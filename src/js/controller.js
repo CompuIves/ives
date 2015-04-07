@@ -10,10 +10,6 @@ app.controller("MainController", ["$scope",
             $(".loadanim").addClass("visible");
         }, 150);
 
-        this.copyToClipboard = function(string) {
-            Materialize.toast('Copied ' + string + ' to clipboard!', 4000) // 4000 is the duration of the toast
-        }
-
         $(".hoverdarker").hover(function() {
                 $(this).css('background-color', rgbToString(darken($(this).data('bgcolor'), 30)));
             },
@@ -55,9 +51,9 @@ app.controller("MainController", ["$scope",
             $(".bgcolor").css("background-color", rgbToString(contentColor)).data("bgcolor", contentColor);
             $(".darkbgcolor").css("background-color", rgbToString(ultimateRgb)).data("bgcolor", ultimateRgb);
             $(".ultradarkbgcolor").css("background-color", rgbToString(secondColor)).data("bgcolor", ultimateRgb);
-            $(".bgcolor-transparent").css("background-color", rgbToString(contentColor, 0.86)).data("bgcolor", contentColor);
-            $(".darkbgcolor-transparent").css("background-color", rgbToString(ultimateRgb, 0.86)).data("bgcolor", ultimateRgb);
-            $(".ultradarkbgcolor-transparent").css("background-color", rgbToString(secondColor, 0.87)).data("bgcolor", ultimateRgb);
+            $(".bgcolor-transparent").css("background-color", rgbToString(contentColor, 0.8)).data("bgcolor", contentColor);
+            $(".darkbgcolor-transparent").css("background-color", rgbToString(ultimateRgb, 0.8)).data("bgcolor", ultimateRgb);
+            $(".ultradarkbgcolor-transparent").css("background-color", rgbToString(secondColor, 0.8)).data("bgcolor", ultimateRgb);
             $(".darkcolor").css("color", rgbToString(ultimateRgb)).data("color", ultimateRgb);
             $(".lightcolor").css("color", rgbToString(thirdColor)).data("color", thirdColor);
             $(".ultralightcolor").css("color", rgbToString(contentColor)).data("color", contentColor);

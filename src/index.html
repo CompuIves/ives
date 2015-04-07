@@ -21,10 +21,10 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-
+    <div ng-trianglify class="background" options="triangleconfig" interval="10000" fullscreen='true'></div>
     <body ng-controller="MainController as main">
+
         <div class="header">
-            <ng-trianglify class="background" options="triangleconfig" interval="10000"></ng-trianglify>
             <div class="loadanim textcard">
                 <span class="title darkcolor">Hi, I'm Ives!</span>
             </div>
@@ -54,14 +54,13 @@
         </div>
 
         <div class="main">
-            <div class="headerspace">
-                <ng-trianglify class="backgroundtriangles" options="triangleconfig" interval="10000" child="true"></ng-trianglify>
-                <div class="row firstrow contentrow bgcolor-transparent">
-                    <div class="col s12 m5 l6">
+            <div class="row firstrow contentrow bgcolor-transparent">
+                <div class="headerspace">
+                    <div class="col s12 m5 l7">
                         <div class="title darkcolor">Who am I?</div>
                         <p class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.age}}</strong> seconds ({{main.ageyears}} years) old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and their uses.</p>
                     </div>
-                    <div class="col s12 m7 l6">
+                    <div class="col s12 m7 l5">
                         <div class="title darkcolor">Information</div>
                         <p class="flow-text">
                             <div class="info">
@@ -84,36 +83,33 @@
                         </p>
                     </div>
                 </div>
-                <div class="row contentrow ultradarkbgcolor-transparent">
-                    <div class="col s12">
-                        <div class="header-title ultralightcolor">What do I know?</div>
-                    </div>
-                    <div class="col s6">
-                        <div class="sp title ultralightcolor">Development</div>
-                        <p class="flow-text" style="color:white;">
-                            I have worked with several codings. Primarily with Java, but also with Javascript, Ruby, CSS, HTML and Git.
-                        </p>
-                    </div>
-                    <div class="col s6">
-                        <div class="sp title ultralightcolor">Design</div>
-                        <p class="flow-text" style="color:white;">
-                            I like design as much as I like cookies: very much. Cookies are very nice.
-                        </p>
-                    </div>
+            </div>
+            <!--<div style="margin-top:200px"></div>-->
+            <div class="row contentrow ultradarkbgcolor-transparent">
+                <div class="col s12">
+                    <div class="header-title ultralightcolor">What do I know?</div>
+                </div>
+                <div class="col s6">
+                    <div class="sp title ultralightcolor">Development</div>
+                    <p class="flow-text" style="color:white;">
+                        I have worked with several codings. Primarily with Java, but also with Javascript, Ruby, CSS, HTML and Git.
+                    </p>
+                </div>
+                <div class="col s6">
+                    <div class="sp title ultralightcolor">Design</div>
+                    <p class="flow-text" style="color:white;">
+                        I like design as much as I like cookies: very much. Cookies are very nice.
+                    </p>
                 </div>
             </div>
         </div>
-
         <!-- jQuery (necessary for Materializes JavaScript plugins) -->
         <script src="lib/jquery/dist/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="lib/materialize/dist/js/materialize.min.js"></script>
         <!-- Angular for frontend modularity -->
         <script src="lib/angular/angular.min.js"></script>
-        <!-- D3 for Trianglify -->
-        <script src="lib/d3/d3.min.js"></script>
-        <!-- Trianglify for header -->
-        <script src="lib/trianglify/trianglify.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js"></script>
         <!-- Moment.JS -->
         <script src="lib/moment/min/moment.min.js"></script>
         <!-- Own scripts -->

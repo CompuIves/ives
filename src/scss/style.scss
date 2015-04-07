@@ -4,358 +4,335 @@ $desktop-width: 1300px;
 $widescreen-width: 1920px;
 
 @mixin phone {
-  @media (min-width: 0) and (max-width: #{$tablet-width - 1px}) {
-    @content;
-  }
+    @media (min-width: 0) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-    @content;
-  }
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop-width}) and (max-width: #{$widescreen-width - 1px}) {
-    @content;
-  }
+    @media (min-width: #{$desktop-width}) and (max-width: #{$widescreen-width - 1px}) {
+        @content;
+    }
 }
 
 @mixin widescreen {
-  @media (min-width: #{$widescreen-width}) {
-    @content;
-  }
+    @media (min-width: #{$widescreen-width}) {
+        @content;
+    }
 }
 
-
-body {
-	background-color: #efefef;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-$header-height: 600px;
-$header-offset: 70px;		
+$header-height: 55vh;
 
 .darkcolor, .lightcolor, .ultralightcolor {
-	transition: color 1s ease;
+    transition: color 1s ease;
 }
 
 .bgcolor, .darkbgcolor, .ultradarkbgcolor,
 .bgcolor-transparent, .darkbgcolor-transparent, .ultradarkbgcolor-transparent {
-	transition: background-color 1s ease;
+    transition: background-color 1s ease;
 }
 
 .hoverdarker {
-	transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-.main {
-	position: absolute;
-	z-index: 1;
-	margin-top: -$header-offset;
-	margin-bottom: $header-offset;
-	width: 70%;
-	top: $header-height; left: 0; right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: white;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-	border-radius: 3px;
-	
-	@include desktop {
-		width: 80%;
-	}
-
-	@include tablet {
-		width: 90%;
-	}
-
-	@include phone {
-		width: 100%;
-	}	
-
-	.title {
-		font-size: 48px;
-		font-weight: 300;
-
-		&.sp {
-			transition: all 0.3s ease;
-			background-color: rgba(0, 0, 0, 0.3);
-			border-radius: 3px;
-			text-align: center;
-
-			&:hover {
-				transition: all 0.3s ease;
-				background-color: rgba(0, 0, 0, 0.4);
-			}
-		}
-	}
-
-	.header-title {
-		text-align: center;
-		font-size: 60px;
-	}
-
-	.contentrow {
-		position: relative;
-		padding-left: 50px;
-		padding-right: 50px;
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-bottom: 0px;
-	}
-
-	.headerspace {
-		position: relative;
-		margin-top: 200px;
-		@include phone {
-			margin-top: 125px;
-		}
-	}
-
-.info {
-			$margin: 5px;
-			$font-size: 26px;
-			position: relative;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			background-color: white;
-			border-radius: 2px;
-			margin-bottom: $margin;
-
-			.icon {
-				width: 3.5rem;
-				text-align: center;
-				font-size: $font-size;
-			}
-
-			.action {
-				border-radius: 2px;
-				position: absolute;
-				display: block;
-				text-align: center;
-				vertical-align: middle;
-				margin: auto;
-				width: 4.5rem;
-				top: 0;
-				bottom: 0;
-				right: 0;
-				padding: $margin;
-				font-size: $font-size;
-				line-height: $font-size + $margin * 4;
-				margin: auto;
-			}
-
-			.text {
-				border-left: 1px solid #ddd;
-				padding-left: 15px;
-				font-size: $font-size;
-				font-weight: 300;
-
-				@include phone {
-					font-size: 16px;
-				}
-			}
-	}
-
-	.skillprogress {
-		position: relative;
-		color: white;
-		display: block;
-		width: 100%;
-		height: 40px;
-		border-radius: 5px;
-	}
-
-	.backgroundtriangles {
-		transition: all 1s ease;
-		z-index: -1;
-		position: absolute;
-		display: block;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-	}
-
+.background {
+    transition: 1s ease all;
+    z-index: 0;
+    //position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 .header {
-	display: inline-block;
-	position: absolute;
-	right: 0;
-	left: 0;
-	margin: 0 auto;
-	width: 100%;
-	height: $header-height;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    height: $header-height;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    .textcard {
+        transform: translateY(5px);
+        opacity: 0;
+        $height: 125px;
+        $width: 500px;
+        z-index: 1;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        left: 0;
+        right: 0;
+        top: -80px;
+        bottom: 0;
+        max-width: $width;
+        max-height: $height;
+        margin: auto;
+        text-align: center;
+        border-radius: 2px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+        .title {
+            line-height: $height;
+            font-size: 64px;
+            font-weight: 500;
+            @include phone {
+                font-size: 50px;
+            }
+        }
+        &.visible {
+            transition: 0.3s ease all;
+            opacity: 1;
+            transform: none;
+        }
+    }
+    $circlessize: 275px;
+    .circles {
+        z-index: 2;
+        position: absolute;
+        bottom: -#{$circlessize / 2};
+        left: 0;
+        right: 0;
+        height: $circlessize;
+    }
+    .logocircle {
+        $size-big: 100px;
+        $size-small: 75px;
+        border-radius: 50%;
+        opacity: 0;
+        display: block;
+        position: absolute;
+        left: 0;
+        margin: 0 auto;
+        width: $size-big;
+        height: $size-big;
+        top: $circlessize / 2 - $size-big / 2;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+        @for $i from 0 through 3 {
+            &:nth-child(#{$i + 1}) {
+                right: -50% + 20% * $i + 40% * floor($i / 2);
+            }
+        }
+        @include desktop {
+            @for $i from 0 through 3 {
+                &:nth-child(#{$i + 1}) {
+                    right: -75% + 30% * $i + 60% * floor($i / 2);
+                }
+            }
+        }
 
-	.background {
-		transition: 1s ease all;
-		z-index: 0;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-	
-	.textcard {
-		transform: translateY(5px);
-		opacity: 0;
-		$height: 125px;
-		$width: 500px;
-		z-index: 1;
-		position: absolute;
-		background-color: rgba(255, 255, 255, 0.7);
-		left: 0;
-		right: 0;
-		top: -$header-offset - 80px;
-		bottom: 0;
-		max-width: $width;
-		max-height: $height;
-		margin: auto;
-		text-align: center;
-		border-radius: 2px;
-		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-		.title {
-			line-height: $height;
-			font-size: 64px;
-			font-weight: 500;
-			@include phone {
-				font-size: 50px;
-			}
-		}
+        @include tablet {
+            width: $size-small;
+            height: $size-small;
+            top: $circlessize / 2 - $size-small / 2;
+            @for $i from 0 through 3 {
+                &:nth-child(#{$i + 1}) {
+                    right: -75% + 30% * $i + 60% * floor($i / 2);
+                }
+            }
+        }
 
-		&.visible {
-			transition: 0.3s ease all;
-			opacity: 1;
-			transform: none;
-		}
-	}
+        @include phone {
+            width: $size-small;
+            height: $size-small;
+            bottom: 0;
+            margin-top: 80px;
+            @for $i from 0 through 3 {
+                &:nth-child(#{$i + 1}) {
+                    right: -70% + 47% * $i;
+                }
+            }
+        }
 
-	$circlessize: 275px;
-	.circles {
-		z-index: 2;
-		position: absolute;
-		bottom: -#{$header-offset};
-		left: 0;
-		right: 0;
-		height: $circlessize;
-	}
+        .logo {
+            $innersize-big: $size-big - 6px;
+            $innersize-small: $size-small - 6px;
+            transition: 1s ease all;
+            color: black;
+            display: block;
+            font-size: 60px;
+            width: $innersize-big;
+            height: $innersize-big;
+            margin-left: ($size-big - $innersize-big) / 2;
+            margin-top: ($size-big - $innersize-big) / 2;
+            border-radius: 50%;
+            align-content: center;
+            text-align: center;
+            line-height: $innersize-big;
+            @include tablet {
+                width: $innersize-small;
+                height: $innersize-small;
+                margin-left: ($size-small - $innersize-small) / 2;
+                margin-top: ($size-small - $innersize-small) / 2;
+                line-height: $innersize-small;
+                font-size: 40px;
+            }
 
-	.logocircle {
-		$size-big: 100px;
-		$size-small: 75px;
-		border-radius: 50%;
-		opacity: 0;
-		display: block;
-		position: absolute;
-		left: 0;
-		margin: 0 auto;
-		width: $size-big;
-		height: $size-big;
-		top: $circlessize / 2 - $size-big / 2;
-		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+            @include phone {
+                width: $innersize-small;
+                height: $innersize-small;
+                margin-left: ($size-small - $innersize-small) / 2;
+                margin-top: ($size-small - $innersize-small) / 2;
+                line-height: $innersize-small;
+                font-size: 40px;
+            }
+        }
+        &.visible {
+            transition: all 0.3s ease, opacity 0.3s ease 0.2s, 1s ease color;
+            opacity: 1;
+        }
+        &:hover {
+            transition: 0.3s ease all;
+            transform: translateY(-3px);
+            box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.4);
+        }
+    }
+    .profileimg {
+        $picsize-large: $circlessize;
+        $picsize-medium: 200px;
+        $picsize-small: 130px;
+        transition: 0.3s ease all;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 0;
+        top: $circlessize - $picsize-large;
+        height: $circlessize;
+        width: $circlessize;
+        border: 7px solid white;
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+        @include tablet {
+            top: $circlessize / 2 - $picsize-medium * 0.5;
+            height: $picsize-medium;
+            width: $picsize-medium;
+            border: 4px solid white;
+        }
 
-		@for $i from 0 through 3 {
-			&:nth-child(#{$i + 1}) {
-				right: -50% + 20% * $i + 40% * floor($i / 2);
-			}
-		}
+        @include phone {
+            top: $circlessize / 2 - $picsize-small * 0.75;
+            height: $picsize-small;
+            width: $picsize-small;
+            border: 4px solid white;
+        }
+    }
+}
 
-		@include tablet {
-			width: $size-small;
-			height: $size-small;
-			top: $circlessize / 2 - $size-small / 2;
+.main {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: 3px;
+    .title {
+        font-size: 48px;
+        font-weight: 300;
+        &.sp {
+            transition: all 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            text-align: center;
+            &:hover {
+                transition: all 0.3s ease;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+    .header-title {
+        text-align: center;
+        font-size: 60px;
+    }
+    .contentrow {
+        position: relative;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 0px;
+        &.firstrow {
+            padding-top: 150px;
+            @include tablet {
+                padding-top: 100px;
+            }
 
-			@for $i from 0 through 3 {
-				&:nth-child(#{$i + 1}) {
-					right: -75% + 30% * $i + 60% * floor($i / 2);
-				}
-			}
-		}
+            @include phone {
+                padding-top: 120px;
+            }
+        }
+        @include desktop {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
 
-		@include phone {
-			width: $size-small;
-			height: $size-small;
-			bottom: 0;
-			margin-top: 80px;
+        @include tablet {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
 
-			@for $i from 0 through 3 {
-				&:nth-child(#{$i + 1}) {
-					right: -70% + 47% * $i
-				}
-			}
-		}
-	
+        @include phone {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+    .info {
+        $margin: 5px;
+        $font-size: 26px;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+        border-radius: 2px;
+        margin-bottom: $margin;
+        .icon {
+            width: 3.5rem;
+            text-align: center;
+            font-size: $font-size;
+        }
+        .action {
+            border-radius: 2px;
+            position: absolute;
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            margin: auto;
+            width: 4.5rem;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            padding: $margin;
+            font-size: $font-size;
+            line-height: $font-size + $margin * 4;
+            margin: auto;
+            @include tablet {
+                width: 4rem;
+            }
+        }
+        .text {
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+            font-size: $font-size;
+            font-weight: 300;
+            @include tablet {
+                font-size: 20px;
+            }
 
-		.logo {
-			$innersize-big: $size-big - 6px;
-			$innersize-small: $size-small - 6px;
-			transition: 1s ease all;
-			color: black;
-			display: block;
-			font-size: 60px;
-			width: $innersize-big;
-			height: $innersize-big;
-			margin-left: ($size-big - $innersize-big) / 2;
-			margin-top: ($size-big - $innersize-big) / 2;
-			border-radius: 50%;
-			align-content: center;
-			text-align: center;
-			line-height: $innersize-big;
-
-			@include tablet {
-				width: $innersize-small;
-				height: $innersize-small;
-				margin-left: ($size-small - $innersize-small) / 2;
-				margin-top: ($size-small - $innersize-small) / 2;
-				line-height: $innersize-small;
-				font-size: 40px;
-			}
-
-			@include phone {
-				width: $innersize-small;
-				height: $innersize-small;
-				margin-left: ($size-small - $innersize-small) / 2;
-				margin-top: ($size-small - $innersize-small) / 2;
-				line-height: $innersize-small;
-				font-size: 40px;
-			}
-
-		}
-
-		&.visible {
-			transition: all 0.3s ease, opacity 0.3s ease 0.2s, 1s ease color;
-			opacity: 1;
-		}
-
-		&:hover {
-			transition: 0.3s ease all;
-			transform: translateY(-3px);
-			box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.4);
-		}
-	}
-
-	.profileimg {
-		$picsize-large: $circlessize;
-		$picsize-small: 130px;
-		transition: 0.3s ease all;
-		position: absolute;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		bottom: 0;
-		top: $circlessize - $picsize-large;
-		height: $circlessize;
-		width: $circlessize;
-		border: 7px solid white;
-		border-radius: 50%;
-		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-
-		@include phone {
-			top: $circlessize / 2 - $picsize-small * 0.75; 
-			height: $picsize-small;
-			width: $picsize-small;
-			border: 4px solid white;
-		}
-	}
+            @include phone {
+                font-size: 16px;
+            }
+        }
+    }
+    .skillprogress {
+        position: relative;
+        color: white;
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+    }
 }
