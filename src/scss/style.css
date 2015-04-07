@@ -1,0 +1,305 @@
+/* line 31, C:/Java Development/ives.io/src/scss/style.scss */
+body {
+  background-color: #efefef; }
+
+/* line 38, C:/Java Development/ives.io/src/scss/style.scss */
+.darkcolor, .lightcolor, .ultralightcolor {
+  transition: color 1s ease; }
+
+/* line 43, C:/Java Development/ives.io/src/scss/style.scss */
+.bgcolor, .darkbgcolor, .ultradarkbgcolor, .bgcolor-transparent, .darkbgcolor-transparent, .ultradarkbgcolor-transparent {
+  transition: background-color 1s ease; }
+
+/* line 47, C:/Java Development/ives.io/src/scss/style.scss */
+.hoverdarker {
+  transition: background-color 0.3s ease; }
+
+/* line 51, C:/Java Development/ives.io/src/scss/style.scss */
+.main {
+  position: absolute;
+  z-index: 1;
+  margin-top: -70px;
+  margin-bottom: 70px;
+  width: 70%;
+  top: 600px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 3px; }
+  @media (min-width: 1300px) and (max-width: 1919px) {
+    .main {
+      width: 80%; } }
+  @media (min-width: 768px) and (max-width: 1299px) {
+    .main {
+      width: 90%; } }
+  @media (min-width: 0) and (max-width: 767px) {
+    .main {
+      width: 100%; } }
+  /* line 76, C:/Java Development/ives.io/src/scss/style.scss */
+  .main .title {
+    font-size: 48px;
+    font-weight: 300; }
+    /* line 80, C:/Java Development/ives.io/src/scss/style.scss */
+    .main .title.sp {
+      transition: all 0.3s ease;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      text-align: center; }
+      /* line 86, C:/Java Development/ives.io/src/scss/style.scss */
+      .main .title.sp:hover {
+        transition: all 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.4); }
+  /* line 93, C:/Java Development/ives.io/src/scss/style.scss */
+  .main .header-title {
+    text-align: center;
+    font-size: 60px; }
+  /* line 98, C:/Java Development/ives.io/src/scss/style.scss */
+  .main .contentrow {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0px; }
+  /* line 107, C:/Java Development/ives.io/src/scss/style.scss */
+  .main .headerspace {
+    position: relative;
+    margin-top: 200px; }
+    @media (min-width: 0) and (max-width: 767px) {
+      .main .headerspace {
+        margin-top: 125px; } }
+  /* line 115, C:/Java Development/ives.io/src/scss/style.scss */
+  .main .info {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 2px;
+    margin-bottom: 5px; }
+    /* line 125, C:/Java Development/ives.io/src/scss/style.scss */
+    .main .info .icon {
+      width: 3.5rem;
+      text-align: center;
+      font-size: 26px; }
+    /* line 131, C:/Java Development/ives.io/src/scss/style.scss */
+    .main .info .action {
+      border-radius: 2px;
+      position: absolute;
+      display: block;
+      text-align: center;
+      vertical-align: middle;
+      margin: auto;
+      width: 4.5rem;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 5px;
+      font-size: 26px;
+      line-height: 46px;
+      margin: auto; }
+    /* line 148, C:/Java Development/ives.io/src/scss/style.scss */
+    .main .info .text {
+      border-left: 1px solid #ddd;
+      padding-left: 15px;
+      font-size: 26px;
+      font-weight: 300; }
+      @media (min-width: 0) and (max-width: 767px) {
+        .main .info .text {
+          font-size: 16px; } }
+  /* line 160, C:/Java Development/ives.io/src/scss/style.scss */
+  .main .skillprogress {
+    position: relative;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px; }
+  /* line 169, C:/Java Development/ives.io/src/scss/style.scss */
+  .main .backgroundtriangles {
+    transition: all 1s ease;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+
+/* line 182, C:/Java Development/ives.io/src/scss/style.scss */
+.header {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); }
+  /* line 192, C:/Java Development/ives.io/src/scss/style.scss */
+  .header .background {
+    transition: 1s ease all;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  /* line 200, C:/Java Development/ives.io/src/scss/style.scss */
+  .header .textcard {
+    transform: translateY(5px);
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    right: 0;
+    top: -150px;
+    bottom: 0;
+    max-width: 500px;
+    max-height: 125px;
+    margin: auto;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
+    /* line 218, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .textcard .title {
+      line-height: 125px;
+      font-size: 64px;
+      font-weight: 500; }
+      @media (min-width: 0) and (max-width: 767px) {
+        .header .textcard .title {
+          font-size: 50px; } }
+    /* line 227, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .textcard.visible {
+      transition: 0.3s ease all;
+      opacity: 1;
+      transform: none; }
+  /* line 235, C:/Java Development/ives.io/src/scss/style.scss */
+  .header .circles {
+    z-index: 2;
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    height: 275px; }
+  /* line 244, C:/Java Development/ives.io/src/scss/style.scss */
+  .header .logocircle {
+    border-radius: 50%;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    top: 87.5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
+    /* line 259, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .logocircle:nth-child(1) {
+      right: -50%; }
+    /* line 259, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .logocircle:nth-child(2) {
+      right: -30%; }
+    /* line 259, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .logocircle:nth-child(3) {
+      right: 30%; }
+    /* line 259, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .logocircle:nth-child(4) {
+      right: 50%; }
+    @media (min-width: 768px) and (max-width: 1299px) {
+      .header .logocircle {
+        width: 75px;
+        height: 75px;
+        top: 100px; }
+        /* line 270, C:/Java Development/ives.io/src/scss/style.scss */
+        .header .logocircle:nth-child(1) {
+          right: -75%; }
+        /* line 270, C:/Java Development/ives.io/src/scss/style.scss */
+        .header .logocircle:nth-child(2) {
+          right: -45%; }
+        /* line 270, C:/Java Development/ives.io/src/scss/style.scss */
+        .header .logocircle:nth-child(3) {
+          right: 45%; }
+        /* line 270, C:/Java Development/ives.io/src/scss/style.scss */
+        .header .logocircle:nth-child(4) {
+          right: 75%; } }
+    @media (min-width: 0) and (max-width: 767px) {
+      .header .logocircle {
+        width: 75px;
+        height: 75px;
+        bottom: 0;
+        margin-top: 80px; }
+        /* line 283, C:/Java Development/ives.io/src/scss/style.scss */
+        .header .logocircle:nth-child(1) {
+          right: -70%; }
+        /* line 283, C:/Java Development/ives.io/src/scss/style.scss */
+        .header .logocircle:nth-child(2) {
+          right: -23%; }
+        /* line 283, C:/Java Development/ives.io/src/scss/style.scss */
+        .header .logocircle:nth-child(3) {
+          right: 24%; }
+        /* line 283, C:/Java Development/ives.io/src/scss/style.scss */
+        .header .logocircle:nth-child(4) {
+          right: 71%; } }
+    /* line 290, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .logocircle .logo {
+      transition: 1s ease all;
+      color: black;
+      display: block;
+      font-size: 60px;
+      width: 94px;
+      height: 94px;
+      margin-left: 3px;
+      margin-top: 3px;
+      border-radius: 50%;
+      align-content: center;
+      text-align: center;
+      line-height: 94px; }
+      @media (min-width: 768px) and (max-width: 1299px) {
+        .header .logocircle .logo {
+          width: 69px;
+          height: 69px;
+          margin-left: 3px;
+          margin-top: 3px;
+          line-height: 69px;
+          font-size: 40px; } }
+      @media (min-width: 0) and (max-width: 767px) {
+        .header .logocircle .logo {
+          width: 69px;
+          height: 69px;
+          margin-left: 3px;
+          margin-top: 3px;
+          line-height: 69px;
+          font-size: 40px; } }
+    /* line 326, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .logocircle.visible {
+      transition: all 0.3s ease, opacity 0.3s ease 0.2s, 1s ease color;
+      opacity: 1; }
+    /* line 331, C:/Java Development/ives.io/src/scss/style.scss */
+    .header .logocircle:hover {
+      transition: 0.3s ease all;
+      transform: translateY(-3px);
+      box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.4); }
+  /* line 338, C:/Java Development/ives.io/src/scss/style.scss */
+  .header .profileimg {
+    transition: 0.3s ease all;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    top: 0px;
+    height: 275px;
+    width: 275px;
+    border: 7px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); }
+    @media (min-width: 0) and (max-width: 767px) {
+      .header .profileimg {
+        top: 40px;
+        height: 130px;
+        width: 130px;
+        border: 4px solid white; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ives">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ives</title>
+
+    <!-- Materialize -->
+    <link href="lib/materialize/dist/css/materialize.min.css" rel="stylesheet">
+    <!-- Material Design icons -->
+    <link href="lib/mdi/css/materialdesignicons.min.css" rel="stylesheet"></link>
+    <link href="lib/fontawesome/css/font-awesome.min.css" rel="stylesheet"></link>
+    <link href='css/style.css' rel="stylesheet"></link>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body ng-controller="MainController as main">
+        <div class="header">
+            <ng-trianglify class="background" options="triangleconfig" interval="10000"></ng-trianglify>
+            <div class="loadanim textcard">
+                <span class="title darkcolor">Hi, I'm Ives!</span>
+            </div>
+            <div class="circles">
+                <div class="loadanim logocircle">
+                    <a href="https://nl.linkedin.com/in/ivesvh" target="_blank">
+                        <i class="logo fa fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="loadanim logocircle">
+                    <a href="http://codepen.io/CompuIves/" target="_blank">
+                        <i class="logo fa fa-codepen"></i>
+                    </a>
+                </div>
+                <div class="loadanim logocircle">
+                    <a href="https://github.com/CompuIves" target="_blank">
+                        <i class="logo fa fa-github-alt"></i>
+                    </a>
+                </div>
+                <div class="loadanim logocircle">
+                    <a href="https://www.youtube.com/playlist?list=PL14AB56050692684A" target="_blank">
+                        <i class="logo fa fa-youtube-play"></i>
+                    </a>
+                </div>
+                <img class="profileimg" src="res/images/ives.png"></img>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="headerspace">
+                <ng-trianglify class="backgroundtriangles" options="triangleconfig" interval="10000" child="true"></ng-trianglify>
+                <div class="row firstrow contentrow bgcolor-transparent">
+                    <div class="col s12 m5 l6">
+                        <div class="title darkcolor">Who am I?</div>
+                        <p class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.age}}</strong> seconds ({{main.ageyears}} years) old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and their uses.</p>
+                    </div>
+                    <div class="col s12 m7 l6">
+                        <div class="title darkcolor">Information</div>
+                        <p class="flow-text">
+                            <div class="info">
+                                <i class="fa fa-user icon darkcolor"></i>
+                                <span class="text">Ives van Hoorne</span>
+                                <i class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
+                            </div>
+
+                            <div class="info">
+                                <i class="fa fa-envelope icon darkcolor"></i>
+                                <span class="text">Ives.v.h@gmail.com</span>
+                                <a href="mailto:Ives.v.h@gmail.com" target="_top" class="fa fa-paper-plane action ultralightcolor darkbgcolor hoverdarker"></a>
+                            </div>
+
+                            <div class="info">
+                                <i class="fa fa-map-marker icon darkcolor"></i>
+                                <span class="text">Assen, The Netherlands</span>
+                                <i class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="row contentrow ultradarkbgcolor-transparent">
+                    <div class="col s12">
+                        <div class="header-title ultralightcolor">What do I know?</div>
+                    </div>
+                    <div class="col s6">
+                        <div class="sp title ultralightcolor">Development</div>
+                        <p class="flow-text" style="color:white;">
+                            I have worked with several codings. Primarily with Java, but also with Javascript, Ruby, CSS, HTML and Git.
+                        </p>
+                    </div>
+                    <div class="col s6">
+                        <div class="sp title ultralightcolor">Design</div>
+                        <p class="flow-text" style="color:white;">
+                            I like design as much as I like cookies: very much. Cookies are very nice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Materializes JavaScript plugins) -->
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="lib/materialize/dist/js/materialize.min.js"></script>
+        <!-- Angular for frontend modularity -->
+        <script src="lib/angular/angular.min.js"></script>
+        <!-- D3 for Trianglify -->
+        <script src="lib/d3/d3.min.js"></script>
+        <!-- Trianglify for header -->
+        <script src="lib/trianglify/trianglify.min.js"></script>
+        <!-- Moment.JS -->
+        <script src="lib/moment/min/moment.min.js"></script>
+        <!-- Own scripts -->
+        <script src="all.min.js"></script>
+    </body>
+
+    </html>
