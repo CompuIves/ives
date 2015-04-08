@@ -26,9 +26,10 @@ app.controller("MainController", ["$scope",
         });
 
         function setColors(options) {
-            var newRgb1 = averageColors(hexToRgb(options.x_gradient[0]), options.y_gradient[0]);
-            var newRgb2 = averageColors(hexToRgb(options.x_gradient[options.x_gradient.length - 1]),
-                options.y_gradient[options.y_gradient.length - 1]);
+            var newRgb1 = averageColors(hexToRgb(options.x_colors[0]),
+                hexToRgb(options.y_colors[Math.floor(options.y_colors.length / 2)]));
+            var newRgb2 = averageColors(hexToRgb(options.x_colors[options.x_colors.length - 1]),
+                hexToRgb(options.y_colors[Math.floor(options.y_colors.length / 2)]));
 
             var ultimateRgb = averageColors(newRgb1, newRgb2);
             var secondColor = darken(ultimateRgb, 60);
