@@ -2,24 +2,23 @@ app.directive("ngProgress", function() {
     return {
         restrict: 'AE',
         scope: {
-            progress: "=",
-            text: "@"
+            progress: "="
         },
         link: function(scope, element, attr, ctrl) {
-            var width = element[0].offsetWidth;
             var fullprogress = $("<div id='full'></div>");
-            var emptyprogress = $("<div id='empty'></div>");
-            var text = $("<span id='text'>" + text + "</span>");
-            $(element).append(fullprogress).append(emptyprogress).append(text);
+            var text = $("<span id='text'>" + (scope.progress * 100) + "%" + "</span>");
+            $(element).append(fullprogress).append(text);
 
 
             $(window).resize(setProgress);
-            scope.$watch('text', function() {
-                text.text(scope.text);
+            scope.$watch('text', function(value) {
+                if (value)
+                    text.text(scope.text);
             }, true);
             setProgress();
 
             function setProgress() {
+                var width = element[0].offsetWidth;
                 fullprogress.css({
                     'z-index': 2,
                     display: 'block',
@@ -30,26 +29,18 @@ app.directive("ngProgress", function() {
                     borderRadius: 'inherit',
                     backgroundColor: 'inherit'
                 });
-
-                emptyprogress.css({
-                    'z-index': 1,
-                    display: 'block',
-                    position: 'absolute',
-                    left: 0,
-                    height: '100%',
-                    width: '100%',
-                    borderRadius: 'inherit',
-                    backgroundColor: '#ddd'
-                });
-
-                text.css({
-                    position: 'absolute',
-                    left: "10px",
-                    color: 'inherit',
-                    textAlign: 'center',
-                    top: 0,
-                    bottom: 0
-                });
+                if (text)
+                    text.css({
+                        position: 'absolute',
+                        display: 'block',
+                        left: 0,
+                        right: 0,
+                        color: 'white',
+                        textAlign: 'center',
+                        width: width * scope.progress,
+                        top: 0,
+                        bottom: 0
+                    });
             }
         }
     };

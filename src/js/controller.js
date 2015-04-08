@@ -55,6 +55,7 @@ app.controller("MainController", ["$scope",
             $(".bgcolor-transparent").css("background-color", rgbToString(contentColor, 0.8)).data("bgcolor", contentColor);
             $(".darkbgcolor-transparent").css("background-color", rgbToString(ultimateRgb, 0.8)).data("bgcolor", ultimateRgb);
             $(".ultradarkbgcolor-transparent").css("background-color", rgbToString(secondColor, 0.8)).data("bgcolor", ultimateRgb);
+            $(".ultradarkcolor").css("color", rgbToString(secondColor)).data("color", secondColor);
             $(".darkcolor").css("color", rgbToString(ultimateRgb)).data("color", ultimateRgb);
             $(".lightcolor").css("color", rgbToString(thirdColor)).data("color", thirdColor);
             $(".ultralightcolor").css("color", rgbToString(contentColor)).data("color", contentColor);
