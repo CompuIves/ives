@@ -338,16 +338,83 @@ $header-height: 55vh;
 }
 
 .skill {
-    transition: all 0.3s ease;
+    position: relative;
+    display: block;
     color: white;
     background-color: rgba(0, 0, 0, 0.15);
     margin-bottom: 10px;
+    text-align: center;
     padding: 0 0.75rem;
+    padding-bottom: 500px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
-    &:hover {
-        transition: all 0.3s ease;
-        background-color: rgba(0, 0, 0, 0.25);
+    .skills {
+        position: relative;
+        font-size: 36px;
+        text-align: left;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-width: 80%;
+
+        .description {
+            border: none;
+            text-align: left;
+            font-size: 15px;
+            font-weight: 300;
+            padding-top: 0.2rem;
+        }
+        
+        .name {
+            text-align: center;
+            padding: 0.75rem;
+            transition: background-color 0.3s ease;
+            font-size: 30px;
+            font-weight: 300;
+            cursor: pointer;
+
+            &:hover {
+                transition: background-color 0.3s ease;
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            &.selected {
+                background-color: rgba(0, 0, 0, 0.2);
+                font-weight: 400;
+            }
+        }
+    }
+
+    .description {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+
+        .skillprogress {
+            position: absolute;
+            top:0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-top: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.15);
+            font-size: 26px;
+            font-weight: 200;
+        }
+    }
+
+    .codingskill {
+        position: relative;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+        margin: 10px;
+        padding: 0;
+        vertical-align: center;
+
+
+        .skilltitle {
+            font-size: 36px;
+            font-weight: 200;
+            line-height: 100px;
+        }
     }
 
     .leftlanguages {
@@ -357,28 +424,6 @@ $header-height: 55vh;
             .skillprogress {
                float: left;
             }
-        }
-    }
-
-    .codingskill {
-        font-size: 30px;
-        font-weight: 300;
-        padding: 1rem;
-
-        .skillprogress {
-            position: relative;
-            display: inline-block;
-            height: 30px;
-            float: right;
-            width: 60%;
-            margin-top: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 3px;
-            background-color: rgba(255, 255, 255, 0.2);
-
-            text-align: center;
-            font-size: 19px;
-            font-weight: 200;
         }
     }
 

@@ -95,11 +95,32 @@
         <div class="subheader-text flow-text col s12 m6 offset-m3">I have worked on projects in many different fields. I'm not limited to web development, I also do video editing and graphic design.
         </div>
 
-        <div class="col s12 skill">
-            <span class="title col s12" style="margin-bottom: 10px; text-align: center;">Coding Skills</span>
-
-
-            Test
+        <div class="col s12 skill" ng-controller="SkillController as skill">
+            <span class="col s12 title">{{skill.title}}</span>
+            <div class="col s12 skills">
+                <span class="col s12 description">Programming Languages</span>
+                <div ng-click="skill.setContent('Java')" class="name col s4">Java</div>
+                <div class="name col s4">Javascript (ES6)</div>
+                <div class="name col s4">Ruby</div>
+                <span class="col s12 description">Backend</span>
+                <div class="name col s4">Node.js</div>
+                <div class="name col s4">Ruby On Rails</div>
+                <div class="name col s4">Express</div>
+                <div class="name col s4">MongoDB</div>
+                <div class="name col s4">(my)SQL</div>
+                <div class="name col s4">Restful API</div>
+                <span class="col s12 description">Frontend</span>
+                <div class="name col s4">HTML5</div>
+                <div class="name col s4">CSS3</div>
+                <div class="name col s4">AngularJS</div>
+                <div class="name col s4">Sass</div>
+                <div class="name col s4">JQuery</div>
+                <div class="name col s4">Materialize</div>
+                <div class="name col s12">Bootstrap</div>
+                <span class="col s12 description">Other</span>
+                <div class="name col s6">Android</div>
+                <div class="name col s6">Gulp</div>
+            </div>
         </div>
                 <!--
                 <div class="col s12 skill">
