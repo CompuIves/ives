@@ -1,8 +1,39 @@
-app.controller("MainController", ["$scope",
-    function($scope) {
+app.controller("MainController", ["$scope", "uiGmapGoogleMapApi",
+    function($scope, uiGmapGoogleMapApi) {
         var birthdate = moment("1996-12-20 15:59").startOf('minute');
         this.age = moment().diff(birthdate, 'seconds');
         this.ageyears = moment().diff(birthdate, 'years');
+
+
+        //When maps are loaded
+        uiGmapGoogleMapApi.then(function(maps) {
+            $scope.map = {
+                center: {
+                    latitude: 53,
+                    longitude: 6.56
+                },
+                zoom: 12,
+                control: {}
+            };
+        });
+
+        this.showMaps = (() => {
+            $(".angular-google-map-container").toggleClass('activated');
+        });
+
+        var mapsResized = false;
+        $scope.$watch(function() {
+            return $(".angular-google-map-container").height();
+        }, function(newValue) {
+            if (newValue == 400 && !mapsResized) {
+                google.maps.event.trigger($scope.map.control.getGMap(), 'resize');
+                $scope.map.center = {
+                    latitude: 53,
+                    longitude: 6.56
+                };
+                mapsResized = true;
+            }
+        }, true);
 
         setInterval(() => $scope.$apply(() => this.age++), 1000);
 

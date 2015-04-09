@@ -32,8 +32,7 @@ gulp.task('sass', function() {
             keepBreaks: true
         }))
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
+            browsers: ['> 1%']
         }))
         .pipe(gulp.dest("./app/css/"))
         .pipe(reload({

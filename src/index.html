@@ -28,6 +28,7 @@
             <div class="loadanim textcard">
                 <span class="title darkcolor">Hi, I'm Ives!</span>
             </div>
+            
             <div class="circles">
                 <div class="loadanim logocircle">
                     <a href="https://nl.linkedin.com/in/ivesvh" target="_blank">
@@ -77,17 +78,30 @@
                         <div class="info">
                             <i class="fa fa-map-marker icon darkcolor"></i>
                             <span class="text">Assen, The Netherlands</span>
-                            <i class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
+                            <i ng-click="main.showMaps()" class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
                         </div>
                     </p>
                 </div>
             </div>
 
-            <div class="row contentrow ultradarkbgcolor-transparent">
-                <div class="header-title ultralightcolor">What are my skills?</div>
-                <div class="subheader-text flow-text col s12 m6 offset-m3">I have worked on projects in many different fields. I'm not limited to web development, I also do video editing and graphic design.
-                </div>
+            <ui-gmap-google-map center='map.center' zoom='map.zoom' control="map.control">
+            <ui-gmap-marker
+            idKey="'Ives'"
+            coords='{latitude: 53, longitude: 6.56}'>
+        </ui-gmap-marker>
+    </ui-gmap-google-map>
+    <div class="row contentrow ultradarkbgcolor-transparent">
+        <div class="header-title ultralightcolor">What are my skills?</div>
+        <div class="subheader-text flow-text col s12 m6 offset-m3">I have worked on projects in many different fields. I'm not limited to web development, I also do video editing and graphic design.
+        </div>
 
+        <div class="col s12 skill">
+            <span class="title col s12" style="margin-bottom: 10px; text-align: center;">Coding Skills</span>
+
+
+            Test
+        </div>
+                <!--
                 <div class="col s12 skill">
                     <span class="title col s12" style="margin-bottom: 10px; text-align: center;">Languages</span>
                     <div class="col m12 l6 leftlanguages">
@@ -120,24 +134,28 @@
                         </div>
                         <div class="codingskill">
                             <span class="language">Ruby</span>
-                            <ng-progress class="skillprogress" progress="0.20"></ng-progress>
+                            <ng-progress class="skillprogress" progress="0.40"></ng-progress>
                         </div>
                     </div>
                 </div>
-            </div>
+            -->
         </div>
-        <!-- jQuery (necessary for Materializes JavaScript plugins) -->
-        <script src="lib/jquery/dist/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="lib/materialize/dist/js/materialize.min.js"></script>
-        <!-- Angular for frontend modularity -->
-        <script src="lib/angular/angular.min.js"></script>
-        <!-- Trianglify for banner -->
-        <script src="lib/trianglify/trianglify.min.js"></script>
-        <!-- Moment.JS -->
-        <script src="lib/moment/min/moment.min.js"></script>
-        <!-- Own scripts -->
-        <script src="all.min.js"></script>
-    </body>
+    </div>
+    <!-- jQuery (necessary for Materializes JavaScript plugins) -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="lib/materialize/dist/js/materialize.min.js"></script>
+    <!-- Angular for frontend modularity -->
+    <script src="lib/angular/angular.min.js"></script>
+    <!-- Trianglify for banner -->
+    <script src="lib/trianglify/trianglify.min.js"></script>
+    <!-- Moment.JS -->
+    <script src="lib/moment/min/moment.min.js"></script>
+    <!-- Google Maps -->
+    <script src='/lib/lodash/dist/lodash.min.js'></script>
+    <script src='/lib/angular-google-maps/dist/angular-google-maps.min.js'></script>
+    <!-- Own scripts -->
+    <script src="all.min.js"></script>
+</body>
 
-    </html>
+</html>

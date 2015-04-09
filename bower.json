@@ -25,6 +25,7 @@
     "bootstrap": "~3.3.4",
     "trianglify": "~0.1.5",
     "mdi": "~1.0.8-beta",
-    "moment": "~2.9.0"
+    "moment": "~2.9.0",
+    "angular-google-maps": "~2.0.19"
   }
 }
