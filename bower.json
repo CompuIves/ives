@@ -26,6 +26,8 @@
     "trianglify": "~0.2.0",
     "mdi": "~1.0.8-beta",
     "moment": "~2.9.0",
-    "angular-google-maps": "~2.0.19"
+    "angular-google-maps": "~2.0.19",
+    "fontawesome": "~4.3.0",
+    "materialize": "~0.96.1"
   }
 }
