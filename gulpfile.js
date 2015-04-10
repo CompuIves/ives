@@ -55,7 +55,7 @@ gulp.task('javascript', function() {
     return gulp.src(["src/js/core.js", "src/js/**/*.js"])
         .pipe(concat('all.min.js'))
         .pipe(babel())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./app/'))
         .pipe(reload({
             stream: true
