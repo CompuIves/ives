@@ -58,7 +58,7 @@
             <div class="row firstrow contentrow bgcolor-transparent">
                 <div class="col s12 m5 l7">
                     <div class="title darkcolor">Who am I?</div>
-                    <p class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.age}}</strong> seconds ({{main.ageyears}} years) old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and their uses.</p>
+                    <p class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.age}}</strong> seconds ({{main.ageyears}} years) old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and its capabilities.</p>
                 </div>
                 <div class="col s12 m7 l5">
                     <div class="title darkcolor">Information</div>
@@ -90,34 +90,34 @@
             coords='{latitude: 53, longitude: 6.56}'>
         </ui-gmap-marker>
     </ui-gmap-google-map>
-    <div class="row contentrow ultradarkbgcolor-transparent">
-        <div class="header-title ultralightcolor">What are my skills?</div>
-        <div class="subheader-text flow-text col s12 m6 offset-m3">I have worked on projects in many different fields. I'm not limited to web development, I also do video editing and graphic design.
+    <div class="row contentrow centerrow ultradarkbgcolor-transparent">
+        <div class="header-title ultralightcolor">Skills</div>
+        <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">I have worked on projects in many different fields. I'm not limited to web development, I also do video editing and graphic design.
         </div>
 
         <div class="col s12 skill" ng-controller="SkillController as skill">
-            <span class="col s12 title">{{skill.title}}</span>
+            <span class="col s12 title">Coding Skills</span>
             <div class="col s12 skills">
                 <span class="col s12 description">Programming Languages</span>
-                <div ng-click="skill.setContent('Java')" class="name col s4">Java</div>
-                <div class="name col s4">Javascript (ES6)</div>
-                <div class="name col s4">Ruby</div>
+                <div class="name col l4 m4 s12">Java</div>
+                <div class="name col l4 m4 s12">Javascript (ES6)</div>
+                <div class="name col l4 m4 s12">Ruby</div>
                 <span class="col s12 description">Backend</span>
-                <div class="name col s4">Node.js</div>
-                <div class="name col s4">Ruby On Rails</div>
-                <div class="name col s4">Express</div>
-                <div class="name col s4">MongoDB</div>
-                <div class="name col s4">(my)SQL</div>
-                <div class="name col s4">Restful API</div>
+                <div class="name col l4 m6 s12">Node.js</div>
+                <div class="name col l4 m6 s12">Ruby On Rails</div>
+                <div class="name col l4 m6 s12">Express</div>
+                <div class="name col l4 m6 s12">MongoDB</div>
+                <div class="name col l4 m6 s12">(my)SQL</div>
+                <div class="name col l4 m6 s12">Restful API</div>
                 <span class="col s12 description">Frontend</span>
-                <div class="name col s4">HTML5</div>
-                <div class="name col s4">CSS3</div>
-                <div class="name col s4">Sass</div>
-                <div class="name col s3">AngularJS</div>
-                <div class="name col s3">JQuery</div>
-                <div class="name col s3">Materialize</div>
-                <div class="name col s3">Bootstrap</div>
-                <div class="name col s12">Android</div>
+                <div class="name col l4 m6 s12">HTML5</div>
+                <div class="name col l4 m6 s12">CSS3</div>
+                <div class="name col l4 m6 s12">Sass</div>
+                <div class="name col l3 m6 s12">AngularJS</div>
+                <div class="name col l3 m6 s12">JQuery</div>
+                <div class="name col l3 m6 s12">Materialize</div>
+                <div class="name col l3 m6 s12">Bootstrap</div>
+                <div class="name col l12 m6 s12">Android</div>
             </div>
         </div>
 
@@ -125,10 +125,10 @@
             <span class="col s12 title">Tools</span>
             <div class="col s12 skills">
                 <span class="col s12 description">Graphic Tools</span>
-                <div class="name col s3">Adobe Photoshop</div>
-                <div class="name col s3">Adobe Illustrator</div>
-                <div class="name col s3">Adobe After Effects</div>
-                <div class="name col s3">Adobe Premiere Pro</div>
+                <div class="name col l3 m6 s12">Adobe Photoshop</div>
+                <div class="name col l3 m6 s12">Adobe Illustrator</div>
+                <div class="name col l3 m6 s12">Adobe After Effects</div>
+                <div class="name col l3 m6 s12">Adobe Premiere Pro</div>
                 <span class="col s12 description">Version Control Systems</span>
                 <div class="name col s6">Git</div>
                 <div class="name col s6">SVN</div>
@@ -137,10 +137,10 @@
                 <div class="name col s4">Grunt</div>
                 <div class="name col s4">Gradle</div>
                 <span class="col s12 description">Code Editors of Choice</span>
-                <div class="name col s3">Sublime Text 3</div>
-                <div class="name col s3">Brackets</div>
-                <div class="name col s3">IntelliJ IDEA</div>
-                <div class="name col s3">Atom.io</div>
+                <div class="name col l3 m6 s12">Sublime Text 3</div>
+                <div class="name col l3 m6 s12">Brackets</div>
+                <div class="name col l3 m6 s12">IntelliJ IDEA</div>
+                <div class="name col l3 m6 s12">Atom.io</div>
             </div>
         </div>
 
@@ -148,44 +148,110 @@
             <span class="col s12 title">Languages</span>
             <div class="col s12 skills">
                 <div class="language col s12">
-                    <span class="col s2">Dutch</span>
-                    <span class="col s4 langdesc">Nederlands is mijn moedertaal.</span>
-                    <ng-progress class="col s6" progress="1"></ng-progress>
+                    <span class="col l2 m12 s12">Dutch</span>
+                    <span class="col l4 m6 s12 langdesc">Nederlands is mijn moedertaal.</span>
+                    <ng-progress class="col l6 m6 s12" progress="1"></ng-progress>
                 </div>
                 <div class="language col s12">
-                    <span class="col s2">English</span>
-                    <span class="col s4 langdesc">English is my second most used language.</span>
-                    <ng-progress class="col s6" progress="1"></ng-progress>
+                    <span class="col l2 s12">English</span>
+                    <span class="col l4 m6 s12 langdesc">English is my second most used language.</span>
+                    <ng-progress class="col l6 m6 s12" progress="1"></ng-progress>
                 </div>
                 <div class="language col s12">
-                    <span class="col s2">German</span>
-                    <span class="col s4 langdesc">Ich spreche Deutsch in der Schule.</span>
-                    <ng-progress class="col s6" progress="0.5"></ng-progress>
+                    <span class="col l2 s12">German</span>
+                    <span class="col l4 m6 s12 langdesc">Ich spreche Deutsch in der Schule.</span>
+                    <ng-progress class="col l6 m6 s12" progress="0.5"></ng-progress>
                 </div>
                 <div class="language col s12">
-                    <span class="col s2">French</span>
-                    <span class="col s4 langdesc">Je parle un petit peu français.</span>
-                    <ng-progress class="col s6" progress="0.2"></ng-progress>
+                    <span class="col l2 s12">French</span>
+                    <span class="col l4 m6 s12 langdesc">Je parle un petit peu français.</span>
+                    <ng-progress class="col l6 m6 s12" progress="0.2"></ng-progress>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- jQuery (necessary for Materializes JavaScript plugins) -->
-<script src="lib/jquery/dist/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="lib/materialize/dist/js/materialize.min.js"></script>
-<!-- Angular for frontend modularity -->
-<script src="lib/angular/angular.min.js"></script>
-<!-- Trianglify for banner -->
-<script src="lib/trianglify/dist/trianglify.min.js"></script>
-<!-- Moment.JS -->
-<script src="lib/moment/min/moment.min.js"></script>
-<!-- Google Maps -->
-<script src='/lib/lodash/dist/lodash.min.js'></script>
-<script src='/lib/angular-google-maps/dist/angular-google-maps.min.js'></script>
-<!-- Own scripts -->
-<script src="all.min.js"></script>
-</body>
 
-</html>
+    <div class="row contentrow bgcolor-transparent">
+        <div class="header-title col s12 ultradarkcolor">Experience</div>
+        <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+            Most of my experience is based on personal projects. Normally I find myself dedicated to a specific project and will continue it until it is finished.
+        </div>
+        <div class="subrow row">        
+            <div class="title darkcolor col s12">Education</div>
+            <div class="entry col s12">
+                <div class="entryinfo col m4 s12">
+                    <a href="http://www.nassaucollege.nl/" target="_blank" class=" ultradarkcolor entryname">Dr. Nassau College Quintus </a>
+                    <div class="entryyears">
+                        2009 - 2015
+                    </div>
+                    <div class="entrysub">
+                        VWO - Nature & Technics + Biology
+                    </div>
+                </div>
+                <div class="entrydescription col m8 s12">
+                    <span class="flow-text">
+                        This is high school in The Netherlands. I follow technic and biology courses with a subject (O&O) that allows me to do projects for businesses. Some projects listed here are also done in O&O. My next step is going to university.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="subrow row">
+            <div class="title darkcolor col s12">Work</div>
+            <div class="entry col s12">
+                <div class="entryinfo col m4 s12">
+                    <a href="http://web.team6-games.com/" target="_blank" class="entryname ultradarkcolor">
+                        Team6 Game Studios
+                    </a>
+                    <div class="entryyears">
+                        2012 - 2015
+                    </div>
+                    <div class="entrysub">
+                        Graphic Artist
+                    </div>
+                </div>
+                <div class="entrydescription col m8 s12">
+                    <span class="flow-text">
+                        I first started working at Team6 in 2012 in the holidays, I began as a game tester and prop placer. Soon I became their Graphic Artist for videos; I began making their trailers and commercials. 
+                    </span>
+                    <div class="recommendationtitle ultradarkcolor">Recommendation:</div>
+                    <div class="recommendation"><i class="darkcolor fa fa-quote-left"></i>
+                        <span class="description">
+                            <em>
+                                Ives is one of the few, unique individuals with a true entrepreneur spirit: He is not afraid of working real hard to realize his big dreams. From very early age Ives started building his career, and never stopped since then. Ives is known as someone who picks up things real quick, takes good initiative, isn't afraid to do what is necessary and from whom you'll know he will always deliver his best work.</em>
+
+                            </span>
+                            <div class="author">
+                                Ronnie Nelis - CEO Team6
+                            </div>
+                            <i class="darkcolor fa fa-quote-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row contentrow ultradarkbgcolor-transparent">
+                <div class="header-title ultralightcolor">Portfolio</div>
+                <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+                    My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Materializes JavaScript plugins) -->
+        <script src="lib/jquery/dist/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="lib/materialize/dist/js/materialize.min.js"></script>
+        <!-- Angular for frontend modularity -->
+        <script src="lib/angular/angular.min.js"></script>
+        <!-- Trianglify for banner -->
+        <script src="lib/trianglify/dist/trianglify.min.js"></script>
+        <!-- Moment.JS -->
+        <script src="lib/moment/min/moment.min.js"></script>
+        <!-- Google Maps -->
+        <script src='/lib/lodash/dist/lodash.min.js'></script>
+        <script src='/lib/angular-google-maps/dist/angular-google-maps.min.js'></script>
+        <!-- Own scripts -->
+        <script src="all.min.js"></script>
+    </body>
+
+    </html>

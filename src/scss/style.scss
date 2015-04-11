@@ -40,7 +40,7 @@ $widescreen-width: 1920px;
 
 $header-height: 55vh;
 
-.darkcolor, .lightcolor, .ultralightcolor {
+.darkcolor, .lightcolor, .ultralightcolor, .ultradarkcolor {
     transition: color 1s ease;
 }
 
@@ -244,15 +244,20 @@ $header-height: 55vh;
     .title {
         font-size: 48px;
         font-weight: 300;
+
+        @include phone {
+            font-size: 34px;
+        }
     }
     .header-title {
         text-align: center;
         font-size: 60px;
-
+        @include phone {
+            font-size: 36px;
+        }
     }
     .subheader-text {
         display: block;
-        color: white;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -262,7 +267,7 @@ $header-height: 55vh;
         padding-right: 15%;
         padding-top: 50px;
         padding-bottom: 50px;
-        margin-bottom: 0px;
+        margin-bottom: 0px;;
         &.firstrow {
             padding-top: 150px;
             @include tablet {
@@ -273,6 +278,14 @@ $header-height: 55vh;
                 padding-top: 120px;
             }
         }
+        
+        &.centerrow {
+            @include phone {
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+        }
+
         @include desktop {
             padding-left: 10%;
             padding-right: 10%;
@@ -361,6 +374,12 @@ $header-height: 55vh;
             font-size: 15px;
             font-weight: 300;
             padding-top: 0.2rem;
+            color: rgba(255, 255, 255, 0.8);
+
+            @include phone {
+                text-align: center;
+
+            }
         }
         
         .name {
@@ -388,25 +407,49 @@ $header-height: 55vh;
             position: relative;
             padding: 0.75rem;
             font-weight: 300;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+            @include phone {
+                text-align: center;
+            }
+
+            &:last-child {
+                border: none;
+            }
 
             .langdesc {
                 display: block;
                 font-size: 20px;
                 font-weight: 200;
                 line-height: 56px;
+
+                @include phone {
+                    text-align: center;
+                    line-height: 2.5rem;
+                }
             }
 
 
             ng-progress {
                 position: absolute;
                 display: inline-block;
+                border-radius: 1px;
                 background-color: rgba(0, 0, 0, 0.2);
                 height: 30px;
                 top: 0;
                 bottom: 0;
                 vertical-align: middle;
                 margin: auto;
-                font-size: 20px
+                font-size: 20px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                
+                @include tablet {
+                    position: relative;
+                }
+
+                @include phone {
+                    position: relative;
+                }
             }
         }
     }
@@ -463,5 +506,82 @@ $header-height: 55vh;
     .framework-logo {
         width: 200px;
         height: 200px;
+    }
+}
+
+.entry {
+    margin-top: 1rem;
+    padding: 1rem;
+
+    .entryname {
+        font-size: 26px;
+    }
+
+    .entryyears {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .entrysub {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .entrydescription {
+        @include phone {
+            padding-top: 10px;
+        }
+    }
+    
+        .recommendationtitle {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    .recommendation {
+        position: relative;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 1rem;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+
+        
+        .description {
+            padding-left: 40px;
+            padding-right: 40px;
+
+
+        }
+        .author {
+            font-weight: 400;
+            font-size: 18px;
+            text-align: right;
+            margin-right: 50px;
+        }
+        
+        .fa {
+            font-size: 30px;
+            
+            &.fa-quote-right {
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+            }
+
+            &.fa-quote-left {
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+        }
+    }
+}
+
+.subrow {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 2rem;
+    &:last-child {
+        border: none;
     }
 }

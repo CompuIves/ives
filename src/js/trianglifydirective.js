@@ -36,8 +36,8 @@ app.directive("ngTrianglify", function() {
             });
 
             function resize() {
-                width = scope.fullscreen ? $(document).width() : element[0].offsetWidth;
-                height = scope.fullscreen ? $(document).height() : element[0].offsetHeight;
+                width = scope.fullscreen ? $(window).width() : element[0].offsetWidth;
+                height = scope.fullscreen ? $(window).height() : element[0].offsetHeight;
             }
 
             var dobg1 = false;
