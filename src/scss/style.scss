@@ -578,6 +578,35 @@ $header-height: 55vh;
     }
 }
 
+.portfolio {
+    .item {
+        padding: 0.75rem;
+        transition: all 0.3s ease;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+        .title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 200;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .description {
+            font-size: 20px;
+            font-weight: 200;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+
 .subrow {
     border-bottom: 1px solid rgba(0,0,0,0.1);
     padding-bottom: 2rem;
