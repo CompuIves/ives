@@ -369,16 +369,44 @@ $header-height: 55vh;
             transition: background-color 0.3s ease;
             font-size: 30px;
             font-weight: 300;
+                        /*
             cursor: pointer;
-
+        
             &:hover {
                 transition: background-color 0.3s ease;
                 background-color: rgba(0, 0, 0, 0.1);
             }
+            */
 
             &.selected {
                 background-color: rgba(0, 0, 0, 0.2);
                 font-weight: 400;
+            }
+        }
+
+        .language {
+            position: relative;
+            padding: 0.75rem;
+            font-weight: 300;
+
+            .langdesc {
+                display: block;
+                font-size: 20px;
+                font-weight: 200;
+                line-height: 56px;
+            }
+
+
+            ng-progress {
+                position: absolute;
+                display: inline-block;
+                background-color: rgba(0, 0, 0, 0.2);
+                height: 30px;
+                top: 0;
+                bottom: 0;
+                vertical-align: middle;
+                margin: auto;
+                font-size: 20px
             }
         }
     }
