@@ -1,31 +1,5 @@
-$phone-width: 400px;
-$tablet-width: 768px;
-$desktop-width: 1300px;
-$widescreen-width: 1920px;
-
-@mixin phone {
-    @media (min-width: 0) and (max-width: #{$tablet-width - 1px}) {
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media (min-width: #{$desktop-width}) and (max-width: #{$widescreen-width - 1px}) {
-        @content;
-    }
-}
-
-@mixin widescreen {
-    @media (min-width: #{$widescreen-width}) {
-        @content;
-    }
-}
+@import 'portfolio';
+@import 'responsive';
 
 .angular-google-map-container { 
     transition: all 0.3s ease;
@@ -363,7 +337,6 @@ $header-height: 55vh;
 
     .skills {
         position: relative;
-        font-size: 36px;
         text-align: left;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-width: 80%;
@@ -371,8 +344,8 @@ $header-height: 55vh;
         .description {
             border: none;
             text-align: left;
-            font-size: 15px;
-            font-weight: 300;
+            font-size: 25px;
+            font-weight: 200;
             padding-top: 0.2rem;
             color: rgba(255, 255, 255, 0.8);
 
@@ -386,7 +359,7 @@ $header-height: 55vh;
             text-align: center;
             padding: 0.75rem;
             transition: background-color 0.3s ease;
-            font-size: 30px;
+            font-size: 26px;
             font-weight: 300;
                         /*
             cursor: pointer;
@@ -580,23 +553,39 @@ $header-height: 55vh;
 
 .portfolio {
     .item {
-        padding: 0.75rem;
+        position: relative;
         transition: all 0.3s ease;
         color: white;
         background-color: rgba(0, 0, 0, 0.3);
         border-top: 1px solid rgba(255, 255, 255, 0.2);
+        overflow: hidden;
 
         .title {
+            position: absolute;
             text-align: center;
             font-size: 32px;
             font-weight: 200;
             padding-bottom: 0.75rem;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            top: -59px;
+            left: 0;
+            right: 0;
+
+            &.hovered {
+                transition: all 0.3s ease;
+                top: 0;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
         }
 
         .description {
             font-size: 20px;
             font-weight: 200;
+            margin: 0.5rem;
             color: rgba(255, 255, 255, 0.8);
         }
 
@@ -606,6 +595,54 @@ $header-height: 55vh;
         }
     }
 }
+
+.frontportfolio {
+    background-color: rgba(0,0,0,0);
+    transition: opacity 0.3s ease;
+    opacity: 1;
+
+    &.invisible {
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.backportfolio {
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    padding: inherit;
+    margin: inherit;
+
+
+    &.visible {
+        transition: opacity 0.3s ease;
+        opacity: 1;
+    }
+
+    .portfolioitemtitle {
+        transition: opacity 0.3s ease;
+        position: relative;
+        text-align: left;
+        opacity: 1;
+    }
+    
+.categoryinfo {
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+    .projectdescription {
+        color: white;
+    }
+}
+
+
 
 .subrow {
     border-bottom: 1px solid rgba(0,0,0,0.1);

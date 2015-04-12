@@ -102,6 +102,7 @@
                 <div class="name col l4 m4 s12">Java</div>
                 <div class="name col l4 m4 s12">Javascript (ES6)</div>
                 <div class="name col l4 m4 s12">Ruby</div>
+                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
                 <span class="col s12 description">Backend</span>
                 <div class="name col l4 m6 s12">Node.js</div>
                 <div class="name col l4 m6 s12">Ruby On Rails</div>
@@ -109,15 +110,16 @@
                 <div class="name col l4 m6 s12">MongoDB</div>
                 <div class="name col l4 m6 s12">(my)SQL</div>
                 <div class="name col l4 m6 s12">Restful API</div>
+                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
                 <span class="col s12 description">Frontend</span>
                 <div class="name col l4 m6 s12">HTML5</div>
                 <div class="name col l4 m6 s12">CSS3</div>
                 <div class="name col l4 m6 s12">Sass</div>
-                <div class="name col l3 m6 s12">AngularJS</div>
-                <div class="name col l3 m6 s12">JQuery</div>
-                <div class="name col l3 m6 s12">Materialize</div>
-                <div class="name col l3 m6 s12">Bootstrap</div>
-                <div class="name col l12 m6 s12">Android</div>
+                <div class="name col l4 m6 s12">AngularJS</div>
+                <div class="name col l4 m6 s12">JQuery</div>
+                <div class="name col l4 m6 s12">Materialize</div>
+                <div class="name col l6 m6 s12">Bootstrap</div>
+                <div class="name col l6 m6 s12">Android</div>
             </div>
         </div>
 
@@ -129,13 +131,16 @@
                 <div class="name col l3 m6 s12">Adobe Illustrator</div>
                 <div class="name col l3 m6 s12">Adobe After Effects</div>
                 <div class="name col l3 m6 s12">Adobe Premiere Pro</div>
+                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
                 <span class="col s12 description">Version Control Systems</span>
                 <div class="name col s6">Git</div>
                 <div class="name col s6">SVN</div>
+                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
                 <span class="col s12 description">Build Automatization</span>
                 <div class="name col s4">Gulp</div>
                 <div class="name col s4">Grunt</div>
                 <div class="name col s4">Gradle</div>
+                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
                 <span class="col s12 description">Code Editors of Choice</span>
                 <div class="name col l3 m6 s12">Sublime Text 3</div>
                 <div class="name col l3 m6 s12">Brackets</div>
@@ -218,54 +223,71 @@
                     <div class="recommendation"><i class="darkcolor fa fa-quote-left"></i>
                         <span class="description">
                             <em>
-                                Ives is one of the few, unique individuals with a true entrepreneur spirit: He is not afraid of working real hard to realize his big dreams. From very early age Ives started building his career, and never stopped since then. Ives is known as someone who picks up things real quick, takes good initiative, isn't afraid to do what is necessary and from whom you'll know he will always deliver his best work.</em>
-
-                            </span>
-                            <div class="author">
-                                Ronnie Nelis - CEO Team6
-                            </div>
-                            <i class="darkcolor fa fa-quote-right"></i></div>
+                                Ives is one of the few, unique individuals with a true entrepreneur spirit: He is not afraid of working real hard to realize his big dreams. From very early age Ives started building his career, and never stopped since then. Ives is known as someone who picks up things real quick, takes good initiative, isn't afraid to do what is necessary and from whom you'll know he will always deliver his best work.
+                            </em>
+                        </span>
+                        <div class="author">
+                            Ronnie Nelis - CEO Team6
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row contentrow ultradarkbgcolor-transparent">
-                <div class="header-title ultralightcolor">Portfolio</div>
-                <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-                    My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
-                </div>
-
-                <div class="portfolio col s12">
-                    <div class="col s6">
-                        <div class="item">
-                            <div class="title">SolarBoard</div>
-                            <span class="description">A full-stack app for Techniko for keeping track of their solar panel winnings. </span>
-                        </div>
-                    </div>
-                    <div class="col s6">
-                        <div class="item">
-                            <div class="title">Relative</div>
-                        </div>
+                        <i class="darkcolor fa fa-quote-right"></i>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- jQuery (necessary for Materializes JavaScript plugins) -->
-        <script src="lib/jquery/dist/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="lib/materialize/dist/js/materialize.min.js"></script>
-        <!-- Angular for frontend modularity -->
-        <script src="lib/angular/angular.min.js"></script>
-        <!-- Trianglify for banner -->
-        <script src="lib/trianglify/dist/trianglify.min.js"></script>
-        <!-- Moment.JS -->
-        <script src="lib/moment/min/moment.min.js"></script>
-        <!-- Google Maps -->
-        <script src='/lib/lodash/dist/lodash.min.js'></script>
-        <script src='/lib/angular-google-maps/dist/angular-google-maps.min.js'></script>
-        <!-- Own scripts -->
-        <script src="all.min.js"></script>
-    </body>
+    </div>
 
-    </html>
+    <div class="row contentrow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
+
+        <div class="backportfolio">
+            <div class="header-title ultralightcolor portfolioitemtitle">
+                {{portfolio.item.name}}
+            </div>
+            <div class="col s7">
+                <div class="categoryinfo lightcolor">Description:</div>
+                <div ng-bind-html="portfolio.item.description" class="flow-text projectdescription"></div>
+            </div>
+            <div class="col s5">
+                <div class="categoryinfo lightcolor">Features:</div>
+                <ul style="margin: 0">
+                    <li class="flow-text projectdescription" ng-repeat="feature in portfolio.item.features">
+                        {{feature}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="frontportfolio">
+            <div class="header-title ultralightcolor">Projects</div>
+            <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+                My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
+            </div>
+
+            <div class="portfolio col s12">
+                <div class="col l4 m6 s12" ng-repeat="item in portfolio.items">
+                    <ng-portfolio transformfunction="portfolio.transformfunction(item)" item="{{item}}"></ng-portfolio>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Materializes JavaScript plugins) -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="lib/materialize/dist/js/materialize.min.js"></script>
+<!-- Angular for frontend modularity -->
+<script src="lib/angular/angular.min.js"></script>
+<!-- Trianglify for banner -->
+<script src="lib/trianglify/dist/trianglify.min.js"></script>
+<!-- Moment.JS -->
+<script src="lib/moment/min/moment.min.js"></script>
+<!-- Google Maps -->
+<script src='/lib/lodash/dist/lodash.min.js'></script>
+<script src='/lib/angular-google-maps/dist/angular-google-maps.min.js'></script>
+<!-- Sanitizer -->
+<script src="/lib/angular-sanitize/angular-sanitize.min.js"></script>
+<!-- Own scripts -->
+<script src="all.min.js"></script>
+</body>
+
+</html>

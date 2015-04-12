@@ -1,4 +1,4 @@
-var app = angular.module("ives", ['uiGmapgoogle-maps']);
+var app = angular.module("ives", ['uiGmapgoogle-maps', 'ngSanitize']);
 
 app.config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({

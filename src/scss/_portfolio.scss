@@ -1,0 +1,123 @@
+@import 'responsive';
+
+ng-portfolio {
+	transition: all 0.3s ease;
+    position: relative;
+    display: block;
+    vertical-align: top;
+    margin: 0.75rem;
+    width: 100%;
+    cursor: pointer;
+
+    img {
+		position: absolute;
+		display: block;
+		transition: all 0.3s ease;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 0;
+    }
+
+    .portfoliocontainer {
+    	transition: all 0.4s ease;
+    	position: absolute;
+    	top: 0; bottom: 0; left: 0; right: 0;
+    	overflow: hidden;
+    	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+
+		&.activated {
+			transition: all 0.4s ease;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 300%;
+			height: 300%;
+			z-index: 5;
+		}
+    }
+
+    .cover {
+		transition: all 0.3s ease;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0);
+
+		&.shown {
+			transition: all 0.3s ease;
+			background-color: rgba(0,0,0,0.5);
+		}
+
+    }
+
+    .itemtitle {
+		transition: all 0.3s ease;
+		position: relative;
+		font-size: 32px;
+		text-align: center;
+		margin: auto;
+		width: 95%;
+		font-weight: 300;
+		opacity: 0;
+		transform: translateY(-50px);
+		color: white;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+		&.shown {
+			transition: all 0.3s ease;
+			transform: none;
+			opacity: 1;
+		}
+    }
+
+    .description {
+    	transition: all 0.3s ease;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        color: white;
+        font-weight: 300;
+        opacity: 0;
+        font-size: 20px;
+        text-align: center;
+
+        &.shown {
+        	transition: all 0.3s ease;
+        	transition-delay: 0.15s;
+        	opacity: 1;
+        }
+    }
+
+    .iconbox {
+    	transition: all 0.3s ease;
+        text-align: center;
+        opacity: 0;
+
+        &.shown {
+			@extend .description.shown
+        }
+
+        .icon {
+        	color: white;
+            margin-top: 0.5rem;
+            font-size: 20px;
+        }
+
+        .text {
+        	position: relative;
+            color: white;
+            font-size: 15;
+            font-weight: 300;
+            z-index: 10;
+        }
+    }
+}
