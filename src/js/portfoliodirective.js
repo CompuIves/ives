@@ -22,8 +22,13 @@ app.directive("ngPortfolio", function() {
                 $(element).empty();
 
                 container = $("<div class='portfoliocontainer'></div>");
+                container.css('background-color', item.color);
                 element.append(container);
-                image = $("<img src='" + item.img + "'></img>");
+                if (item.images.front) {
+                    image = $("<img src='" + item.images.front + "'></img>");
+                } else {
+                    image = $("<span class='fronttitle'>Relative</span>");
+                }
                 container.append(image);
                 cover = $("<div class='cover'></div>");
                 container.append(cover);
@@ -63,17 +68,7 @@ app.directive("ngPortfolio", function() {
 
                 //Size div to absolute child + responsiveness
                 setTimeout(() => {
-                    element.css('height', image.outerHeight());
-                    if (image.outerHeight() < 150) {
-                        description.css('visibility', 'hidden');
-                        icontext.css('font-size', '12px');
-                        title.css('font-size', '20px');
-                    } else if (image.outerHeight() < 180) {
-                        description.css('font-size', '12px');
-                    } else if (image.outerHeight() < 200) {
-                        icontext.css('font-size', '15px');
-                        description.css('font-size', '12px');
-                    }
+                    element.css('height', 200);
                 }, 50);
 
                 setHoverActions();
@@ -82,22 +77,39 @@ app.directive("ngPortfolio", function() {
 
             function setHoverActions() {
                 element.hover(function() {
-                    cover.addClass('shown')
+                    cover.addClass('shown');
                     title.addClass("shown");
                     description.addClass('shown');
                     iconbox.addClass('shown');
-
+                    image.addClass('hover');
+                    container.addClass('hover');
                 }, function() {
-                    cover.removeClass('shown')
+                    cover.removeClass('shown');
                     title.removeClass("shown");
                     description.removeClass('shown');
                     iconbox.removeClass('shown');
+                    image.removeClass('hover');
+                    container.removeClass('hover');
                 });
             }
 
             function setClickActions() {
-                element.click(function() {
-                    scope.transformfunction(scope.item);
+                element.mousedown(function(event) {
+                    cover.removeClass('shown');
+                    title.removeClass("shown");
+                    description.removeClass('shown');
+                    iconbox.removeClass('shown');
+                    image.removeClass('hover');
+                });
+                element.click(function(e) {
+                    //$(image).fadeOut(300);
+                    scope.transformfunction({
+                        item: JSON.parse(scope.item),
+                        pos: {
+                            x: e.offsetX + $(element).position().left,
+                            y: e.offsetY + $(element).position().top
+                        }
+                    });
                 });
             }
         }

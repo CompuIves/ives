@@ -241,7 +241,8 @@ $header-height: 55vh;
         padding-right: 15%;
         padding-top: 50px;
         padding-bottom: 50px;
-        margin-bottom: 0px;;
+        margin-bottom: 0px;
+        overflow: hidden;
         &.firstrow {
             padding-top: 150px;
             @include tablet {
@@ -380,6 +381,7 @@ $header-height: 55vh;
             position: relative;
             padding: 0.75rem;
             font-weight: 300;
+            font-size: 36px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
             @include phone {
@@ -597,14 +599,25 @@ $header-height: 55vh;
 }
 
 .frontportfolio {
+    display: inline-block;
     background-color: rgba(0,0,0,0);
     transition: opacity 0.3s ease;
     opacity: 1;
+    z-index: 2;
 
     &.invisible {
         transition: opacity 0.3s ease;
         opacity: 0;
         pointer-events: none;
+        z-index: 0;
+    }
+}
+
+.portfoliorow {
+    transition: all 1s ease;
+    &.extended {
+        transition: all 1s ease;
+        height: 1000px;
     }
 }
 
@@ -619,10 +632,37 @@ $header-height: 55vh;
     padding: inherit;
     margin: inherit;
 
-
     &.visible {
-        transition: opacity 0.3s ease;
+        transition: all 0.3s ease;
         opacity: 1;
+    }
+
+    .backcontainer {
+        display: inline-block;
+    }
+
+    .fa-times-circle {
+        transition: all 0.3s ease;
+        font-size: 60px;
+        line-height: 60px;
+        margin-right: 1rem;
+        padding: 5px;
+
+        cursor: pointer;
+
+        &:hover {
+            transition: all 0.3s ease;
+            transform: rotateZ(180deg);
+        }
+    }
+
+    .images {
+        img {
+            padding: 0;
+            margin: 1rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+        }
     }
 
     .portfolioitemtitle {
@@ -632,10 +672,10 @@ $header-height: 55vh;
         opacity: 1;
     }
     
-.categoryinfo {
-    font-size: 18px;
-    border-radius: 2px;
-}
+    .categoryinfo {
+        font-size: 18px;
+        border-radius: 2px;
+    }
 
     .projectdescription {
         color: white;

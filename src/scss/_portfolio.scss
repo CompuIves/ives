@@ -5,41 +5,55 @@ ng-portfolio {
     position: relative;
     display: block;
     vertical-align: top;
-    margin: 0.75rem;
     width: 100%;
     cursor: pointer;
+    margin-bottom: 1rem;
 
     img {
+        transition: transform 0.3s ease;
 		position: absolute;
 		display: block;
 		transition: all 0.3s ease;
-		margin: 0;
-		padding: 0;
-		width: 100%;
+		margin: auto;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		z-index: 0;
+        pointer-events: none;
+
+        &.hover {
+            transition: transform 0.3s ease;
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+    .fronttitle {
+        transition: transform 0.3s ease;
+        display: block;
+        color: white;
+        position: absolute;
+        font-size: 50px;
+        font-weight: 500;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        line-height: 200px;
+
+        &.hover {
+            transition: transform 0.3s ease;
+            transform: scale(1.1, 1.1);
+        }
     }
 
     .portfoliocontainer {
-    	transition: all 0.4s ease;
+    	transition: all 0.3s ease;
     	position: absolute;
     	top: 0; bottom: 0; left: 0; right: 0;
     	overflow: hidden;
-    	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-
-		&.activated {
-			transition: all 0.4s ease;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			width: 300%;
-			height: 300%;
-			z-index: 5;
-		}
     }
 
     .cover {
@@ -50,6 +64,7 @@ ng-portfolio {
 		left: 0;
 		right: 0;
 		background-color: rgba(0,0,0,0);
+        pointer-events: none;
 
 		&.shown {
 			transition: all 0.3s ease;
@@ -70,6 +85,7 @@ ng-portfolio {
 		transform: translateY(-50px);
 		color: white;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        pointer-events: none;
 
 		&.shown {
 			transition: all 0.3s ease;
@@ -89,10 +105,15 @@ ng-portfolio {
         opacity: 0;
         font-size: 20px;
         text-align: center;
+        pointer-events: none;
+
+        @include phone {
+        	font-size: 15px;
+        }
 
         &.shown {
         	transition: all 0.3s ease;
-        	transition-delay: 0.15s;
+        	//transition-delay: 0.15s;
         	opacity: 1;
         }
     }
@@ -101,6 +122,7 @@ ng-portfolio {
     	transition: all 0.3s ease;
         text-align: center;
         opacity: 0;
+        pointer-events: none;
 
         &.shown {
 			@extend .description.shown
@@ -110,6 +132,7 @@ ng-portfolio {
         	color: white;
             margin-top: 0.5rem;
             font-size: 20px;
+            pointer-events: none;
         }
 
         .text {
@@ -118,6 +141,7 @@ ng-portfolio {
             font-size: 15;
             font-weight: 300;
             z-index: 10;
+            pointer-events: none;
         }
     }
 }

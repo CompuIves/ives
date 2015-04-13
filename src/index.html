@@ -217,7 +217,7 @@
                 </div>
                 <div class="entrydescription col m8 s12">
                     <span class="flow-text">
-                        I first started working at Team6 in 2012 in the holidays, I began as a game tester and prop placer. Soon I became their Graphic Artist for videos; I began making their trailers and commercials. 
+                        I first started working at Team6 in 2012 in the holidays, I began as a game tester and prop placer. After that I became their Graphic Artist for video; I began making their trailers and commercials. 
                     </span>
                     <div class="recommendationtitle ultradarkcolor">Recommendation:</div>
                     <div class="recommendation"><i class="darkcolor fa fa-quote-left"></i>
@@ -236,40 +236,54 @@
         </div>
     </div>
 
-    <div class="row contentrow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
-
+    <div class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
         <div class="backportfolio">
-            <div class="header-title ultralightcolor portfolioitemtitle">
-                {{portfolio.item.name}}
-            </div>
-            <div class="col s7">
-                <div class="categoryinfo lightcolor">Description:</div>
-                <div ng-bind-html="portfolio.item.description" class="flow-text projectdescription"></div>
-            </div>
-            <div class="col s5">
-                <div class="categoryinfo lightcolor">Features:</div>
-                <ul style="margin: 0">
-                    <li class="flow-text projectdescription" ng-repeat="feature in portfolio.item.features">
-                        {{feature}}
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="frontportfolio">
-            <div class="header-title ultralightcolor">Projects</div>
-            <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-                My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
-            </div>
-
-            <div class="portfolio col s12">
-                <div class="col l4 m6 s12" ng-repeat="item in portfolio.items">
-                    <ng-portfolio transformfunction="portfolio.transformfunction(item)" item="{{item}}"></ng-portfolio>
+            <div class="backcontainer">
+                <div class="header-title portfolioultralightcolor portfolioitemtitle">
+                    <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>{{portfolio.item.name}}
                 </div>
-
+                <div class="images">
+                    <div class="col s12 m4">
+                        <img class="col s12" ng-src="{{portfolio.item.images.image1}}">
+                    </div>
+                    <div class="col s12 m4">
+                        <img class="col s12" ng-src="{{portfolio.item.images.image2}}">
+                    </div>
+                    <div class="col s12 m4">
+                        <img class="col s12" ng-src="{{portfolio.item.images.image3}}">
+                    </div>
+                </div>
+                <div class="col s12 m7">
+                    <div class="categoryinfo portfoliolightcolor">Description:</div>
+                    <div ng-bind-html="portfolio.item.description" class="flow-text projectdescription"></div>
+                </div>
+                <div class="col s12 m5">
+                    <div class="categoryinfo portfoliolightcolor">Features:</div>
+                    <ul style="margin: 0">
+                        <li class="flow-text projectdescription" ng-repeat="feature in portfolio.item.features">
+                            {{feature}}
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="frontportfolio">
+           <div class="header-title ultralightcolor">Projects</div>
+           <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+               My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
+           </div>
+
+           <div class="portfolio col s12">
+               <div class="col l4 m6 s12" ng-repeat="item in portfolio.items">
+                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
+               </ng-portfolio>
+           </div>
+       </div>
+   </div>
+   <ng-drop options="{{portfolio.drop}}">
+</ng-drop>
+
+</div>
 </div>
 <!-- jQuery (necessary for Materializes JavaScript plugins) -->
 <script src="lib/jquery/dist/jquery.min.js"></script>
