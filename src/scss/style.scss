@@ -613,14 +613,6 @@ $header-height: 55vh;
     }
 }
 
-.portfoliorow {
-    transition: all 1s ease;
-    &.extended {
-        transition: all 1s ease;
-        height: 1000px;
-    }
-}
-
 .backportfolio {
     transition: opacity 0.3s ease;
     position: absolute;

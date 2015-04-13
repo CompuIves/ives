@@ -57,7 +57,7 @@ app.controller("PortfolioController", ['$scope', 'ColorService',
                 $('.frontportfolio').addClass('invisible');
                 $('.portfoliorow').animate({
                     'height': $('.backcontainer').height() + 100
-                }, 100);
+                }, 300);
                 $(".backportfolio").addClass('visible');
                 $('.backportfolio').css('visibility', 'visible');
 
@@ -73,7 +73,7 @@ app.controller("PortfolioController", ['$scope', 'ColorService',
             $('.frontportfolio').removeClass('invisible');
             $('.portfoliorow').animate({
                 'height': $('.frontportfolio').height() + 100
-            }, 100);
+            }, 800);
             $(".backportfolio").removeClass('visible');
 
             setTimeout(() => {
