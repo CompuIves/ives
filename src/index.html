@@ -276,7 +276,7 @@
                         </li>
                     </ul>
 
-                    <div ng-show="portfolio.item.tools" style="margin-top: 1.5rem;" class="categoryinfo portfoliolightcolor">Built with:</div>
+                    <div ng-show="portfolio.item.tools" class="categoryinfo portfoliolightcolor">Built with:</div>
                     <ul style="margin: 0;">
                         <li class="flow-text projectdescription" ng-repeat="tool in portfolio.item.tools">
                             {{tool}}
@@ -286,19 +286,19 @@
             </div>
         </div>
         <div class="frontportfolio">
-           <div class="header-title ultralightcolor">Projects</div>
-           <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-               My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
-           </div>
+         <div class="header-title ultralightcolor">Projects</div>
+         <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+             My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
+         </div>
 
-           <div class="portfolio col s12">
-               <div class="col l4 m6 s12" ng-repeat="item in portfolio.items">
-                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
-               </ng-portfolio>
-           </div>
-       </div>
-   </div>
-   <ng-drop options="{{portfolio.drop}}">
+         <div class="portfolio col s12">
+             <div class="col l4 m6 s12" ng-repeat="item in portfolio.items">
+                 <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
+             </ng-portfolio>
+         </div>
+     </div>
+ </div>
+ <ng-drop options="{{portfolio.drop}}">
 </ng-drop>
 
 </div>
