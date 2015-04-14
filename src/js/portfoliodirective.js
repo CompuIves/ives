@@ -24,10 +24,16 @@ app.directive("ngPortfolio", function() {
                 container = $("<div class='portfoliocontainer'></div>");
                 container.css('background-color', item.color);
                 element.append(container);
-                if (item.images.front) {
-                    image = $("<img src='" + item.images.front + "'></img>");
+                if (item.front) {
+                    image = $("<img src='" + item.front.image + "'></img>");
+                    if (item.front.backgroundimage) {
+                        image.css({
+                            width: '100%',
+                            height: '100%'
+                        });
+                    }
                 } else {
-                    image = $("<span class='fronttitle'>Relative</span>");
+                    image = $("<span class='fronttitle'>" + item.name + "</span>");
                 }
                 container.append(image);
                 cover = $("<div class='cover'></div>");

@@ -26,13 +26,13 @@ app.directive("ngTrianglify", function() {
             if (scope.interval) {
                 setInterval(() => {
                     scope.options = null;
-                    setBackground()
+                    setBackground();
                 }, scope.interval);
             }
 
             $(window).resize(() => {
                 resize();
-                setBackground()
+                setBackground();
             });
 
             function resize() {

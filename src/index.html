@@ -239,48 +239,66 @@
     <div class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
         <div class="backportfolio">
             <div class="backcontainer">
-                <div class="header-title portfolioultralightcolor portfolioitemtitle">
-                    <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>{{portfolio.item.name}}
+                <div class="col s12 portfolioultralightcolor">
+                    <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>
+                    <div class="header-title portfolioitemtitle">
+                        {{portfolio.item.name}}
+                    </div>
+                    <a ng-show="portfolio.item.link.title" class="portfoliosubtitle portfoliolightcolor" ng-href="{{portfolio.item.link.url}}" target="_blank">{{portfolio.item.link.title}}</a>
                 </div>
-                <div class="images">
+
+                <div ng-show="portfolio.item.banner.kind == 'images'" class="images">
                     <div class="col s12 m4">
-                        <img class="col s12" ng-src="{{portfolio.item.images.image1}}">
+                        <img class="col s12" ng-src="{{portfolio.item.banner.image1}}">
                     </div>
                     <div class="col s12 m4">
-                        <img class="col s12" ng-src="{{portfolio.item.images.image2}}">
+                        <img class="col s12" ng-src="{{portfolio.item.banner.image2}}">
                     </div>
                     <div class="col s12 m4">
-                        <img class="col s12" ng-src="{{portfolio.item.images.image3}}">
+                        <img class="col s12" ng-src="{{portfolio.item.banner.image3}}">
                     </div>
                 </div>
+
+                <iframe class="col s12 website" ng-if="portfolio.item.banner.kind == 'iframe'" ng-src="{{portfolio.item.banner.url}}"></iframe>
+
+                <p ng-if="portfolio.item.banner.kind == 'codepen'" data-height="300" data-theme-id="0" data-slug-hash="{{portfolio.item.banner.codepen_id}}" data-default-tab="result" class='col s12 codepen' data-user="CompuIves">
+                </p>
+
                 <div class="col s12 m7">
                     <div class="categoryinfo portfoliolightcolor">Description:</div>
                     <div ng-bind-html="portfolio.item.description" class="flow-text projectdescription"></div>
                 </div>
                 <div class="col s12 m5">
-                    <div class="categoryinfo portfoliolightcolor">Features:</div>
+                    <div ng-show="portfolio.item.features" class="categoryinfo portfoliolightcolor">Features:</div>
                     <ul style="margin: 0">
                         <li class="flow-text projectdescription" ng-repeat="feature in portfolio.item.features">
                             {{feature}}
+                        </li>
+                    </ul>
+
+                    <div ng-show="portfolio.item.tools" style="margin-top: 1.5rem;" class="categoryinfo portfoliolightcolor">Built with:</div>
+                    <ul style="margin: 0;">
+                        <li class="flow-text projectdescription" ng-repeat="tool in portfolio.item.tools">
+                            {{tool}}
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="frontportfolio">
-         <div class="header-title ultralightcolor">Projects</div>
-         <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-             My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
-         </div>
+           <div class="header-title ultralightcolor">Projects</div>
+           <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+               My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
+           </div>
 
-         <div class="portfolio col s12">
-             <div class="col l4 m6 s12" ng-repeat="item in portfolio.items">
-                 <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
-             </ng-portfolio>
-         </div>
-     </div>
- </div>
- <ng-drop options="{{portfolio.drop}}">
+           <div class="portfolio col s12">
+               <div class="col l4 m6 s12" ng-repeat="item in portfolio.items">
+                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
+               </ng-portfolio>
+           </div>
+       </div>
+   </div>
+   <ng-drop options="{{portfolio.drop}}">
 </ng-drop>
 
 </div>
@@ -295,6 +313,8 @@
 <script src="lib/trianglify/dist/trianglify.min.js"></script>
 <!-- Moment.JS -->
 <script src="lib/moment/min/moment.min.js"></script>
+<!-- Codepen -->
+<script src="lib/angular-embed-codepen/dist/embed-codepen.min.js"></script>
 <!-- Google Maps -->
 <script src='/lib/lodash/dist/lodash.min.js'></script>
 <script src='/lib/angular-google-maps/dist/angular-google-maps.min.js'></script>

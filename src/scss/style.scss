@@ -624,6 +624,32 @@ $header-height: 55vh;
     padding: inherit;
     margin: inherit;
 
+    .fa {
+        font-size: 50px;
+        margin-right: 0.5rem;
+        &.fa-times-circle {
+            position: absolute;
+            transition: all 0.3s ease;
+            top: 60px;
+            font-size: 60px;
+            line-height: 60px;
+            padding: 5px;
+            cursor: pointer;
+            &:hover {
+               transition: all 0.3s ease;
+               transform: rotateZ(180deg);
+            }
+
+            @include phone {
+                font-size: 45px;
+                line-height: 45px;
+                top: 45px;
+                left: 5px;;
+            }
+        }
+    }
+    
+
     &.visible {
         transition: all 0.3s ease;
         opacity: 1;
@@ -631,21 +657,6 @@ $header-height: 55vh;
 
     .backcontainer {
         display: inline-block;
-    }
-
-    .fa-times-circle {
-        transition: all 0.3s ease;
-        font-size: 60px;
-        line-height: 60px;
-        margin-right: 1rem;
-        padding: 5px;
-
-        cursor: pointer;
-
-        &:hover {
-            transition: all 0.3s ease;
-            transform: rotateZ(180deg);
-        }
     }
 
     .images {
@@ -657,16 +668,60 @@ $header-height: 55vh;
         }
     }
 
+    .website {
+        height: 300px;
+        width: 100%;
+        margin-top: 1rem;
+        border: none;
+    }
+
+    .smalldescription {
+        font-size: 15px;
+        font-weight: 300;
+        padding-top: 0;
+    }
+
+    .subinfo {
+        font-size: 32px;
+        border-radius: 5px;
+        padding-left: 90px;
+
+        .fa {
+            padding: 0.75rem;
+        }
+    }
+
     .portfolioitemtitle {
+        display: block;
         transition: opacity 0.3s ease;
         position: relative;
-        text-align: left;
         opacity: 1;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    .portfoliosubtitle {
+        transition: all 0.3s ease;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 40px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        max-width: 200px;
+        margin: auto;
+        border-radius: 3px;
+        &:hover {
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 1);
+            color: rgb(60, 60, 60) !important;
+        }
     }
     
     .categoryinfo {
         font-size: 18px;
         border-radius: 2px;
+        padding-top: 0.75rem;
     }
 
     .projectdescription {
