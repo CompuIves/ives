@@ -1,6 +1,7 @@
 var express = require('express');
 var http = require('http');
 var favicon = require('serve-favicon');
+var path = require('path');
 
 var app = module.exports = express();
 
