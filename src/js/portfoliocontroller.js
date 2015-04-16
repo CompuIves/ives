@@ -75,7 +75,7 @@ app.controller("PortfolioController", ['$scope', 'ColorService',
         }, {
             name: "Material Design 'drop' effect",
             shortdescription: "A Codepen showing the drop effect of Material Design.",
-            description: "This effect is also used for this portfolio, when a button is clicked there is a circle expanding from the pointer, when the screen or parent is filled the background will be set to given color.",
+            description: "This effect is also used for this portfolio. When a button is pressed a circle will expand from the pointer, when the screen or parent is filled the background will be set to given color.",
             front: {
                 image: "res/images/codepen/cover.png"
             },
