@@ -108,13 +108,15 @@ app.directive("ngPortfolio", function() {
                     image.removeClass('hover');
                 });
                 element.click(function(e) {
-                    var offsetX = e.offsetX ? e.offsetX : e.layerX;
-                    var offsetY = e.offsetY ? e.offsetY : e.layerY;
+                    if (!e.offsetX) {
+                        e.offsetX = (e.pageX - $(e.target).offset().left);
+                        e.offsetY = (e.pageY - $(e.target).offset().top);
+                    }
                     scope.transformfunction({
                         item: JSON.parse(scope.item),
                         pos: {
-                            x: offsetX + $(element).position().left,
-                            y: offsetY + $(element).position().top
+                            x: e.offsetX + $(element).position().left,
+                            y: e.offsetY + $(element).position().top
                         }
                     });
                 });
