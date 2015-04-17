@@ -52,6 +52,7 @@ app.directive("ngDrop", function() {
                     opacity: 1,
                     'pointer-events': 'none'
                 });
+
                 circle.animate({
                     width: (r * 2),
                     height: (r * 2),
@@ -62,6 +63,7 @@ app.directive("ngDrop", function() {
                     easing: "easeInOutCubic",
                     queue: true
                 });
+
             }
         }
     };

@@ -21,7 +21,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <div ng-trianglify class="background" options="triangleconfig" interval="10000" fullscreen='true'></div>
+    <div ng-trianglify class="background" options="triangleconfig" interval="60000" fullscreen='true'></div>
     <body ng-controller="MainController as main">
 
         <div class="header">
@@ -58,7 +58,7 @@
             <div class="row firstrow contentrow bgcolor-transparent">
                 <div class="col s12 m5 l7">
                     <div class="title darkcolor">Who am I?</div>
-                    <p class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.age}}</strong> seconds ({{main.ageyears}} years) old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and its capabilities.</p>
+                    <p class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.ageyears}} years, {{main.agemonths}} months and {{main.ageseconds}} seconds</strong> old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and its capabilities.</p>
                 </div>
                 <div class="col s12 m7 l5">
                     <div class="title darkcolor">Information</div>
@@ -132,20 +132,18 @@
                 <div class="name col l3 m6 s12">Adobe After Effects</div>
                 <div class="name col l3 m6 s12">Adobe Premiere Pro</div>
                 <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
+                <span class="col s12 description">Code Editors of Choice</span>
+                <div class="name col l4 m4 s12">Sublime Text 3</div>
+                <div class="name col l4 m4 s12">Brackets</div>
+                <div class="name col l4 m4 s12">IntelliJ IDEA</div>
+                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
                 <span class="col s12 description">Version Control Systems</span>
                 <div class="name col s6">Git</div>
                 <div class="name col s6">SVN</div>
                 <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
                 <span class="col s12 description">Build Automatization</span>
-                <div class="name col s4">Gulp</div>
-                <div class="name col s4">Grunt</div>
-                <div class="name col s4">Gradle</div>
-                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
-                <span class="col s12 description">Code Editors of Choice</span>
-                <div class="name col l3 m6 s12">Sublime Text 3</div>
-                <div class="name col l3 m6 s12">Brackets</div>
-                <div class="name col l3 m6 s12">IntelliJ IDEA</div>
-                <div class="name col l3 m6 s12">Atom.io</div>
+                <div class="name col s6">Gulp</div>
+                <div class="name col s6">Gradle</div>
             </div>
         </div>
 
@@ -155,29 +153,29 @@
                 <div class="language col s12">
                     <span class="col l2 m12 s12">Dutch</span>
                     <span class="col l4 m6 s12 langdesc">Nederlands is mijn moedertaal.</span>
-                    <div class="col l6 m6 s12">
-                        <ng-progress progress="1" style="width: 100%"></ng-progress>
+                    <div class="col l6 m6 s12" style="position: relative;">
+                        <ng-progress progress="1" ></ng-progress>
                     </div>
                 </div>
                 <div class="language col s12">
                     <span class="col l2 s12">English</span>
                     <span class="col l4 m6 s12 langdesc">English is my second most used language.</span>
-                    <div class="col l6 m6 s12">
-                        <ng-progress progress="1" style="width: 100%"></ng-progress>
+                    <div class="col l6 m6 s12" style="position: relative;">
+                        <ng-progress progress="1" ></ng-progress>
                     </div>
                 </div>
                 <div class="language col s12">
                     <span class="col l2 s12">German</span>
                     <span class="col l4 m6 s12 langdesc">Ich spreche Deutsch in der Schule.</span>
-                    <div class="col l6 m6 s12">
-                        <ng-progress progress="0.5" style="width: 100%"></ng-progress>
+                    <div class="col l6 m6 s12" style="position: relative;">
+                        <ng-progress progress="0.5" ></ng-progress>
                     </div>
                 </div>
                 <div class="language col s12">
                     <span class="col l2 s12">French</span>
                     <span class="col l4 m6 s12 langdesc">Je parle un petit peu français.</span>
-                    <div class="col l6 m6 s12">
-                        <ng-progress progress="0.2" style="width: 100%"></ng-progress>
+                    <div class="col l6 m6 s12" style="position: relative;">
+                        <ng-progress progress="0.2" ></ng-progress>
                     </div>
                 </div>
             </div>
@@ -302,7 +300,7 @@
            </div>
 
            <div class="portfolio col s12">
-               <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m3 s6': item.small, 'l4 m6 s12': !item.small}">
+               <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m6 s12': item.small, 'l4 m6 s12': !item.small}">
                    <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
                </ng-portfolio>
            </div>

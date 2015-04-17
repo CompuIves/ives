@@ -21,7 +21,7 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
 
                 var color = ColorService.stringToRGB(item.color);
                 $(".portfoliolightcolor").css('color', ColorService.rgbToString(ColorService.lighten(color, 80)));
-            }, 300);
+            }, 250);
 
             $scope.$apply(() => {
                 vm.drop = {

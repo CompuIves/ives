@@ -21,7 +21,7 @@ body {
     }
  }
 
-$header-height: 55vh;
+$header-height: 40rem;
 
 .darkcolor, .lightcolor, .ultralightcolor, .ultradarkcolor {
     transition: color 1s ease;
@@ -420,12 +420,12 @@ $header-height: 55vh;
                 border-radius: 1px;
                 background-color: rgba(0, 0, 0, 0.2);
                 height: 30px;
-                top: 0;
+                top: 50%;
                 bottom: 0;
-                vertical-align: middle;
-                margin: auto;
+                width: 100%;
                 font-size: 20px;
                 border: 1px solid rgba(255, 255, 255, 0.1);
+                transform: translateY(50%);
                 
                 @include tablet {
                     position: relative;

@@ -1,8 +1,10 @@
 app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService",
     function($scope, uiGmapGoogleMapApi, ColorService) {
         var birthdate = moment("1996-12-20 15:59").startOf('minute');
-        this.age = moment().diff(birthdate, 'seconds');
         this.ageyears = moment().diff(birthdate, 'years');
+        this.agemonths = moment().subtract(this.ageyears, 'years').diff(birthdate, 'months');
+        this.ageseconds = moment().subtract(this.ageyears, 'years').subtract(this.agemonths, 'months').diff(birthdate, 'seconds');
+        setInterval(() => $scope.$apply(() => this.ageseconds++), 1000);
 
 
         //When maps are loaded
@@ -34,8 +36,6 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
                 mapsResized = true;
             }
         }, true);
-
-        setInterval(() => $scope.$apply(() => this.age++), 1000);
 
         setTimeout(() => $(".loadanim").addClass("visible"), 150);
 

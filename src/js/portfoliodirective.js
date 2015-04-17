@@ -34,7 +34,7 @@ app.directive("ngPortfolio", function() {
                     }
                     if (item.small) {
                         image.css({
-                            width: '70%'
+                            width: '60%'
                         })
                     }
                     container.append(image);
