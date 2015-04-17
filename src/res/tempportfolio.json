@@ -1,0 +1,26 @@
+ {
+     "name": "Sign-in Box",
+     "shortdescription": "My first Codepen, it's a sign-in box!",
+     "description": "A simple sign-in box.",
+     "front": {
+         "image": "res/images/codepen/cover.png"
+     },
+     "banner": {
+         "kind": "codepen",
+         "codepen_id": "PwgpJM"
+     },
+     "tools": [
+         "HTML5",
+         "CSS",
+         "JavaScript"
+     ],
+     "progress": "Finished!",
+     "calendar": "April 2015",
+     "tasks": "Frontend",
+     "link": {
+         "title": "Codepen",
+         "url": "http://codepen.io/CompuIves/pen/PwgpJM"
+     },
+     "color": "rgb(44, 62, 80)",
+     "small": true
+ },

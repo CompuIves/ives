@@ -66,7 +66,7 @@ ng-portfolio {
 		background-color: rgba(0,0,0,0);
         pointer-events: none;
 
-		&.shown {
+		&.hover {
 			transition: all 0.3s ease;
 			background-color: rgba(0,0,0,0.5);
 		}
@@ -87,11 +87,15 @@ ng-portfolio {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         pointer-events: none;
 
-		&.shown {
+		&.hover {
 			transition: all 0.3s ease;
 			transform: none;
 			opacity: 1;
 		}
+
+        &.small {
+            font-size: 28px;
+        }
     }
 
     .description {
@@ -111,10 +115,15 @@ ng-portfolio {
         	font-size: 15px;
         }
 
-        &.shown {
+        &.hover {
         	transition: all 0.3s ease;
         	//transition-delay: 0.15s;
         	opacity: 1;
+        }
+
+        &.small {
+            top: 50px;
+            font-size: 17px;
         }
     }
 
@@ -124,8 +133,8 @@ ng-portfolio {
         opacity: 0;
         pointer-events: none;
 
-        &.shown {
-			@extend .description.shown
+        &.hover {
+			@extend .description.hover
         }
 
         .icon {
@@ -138,7 +147,7 @@ ng-portfolio {
         .text {
         	position: relative;
             color: white;
-            font-size: 15;
+            font-size: 15px;
             font-weight: 300;
             z-index: 10;
             pointer-events: none;

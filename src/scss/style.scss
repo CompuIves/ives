@@ -1,6 +1,15 @@
 @import 'portfolio';
 @import 'responsive';
 
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    font-smooth:always;
+}
+
 .angular-google-map-container { 
     transition: all 0.3s ease;
     display: block;

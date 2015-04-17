@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
@@ -27,6 +28,7 @@ gulp.task('serve', ['sass', 'bower', 'html', 'javascript', 'resources'], functio
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("src/scss/*.scss")
+        .pipe(plumber())
         .pipe(sass())
         .pipe(minifyCSS({
             keepBreaks: true
@@ -42,6 +44,7 @@ gulp.task('sass', function() {
 
 gulp.task('html', function() {
     return gulp.src("src/*.html")
+        .pipe(plumber())
         .pipe(minifyHTML({
             conditionals: true
         }))
@@ -53,6 +56,7 @@ gulp.task('html', function() {
 
 gulp.task('javascript', function() {
     return gulp.src(["src/js/core.js", "src/js/**/*.js"])
+        .pipe(plumber())
         .pipe(concat('all.min.js'))
         .pipe(babel())
         //.pipe(uglify())

@@ -155,22 +155,30 @@
                 <div class="language col s12">
                     <span class="col l2 m12 s12">Dutch</span>
                     <span class="col l4 m6 s12 langdesc">Nederlands is mijn moedertaal.</span>
-                    <ng-progress class="col l6 m6 s12" progress="1"></ng-progress>
+                    <div class="col l6 m6 s12">
+                        <ng-progress progress="1" style="width: 100%"></ng-progress>
+                    </div>
                 </div>
                 <div class="language col s12">
                     <span class="col l2 s12">English</span>
                     <span class="col l4 m6 s12 langdesc">English is my second most used language.</span>
-                    <ng-progress class="col l6 m6 s12" progress="1"></ng-progress>
+                    <div class="col l6 m6 s12">
+                        <ng-progress progress="1" style="width: 100%"></ng-progress>
+                    </div>
                 </div>
                 <div class="language col s12">
                     <span class="col l2 s12">German</span>
                     <span class="col l4 m6 s12 langdesc">Ich spreche Deutsch in der Schule.</span>
-                    <ng-progress class="col l6 m6 s12" progress="0.5"></ng-progress>
+                    <div class="col l6 m6 s12">
+                        <ng-progress progress="0.5" style="width: 100%"></ng-progress>
+                    </div>
                 </div>
                 <div class="language col s12">
                     <span class="col l2 s12">French</span>
                     <span class="col l4 m6 s12 langdesc">Je parle un petit peu français.</span>
-                    <ng-progress class="col l6 m6 s12" progress="0.2"></ng-progress>
+                    <div class="col l6 m6 s12">
+                        <ng-progress progress="0.2" style="width: 100%"></ng-progress>
+                    </div>
                 </div>
             </div>
         </div>
@@ -238,8 +246,8 @@
 
     <div class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
         <div class="backportfolio">
-            <div class="backcontainer">
-                <div class="col s12 portfolioultralightcolor">
+            <div style="color: white;" class="backcontainer">
+                <div class="col s12">
                     <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>
                     <div class="header-title portfolioitemtitle">
                         {{portfolio.item.name}}
@@ -264,6 +272,8 @@
                 <p ng-if="portfolio.item.banner.kind == 'codepen'" data-height="300" data-theme-id="0" data-slug-hash="{{portfolio.item.banner.codepen_id}}" data-default-tab="result" class='col s12 codepen' data-user="CompuIves">
                 </p>
 
+                <iframe ng-if="portfolio.item.banner.kind == 'youtube'" style="width: 550px; display: block; margin: 0 auto; padding-top: 15px;" width="100%" height="360" src="{{'https://www.youtube.com/embed/' + portfolio.item.banner.youtube_id}}" frameborder="0" allowfullscreen></iframe>
+
                 <div class="col s12 m7">
                     <div class="categoryinfo portfoliolightcolor">Description:</div>
                     <div ng-bind-html="portfolio.item.description" class="flow-text projectdescription"></div>
@@ -286,19 +296,19 @@
             </div>
         </div>
         <div class="frontportfolio">
-         <div class="header-title ultralightcolor">Projects</div>
-         <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-             My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
-         </div>
+           <div class="header-title ultralightcolor">Projects</div>
+           <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+               My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
+           </div>
 
-         <div class="portfolio col s12">
-             <div class="col l4 m6 s12" ng-repeat="item in portfolio.items">
-                 <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
-             </ng-portfolio>
-         </div>
-     </div>
- </div>
- <ng-drop options="{{portfolio.drop}}">
+           <div class="portfolio col s12">
+               <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m3 s6': item.small, 'l4 m6 s12': !item.small}">
+                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
+               </ng-portfolio>
+           </div>
+       </div>
+   </div>
+   <ng-drop options="{{portfolio.drop}}">
 </ng-drop>
 
 </div>
@@ -315,6 +325,8 @@
 <script src="lib/moment/min/moment.min.js"></script>
 <!-- Codepen -->
 <script src="lib/angular-embed-codepen/dist/embed-codepen.min.js"></script>
+<!-- Lightweight Youtube -->
+<script src="lib/angular-lazytube/angular-lazytube.min.js"></script>
 <!-- Google Maps -->
 <script src='/lib/lodash/dist/lodash.min.js'></script>
 <script src='/lib/angular-google-maps/dist/angular-google-maps.min.js'></script>
