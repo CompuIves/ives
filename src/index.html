@@ -19,11 +19,11 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <div ng-trianglify class="background" options="triangleconfig" interval="60000" fullscreen='true'></div>
     <body ng-controller="MainController as main">
+    <div ng-trianglify class="background" options="triangleconfig" interval="{{interval}}" fullscreen='true'></div>
 
         <div class="header">
-        <ng-hello></ng-hello>
+        <ng-hello interval="{{interval}}"></ng-hello>
             <div class="circles">
                 <div class="logocircle">
                     <a href="https://nl.linkedin.com/in/ivesvh" target="_blank">
@@ -92,7 +92,7 @@
 
         <div class="col s12 skill scrollfade" ng-controller="SkillController as skill">
             <span class="col s12 title">Coding Skills</span>
-            <div class="col s12 skills ">
+            <div class="col s12 skills">
                 <span class="col s12 description">Programming Languages</span>
                 <div class="name col l4 m4 s12">Java</div>
                 <div class="name col l4 m4 s12">Javascript (ES6)</div>
@@ -113,8 +113,8 @@
                 <div class="name col l4 m6 s12">AngularJS</div>
                 <div class="name col l4 m6 s12">JQuery</div>
                 <div class="name col l4 m6 s12">Materialize</div>
-                <div class="name col l6 m6 s12">Bootstrap</div>
-                <div class="name col l6 m6 s12">Android</div>
+                <div class="name col l4 m6 s12">Bootstrap</div>
+                <div class="name col l4 m6 s12">Android</div>
             </div>
         </div>
 
@@ -122,15 +122,10 @@
             <span class="col s12 title">Tools</span>
             <div class="col s12 skills">
                 <span class="col s12 description">Graphic Tools</span>
-                <div class="name col l3 m6 s12">Adobe Photoshop</div>
-                <div class="name col l3 m6 s12">Adobe Illustrator</div>
-                <div class="name col l3 m6 s12">Adobe After Effects</div>
-                <div class="name col l3 m6 s12">Adobe Premiere Pro</div>
-                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
-                <span class="col s12 description">Code Editors of Choice</span>
-                <div class="name col l4 m4 s12">Sublime Text 3</div>
-                <div class="name col l4 m4 s12">Brackets</div>
-                <div class="name col l4 m4 s12">IntelliJ IDEA</div>
+                <div class="name col m6 s12">Adobe Photoshop</div>
+                <div class="name col m6 s12">Adobe Illustrator</div>
+                <div class="name col m6 s12">Adobe After Effects</div>
+                <div class="name col m6 s12">Adobe Premiere Pro</div>
                 <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
                 <span class="col s12 description">Version Control Systems</span>
                 <div class="name col s6">Git</div>
@@ -139,6 +134,11 @@
                 <span class="col s12 description">Build Automatization</span>
                 <div class="name col s6">Gulp</div>
                 <div class="name col s6">Gradle</div>
+                <div class="name col s12" style="border-bottom: 1px solid rgba(255, 255, 255, 0.2);"></div>
+                <span class="col s12 description">Code Editors of Choice</span>
+                <div class="name col m6 s12">Sublime Text 3</div>
+                <div class="name col m6 s12">Brackets</div>
+                <div class="name col m6 s12">IntelliJ IDEA</div>
             </div>
         </div>
 

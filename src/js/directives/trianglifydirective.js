@@ -23,12 +23,22 @@ app.directive("ngTrianglify", function() {
             resize();
             setBackground(true);
 
-            if (scope.interval) {
-                setInterval(() => {
-                    scope.options = null;
+            var timer;
+            scope.$watch('interval', function(newValue) {
+                if (newValue && !isNaN(newValue) && newValue > 0 && newValue < 1000) {
+                    if (timer) clearInterval(timer);
+                    timer = setInterval(() => {
+                        scope.options = null;
+                        setBackground();
+                    }, scope.interval * 1000);
+                }
+            }, true);
+
+            scope.$watch('options', function(newValue) {
+                if (!newValue) {
                     setBackground();
-                }, scope.interval);
-            }
+                }
+            }, true);
 
             $(window).resize(() => {
                 resize();
@@ -40,15 +50,14 @@ app.directive("ngTrianglify", function() {
                 height = scope.fullscreen ? $(window).height() : element[0].offsetHeight;
             }
 
+
             var dobg1 = false;
 
             function setBackground(first) {
-                var now = moment.utc();
                 var pattern = Trianglify({
                     width: width,
                     height: height,
-                    cell_size: 150,
-                    seed: now.hour() * 3600 + now.minute() * 60 + Math.floor(now.seconds() / 10)
+                    cell_size: 150
                 });
 
                 if (first) scope.options = pattern.opts; //Check if it is the first time this is called, then no apply is needed.

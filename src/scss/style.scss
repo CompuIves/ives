@@ -325,8 +325,9 @@ $header-height: 40rem;
         }
         
         .name {
-            text-align: center;
+            text-align: left;
             padding: 0.75rem;
+            padding-left: 2.5rem;
             transition: background-color 0.3s ease;
             font-size: 26px;
             font-weight: 300;

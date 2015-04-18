@@ -4,9 +4,11 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
         this.ageyears = moment().diff(birthdate, 'years');
         this.agemonths = moment().subtract(this.ageyears, 'years').diff(birthdate, 'months');
         this.ageseconds = moment().subtract(this.ageyears, 'years').subtract(this.agemonths, 'months').diff(birthdate, 'seconds');
-        setInterval(() => $scope.$apply(() => this.ageseconds++), 1000);
+        setInterval(() => $scope.$apply(() =>
+            this.ageseconds++
+        ), 1000);
 
-
+        $scope.interval = 60;
         //When maps are loaded
         uiGmapGoogleMapApi.then(function(maps) {
             $scope.map = {
@@ -38,6 +40,14 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
         }, true);
 
         setTimeout(() => {
+            $scope.$watch(function() {
+                return $scope.triangleconfig;
+            }, (newValue) => {
+                if (newValue) {
+                    $scope.setColors(newValue);
+                }
+            });
+
             $(".hoverdarker").hover(function() {
                     $(this).css('background-color', ColorService.rgbToString(ColorService.darken($(this).data('bgcolor'), 30)));
                 },
@@ -47,15 +57,12 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
 
         }, 0);
 
-        $scope.$watch(function() {
-            return $scope.triangleconfig;
-        }, (newValue) => {
-            if (newValue) {
-                this.setColors(newValue);
-            }
-        });
+        $scope.resetBG = function() {
 
-        this.setColors = function(options) {
+            $scope.options = undefined;
+        }
+
+        $scope.setColors = function(options) {
             var newRgb1 = ColorService.averageColors(ColorService.hexToRgb(options.x_colors[0]),
                 ColorService.hexToRgb(options.y_colors[Math.floor(options.y_colors.length / 2)]));
             var newRgb2 = ColorService.averageColors(ColorService.hexToRgb(options.x_colors[options.x_colors.length - 1]),
@@ -89,6 +96,6 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             $(".darkcolor").css("color", ColorService.rgbToString(ultimateRgb)).data("color", ultimateRgb);
             $(".lightcolor").css("color", ColorService.rgbToString(thirdColor)).data("color", thirdColor);
             $(".ultralightcolor").css("color", ColorService.rgbToString(contentColor)).data("color", contentColor);
-        }
+        };
     }
 ]);

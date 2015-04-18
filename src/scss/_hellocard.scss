@@ -6,7 +6,7 @@ $transition-time: 0.8s;
 ng-hello {
     $frontheight: 125px;
     $frontwidth: 500px;
-    $backheight: 225px;
+    $backheight: 250px;
     $backwidth: 600px;
     transition: all $transition-time $transition;
     display: block;
@@ -121,7 +121,7 @@ ng-hello {
         }
 
         .button {
-            margin: 0 auto;
+            margin: 15px auto;
 
             display: block;
             width: 200px;
@@ -133,6 +133,15 @@ ng-hello {
             font-weight: 300;
 
             cursor: pointer;
+        }
+
+        .trianglify {
+            position: absolute;
+            font-size: 15px;
+            bottom: 5px;
+            left:0;
+            right:0;
+            color: grey;
         }
     }
 }
