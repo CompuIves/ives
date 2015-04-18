@@ -25,6 +25,8 @@ gulp.task('serve', ['sass', 'fonts', 'bower', 'html', 'javascript', 'resources']
     gulp.watch("src/res/**/*.*", ['resources']);
 });
 
+gulp.task('build', ['sass', 'fonts', 'bower', 'html', 'javascript', 'resources'], function() {});
+
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("src/scss/**/*.scss")
