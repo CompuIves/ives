@@ -1,0 +1,3783 @@
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.lighten-5 {
+  background-color: #fdeaeb !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-lighten-5 {
+  color: #fdeaeb !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.lighten-4 {
+  background-color: #f8c1c3 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-lighten-4 {
+  color: #f8c1c3 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.lighten-3 {
+  background-color: #f3989b !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-lighten-3 {
+  color: #f3989b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.lighten-2 {
+  background-color: #ee6e73 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-lighten-2 {
+  color: #ee6e73 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.lighten-1 {
+  background-color: #ea454b !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-lighten-1 {
+  color: #ea454b !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red {
+  background-color: #e51c23 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text {
+  color: #e51c23 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.darken-1 {
+  background-color: #d0181e !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-darken-1 {
+  color: #d0181e !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.darken-2 {
+  background-color: #b9151b !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-darken-2 {
+  color: #b9151b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.darken-3 {
+  background-color: #a21318 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-darken-3 {
+  color: #a21318 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red.darken-4 {
+  background-color: #8b1014 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.materialize-red-text.text-darken-4 {
+  color: #8b1014 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.lighten-5 {
+  background-color: #FFEBEE !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-lighten-5 {
+  color: #FFEBEE !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.lighten-4 {
+  background-color: #FFCDD2 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-lighten-4 {
+  color: #FFCDD2 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.lighten-3 {
+  background-color: #EF9A9A !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-lighten-3 {
+  color: #EF9A9A !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.lighten-2 {
+  background-color: #E57373 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-lighten-2 {
+  color: #E57373 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.lighten-1 {
+  background-color: #EF5350 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-lighten-1 {
+  color: #EF5350 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red {
+  background-color: #F44336 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text {
+  color: #F44336 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.darken-1 {
+  background-color: #E53935 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-darken-1 {
+  color: #E53935 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.darken-2 {
+  background-color: #D32F2F !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-darken-2 {
+  color: #D32F2F !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.darken-3 {
+  background-color: #C62828 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-darken-3 {
+  color: #C62828 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.darken-4 {
+  background-color: #B71C1C !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-darken-4 {
+  color: #B71C1C !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.accent-1 {
+  background-color: #FF8A80 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-accent-1 {
+  color: #FF8A80 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.accent-2 {
+  background-color: #FF5252 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-accent-2 {
+  color: #FF5252 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.accent-3 {
+  background-color: #FF1744 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-accent-3 {
+  color: #FF1744 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red.accent-4 {
+  background-color: #D50000 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.red-text.text-accent-4 {
+  color: #D50000 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.lighten-5 {
+  background-color: #fce4ec !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-lighten-5 {
+  color: #fce4ec !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.lighten-4 {
+  background-color: #f8bbd0 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-lighten-4 {
+  color: #f8bbd0 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.lighten-3 {
+  background-color: #f48fb1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-lighten-3 {
+  color: #f48fb1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.lighten-2 {
+  background-color: #f06292 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-lighten-2 {
+  color: #f06292 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.lighten-1 {
+  background-color: #ec407a !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-lighten-1 {
+  color: #ec407a !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink {
+  background-color: #e91e63 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text {
+  color: #e91e63 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.darken-1 {
+  background-color: #d81b60 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-darken-1 {
+  color: #d81b60 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.darken-2 {
+  background-color: #c2185b !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-darken-2 {
+  color: #c2185b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.darken-3 {
+  background-color: #ad1457 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-darken-3 {
+  color: #ad1457 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.darken-4 {
+  background-color: #880e4f !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-darken-4 {
+  color: #880e4f !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.accent-1 {
+  background-color: #ff80ab !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-accent-1 {
+  color: #ff80ab !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.accent-2 {
+  background-color: #ff4081 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-accent-2 {
+  color: #ff4081 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.accent-3 {
+  background-color: #f50057 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-accent-3 {
+  color: #f50057 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink.accent-4 {
+  background-color: #c51162 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.pink-text.text-accent-4 {
+  color: #c51162 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.lighten-5 {
+  background-color: #f3e5f5 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-lighten-5 {
+  color: #f3e5f5 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.lighten-4 {
+  background-color: #e1bee7 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-lighten-4 {
+  color: #e1bee7 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.lighten-3 {
+  background-color: #ce93d8 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-lighten-3 {
+  color: #ce93d8 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.lighten-2 {
+  background-color: #ba68c8 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-lighten-2 {
+  color: #ba68c8 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.lighten-1 {
+  background-color: #ab47bc !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-lighten-1 {
+  color: #ab47bc !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple {
+  background-color: #9c27b0 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text {
+  color: #9c27b0 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.darken-1 {
+  background-color: #8e24aa !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-darken-1 {
+  color: #8e24aa !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.darken-2 {
+  background-color: #7b1fa2 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-darken-2 {
+  color: #7b1fa2 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.darken-3 {
+  background-color: #6a1b9a !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-darken-3 {
+  color: #6a1b9a !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.darken-4 {
+  background-color: #4a148c !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-darken-4 {
+  color: #4a148c !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.accent-1 {
+  background-color: #ea80fc !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-accent-1 {
+  color: #ea80fc !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.accent-2 {
+  background-color: #e040fb !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-accent-2 {
+  color: #e040fb !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.accent-3 {
+  background-color: #d500f9 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-accent-3 {
+  color: #d500f9 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple.accent-4 {
+  background-color: #aa00ff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.purple-text.text-accent-4 {
+  color: #aa00ff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.lighten-5 {
+  background-color: #ede7f6 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-lighten-5 {
+  color: #ede7f6 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.lighten-4 {
+  background-color: #d1c4e9 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-lighten-4 {
+  color: #d1c4e9 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.lighten-3 {
+  background-color: #b39ddb !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-lighten-3 {
+  color: #b39ddb !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.lighten-2 {
+  background-color: #9575cd !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-lighten-2 {
+  color: #9575cd !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.lighten-1 {
+  background-color: #7e57c2 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-lighten-1 {
+  color: #7e57c2 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple {
+  background-color: #673ab7 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text {
+  color: #673ab7 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.darken-1 {
+  background-color: #5e35b1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-darken-1 {
+  color: #5e35b1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.darken-2 {
+  background-color: #512da8 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-darken-2 {
+  color: #512da8 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.darken-3 {
+  background-color: #4527a0 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-darken-3 {
+  color: #4527a0 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.darken-4 {
+  background-color: #311b92 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-darken-4 {
+  color: #311b92 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.accent-1 {
+  background-color: #b388ff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-accent-1 {
+  color: #b388ff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.accent-2 {
+  background-color: #7c4dff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-accent-2 {
+  color: #7c4dff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.accent-3 {
+  background-color: #651fff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-accent-3 {
+  color: #651fff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple.accent-4 {
+  background-color: #6200ea !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-purple-text.text-accent-4 {
+  color: #6200ea !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.lighten-5 {
+  background-color: #e8eaf6 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-lighten-5 {
+  color: #e8eaf6 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.lighten-4 {
+  background-color: #c5cae9 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-lighten-4 {
+  color: #c5cae9 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.lighten-3 {
+  background-color: #9fa8da !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-lighten-3 {
+  color: #9fa8da !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.lighten-2 {
+  background-color: #7986cb !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-lighten-2 {
+  color: #7986cb !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.lighten-1 {
+  background-color: #5c6bc0 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-lighten-1 {
+  color: #5c6bc0 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo {
+  background-color: #3f51b5 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text {
+  color: #3f51b5 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.darken-1 {
+  background-color: #3949ab !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-darken-1 {
+  color: #3949ab !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.darken-2 {
+  background-color: #303f9f !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-darken-2 {
+  color: #303f9f !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.darken-3 {
+  background-color: #283593 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-darken-3 {
+  color: #283593 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.darken-4 {
+  background-color: #1a237e !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-darken-4 {
+  color: #1a237e !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.accent-1 {
+  background-color: #8c9eff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-accent-1 {
+  color: #8c9eff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.accent-2 {
+  background-color: #536dfe !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-accent-2 {
+  color: #536dfe !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.accent-3 {
+  background-color: #3d5afe !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-accent-3 {
+  color: #3d5afe !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo.accent-4 {
+  background-color: #304ffe !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.indigo-text.text-accent-4 {
+  color: #304ffe !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.lighten-5 {
+  background-color: #E3F2FD !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-lighten-5 {
+  color: #E3F2FD !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.lighten-4 {
+  background-color: #BBDEFB !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-lighten-4 {
+  color: #BBDEFB !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.lighten-3 {
+  background-color: #90CAF9 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-lighten-3 {
+  color: #90CAF9 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.lighten-2 {
+  background-color: #64B5F6 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-lighten-2 {
+  color: #64B5F6 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.lighten-1 {
+  background-color: #42A5F5 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-lighten-1 {
+  color: #42A5F5 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue {
+  background-color: #2196F3 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text {
+  color: #2196F3 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.darken-1 {
+  background-color: #1E88E5 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-darken-1 {
+  color: #1E88E5 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.darken-2 {
+  background-color: #1976D2 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-darken-2 {
+  color: #1976D2 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.darken-3 {
+  background-color: #1565C0 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-darken-3 {
+  color: #1565C0 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.darken-4 {
+  background-color: #0D47A1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-darken-4 {
+  color: #0D47A1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.accent-1 {
+  background-color: #82B1FF !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-accent-1 {
+  color: #82B1FF !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.accent-2 {
+  background-color: #448AFF !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-accent-2 {
+  color: #448AFF !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.accent-3 {
+  background-color: #2979FF !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-accent-3 {
+  color: #2979FF !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue.accent-4 {
+  background-color: #2962FF !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-text.text-accent-4 {
+  color: #2962FF !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.lighten-5 {
+  background-color: #e1f5fe !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-lighten-5 {
+  color: #e1f5fe !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.lighten-4 {
+  background-color: #b3e5fc !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-lighten-4 {
+  color: #b3e5fc !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.lighten-3 {
+  background-color: #81d4fa !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-lighten-3 {
+  color: #81d4fa !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.lighten-2 {
+  background-color: #4fc3f7 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-lighten-2 {
+  color: #4fc3f7 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.lighten-1 {
+  background-color: #29b6f6 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-lighten-1 {
+  color: #29b6f6 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue {
+  background-color: #03a9f4 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text {
+  color: #03a9f4 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.darken-1 {
+  background-color: #039be5 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-darken-1 {
+  color: #039be5 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.darken-2 {
+  background-color: #0288d1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-darken-2 {
+  color: #0288d1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.darken-3 {
+  background-color: #0277bd !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-darken-3 {
+  color: #0277bd !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.darken-4 {
+  background-color: #01579b !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-darken-4 {
+  color: #01579b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.accent-1 {
+  background-color: #80d8ff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-accent-1 {
+  color: #80d8ff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.accent-2 {
+  background-color: #40c4ff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-accent-2 {
+  color: #40c4ff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.accent-3 {
+  background-color: #00b0ff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-accent-3 {
+  color: #00b0ff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue.accent-4 {
+  background-color: #0091ea !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-blue-text.text-accent-4 {
+  color: #0091ea !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.lighten-5 {
+  background-color: #e0f7fa !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-lighten-5 {
+  color: #e0f7fa !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.lighten-4 {
+  background-color: #b2ebf2 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-lighten-4 {
+  color: #b2ebf2 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.lighten-3 {
+  background-color: #80deea !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-lighten-3 {
+  color: #80deea !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.lighten-2 {
+  background-color: #4dd0e1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-lighten-2 {
+  color: #4dd0e1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.lighten-1 {
+  background-color: #26c6da !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-lighten-1 {
+  color: #26c6da !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan {
+  background-color: #00bcd4 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text {
+  color: #00bcd4 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.darken-1 {
+  background-color: #00acc1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-darken-1 {
+  color: #00acc1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.darken-2 {
+  background-color: #0097a7 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-darken-2 {
+  color: #0097a7 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.darken-3 {
+  background-color: #00838f !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-darken-3 {
+  color: #00838f !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.darken-4 {
+  background-color: #006064 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-darken-4 {
+  color: #006064 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.accent-1 {
+  background-color: #84ffff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-accent-1 {
+  color: #84ffff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.accent-2 {
+  background-color: #18ffff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-accent-2 {
+  color: #18ffff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.accent-3 {
+  background-color: #00e5ff !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-accent-3 {
+  color: #00e5ff !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan.accent-4 {
+  background-color: #00b8d4 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.cyan-text.text-accent-4 {
+  color: #00b8d4 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.lighten-5 {
+  background-color: #e0f2f1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-lighten-5 {
+  color: #e0f2f1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.lighten-4 {
+  background-color: #b2dfdb !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-lighten-4 {
+  color: #b2dfdb !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.lighten-3 {
+  background-color: #80cbc4 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-lighten-3 {
+  color: #80cbc4 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.lighten-2 {
+  background-color: #4db6ac !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-lighten-2 {
+  color: #4db6ac !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.lighten-1 {
+  background-color: #26a69a !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-lighten-1 {
+  color: #26a69a !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal {
+  background-color: #009688 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text {
+  color: #009688 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.darken-1 {
+  background-color: #00897b !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-darken-1 {
+  color: #00897b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.darken-2 {
+  background-color: #00796b !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-darken-2 {
+  color: #00796b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.darken-3 {
+  background-color: #00695c !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-darken-3 {
+  color: #00695c !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.darken-4 {
+  background-color: #004d40 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-darken-4 {
+  color: #004d40 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.accent-1 {
+  background-color: #a7ffeb !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-accent-1 {
+  color: #a7ffeb !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.accent-2 {
+  background-color: #64ffda !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-accent-2 {
+  color: #64ffda !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.accent-3 {
+  background-color: #1de9b6 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-accent-3 {
+  color: #1de9b6 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal.accent-4 {
+  background-color: #00bfa5 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.teal-text.text-accent-4 {
+  color: #00bfa5 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.lighten-5 {
+  background-color: #E8F5E9 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-lighten-5 {
+  color: #E8F5E9 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.lighten-4 {
+  background-color: #C8E6C9 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-lighten-4 {
+  color: #C8E6C9 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.lighten-3 {
+  background-color: #A5D6A7 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-lighten-3 {
+  color: #A5D6A7 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.lighten-2 {
+  background-color: #81C784 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-lighten-2 {
+  color: #81C784 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.lighten-1 {
+  background-color: #66BB6A !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-lighten-1 {
+  color: #66BB6A !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green {
+  background-color: #4CAF50 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text {
+  color: #4CAF50 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.darken-1 {
+  background-color: #43A047 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-darken-1 {
+  color: #43A047 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.darken-2 {
+  background-color: #388E3C !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-darken-2 {
+  color: #388E3C !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.darken-3 {
+  background-color: #2E7D32 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-darken-3 {
+  color: #2E7D32 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.darken-4 {
+  background-color: #1B5E20 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-darken-4 {
+  color: #1B5E20 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.accent-1 {
+  background-color: #B9F6CA !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-accent-1 {
+  color: #B9F6CA !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.accent-2 {
+  background-color: #69F0AE !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-accent-2 {
+  color: #69F0AE !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.accent-3 {
+  background-color: #00E676 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-accent-3 {
+  color: #00E676 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green.accent-4 {
+  background-color: #00C853 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.green-text.text-accent-4 {
+  color: #00C853 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.lighten-5 {
+  background-color: #f1f8e9 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-lighten-5 {
+  color: #f1f8e9 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.lighten-4 {
+  background-color: #dcedc8 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-lighten-4 {
+  color: #dcedc8 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.lighten-3 {
+  background-color: #c5e1a5 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-lighten-3 {
+  color: #c5e1a5 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.lighten-2 {
+  background-color: #aed581 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-lighten-2 {
+  color: #aed581 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.lighten-1 {
+  background-color: #9ccc65 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-lighten-1 {
+  color: #9ccc65 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green {
+  background-color: #8bc34a !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text {
+  color: #8bc34a !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.darken-1 {
+  background-color: #7cb342 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-darken-1 {
+  color: #7cb342 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.darken-2 {
+  background-color: #689f38 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-darken-2 {
+  color: #689f38 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.darken-3 {
+  background-color: #558b2f !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-darken-3 {
+  color: #558b2f !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.darken-4 {
+  background-color: #33691e !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-darken-4 {
+  color: #33691e !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.accent-1 {
+  background-color: #ccff90 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-accent-1 {
+  color: #ccff90 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.accent-2 {
+  background-color: #b2ff59 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-accent-2 {
+  color: #b2ff59 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.accent-3 {
+  background-color: #76ff03 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-accent-3 {
+  color: #76ff03 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green.accent-4 {
+  background-color: #64dd17 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.light-green-text.text-accent-4 {
+  color: #64dd17 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.lighten-5 {
+  background-color: #f9fbe7 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-lighten-5 {
+  color: #f9fbe7 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.lighten-4 {
+  background-color: #f0f4c3 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-lighten-4 {
+  color: #f0f4c3 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.lighten-3 {
+  background-color: #e6ee9c !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-lighten-3 {
+  color: #e6ee9c !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.lighten-2 {
+  background-color: #dce775 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-lighten-2 {
+  color: #dce775 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.lighten-1 {
+  background-color: #d4e157 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-lighten-1 {
+  color: #d4e157 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime {
+  background-color: #cddc39 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text {
+  color: #cddc39 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.darken-1 {
+  background-color: #c0ca33 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-darken-1 {
+  color: #c0ca33 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.darken-2 {
+  background-color: #afb42b !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-darken-2 {
+  color: #afb42b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.darken-3 {
+  background-color: #9e9d24 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-darken-3 {
+  color: #9e9d24 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.darken-4 {
+  background-color: #827717 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-darken-4 {
+  color: #827717 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.accent-1 {
+  background-color: #f4ff81 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-accent-1 {
+  color: #f4ff81 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.accent-2 {
+  background-color: #eeff41 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-accent-2 {
+  color: #eeff41 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.accent-3 {
+  background-color: #c6ff00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-accent-3 {
+  color: #c6ff00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime.accent-4 {
+  background-color: #aeea00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.lime-text.text-accent-4 {
+  color: #aeea00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.lighten-5 {
+  background-color: #fffde7 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-lighten-5 {
+  color: #fffde7 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.lighten-4 {
+  background-color: #fff9c4 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-lighten-4 {
+  color: #fff9c4 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.lighten-3 {
+  background-color: #fff59d !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-lighten-3 {
+  color: #fff59d !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.lighten-2 {
+  background-color: #fff176 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-lighten-2 {
+  color: #fff176 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.lighten-1 {
+  background-color: #ffee58 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-lighten-1 {
+  color: #ffee58 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow {
+  background-color: #ffeb3b !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text {
+  color: #ffeb3b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.darken-1 {
+  background-color: #fdd835 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-darken-1 {
+  color: #fdd835 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.darken-2 {
+  background-color: #fbc02d !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-darken-2 {
+  color: #fbc02d !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.darken-3 {
+  background-color: #f9a825 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-darken-3 {
+  color: #f9a825 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.darken-4 {
+  background-color: #f57f17 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-darken-4 {
+  color: #f57f17 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.accent-1 {
+  background-color: #ffff8d !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-accent-1 {
+  color: #ffff8d !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.accent-2 {
+  background-color: #ffff00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-accent-2 {
+  color: #ffff00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.accent-3 {
+  background-color: #ffea00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-accent-3 {
+  color: #ffea00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow.accent-4 {
+  background-color: #ffd600 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.yellow-text.text-accent-4 {
+  color: #ffd600 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.lighten-5 {
+  background-color: #fff8e1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-lighten-5 {
+  color: #fff8e1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.lighten-4 {
+  background-color: #ffecb3 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-lighten-4 {
+  color: #ffecb3 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.lighten-3 {
+  background-color: #ffe082 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-lighten-3 {
+  color: #ffe082 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.lighten-2 {
+  background-color: #ffd54f !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-lighten-2 {
+  color: #ffd54f !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.lighten-1 {
+  background-color: #ffca28 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-lighten-1 {
+  color: #ffca28 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber {
+  background-color: #ffc107 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text {
+  color: #ffc107 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.darken-1 {
+  background-color: #ffb300 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-darken-1 {
+  color: #ffb300 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.darken-2 {
+  background-color: #ffa000 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-darken-2 {
+  color: #ffa000 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.darken-3 {
+  background-color: #ff8f00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-darken-3 {
+  color: #ff8f00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.darken-4 {
+  background-color: #ff6f00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-darken-4 {
+  color: #ff6f00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.accent-1 {
+  background-color: #ffe57f !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-accent-1 {
+  color: #ffe57f !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.accent-2 {
+  background-color: #ffd740 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-accent-2 {
+  color: #ffd740 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.accent-3 {
+  background-color: #ffc400 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-accent-3 {
+  color: #ffc400 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber.accent-4 {
+  background-color: #ffab00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.amber-text.text-accent-4 {
+  color: #ffab00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.lighten-5 {
+  background-color: #fff3e0 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-lighten-5 {
+  color: #fff3e0 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.lighten-4 {
+  background-color: #ffe0b2 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-lighten-4 {
+  color: #ffe0b2 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.lighten-3 {
+  background-color: #ffcc80 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-lighten-3 {
+  color: #ffcc80 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.lighten-2 {
+  background-color: #ffb74d !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-lighten-2 {
+  color: #ffb74d !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.lighten-1 {
+  background-color: #ffa726 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-lighten-1 {
+  color: #ffa726 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange {
+  background-color: #ff9800 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text {
+  color: #ff9800 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.darken-1 {
+  background-color: #fb8c00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-darken-1 {
+  color: #fb8c00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.darken-2 {
+  background-color: #f57c00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-darken-2 {
+  color: #f57c00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.darken-3 {
+  background-color: #ef6c00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-darken-3 {
+  color: #ef6c00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.darken-4 {
+  background-color: #e65100 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-darken-4 {
+  color: #e65100 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.accent-1 {
+  background-color: #ffd180 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-accent-1 {
+  color: #ffd180 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.accent-2 {
+  background-color: #ffab40 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-accent-2 {
+  color: #ffab40 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.accent-3 {
+  background-color: #ff9100 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-accent-3 {
+  color: #ff9100 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange.accent-4 {
+  background-color: #ff6d00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.orange-text.text-accent-4 {
+  color: #ff6d00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.lighten-5 {
+  background-color: #fbe9e7 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-lighten-5 {
+  color: #fbe9e7 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.lighten-4 {
+  background-color: #ffccbc !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-lighten-4 {
+  color: #ffccbc !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.lighten-3 {
+  background-color: #ffab91 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-lighten-3 {
+  color: #ffab91 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.lighten-2 {
+  background-color: #ff8a65 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-lighten-2 {
+  color: #ff8a65 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.lighten-1 {
+  background-color: #ff7043 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-lighten-1 {
+  color: #ff7043 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange {
+  background-color: #ff5722 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text {
+  color: #ff5722 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.darken-1 {
+  background-color: #f4511e !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-darken-1 {
+  color: #f4511e !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.darken-2 {
+  background-color: #e64a19 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-darken-2 {
+  color: #e64a19 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.darken-3 {
+  background-color: #d84315 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-darken-3 {
+  color: #d84315 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.darken-4 {
+  background-color: #bf360c !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-darken-4 {
+  color: #bf360c !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.accent-1 {
+  background-color: #ff9e80 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-accent-1 {
+  color: #ff9e80 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.accent-2 {
+  background-color: #ff6e40 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-accent-2 {
+  color: #ff6e40 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.accent-3 {
+  background-color: #ff3d00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-accent-3 {
+  color: #ff3d00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange.accent-4 {
+  background-color: #dd2c00 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.deep-orange-text.text-accent-4 {
+  color: #dd2c00 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.lighten-5 {
+  background-color: #efebe9 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-lighten-5 {
+  color: #efebe9 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.lighten-4 {
+  background-color: #d7ccc8 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-lighten-4 {
+  color: #d7ccc8 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.lighten-3 {
+  background-color: #bcaaa4 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-lighten-3 {
+  color: #bcaaa4 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.lighten-2 {
+  background-color: #a1887f !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-lighten-2 {
+  color: #a1887f !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.lighten-1 {
+  background-color: #8d6e63 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-lighten-1 {
+  color: #8d6e63 !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown {
+  background-color: #795548 !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text {
+  color: #795548 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.darken-1 {
+  background-color: #6d4c41 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-darken-1 {
+  color: #6d4c41 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.darken-2 {
+  background-color: #5d4037 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-darken-2 {
+  color: #5d4037 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.darken-3 {
+  background-color: #4e342e !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-darken-3 {
+  color: #4e342e !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown.darken-4 {
+  background-color: #3e2723 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.brown-text.text-darken-4 {
+  color: #3e2723 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.lighten-5 {
+  background-color: #eceff1 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-lighten-5 {
+  color: #eceff1 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.lighten-4 {
+  background-color: #cfd8dc !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-lighten-4 {
+  color: #cfd8dc !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.lighten-3 {
+  background-color: #b0bec5 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-lighten-3 {
+  color: #b0bec5 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.lighten-2 {
+  background-color: #90a4ae !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-lighten-2 {
+  color: #90a4ae !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.lighten-1 {
+  background-color: #78909c !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-lighten-1 {
+  color: #78909c !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey {
+  background-color: #607d8b !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text {
+  color: #607d8b !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.darken-1 {
+  background-color: #546e7a !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-darken-1 {
+  color: #546e7a !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.darken-2 {
+  background-color: #455a64 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-darken-2 {
+  color: #455a64 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.darken-3 {
+  background-color: #37474f !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-darken-3 {
+  color: #37474f !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey.darken-4 {
+  background-color: #263238 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.blue-grey-text.text-darken-4 {
+  color: #263238 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.lighten-5 {
+  background-color: #fafafa !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-lighten-5 {
+  color: #fafafa !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.lighten-4 {
+  background-color: #f5f5f5 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-lighten-4 {
+  color: #f5f5f5 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.lighten-3 {
+  background-color: #eeeeee !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-lighten-3 {
+  color: #eeeeee !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.lighten-2 {
+  background-color: #e0e0e0 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-lighten-2 {
+  color: #e0e0e0 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.lighten-1 {
+  background-color: #bdbdbd !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-lighten-1 {
+  color: #bdbdbd !important; }
+
+/* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey {
+  background-color: #9e9e9e !important; }
+
+/* line 373, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text {
+  color: #9e9e9e !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.darken-1 {
+  background-color: #757575 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-darken-1 {
+  color: #757575 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.darken-2 {
+  background-color: #616161 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-darken-2 {
+  color: #616161 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.darken-3 {
+  background-color: #424242 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-darken-3 {
+  color: #424242 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey.darken-4 {
+  background-color: #212121 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.grey-text.text-darken-4 {
+  color: #212121 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.shades.black {
+  background-color: #000000 !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.shades-text.text-black {
+  color: #000000 !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.shades.white {
+  background-color: #FFFFFF !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.shades-text.text-white {
+  color: #FFFFFF !important; }
+
+/* line 378, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.shades.transparent {
+  background-color: transparent !important; }
+
+/* line 381, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.shades-text.text-transparent {
+  color: transparent !important; }
+
+/* line 390, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.black {
+  background-color: #000000 !important; }
+
+/* line 393, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.black-text {
+  color: #000000 !important; }
+
+/* line 390, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.white {
+  background-color: #FFFFFF !important; }
+
+/* line 393, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.white-text {
+  color: #FFFFFF !important; }
+
+/* line 390, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.transparent {
+  background-color: transparent !important; }
+
+/* line 393, C:/Java Development/ives.io/src/scss/materialize/components/_color.scss */
+.transparent-text {
+  color: transparent !important; }
+
+/*** Colors ***/
+/*** Badges ***/
+/*** Buttons ***/
+/*** Cards ***/
+/*** Collapsible ***/
+/*** Dropdown ***/
+/*** Fonts ***/
+/*** Forms ***/
+/*** Global ***/
+/*** Navbar ***/
+/*** SideNav ***/
+/*** Tabs ***/
+/*** Tables ***/
+/*** Toasts ***/
+/*** Typography ***/
+/*** Collections ***/
+/* Progress Bar */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 173, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* 1 */
+/* line 293, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+html input[type="button"], button, input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, C:/Java Development/ives.io/src/scss/materialize/components/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/* line 6, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 9, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 23, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+ul {
+  list-style-type: none; }
+
+/* line 27, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+a {
+  color: #039be5;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 37, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.valign-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  /* line 41, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .valign-wrapper .valign {
+    display: block; }
+
+/* line 47, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+ul {
+  padding: 0; }
+  /* line 49, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  ul li {
+    list-style-type: none; }
+
+/* line 55, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.clearfix {
+  clear: both; }
+
+/* line 62, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.z-depth-1 {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+/* line 65, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.z-depth-1-half {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
+/* line 68, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.z-depth-2 {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/* line 71, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.z-depth-3 {
+  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
+
+/* line 74, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.z-depth-4 {
+  -webkit-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
+
+/* line 77, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.z-depth-5 {
+  -webkit-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
+
+/* line 83, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0; }
+
+/* line 92, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+blockquote {
+  margin: 20px 0;
+  padding-left: 1.5rem;
+  border-left: 5px solid #EF9A9A; }
+
+/* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+i {
+  line-height: inherit; }
+  /* line 103, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  i.left {
+    float: left;
+    margin-right: 15px; }
+  /* line 107, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  i.right {
+    float: right;
+    margin-left: 15px; }
+  /* line 111, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  i.tiny {
+    font-size: 1rem; }
+  /* line 114, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  i.small {
+    font-size: 2rem; }
+  /* line 117, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  i.medium {
+    font-size: 4rem; }
+  /* line 120, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  i.large {
+    font-size: 6rem; }
+
+/* line 127, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+img.responsive-img, video.responsive-video {
+  max-width: 100%;
+  height: auto; }
+
+/* line 137, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.pagination li {
+  font-size: 1.2rem;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 2px;
+  text-align: center; }
+  /* line 146, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .pagination li a {
+    color: #444; }
+  /* line 148, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .pagination li.active a {
+    color: #fff; }
+  /* line 150, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .pagination li.active {
+    background-color: #ee6e73; }
+  /* line 152, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .pagination li.disabled a {
+    color: #999; }
+  /* line 154, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .pagination li i {
+    font-size: 2rem;
+    line-height: 1.8rem; }
+
+/* line 163, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px; }
+
+/* line 169, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+  /* line 177, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transform: translateX(-50%); }
+
+/* line 191, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.pin-top, .pin-bottom {
+  position: relative; }
+
+/* line 194, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.pinned {
+  position: fixed !important; }
+
+/*********************
+  Transition Classes
+**********************/
+/* line 202, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+ul.staggered-list li {
+  opacity: 0; }
+
+/* line 206, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.fade-in {
+  opacity: 0;
+  transform-origin: 0 50%; }
+
+/*********************
+  Media Query Classes
+**********************/
+@media only screen and (max-width : 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important; } }
+
+@media only screen and (max-width : 992px) {
+  .hide-on-med-and-down {
+    display: none !important; } }
+
+@media only screen and (min-width : 601px) {
+  .hide-on-med-and-up {
+    display: none !important; } }
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important; } }
+
+@media only screen and (min-width : 993px) {
+  .hide-on-large-only {
+    display: none !important; } }
+
+@media only screen and (min-width : 993px) {
+  .show-on-large {
+    display: initial !important; } }
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: initial !important; } }
+
+@media only screen and (max-width : 600px) {
+  .show-on-small {
+    display: initial !important; } }
+
+@media only screen and (min-width : 601px) {
+  .show-on-medium-and-up {
+    display: initial !important; } }
+
+@media only screen and (max-width : 992px) {
+  .show-on-medium-and-down {
+    display: initial !important; } }
+
+@media only screen and (max-width : 600px) {
+  .center-on-small-only {
+    text-align: center; } }
+
+/* line 275, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+footer.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #ee6e73; }
+  /* line 280, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  footer.page-footer .footer-copyright {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.08); }
+
+/* line 291, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+table, th, td {
+  border: none; }
+
+/* line 295, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+table {
+  width: 100%;
+  display: table; }
+  /* line 299, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  table.bordered tr {
+    border-bottom: 1px solid #d0d0d0; }
+  /* line 304, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  table.striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; }
+  /* line 311, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  table.hoverable tbody tr {
+    -webkit-transition: background-color .25s ease;
+    -moz-transition: background-color .25s ease;
+    -o-transition: background-color .25s ease;
+    -ms-transition: background-color .25s ease;
+    transition: background-color .25s ease; }
+    /* line 313, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.hoverable tbody tr:hover {
+      background-color: #f2f2f2; }
+  /* line 320, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  table.centered thead tr th, table.centered tbody tr td {
+    text-align: center; }
+
+/* line 328, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+thead {
+  border-bottom: 1px solid #d0d0d0; }
+
+/* line 332, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+td, th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px; }
+
+@media only screen and (max-width : 992px) {
+  /* line 343, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  table.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    position: relative;
+    /* sort out borders */ }
+    /* line 351, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table th, table.responsive-table td {
+      margin: 0;
+      vertical-align: top; }
+    /* line 356, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table th {
+      text-align: left; }
+    /* line 357, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table thead {
+      display: block;
+      float: left; }
+      /* line 361, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+      table.responsive-table thead tr {
+        display: block;
+        padding: 0 10px 0 0; }
+        /* line 365, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+        table.responsive-table thead tr th::before {
+          content: "\00a0"; }
+    /* line 370, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table tbody {
+      display: block;
+      width: auto;
+      position: relative;
+      overflow-x: auto;
+      white-space: nowrap; }
+      /* line 377, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+      table.responsive-table tbody tr {
+        display: inline-block;
+        vertical-align: top; }
+    /* line 382, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table th {
+      display: block;
+      text-align: right; }
+    /* line 386, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table td {
+      display: block;
+      min-height: 1.25em;
+      text-align: left; }
+    /* line 391, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table tr {
+      padding: 0 10px; }
+    /* line 394, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table thead {
+      border: 0;
+      border-right: 1px solid #d0d0d0; }
+    /* line 400, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table.bordered th {
+      border-bottom: 0;
+      border-left: 0; }
+    /* line 401, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table.bordered td {
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0; }
+    /* line 402, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table.bordered tr {
+      border: 0; }
+    /* line 403, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    table.responsive-table.bordered tbody tr {
+      border-right: 1px solid #d0d0d0; } }
+
+/* line 412, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.collection {
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative; }
+  /* line 419, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .collection .collection-item {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0; }
+    /* line 427, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    .collection .collection-item.avatar {
+      height: 84px;
+      padding-left: 72px;
+      position: relative; }
+      /* line 432, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+      .collection .collection-item.avatar .circle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle; }
+      /* line 441, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+      .collection .collection-item.avatar i.circle {
+        font-size: 18px;
+        line-height: 42px;
+        color: #fff;
+        background-color: #999;
+        text-align: center; }
+      /* line 450, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+      .collection .collection-item.avatar .title {
+        font-size: 16px; }
+      /* line 454, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+      .collection .collection-item.avatar p {
+        margin: 0; }
+      /* line 458, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+      .collection .collection-item.avatar .secondary-content {
+        position: absolute;
+        top: 16px;
+        right: 16px; }
+    /* line 467, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    .collection .collection-item:last-child {
+      border-bottom: none; }
+    /* line 471, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    .collection .collection-item.active {
+      background-color: #26a69a;
+      color: #eafaf9; }
+  /* line 476, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .collection a.collection-item {
+    display: block;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    -ms-transition: 0.25s;
+    transition: 0.25s;
+    color: #26a69a; }
+    /* line 481, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    .collection a.collection-item:not(.active):hover {
+      background-color: #ddd; }
+  /* line 488, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .collection.with-header .collection-header {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px; }
+  /* line 493, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .collection.with-header .collection-item {
+    padding-left: 30px; }
+
+/* line 500, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.secondary-content {
+  float: right;
+  color: #26a69a; }
+
+/* line 507, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+span.badge {
+  min-width: 3rem;
+  padding: 0 6px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: inherit;
+  color: #757575;
+  position: absolute;
+  right: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  /* line 518, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  span.badge.new {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    background-color: #26a69a;
+    border-radius: 2px; }
+  /* line 525, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  span.badge.new:after {
+    content: " new"; }
+
+/* line 531, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+  /* line 537, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .video-container.no-controls {
+    padding-top: 0; }
+  /* line 541, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* line 551, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.progress {
+  position: relative;
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: #acece6;
+  border-radius: 2px;
+  margin: 0.5rem 0 1rem 0;
+  overflow: hidden; }
+  /* line 560, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .progress .determinate {
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    bottom: 0;
+    background-color: #26a69a;
+    -webkit-transition: width .3s linear;
+    -moz-transition: width .3s linear;
+    -o-transition: width .3s linear;
+    -ms-transition: width .3s linear;
+    transition: width .3s linear; }
+  /* line 568, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  .progress .indeterminate {
+    background-color: #26a69a; }
+    /* line 570, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    .progress .indeterminate:before {
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      will-change: left, right;
+      -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+      -moz-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+      -ms-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+      -o-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+      animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
+    /* line 582, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+    .progress .indeterminate:after {
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      will-change: left, right;
+      -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      -moz-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      -ms-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      -o-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      -webkit-animation-delay: 1.15s;
+      -moz-animation-delay: 1.15s;
+      -ms-animation-delay: 1.15s;
+      -o-animation-delay: 1.15s;
+      animation-delay: 1.15s; }
+
+@-webkit-keyframes indeterminate {
+  /* line 597, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  0% {
+    left: -35%;
+    right: 100%; }
+
+  /* line 601, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  60% {
+    left: 100%;
+    right: -90%; }
+
+  /* line 605, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  100% {
+    left: 100%;
+    right: -90%; } }
+
+@-moz-keyframes indeterminate {
+  /* line 597, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  0% {
+    left: -35%;
+    right: 100%; }
+
+  /* line 601, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  60% {
+    left: 100%;
+    right: -90%; }
+
+  /* line 605, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  100% {
+    left: 100%;
+    right: -90%; } }
+
+@keyframes indeterminate {
+  /* line 597, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  0% {
+    left: -35%;
+    right: 100%; }
+
+  /* line 601, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  60% {
+    left: 100%;
+    right: -90%; }
+
+  /* line 605, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  100% {
+    left: 100%;
+    right: -90%; } }
+
+@-webkit-keyframes indeterminate-short {
+  /* line 612, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  0% {
+    left: -200%;
+    right: 100%; }
+
+  /* line 616, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  60% {
+    left: 107%;
+    right: -8%; }
+
+  /* line 620, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  100% {
+    left: 107%;
+    right: -8%; } }
+
+@-moz-keyframes indeterminate-short {
+  /* line 612, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  0% {
+    left: -200%;
+    right: 100%; }
+
+  /* line 616, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  60% {
+    left: 107%;
+    right: -8%; }
+
+  /* line 620, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  100% {
+    left: 107%;
+    right: -8%; } }
+
+@keyframes indeterminate-short {
+  /* line 612, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  0% {
+    left: -200%;
+    right: 100%; }
+
+  /* line 616, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  60% {
+    left: 107%;
+    right: -8%; }
+
+  /* line 620, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+  100% {
+    left: 107%;
+    right: -8%; } }
+
+/*******************
+  Utility Classes
+*******************/
+/* line 631, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.hide {
+  display: none !important; }
+
+/* line 636, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.left-align {
+  text-align: left; }
+
+/* line 639, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.right-align {
+  text-align: right; }
+
+/* line 642, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.center, .center-align {
+  text-align: center; }
+
+/* line 646, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.left {
+  float: left !important; }
+
+/* line 649, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.right {
+  float: right !important; }
+
+/* line 654, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 664, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.circle {
+  border-radius: 50%; }
+
+/* line 668, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 674, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+/* line 680, C:/Java Development/ives.io/src/scss/materialize/components/_global.scss */
+.no-padding {
+  padding: 0 !important; }
+
+/* line 1, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+.container {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%; }
+
+@media only screen and (min-width : 601px) {
+  /* line 8, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+  .container {
+    width: 85%; } }
+
+@media only screen and (min-width : 993px) {
+  /* line 13, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+  .container {
+    width: 70%; } }
+
+/* line 17, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+.container .row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem; }
+
+/* line 22, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+.section {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  /* line 26, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+  .section.no-pad {
+    padding: 0; }
+  /* line 29, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+  .section.no-pad-bot {
+    padding-bottom: 0; }
+  /* line 32, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+  .section.no-pad-top {
+    padding-top: 0; }
+
+/* line 38, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; }
+  /* line 44, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 50, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+  .row .col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0.75rem; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s1 {
+      width: 8.33333%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s2 {
+      width: 16.66667%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s3 {
+      width: 25%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s4 {
+      width: 33.33333%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s5 {
+      width: 41.66667%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s6 {
+      width: 50%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s7 {
+      width: 58.33333%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s8 {
+      width: 66.66667%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s9 {
+      width: 75%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s10 {
+      width: 83.33333%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s11 {
+      width: 91.66667%;
+      margin-left: 0; }
+    /* line 58, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.s12 {
+      width: 100%;
+      margin-left: 0; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s1 {
+      margin-left: 8.33333%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s2 {
+      margin-left: 16.66667%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s3 {
+      margin-left: 25%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s4 {
+      margin-left: 33.33333%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s5 {
+      margin-left: 41.66667%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s6 {
+      margin-left: 50%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s7 {
+      margin-left: 58.33333%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s8 {
+      margin-left: 66.66667%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s9 {
+      margin-left: 75%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s10 {
+      margin-left: 83.33333%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s11 {
+      margin-left: 91.66667%; }
+    /* line 67, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+    .row .col.offset-s12 {
+      margin-left: 100%; }
+    @media only screen and (min-width : 601px) {
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m1 {
+        width: 8.33333%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m2 {
+        width: 16.66667%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m3 {
+        width: 25%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m4 {
+        width: 33.33333%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m5 {
+        width: 41.66667%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m6 {
+        width: 50%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m7 {
+        width: 58.33333%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m8 {
+        width: 66.66667%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m9 {
+        width: 75%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m10 {
+        width: 83.33333%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m11 {
+        width: 91.66667%;
+        margin-left: 0; }
+      /* line 78, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.m12 {
+        width: 100%;
+        margin-left: 0; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m1 {
+        margin-left: 8.33333%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m2 {
+        margin-left: 16.66667%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m3 {
+        margin-left: 25%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m4 {
+        margin-left: 33.33333%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m5 {
+        margin-left: 41.66667%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m6 {
+        margin-left: 50%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m7 {
+        margin-left: 58.33333%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m8 {
+        margin-left: 66.66667%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m9 {
+        margin-left: 75%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m10 {
+        margin-left: 83.33333%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m11 {
+        margin-left: 91.66667%; }
+      /* line 87, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-m12 {
+        margin-left: 100%; } }
+    @media only screen and (min-width : 993px) {
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l1 {
+        width: 8.33333%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l2 {
+        width: 16.66667%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l3 {
+        width: 25%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l4 {
+        width: 33.33333%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l5 {
+        width: 41.66667%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l6 {
+        width: 50%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l7 {
+        width: 58.33333%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l8 {
+        width: 66.66667%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l9 {
+        width: 75%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l10 {
+        width: 83.33333%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l11 {
+        width: 91.66667%;
+        margin-left: 0; }
+      /* line 100, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.l12 {
+        width: 100%;
+        margin-left: 0; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l1 {
+        margin-left: 8.33333%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l2 {
+        margin-left: 16.66667%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l3 {
+        margin-left: 25%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l4 {
+        margin-left: 33.33333%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l5 {
+        margin-left: 41.66667%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l6 {
+        margin-left: 50%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l7 {
+        margin-left: 58.33333%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l8 {
+        margin-left: 66.66667%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l9 {
+        margin-left: 75%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l10 {
+        margin-left: 83.33333%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l11 {
+        margin-left: 91.66667%; }
+      /* line 109, C:/Java Development/ives.io/src/scss/materialize/components/_grid.scss */
+      .row .col.offset-l12 {
+        margin-left: 100%; } }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Thin.woff2") format("woff2"), url("../font/roboto/Roboto-Thin.woff") format("woff"), url("../font/roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Light.woff2") format("woff2"), url("../font/roboto/Roboto-Light.woff") format("woff"), url("../font/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Regular.woff2") format("woff2"), url("../font/roboto/Roboto-Regular.woff") format("woff"), url("../font/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Medium.woff2") format("woff2"), url("../font/roboto/Roboto-Medium.woff") format("woff"), url("../font/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/roboto/Roboto-Bold.woff2") format("woff2"), url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+/* line 1, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+a {
+  text-decoration: none; }
+
+/* line 5, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+html {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87); }
+  @media only screen and (min-width: 0) {
+    html {
+      font-size: 14px; } }
+  @media only screen and (min-width: 992px) {
+    html {
+      font-size: 14.5px; } }
+  @media only screen and (min-width: 1200px) {
+    html {
+      font-size: 15px; } }
+
+/* line 24, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
+/* line 29, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit; }
+
+/* line 30, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+h1 {
+  font-size: 4.2rem;
+  line-height: 4.62rem;
+  margin: 2.1rem 0 1.68rem 0; }
+
+/* line 31, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+h2 {
+  font-size: 3.56rem;
+  line-height: 3.916rem;
+  margin: 1.78rem 0 1.424rem 0; }
+
+/* line 32, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+h3 {
+  font-size: 2.92rem;
+  line-height: 3.212rem;
+  margin: 1.46rem 0 1.168rem 0; }
+
+/* line 33, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+h4 {
+  font-size: 2.28rem;
+  line-height: 2.508rem;
+  margin: 1.14rem 0 0.912rem 0; }
+
+/* line 34, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+h5 {
+  font-size: 1.64rem;
+  line-height: 1.804rem;
+  margin: 0.82rem 0 0.656rem 0; }
+
+/* line 35, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+h6 {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  margin: 0.5rem 0 0.4rem 0; }
+
+/* line 38, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+em {
+  font-style: italic; }
+
+/* line 39, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+strong {
+  font-weight: 500; }
+
+/* line 40, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+small {
+  font-size: 75%; }
+
+/* line 41, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+.light, footer.page-footer .footer-copyright {
+  font-weight: 300; }
+
+/* line 42, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+.thin {
+  font-weight: 200; }
+
+/* line 44, C:/Java Development/ives.io/src/scss/materialize/components/_typography.scss */
+.flow-text {
+  font-weight: 300; }
+  @media only screen and (min-width: 360px) {
+    .flow-text {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 0px) {
+    .flow-text {
+      line-height: .8rem; } }
+  @media only screen and (min-width: 390px) {
+    .flow-text {
+      font-size: 1.224rem; } }
+  @media only screen and (min-width: 30px) {
+    .flow-text {
+      line-height: .904rem; } }
+  @media only screen and (min-width: 420px) {
+    .flow-text {
+      font-size: 1.248rem; } }
+  @media only screen and (min-width: 60px) {
+    .flow-text {
+      line-height: 1.008rem; } }
+  @media only screen and (min-width: 450px) {
+    .flow-text {
+      font-size: 1.272rem; } }
+  @media only screen and (min-width: 90px) {
+    .flow-text {
+      line-height: 1.112rem; } }
+  @media only screen and (min-width: 480px) {
+    .flow-text {
+      font-size: 1.296rem; } }
+  @media only screen and (min-width: 120px) {
+    .flow-text {
+      line-height: 1.216rem; } }
+  @media only screen and (min-width: 510px) {
+    .flow-text {
+      font-size: 1.32rem; } }
+  @media only screen and (min-width: 150px) {
+    .flow-text {
+      line-height: 1.32rem; } }
+  @media only screen and (min-width: 540px) {
+    .flow-text {
+      font-size: 1.344rem; } }
+  @media only screen and (min-width: 180px) {
+    .flow-text {
+      line-height: 1.424rem; } }
+  @media only screen and (min-width: 570px) {
+    .flow-text {
+      font-size: 1.368rem; } }
+  @media only screen and (min-width: 210px) {
+    .flow-text {
+      line-height: 1.528rem; } }
+  @media only screen and (min-width: 600px) {
+    .flow-text {
+      font-size: 1.392rem; } }
+  @media only screen and (min-width: 240px) {
+    .flow-text {
+      line-height: 1.632rem; } }
+  @media only screen and (min-width: 630px) {
+    .flow-text {
+      font-size: 1.416rem; } }
+  @media only screen and (min-width: 270px) {
+    .flow-text {
+      line-height: 1.736rem; } }
+  @media only screen and (min-width: 660px) {
+    .flow-text {
+      font-size: 1.44rem; } }
+  @media only screen and (min-width: 300px) {
+    .flow-text {
+      line-height: 1.84rem; } }
+  @media only screen and (min-width: 690px) {
+    .flow-text {
+      font-size: 1.464rem; } }
+  @media only screen and (min-width: 330px) {
+    .flow-text {
+      line-height: 1.944rem; } }
+  @media only screen and (min-width: 720px) {
+    .flow-text {
+      font-size: 1.488rem; } }
+  @media only screen and (min-width: 360px) {
+    .flow-text {
+      line-height: 2.048rem; } }
+  @media only screen and (min-width: 750px) {
+    .flow-text {
+      font-size: 1.512rem; } }
+  @media only screen and (min-width: 390px) {
+    .flow-text {
+      line-height: 2.152rem; } }
+  @media only screen and (min-width: 780px) {
+    .flow-text {
+      font-size: 1.536rem; } }
+  @media only screen and (min-width: 420px) {
+    .flow-text {
+      line-height: 2.256rem; } }
+  @media only screen and (min-width: 810px) {
+    .flow-text {
+      font-size: 1.56rem; } }
+  @media only screen and (min-width: 450px) {
+    .flow-text {
+      line-height: 2.36rem; } }
+  @media only screen and (min-width: 840px) {
+    .flow-text {
+      font-size: 1.584rem; } }
+  @media only screen and (min-width: 480px) {
+    .flow-text {
+      line-height: 2.464rem; } }
+  @media only screen and (min-width: 870px) {
+    .flow-text {
+      font-size: 1.608rem; } }
+  @media only screen and (min-width: 510px) {
+    .flow-text {
+      line-height: 2.568rem; } }
+  @media only screen and (min-width: 900px) {
+    .flow-text {
+      font-size: 1.632rem; } }
+  @media only screen and (min-width: 540px) {
+    .flow-text {
+      line-height: 2.672rem; } }
+  @media only screen and (min-width: 930px) {
+    .flow-text {
+      font-size: 1.656rem; } }
+  @media only screen and (min-width: 570px) {
+    .flow-text {
+      line-height: 2.776rem; } }
+  @media only screen and (min-width: 960px) {
+    .flow-text {
+      font-size: 1.68rem; } }
+  @media only screen and (min-width: 600px) {
+    .flow-text {
+      line-height: 2.88rem; } }
+
+/*# sourceMappingURL=materialize.css.map */

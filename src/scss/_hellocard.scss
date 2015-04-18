@@ -1,0 +1,39 @@
+@import 'responsive';
+ng-hello {
+    .textcard {
+        transform: translateY(5px);
+        $height: 125px;
+        $width: 500px;
+        z-index: 1;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        left: 0;
+        right: 0;
+        top: -80px;
+        bottom: 0;
+        width: $width;
+        max-height: $height;
+        margin: auto;
+        text-align: center;
+        border-radius: 2px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+
+        @include phone {
+            width: initial;
+            max-width: $width;
+        }
+        .title {
+            line-height: $height;
+            font-size: 64px;
+            font-weight: 500;
+            @include phone {
+                font-size: 50px;
+            }
+        }
+        &.visible {
+            transition: 0.3s ease all;
+            opacity: 1;
+            transform: none;
+        }
+    }
+}

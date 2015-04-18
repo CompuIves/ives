@@ -8,9 +8,7 @@
     <title>Ives</title>
 
     <!-- Materialize -->
-    <link href="lib/materialize/dist/css/materialize.min.css" rel="stylesheet">
-    <!-- Material Design icons -->
-    <link href="lib/mdi/css/materialdesignicons.min.css" rel="stylesheet"></link>
+    <link href="css/materialize/materialize.css" rel="stylesheet">
     <link href="lib/fontawesome/css/font-awesome.min.css" rel="stylesheet"></link>
     <link href='css/style.css' rel="stylesheet"></link>
 
@@ -25,27 +23,24 @@
     <body ng-controller="MainController as main">
 
         <div class="header">
-            <div class="loadanim textcard">
-                <span class="title darkcolor">Hi, I'm Ives!</span>
-            </div>
-            
+        <ng-hello></ng-hello>
             <div class="circles">
-                <div class="loadanim logocircle">
+                <div class="logocircle">
                     <a href="https://nl.linkedin.com/in/ivesvh" target="_blank">
                         <i class="logo fa fa-linkedin"></i>
                     </a>
                 </div>
-                <div class="loadanim logocircle">
+                <div class="logocircle">
                     <a href="http://codepen.io/CompuIves/" target="_blank">
                         <i class="logo fa fa-codepen"></i>
                     </a>
                 </div>
-                <div class="loadanim logocircle">
+                <div class="logocircle">
                     <a href="https://github.com/CompuIves" target="_blank">
                         <i class="logo fa fa-github-alt"></i>
                     </a>
                 </div>
-                <div class="loadanim logocircle">
+                <div class="logocircle">
                     <a href="https://www.youtube.com/playlist?list=PL14AB56050692684A" target="_blank">
                         <i class="logo fa fa-youtube-play"></i>
                     </a>
@@ -91,13 +86,13 @@
         </ui-gmap-marker>
     </ui-gmap-google-map>
     <div class="row contentrow centerrow ultradarkbgcolor-transparent">
-        <div class="header-title ultralightcolor">Skills</div>
+        <div class="header-title ultralightcolor scroll">Skills</div>
         <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">I have worked on projects in many different fields. I'm not limited to web development, I also do video editing and graphic design.
         </div>
 
-        <div class="col s12 skill" ng-controller="SkillController as skill">
+        <div class="col s12 skill scrollfade" ng-controller="SkillController as skill">
             <span class="col s12 title">Coding Skills</span>
-            <div class="col s12 skills">
+            <div class="col s12 skills ">
                 <span class="col s12 description">Programming Languages</span>
                 <div class="name col l4 m4 s12">Java</div>
                 <div class="name col l4 m4 s12">Javascript (ES6)</div>
@@ -123,7 +118,7 @@
             </div>
         </div>
 
-        <div class="col s12 skill">
+        <div class="col s12 skill scrollfade">
             <span class="col s12 title">Tools</span>
             <div class="col s12 skills">
                 <span class="col s12 description">Graphic Tools</span>
@@ -147,7 +142,7 @@
             </div>
         </div>
 
-        <div class="col s12 skill">
+        <div class="col s12 skill scrollfade">
             <span class="col s12 title">Languages</span>
             <div class="col s12 skills">
                 <div class="language col s12">
@@ -187,7 +182,7 @@
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
             Most of my experience is based on personal projects. Normally I find myself dedicated to a specific project and will continue it until it is finished.
         </div>
-        <div class="subrow row">        
+        <div class="subrow row scrollfade">        
             <div class="title darkcolor col s12">Education</div>
             <div class="entry col s12">
                 <div class="entryinfo col m4 s12">
@@ -207,7 +202,7 @@
             </div>
         </div>
 
-        <div class="subrow row">
+        <div class="subrow row scrollfade">
             <div class="title darkcolor col s12">Work</div>
             <div class="entry col s12">
                 <div class="entryinfo col m4 s12">
@@ -296,11 +291,11 @@
         <div class="frontportfolio">
            <div class="header-title ultralightcolor">Projects</div>
            <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-               My portfolio starts off with video projects, as I began to get more interest in development my projects became more concentrated on coding.
+               My portfolio varies in project type. Three years ago when I worked for Team6 I was more into video editing, now I'm more in to development.
            </div>
 
            <div class="portfolio col s12">
-               <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m6 s12': item.small, 'l4 m6 s12': !item.small}">
+               <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m6 s12': item.small, 'l4 m6 s12': !item.small, 'scrollfade': true}">
                    <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
                </ng-portfolio>
            </div>
@@ -323,8 +318,6 @@
 <script src="lib/moment/min/moment.min.js"></script>
 <!-- Codepen -->
 <script src="lib/angular-embed-codepen/dist/embed-codepen.min.js"></script>
-<!-- Lightweight Youtube -->
-<script src="lib/angular-lazytube/angular-lazytube.min.js"></script>
 <!-- Google Maps -->
 <script src='/lib/lodash/dist/lodash.min.js'></script>
 <script src='/lib/angular-google-maps/dist/angular-google-maps.min.js'></script>

@@ -1,4 +1,4 @@
-app.service('ColorService', function() {
+app.factory('ColorService', function() {
     function hexToRgb(hex) {
         var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
         return result ? {
@@ -28,41 +28,43 @@ app.service('ColorService', function() {
 
         newRgb += "(" + rgb.r + "," + rgb.g + "," + rgb.b;
         if (rgb.a || a)
-            newRgb += ", " + (rgb.a ? rgb.a : a)
-        newRgb += ")"
-        return newRgb
+            newRgb += ", " + (rgb.a ? rgb.a : a);
+        newRgb += ")";
+        return newRgb;
     }
 
     function darken(rgb, amount, percentage) {
+        var newRgb;
         if (!percentage) {
-            var newRgb = {
+            newRgb = {
                 r: Math.max(rgb.r - amount, 0),
                 g: Math.max(rgb.g - amount, 0),
                 b: Math.max(rgb.b - amount, 0)
             };
         } else {
-            var newRgb = {
+            newRgb = {
                 r: Math.max(Math.floor(rgb.r - (rgb.r * amount)), 0),
                 g: Math.max(Math.floor(rgb.g - (rgb.g * amount)), 0),
                 b: Math.max(Math.floor(rgb.b - (rgb.b * amount)), 0)
-            }
+            };
         }
         return newRgb;
     }
 
     function lighten(rgb, amount, percentage) {
+        var newRgb;
         if (!percentage) {
-            var newRgb = {
+            newRgb = {
                 r: Math.min(rgb.r + amount, 255),
                 g: Math.min(rgb.g + amount, 255),
                 b: Math.min(rgb.b + amount, 255)
             };
         } else {
-            var newRgb = {
+            newRgb = {
                 r: Math.min(Math.floor(rgb.r + (rgb.r * amount)), 255),
                 g: Math.min(Math.floor(rgb.g + (rgb.g * amount)), 255),
                 b: Math.min(Math.floor(rgb.b + (rgb.b * amount)), 255)
-            }
+            };
         }
         return newRgb;
     }
@@ -94,5 +96,5 @@ app.service('ColorService', function() {
         lighten: lighten,
         averageColors: averageColors,
         hexToRgb: hexToRgb
-    }
+    };
 });

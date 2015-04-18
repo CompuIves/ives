@@ -1,5 +1,5 @@
-app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService",
-    function($scope, uiGmapGoogleMapApi, ColorService) {
+app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService", 'ScrollService',
+    function($scope, uiGmapGoogleMapApi, ColorService, ScrollService) {
         var birthdate = moment("1996-12-20 15:59").startOf('minute');
         this.ageyears = moment().diff(birthdate, 'years');
         this.agemonths = moment().subtract(this.ageyears, 'years').diff(birthdate, 'months');
@@ -36,8 +36,6 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
                 mapsResized = true;
             }
         }, true);
-
-        setTimeout(() => $(".loadanim").addClass("visible"), 150);
 
         $(".hoverdarker").hover(function() {
                 $(this).css('background-color', ColorService.rgbToString(ColorService.darken($(this).data('bgcolor'), 30)));

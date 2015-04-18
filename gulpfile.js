@@ -12,14 +12,14 @@ var bower = require('gulp-bower');
 var reload = browserSync.reload;
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass', 'bower', 'html', 'javascript', 'resources'], function() {
+gulp.task('serve', ['sass', 'fonts', 'bower', 'html', 'javascript', 'resources'], function() {
 
     browserSync({
         server: "./app"
     });
 
     gulp.watch("bower_components/**/*.*", ['bower']);
-    gulp.watch("src/scss/*.scss", ['sass']);
+    gulp.watch("src/scss/**/*.scss", ['sass']);
     gulp.watch("src/*.html", ['html']);
     gulp.watch("src/js/**/*.js", ['javascript']);
     gulp.watch("src/res/**/*.*", ['resources']);
@@ -27,7 +27,7 @@ gulp.task('serve', ['sass', 'bower', 'html', 'javascript', 'resources'], functio
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("src/scss/*.scss")
+    return gulp.src("src/scss/**/*.scss")
         .pipe(plumber())
         .pipe(sass())
         .pipe(minifyCSS({
@@ -36,6 +36,14 @@ gulp.task('sass', function() {
         .pipe(autoprefixer({
             browsers: ['> 1%']
         }))
+        .pipe(gulp.dest("./app/css/"))
+        .pipe(reload({
+            stream: true
+        }));
+});
+
+gulp.task('fonts', function() {
+    return gulp.src(["src/scss/**/*.ttf", 'src/scss/**/*.woff', 'src/scss/**/*.woff2'])
         .pipe(gulp.dest("./app/css/"))
         .pipe(reload({
             stream: true
@@ -56,10 +64,10 @@ gulp.task('html', function() {
 
 gulp.task('javascript', function() {
     return gulp.src(["src/js/core.js", "src/js/**/*.js"])
-        .pipe(plumber())
         .pipe(concat('all.min.js'))
+        .pipe(plumber())
         .pipe(babel())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./app/'))
         .pipe(reload({
             stream: true
