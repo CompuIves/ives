@@ -60,7 +60,7 @@ $header-height: 40rem;
         height: $circlessize;
     }
     .logocircle {
-        transition: all 0.3s ease;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
         $size-big: 100px;
         $size-small: 75px;
         border-radius: 50%;

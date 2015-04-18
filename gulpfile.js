@@ -20,7 +20,7 @@ gulp.task('serve', ['sass', 'fonts', 'bower', 'html', 'javascript', 'resources']
 
     gulp.watch("bower_components/**/*.*", ['bower']);
     gulp.watch("src/scss/**/*.scss", ['sass']);
-    gulp.watch("src/*.html", ['html']);
+    gulp.watch("src/**/*.html", ['html']);
     gulp.watch("src/js/**/*.js", ['javascript']);
     gulp.watch("src/res/**/*.*", ['resources']);
 });
@@ -53,7 +53,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('html', function() {
-    return gulp.src("src/*.html")
+    return gulp.src("src/**/*.html")
         .pipe(plumber())
         .pipe(minifyHTML({
             conditionals: true

@@ -1,39 +1,138 @@
 @import 'responsive';
+
+$transition: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$transition-time: 0.8s;
+
 ng-hello {
-    .textcard {
-        transform: translateY(5px);
-        $height: 125px;
-        $width: 500px;
-        z-index: 1;
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.7);
-        left: 0;
-        right: 0;
-        top: -80px;
-        bottom: 0;
-        width: $width;
-        max-height: $height;
-        margin: auto;
-        text-align: center;
-        border-radius: 2px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    $frontheight: 125px;
+    $frontwidth: 500px;
+    $backheight: 225px;
+    $backwidth: 600px;
+    transition: all $transition-time $transition;
+    display: block;
+    margin: auto;
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: $frontwidth;
+    height: $frontheight;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    
+    &.backactive {
+        width: $backwidth;
+        height: $backheight;
 
         @include phone {
             width: initial;
-            max-width: $width;
+            max-width: $backwidth;
+            height: 300px;
         }
+    }
+
+    @include phone {
+        width: initial;
+        max-width: $frontwidth;
+    }
+
+    .fa {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .fronttextcard {
+        backface-visibility: hidden;
+        transition: all $transition-time $transition;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin: auto;
+        text-align: center;
+        border-radius: 2px;
+        //box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+
+        &.active {
+            transition: all $transition-time $transition;
+            transform: rotateX(180deg);
+            //line-height: $backheight;
+        }
+
         .title {
-            line-height: $height;
+            line-height: $frontheight;
             font-size: 64px;
             font-weight: 500;
             @include phone {
                 font-size: 50px;
             }
         }
-        &.visible {
-            transition: 0.3s ease all;
-            opacity: 1;
-            transform: none;
+    }
+
+    .backtextcard {
+        display: block;
+        transition: all $transition-time $transition;
+        backface-visibility: hidden;
+        position: absolute;
+        transform: translateZ(-1px) rotateX(180deg);
+        background-color: rgba(255,255,255,0.7);
+        text-align: center;
+        border-radius: 2px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+
+
+        &.active {
+            transition: all $transition-time $transition;
+            transform: rotateX(0);
+        }
+
+
+        .toptext {
+            font-size: 30px;
+            font-weight: 400;
+            margin-top: 1rem;
+            @include phone {
+                font-size: 30px;
+            }
+        }
+
+        .inputcontainer {
+            font-size: 20px;
+            width: 80%;
+            margin: 20px auto;
+
+            input {
+                border: none;
+                width: 40px;
+                text-align: center;
+            }
+        }
+
+        .button {
+            margin: 0 auto;
+
+            display: block;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+
+            color: white;
+            font-size: 17px;
+            font-weight: 300;
+
+            cursor: pointer;
         }
     }
 }

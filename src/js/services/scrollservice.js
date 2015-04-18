@@ -4,26 +4,22 @@ app.factory('ScrollService', function() {
         $('.scrollfade').each(function() {
             var top = $(this).offset().top;
 
-            if (top + 200 < windowBottom) {
+            if (top + $(this).outerHeight() * 0.4 < windowBottom) {
                 if ($(this).css('opacity') == 0) {
-                    console.log("Fadein");
                     $(this).animate({
                         opacity: 1,
                         top: 0
                     }, {
-                        duration: 300,
-                        queue: false
+                        duration: 300
                     });
                 }
             } else {
                 if ($(this).css('opacity') == 1) {
-                    console.log("Fadeout");
                     $(this).animate({
                         opacity: 0,
                         top: 10
                     }, {
-                        duration: 300,
-                        queue: false
+                        duration: 300
                     });
                 }
             }

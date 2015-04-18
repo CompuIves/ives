@@ -37,22 +37,25 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             }
         }, true);
 
-        $(".hoverdarker").hover(function() {
-                $(this).css('background-color', ColorService.rgbToString(ColorService.darken($(this).data('bgcolor'), 30)));
-            },
-            function() {
-                $(this).css('background-color', ColorService.rgbToString($(this).data('bgcolor'), 30));
-            });
+        setTimeout(() => {
+            $(".hoverdarker").hover(function() {
+                    $(this).css('background-color', ColorService.rgbToString(ColorService.darken($(this).data('bgcolor'), 30)));
+                },
+                function() {
+                    $(this).css('background-color', ColorService.rgbToString($(this).data('bgcolor')));
+                });
+
+        }, 0);
 
         $scope.$watch(function() {
             return $scope.triangleconfig;
-        }, function(newValue) {
+        }, (newValue) => {
             if (newValue) {
-                setColors(newValue);
+                this.setColors(newValue);
             }
         });
 
-        function setColors(options) {
+        this.setColors = function(options) {
             var newRgb1 = ColorService.averageColors(ColorService.hexToRgb(options.x_colors[0]),
                 ColorService.hexToRgb(options.y_colors[Math.floor(options.y_colors.length / 2)]));
             var newRgb2 = ColorService.averageColors(ColorService.hexToRgb(options.x_colors[options.x_colors.length - 1]),
@@ -78,10 +81,10 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             }
             $(".bgcolor").css("background-color", ColorService.rgbToString(contentColor)).data("bgcolor", contentColor);
             $(".darkbgcolor").css("background-color", ColorService.rgbToString(ultimateRgb)).data("bgcolor", ultimateRgb);
-            $(".ultradarkbgcolor").css("background-color", ColorService.rgbToString(secondColor)).data("bgcolor", ultimateRgb);
+            $(".ultradarkbgcolor").css("background-color", ColorService.rgbToString(secondColor)).data("bgcolor", secondColor);
             $(".bgcolor-transparent").css("background-color", ColorService.rgbToString(contentColor, 0.8)).data("bgcolor", contentColor);
             $(".darkbgcolor-transparent").css("background-color", ColorService.rgbToString(ultimateRgb, 0.8)).data("bgcolor", ultimateRgb);
-            $(".ultradarkbgcolor-transparent").css("background-color", ColorService.rgbToString(secondColor, 0.8)).data("bgcolor", ultimateRgb);
+            $(".ultradarkbgcolor-transparent").css("background-color", ColorService.rgbToString(secondColor, 0.8)).data("bgcolor", secondColor);
             $(".ultradarkcolor").css("color", ColorService.rgbToString(secondColor)).data("color", secondColor);
             $(".darkcolor").css("color", ColorService.rgbToString(ultimateRgb)).data("color", ultimateRgb);
             $(".lightcolor").css("color", ColorService.rgbToString(thirdColor)).data("color", thirdColor);
