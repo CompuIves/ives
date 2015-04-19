@@ -707,3 +707,93 @@ $header-height: 40rem;
         border: none;
     }
 }
+
+.form {
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    border-radius: 3px;
+    color: white;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+
+    .formcontents {
+        padding: 3rem 1rem;
+    }
+
+    .descriptionbox {
+        color: black;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    input, textarea {
+        transition: all 0.3s ease;
+        border: none;
+        border-radius: 2px;
+        margin-bottom: 10px;
+
+        &:focus, &:valid {
+            transition: all 0.3s ease;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 200;
+            color: white;
+        }
+    }
+
+    textarea {
+        font-size: 20px;
+    }
+
+    .sendbutton {
+        float: right;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        cursor: pointer;
+    }
+
+    .confirmcontents {
+        transition: all 0.3s ease;
+        color: black;
+        opacity: 0;
+        left: 0;
+        right: 0;
+        top: 20px;
+        position: absolute;
+        pointer-events: none;
+
+    }
+
+    &.confirm {
+        transition: all 0.3s ease;
+
+        .formcontents {
+            transition: all 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .confirmcontents {
+
+            .confirmed {
+                color:rgb(46, 204, 113) ;
+                font-size: 45px;
+                font-weight: 400;
+                margin-bottom: 50px;
+            }
+                transition: all 0.3s ease;
+                opacity: 1;
+        }
+
+
+    }
+}

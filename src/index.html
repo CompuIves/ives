@@ -291,20 +291,46 @@
         <div class="frontportfolio">
            <div class="header-title ultralightcolor">Projects</div>
            <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-               My portfolio varies in project type. Three years ago when I worked for Team6 I was more into video editing, now I'm more in to development.
+               My portfolio varies with project type. Three years ago when I worked for Team6 I was more into video editing, now I'm more in to development.
            </div>
 
            <div class="portfolio col s12">
                <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m6 s12': item.small, 'l4 m6 s12': !item.small, 'scrollfade': true}">
-                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}">
-               </ng-portfolio>
-           </div>
-       </div>
-   </div>
-   <ng-drop options="{{portfolio.drop}}">
-</ng-drop>
+                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}"></ng-portfolio>
+                </div>
+            </div>
+        </div>
+        <ng-drop options="{{portfolio.drop}}"></ng-drop>
+    </div>
 
-</div>
+    <div class="row contentrow bgcolor-transparent" ng-controller="ContactController as contact">
+        <div class="header-title ultradarkcolor">Contact</div>
+        <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+            Thanks for visiting my website! <br> Do you have any questions, offers or do you just want to say hi? You can contact me by sending an email or filling out this form.   
+        </div>
+
+        <div class="col s12 l8 offset-l2 form">
+        <div class="formcontents col s12 m10 offset-m1">
+            <div class="descriptionbox">Name:</div>
+            <input required="" class="darkbgcolor-transparent col s12"></input>
+            <div class="descriptionbox">E-mail:</div>
+            <input style="margin-bottom: 50px" type="email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" class="darkbgcolor-transparent col s12"></input>
+            <div class="descriptionbox">Subject:</div>
+            <input required="" class="darkbgcolor-transparent col s12"></input>
+            <div class="descriptionbox">Message:</div>
+            <textarea required="" style="height: 300px;"  class="darkbgcolor-transparent col s12"></textarea>
+
+            <a class="sendbutton ultradarkbgcolor ultralightcolor hoverdarker" ng-click="contact.sendForm()">Send</a>
+        </div>
+
+        <div class="confirmcontents">
+            <div class="confirmed">The message has been sent</div>
+
+            <div class="text">Thanks for contacting me!</div>
+        </div>
+    
+        </div>
+    </div>
 </div>
 <!-- jQuery (necessary for Materializes JavaScript plugins) -->
 <script src="lib/jquery/dist/jquery.min.js"></script>

@@ -21,7 +21,7 @@ app.directive("ngTrianglify", function() {
             element.append(bg2);
             bg2.fadeOut();
             resize();
-            setBackground(true);
+            setBackground();
 
             var timer;
             scope.$watch('interval', function(newValue) {
@@ -53,31 +53,25 @@ app.directive("ngTrianglify", function() {
 
             var dobg1 = false;
 
-            function setBackground(first) {
+            function setBackground() {
                 var pattern = Trianglify({
                     width: width,
                     height: height,
                     cell_size: 150
                 });
 
-                if (first) scope.options = pattern.opts; //Check if it is the first time this is called, then no apply is needed.
-                else scope.$apply(function() {
-                    scope.options = pattern.opts;
-                });
+                scope.options = pattern.opts; //Check if it is the first time this is called, then no apply is needed.
 
-                if (first)
+                if (dobg1) {
                     pattern.canvas(bg1[0]);
-                else {
-                    if (dobg1) {
-                        pattern.canvas(bg1[0]);
-                        bg2.fadeOut(1000);
-                        dobg1 = false;
-                    } else {
-                        pattern.canvas(bg2[0]);
-                        bg2.fadeIn(1000);
-                        dobg1 = true;
-                    }
+                    bg2.fadeOut(1000);
+                    dobg1 = false;
+                } else {
+                    pattern.canvas(bg2[0]);
+                    bg2.fadeIn(1000);
+                    dobg1 = true;
                 }
+
 
             }
         }

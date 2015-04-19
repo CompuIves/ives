@@ -58,8 +58,8 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
         }, 0);
 
         $scope.resetBG = function() {
-
-            $scope.options = undefined;
+            console.log($scope.triangleconfig);
+            $scope.triangleconfig = null;
         }
 
         $scope.setColors = function(options) {
