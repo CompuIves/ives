@@ -3,23 +3,11 @@ app.directive("ngTrianglify", function() {
         restrict: 'AE',
         scope: {
             options: "=",
-            interval: "@",
-            fullscreen: "@"
+            interval: "@"
         },
         link: function(scope, element, attr, ctrl) {
             var width = 0;
             var height = 0;
-            var bg1 = $("<canvas id='bg1''></canvas>").css({
-                "z-index": 0,
-                "position": "absolute"
-            });
-            var bg2 = $("<canvas id='bg2''></canvas>").css({
-                "z-index": 1,
-                "position": "absolute"
-            });
-            element.append(bg1);
-            element.append(bg2);
-            bg2.fadeOut();
             resize();
             setBackground();
 
@@ -46,12 +34,10 @@ app.directive("ngTrianglify", function() {
             });
 
             function resize() {
-                width = scope.fullscreen ? $(window).width() : element[0].offsetWidth;
-                height = scope.fullscreen ? $(window).height() : element[0].offsetHeight;
+                width = element[0].offsetWidth;
+                height = element[0].offsetHeight;
             }
 
-
-            var dobg1 = false;
 
             function setBackground() {
                 var pattern = Trianglify({
@@ -60,19 +46,8 @@ app.directive("ngTrianglify", function() {
                     cell_size: 150
                 });
 
-                scope.options = pattern.opts; //Check if it is the first time this is called, then no apply is needed.
-
-                if (dobg1) {
-                    pattern.canvas(bg1[0]);
-                    bg2.fadeOut(1000);
-                    dobg1 = false;
-                } else {
-                    pattern.canvas(bg2[0]);
-                    bg2.fadeIn(1000);
-                    dobg1 = true;
-                }
-
-
+                scope.options = pattern.opts;
+                $(element).css('background-image', 'url(' + pattern.png() + ')');
             }
         }
     };

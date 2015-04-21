@@ -148,6 +148,7 @@ $header-height: 40rem;
         }
     }
     .profileimg {
+        transition: opacity 1s ease;
         $picsize-large: $circlessize;
         $picsize-medium: 200px;
         $picsize-small: 130px;
@@ -156,12 +157,19 @@ $header-height: 40rem;
         right: 0;
         margin: 0 auto;
         bottom: 0;
+        opacity: 0;
         top: $circlessize - $picsize-large;
         height: $circlessize;
         width: $circlessize;
         border: 7px solid white;
         border-radius: 50%;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+
+        &.shown {
+            transition: opacity 1s ease;
+            opacity: 1;
+        }
+
         @include tablet {
             top: $circlessize / 2 - $picsize-medium * 0.5;
             height: $picsize-medium;
@@ -256,7 +264,7 @@ $header-height: 40rem;
         .icon {
             width: 3.5rem;
             text-align: center;
-            font-size: $font-size;
+            font-size: $font-size - 3px;
         }
         .action {
             border-radius: 2px;
@@ -273,8 +281,11 @@ $header-height: 40rem;
             font-size: $font-size;
             line-height: $font-size + $margin * 4;
             margin: auto;
+            cursor: pointer;
             @include tablet {
                 width: 4rem;
+                font-size: 20px;
+                line-height: 20px + $margin * 4;;
             }
         }
         .text {
@@ -713,9 +724,9 @@ $header-height: 40rem;
     position: relative;
     display: inline-block;
     border-radius: 3px;
-    color: white;
+    color: black;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     font-size: 32px;
     font-weight: 300;

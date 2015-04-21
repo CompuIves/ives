@@ -45,6 +45,7 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             }, (newValue) => {
                 if (newValue) {
                     $scope.setColors(newValue);
+                    this.changeIvesImage();
                 }
             });
 
@@ -57,8 +58,20 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
 
         }, 0);
 
+        this.ivesimages = [];
+        for (let i = 0; i < 3; i++) {
+            this.ivesimages.push("res/images/ives" + i + ".png");
+        };
+
+        this.changeIvesImage = () => {
+            if (!$scope.$$phase) {
+                $scope.$apply(() => this.currentIves = Math.floor(Math.random() * 3));
+            } else {
+                this.currentIves = Math.floor(Math.random() * 3);
+            }
+        }
+
         $scope.resetBG = function() {
-            console.log($scope.triangleconfig);
             $scope.triangleconfig = null;
         }
 

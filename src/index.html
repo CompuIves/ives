@@ -20,7 +20,7 @@
         <![endif]-->
     </head>
     <body ng-controller="MainController as main">
-    <div ng-trianglify class="background" options="triangleconfig" interval="{{interval}}" fullscreen='true'></div>
+    <div ng-trianglify class="background" options="triangleconfig" interval="{{interval}}"></div>
 
         <div class="header">
         <ng-hello interval="{{interval}}"></ng-hello>
@@ -45,7 +45,10 @@
                         <i class="logo fa fa-youtube-play"></i>
                     </a>
                 </div>
-                <img class="profileimg" src="res/images/ives.png"></img>
+                <div>
+                <img ng-repeat="i in main.ivesimages" class="profileimg" ng-src="{{i}}" ng-class="{'shown': main.currentIves === $index}"></img>
+                </div>
+                
             </div>
         </div>
 
@@ -61,13 +64,13 @@
                         <div class="info">
                             <i class="fa fa-user icon darkcolor"></i>
                             <span class="text">Ives van Hoorne</span>
-                            <i class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
+                            <i ng-click="main.changeIvesImage()" class="fa fa-picture-o action ultralightcolor darkbgcolor hoverdarker"></i>
                         </div>
 
                         <div class="info">
                             <i class="fa fa-envelope icon darkcolor"></i>
-                            <span class="text">Ives.v.h@gmail.com</span>
-                            <a href="mailto:Ives.v.h@gmail.com" target="_top" class="fa fa-paper-plane action ultralightcolor darkbgcolor hoverdarker"></a>
+                            <span class="text">me@ivesvh.com</span>
+                            <a href="mailto:me@ivesvh.com" class="fa fa-paper-plane action ultralightcolor darkbgcolor hoverdarker"></a>
                         </div>
 
                         <div class="info">
@@ -87,7 +90,8 @@
     </ui-gmap-google-map>
     <div class="row contentrow centerrow ultradarkbgcolor-transparent">
         <div class="header-title ultralightcolor scroll">Skills</div>
-        <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">I have worked on projects in many different fields. I'm not limited to web development, I also do video editing and graphic design.
+        <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+        These are the skills I'm familiar with. I'm trying to get better at each skill and learn new ones as fast as possible.
         </div>
 
         <div class="col s12 skill scrollfade" ng-controller="SkillController as skill">
@@ -180,7 +184,7 @@
     <div class="row contentrow bgcolor-transparent">
         <div class="header-title col s12 ultradarkcolor">Experience</div>
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-            Most of my experience is based on personal projects. Normally I find myself dedicated to a specific project and will continue it until it is finished.
+            My experience is mostly based on personal projects, holiday work and work for companies through school. I'm trying to gain as much experience as possible each year. 
         </div>
         <div class="subrow row scrollfade">        
             <div class="title darkcolor col s12">Education</div>
@@ -210,7 +214,7 @@
                         Team6 Game Studios
                     </a>
                     <div class="entryyears">
-                        2012 - 2015
+                        2011 - 2015
                     </div>
                     <div class="entrysub">
                         Graphic Artist
@@ -218,7 +222,7 @@
                 </div>
                 <div class="entrydescription col m8 s12">
                     <span class="flow-text">
-                        I first started working at Team6 in 2012 in the holidays, I began as a game tester and prop placer. After that I became their Graphic Artist for video; I began making their trailers and commercials. 
+                        I first started working at Team6 in 2011 and after that I have worked there several times in the holidays. I started out as game-tester. After some time I became their Graphic Artist for video; I began making their trailers and commercials. Team6 has been a great learning experience for me, I have learned working at a company for an executive with different people.
                     </span>
                     <div class="recommendationtitle ultradarkcolor">Recommendation:</div>
                     <div class="recommendation"><i class="darkcolor fa fa-quote-left"></i>
@@ -291,7 +295,7 @@
         <div class="frontportfolio">
            <div class="header-title ultralightcolor">Projects</div>
            <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-               My portfolio varies with project type. Three years ago when I worked for Team6 I was more into video editing, now I'm more in to development.
+               My most recent work is in development, I have done web development and game development (which I both love to do). My older work is in video editing, which I did much for Team6.
            </div>
 
            <div class="portfolio col s12">
@@ -312,13 +316,13 @@
         <div class="col s12 l8 offset-l2 form">
         <div class="formcontents col s12 m10 offset-m1">
             <div class="descriptionbox">Name:</div>
-            <input required="" class="darkbgcolor-transparent col s12"></input>
+            <input required="" class="bgcolor col s12"></input>
             <div class="descriptionbox">E-mail:</div>
-            <input style="margin-bottom: 50px" type="email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" class="darkbgcolor-transparent col s12"></input>
+            <input style="margin-bottom: 50px" type="email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" class="bgcolor col s12"></input>
             <div class="descriptionbox">Subject:</div>
-            <input required="" class="darkbgcolor-transparent col s12"></input>
+            <input required="" class="bgcolor col s12"></input>
             <div class="descriptionbox">Message:</div>
-            <textarea required="" style="height: 300px;"  class="darkbgcolor-transparent col s12"></textarea>
+            <textarea required="" style="height: 300px;"  class="bgcolor col s12"></textarea>
 
             <a class="sendbutton ultradarkbgcolor ultralightcolor hoverdarker" ng-click="contact.sendForm()">Send</a>
         </div>
