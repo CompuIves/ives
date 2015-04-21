@@ -255,12 +255,15 @@
                 <div ng-show="portfolio.item.banner.kind == 'images'" class="images">
                     <div class="col s12 m4">
                         <img class="col s12" ng-src="{{portfolio.item.banner.image1}}">
+                        <div>{{portfolio.item.banner.image1desc}}</div>
                     </div>
                     <div class="col s12 m4">
                         <img class="col s12" ng-src="{{portfolio.item.banner.image2}}">
+                        <div>{{portfolio.item.banner.image2desc}}</div>
                     </div>
                     <div class="col s12 m4">
                         <img class="col s12" ng-src="{{portfolio.item.banner.image3}}">
+                        <div>{{portfolio.item.banner.image3desc}}</div>
                     </div>
                 </div>
 
@@ -314,26 +317,29 @@
         </div>
 
         <div class="col s12 l8 offset-l2 form">
-        <div class="formcontents col s12 m10 offset-m1">
-            <div class="descriptionbox">Name:</div>
-            <input required="" class="bgcolor col s12"></input>
-            <div class="descriptionbox">E-mail:</div>
-            <input style="margin-bottom: 50px" type="email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" class="bgcolor col s12"></input>
-            <div class="descriptionbox">Subject:</div>
-            <input required="" class="bgcolor col s12"></input>
-            <div class="descriptionbox">Message:</div>
-            <textarea required="" style="height: 300px;"  class="bgcolor col s12"></textarea>
+            <form name="contactForm" class="formcontents col s12 m10 offset-m1">
+                <div class="descriptionbox">Name:</div>
+                <input name='name' type="text" id="formname" ng-model="contact.data.name" class="bgcolor col s12" required></input>
+                <div class="descriptionbox">E-mail:</div>
+                <input name='email' id="formemail" ng-model="contact.data.email" style="margin-bottom: 50px" type="email" class="bgcolor col s12" required></input>
+                <div class="descriptionbox">Subject:</div>
+                <input name='subject' type="text" id="formsubject" ng-model="contact.data.subject" class="bgcolor col s12" required></input>
+                <div class="descriptionbox">Message:</div>
+                <textarea name='message' type="text" id="formmessage" ng-model="contact.data.message" style="height: 300px;" class="bgcolor col s12" required></textarea>
 
-            <a class="sendbutton ultradarkbgcolor ultralightcolor hoverdarker" ng-click="contact.sendForm()">Send</a>
-        </div>
+                <a class="sendbutton ultradarkbgcolor ultralightcolor hoverdarker" ng-click="contact.sendForm()">Send</a>
+            </form>
 
-        <div class="confirmcontents">
-            <div class="confirmed">The message has been sent</div>
+            <div class="confirmcontents">
+                <div class="confirmed">The message has been sent</div>
 
-            <div class="text">Thanks for contacting me!</div>
+                <div class="text">Thanks for contacting me!</div>
+            </div>
         </div>
-    
-        </div>
+    </div>
+    <div class="row contentrow ultradarkbgcolor-transparent quote">
+    <span class="col offset-s2 s8 ultralightcolor">Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</span>
+    <span class="lightcolor col s12 author"> – Steve Jobs, June 12, 2005.</span>
     </div>
 </div>
 <!-- jQuery (necessary for Materializes JavaScript plugins) -->

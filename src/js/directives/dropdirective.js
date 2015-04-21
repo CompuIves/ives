@@ -32,7 +32,7 @@ app.directive("ngDrop", function() {
                 height = $(element).parent().height() + 1000;
                 offsetX = $(element).parent().offset().left;
                 offsetY = $(element).parent().offset().top;
-                r = Math.sqrt(width * width + height * height);
+                r = Math.sqrt(width * width + height * height) * 2;
             }
 
             function addCircle(options) {

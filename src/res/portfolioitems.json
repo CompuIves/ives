@@ -37,9 +37,12 @@
     },
     "banner": {
         "kind": "images",
-        "image1": "res/images/solarboard/solarboard.png",
-        "image2": "res/images/solarboard/solarboard.png",
-        "image3": "res/images/solarboard/solarboard.png"
+        "image1": "res/images/solarboard/solarboard1.png",
+        "image1desc": "Dashboard itself",
+        "image2": "res/images/solarboard/solarboard2.png",
+        "image2desc": "View for days/months or years",
+        "image3": "res/images/solarboard/solarboard3.png",
+        "image3desc": "View for individual solar panels"
     },
     "shortdescription": "An app for showing and analyzing solar power winnings.",
     "description": "Techniko is an installation company specialized in green power. They currently own more than 200 solar panels, but didn't have a way to see how much power they're generating. They wanted a simple way to see how much their solar panels were generating with the ability to compare the data.<br> I chose to make a website using the MEAN (MongoDB, Express, AngularJS, Node) stack. The website utilizes custom directives, filters and services. The backend has a RESTful API to communicate with the website. The data is gathered by kWh-meters and sent with an Arduino to a server which stores it in the database.",
@@ -71,8 +74,18 @@
     "front": {
         "title": "Relative"
     },
-    "description": "Relative has been my most complicated and biggest hobby project thus far. It is a 2d sidescrolling RPG game with as much as possible procedural generation and mod support. Multiplayer is implemented too with a special authority system designed by myself. Mod support works great together with multiplayer, since the server will send the mods it has installed to the client connecting. I really love doing procedural generation, the moment when you surprise yourself with generated content is incredible.",
+    "banner": {
+        "kind": "images",
+        "image1": "res/images/relative/relative1.png",
+        "image1desc": "Concept art for base game.",
+        "image2": "res/images/relative/relative2.png",
+        "image2desc": "Distributed Authority System explained",
+        "image3": "res/images/relative/relative3.png",
+        "image3desc": "Rotating planet with player on it (debug view)"
+    },
+    "description": "Relative has been my most complicated and biggest project thus far. It is a 2d sidescrolling RPG game with as much as possible procedural generation and mod support. Multiplayer is implemented too with a special authority system designed by myself. Mod support works great together with multiplayer, since the server will send the mods it has installed to the client connecting. I really love doing procedural generation, the moment when you surprise yourself with generated content is incredible.",
     "features": [
+        "Entity Component System (ECS)",
         "Procedurally generated universe",
         "Unique Distributed Authority System for multiplayer",
         "Mod Support both on server and client"
@@ -115,6 +128,59 @@
     },
     "color": "rgb(44, 62, 80)",
     "small": true
+}, {
+    "name": "Counter",
+    "shortdescription": "A turn based math game for Android.",
+    "front": {
+        "image": "res/images/counter/cover.png"
+    },
+    "banner": {
+        "kind": "images",
+        "image1": "res/images/counter/counter1.png",
+        "image1desc": "Main menu",
+        "image2": "res/images/counter/counter2.png",
+        "image2desc": "Invite screen",
+        "image3": "res/images/counter/counter3.png",
+        "image3desc": "Game screen"
+    },
+    "description": "A mobile turn-based (Ruzzle-like) math game. This is the first game I made. Although it is not finished, it was almost finished. It has everything implemented except a statistic screen. A unique feature is the ability to challenge more than one players at once. This means you can play against a group of friends. <br> Like my other games this is also built on LibGDX and it uses AppEngine from Google for storing data.",
+    "features": [
+        "Turn based multiplayer",
+        "Multiple player invite system",
+        "Push notifications"
+    ],
+    "tools": [
+        "Java",
+        "LibGDX",
+        "AppEngine"
+    ],
+    "progress": "Not finished",
+    "calendar": "2013",
+    "tasks": "Java",
+    "color": "rgb(106, 147, 175)"
+}, {
+    "name": "Monster Jam Commercial",
+    "front": {
+        "title": "Monster Jam"
+    },
+    "banner": {
+        "kind": "youtube",
+        "youtube_id": "Q4TY92_MK3E"
+    },
+    "shortdescription": "A commercial video for a Monster Jam game by Team6.",
+    "description": "A commercial for one of the latest games of Team6 in collaboration with Monster Jam. The final video has been broadcasted over the USA as commercial on TV.",
+    "tools": [
+        "Adobe After Effects",
+        "Adobe Premiere Pro"
+    ],
+    "progress": "Finished!",
+    "calendar": "Dec 2013",
+    "tasks": "Video",
+    "link": {
+        "title": "Youtube",
+        "url": "https://www.youtube.com/watch?v=Q4TY92_MK3E&index=10&list=PL14AB56050692684A"
+    },
+    "color": "rgb(211, 84, 0)"
 }, {
     "name": "Team6 Logo Intro",
     "front": {

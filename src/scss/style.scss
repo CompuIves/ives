@@ -646,6 +646,10 @@ $header-height: 40rem;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             border-radius: 2px;
         }
+
+        div {
+            text-align: center;
+        }
     }
 
     .website {
@@ -734,6 +738,13 @@ $header-height: 40rem;
 
     .formcontents {
         padding: 3rem 1rem;
+        &.ng-invalid {
+            .sendbutton {
+                background-color: grey !important;
+                cursor: default;
+                pointer-events: none;
+            }
+        }
     }
 
     .descriptionbox {
@@ -768,7 +779,6 @@ $header-height: 40rem;
         padding-right: 2rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-
         cursor: pointer;
     }
 
@@ -806,5 +816,17 @@ $header-height: 40rem;
         }
 
 
+    }
+}
+
+.quote {
+    span {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 200;
+
+        &.author {
+            font-weight: 400;
+        }
     }
 }
