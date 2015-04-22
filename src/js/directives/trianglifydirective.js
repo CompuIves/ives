@@ -8,7 +8,7 @@ app.directive("ngTrianglify", function() {
         link: function(scope, element, attr, ctrl) {
             var width = 0;
             var height = 0;
-            //
+
             var bg1 = $("<canvas id='bg1''></canvas>").css({
                 "z-index": 0,
                 "position": "absolute"
@@ -21,8 +21,6 @@ app.directive("ngTrianglify", function() {
             element.append(bg2);
             bg2.fadeOut();
 
-            //
-
             resize();
             setBackground();
 
@@ -33,7 +31,10 @@ app.directive("ngTrianglify", function() {
                     timer = setInterval(() => {
                         scope.options = null;
                         setBackground();
-                    }, scope.interval * 1000);
+                    }, Math.max(1000, scope.interval * 1000));
+                } else if (newValue == 0) {
+                    if (timer)
+                        clearInterval(timer);
                 }
             }, true);
 
