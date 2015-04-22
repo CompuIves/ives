@@ -6,26 +6,28 @@ app.controller("ContactController", ['$scope', '$http',
         this.sendForm = function() {
             $http.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
             if ($scope.contactForm.$valid) {
-                console.log(vm.data);
-                console.log("Lawl");
+                $('.form').toggleClass('confirm');
+
+                $('.form').stop().animate({
+                    height: 225
+                }, 500);
                 $http({
                     method: 'POST',
-                    url: 'res/php/mail.php',
+                    url: '/mail',
                     data: $.param(vm.data), //param method from jQuery
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded'
                     } //set the headers so angular passing info as form data (not request payload)
-                }).success(function(data) {
-                    console.log(data);
-                    if (data.success) { //success comes from the return json object
-                        $('.form').toggleClass('confirm');
-
-                        $('.form').animate({
-                            height: 225
-                        }, 500);
+                }).success(function(data, status) {
+                    $('.loading').addClass('hide');
+                    if (status == 200) {
+                        $('.done').addClass('show');
                     } else {
-                        console.log(data);
+                        $('.failed').addClass('show');
                     }
+                }).error(function(data, status) {
+                    $('.loading').addClass('hide');
+                    $('.failed').addClass('show');
                 });
 
             }

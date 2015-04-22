@@ -12,7 +12,7 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
             setTimeout(function() {
                 $('.backportfolio').css('z-index', 5);
                 $('.frontportfolio').addClass('invisible');
-                $('.portfoliorow').animate({
+                $('.portfoliorow').stop().animate({
                     'height': $('.backcontainer').height() + 100
                 }, 300);
                 $(".backportfolio").addClass('visible');
@@ -21,6 +21,12 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
 
                 var color = ColorService.stringToRGB(item.color);
                 $(".portfoliolightcolor").css('color', ColorService.rgbToString(ColorService.lighten(color, 80)));
+
+                if ($(window).scrollTop() > $('.portfoliorow').offset().top) {
+                    $("html, body").stop().animate({
+                        scrollTop: $('.portfoliorow').offset().top
+                    }, 200);
+                }
             }, 250);
 
             $scope.$apply(() => {
@@ -40,7 +46,7 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
         this.reset = function() {
             vm.drop = undefined;
             $('.frontportfolio').removeClass('invisible');
-            $('.portfoliorow').animate({
+            $('.portfoliorow').stop().animate({
                 'height': $('.frontportfolio').height() + 100
             }, 800);
             $(".backportfolio").removeClass('visible');

@@ -5,10 +5,6 @@
         "backgroundimage": true,
         "title": "This"
     },
-    "banner": {
-        "kind": "iframe",
-        "url": "http://localhost:3000"
-    },
     "shortdescription": "My portfolio website, you're browsing it now!",
     "description": "My portfolio website is designed to highlight important information so potential employers can have a quick glance before reading further. It features a dynamic color palette and some small features like this portfolio.",
     "features": [
@@ -64,7 +60,7 @@
     "tasks": "Full stack",
     "link": {
         "title": "Demo",
-        "url": "#"
+        "url": "http://techniko.ivesvh.com"
     },
     "color": "rgb(244, 121, 51)",
     "bgcolor": "rgb(207, 103, 43)"

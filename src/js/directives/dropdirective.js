@@ -21,7 +21,7 @@ app.directive("ngDrop", function() {
                 if (newValue) {
                     addCircle(JSON.parse(scope.options));
                 } else {
-                    circle.animate({
+                    circle.stop().animate({
                         'opacity': 0
                     }, 300);
                 }
@@ -29,10 +29,10 @@ app.directive("ngDrop", function() {
 
             function setSize() {
                 width = $(element).parent().width();
-                height = $(element).parent().height() + 1000;
+                height = $(element).parent().height() + 1500;
                 offsetX = $(element).parent().offset().left;
                 offsetY = $(element).parent().offset().top;
-                r = Math.sqrt(width * width + height * height) * 2;
+                r = Math.sqrt(width * width + height * height);
             }
 
             function addCircle(options) {
@@ -53,7 +53,7 @@ app.directive("ngDrop", function() {
                     'pointer-events': 'none'
                 });
 
-                circle.animate({
+                circle.stop().animate({
                     width: (r * 2),
                     height: (r * 2),
                     'margin-left': -r,

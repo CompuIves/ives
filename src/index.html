@@ -244,11 +244,12 @@
     <div class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
         <div class="backportfolio">
             <div style="color: white;" class="backcontainer">
-                <div class="col s12">
+                <div style="position: relative;" class="col s12">
                     <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>
                     <div class="header-title portfolioitemtitle">
                         {{portfolio.item.name}}
                     </div>
+                    <div class="portfoliolightcolor header-progress">Status: {{portfolio.item.progress | lowercase}}</div>
                     <a ng-show="portfolio.item.link.title" class="portfoliosubtitle portfoliolightcolor" ng-href="{{portfolio.item.link.url}}" target="_blank">{{portfolio.item.link.title}}</a>
                 </div>
 
@@ -267,12 +268,12 @@
                     </div>
                 </div>
 
-                <iframe class="col s12 website" ng-if="portfolio.item.banner.kind == 'iframe'" ng-src="{{portfolio.item.banner.url}}"></iframe>
+                <iframe class="col s12 website" ng-show="portfolio.item.banner.kind == 'iframe'" ng-src="{{portfolio.item.banner.url}}"></iframe>
 
                 <p ng-if="portfolio.item.banner.kind == 'codepen'" data-height="300" data-theme-id="0" data-slug-hash="{{portfolio.item.banner.codepen_id}}" data-default-tab="result" class='col s12 codepen' data-user="CompuIves">
                 </p>
 
-                <iframe ng-if="portfolio.item.banner.kind == 'youtube'" style="width: 550px; display: block; margin: 0 auto; padding-top: 15px;" width="100%" height="360" src="{{'https://www.youtube.com/embed/' + portfolio.item.banner.youtube_id}}" frameborder="0" allowfullscreen></iframe>
+                <iframe ng-if="portfolio.item.banner.kind == 'youtube'" style="max-width: 550px; display: block; margin: 0 auto; padding-top: 15px;" width="100%" height="360" ng-src="{{'https://www.youtube.com/embed/' + portfolio.item.banner.youtube_id}}" frameborder="0" allowfullscreen></iframe>
 
                 <div class="col s12 m7">
                     <div class="categoryinfo portfoliolightcolor">Description:</div>
@@ -331,15 +332,65 @@
             </form>
 
             <div class="confirmcontents">
-                <div class="confirmed">The message has been sent</div>
-
-                <div class="text">Thanks for contacting me!</div>
+                <div class="loading">
+                <div class="loadinganim">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-blue">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div><div class="gap-patch">
+                            <div class="circle"></div>
+                          </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+                
+                        <div class="spinner-layer spinner-red">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div><div class="gap-patch">
+                            <div class="circle"></div>
+                          </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+                
+                        <div class="spinner-layer spinner-yellow">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div><div class="gap-patch">
+                            <div class="circle"></div>
+                          </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+                
+                        <div class="spinner-layer spinner-green">
+                          <div class="circle-clipper left">
+                            <div class="circle"></div>
+                          </div><div class="gap-patch">
+                            <div class="circle"></div>
+                          </div><div class="circle-clipper right">
+                            <div class="circle"></div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                <div class="done">
+                    <div class="confirmed">The message has been sent</div>
+                    <div class="text">Thanks for contacting me!</div>
+                </div>
+                <div class="failed">                    
+                    <div class="confirmed">The message has not been sent</div>
+                    <div class="text">Please try again later or try sending a mail directly (me@ivesvh.com)</div>
+                </div>
             </div>
         </div>
     </div>
     <div class="row contentrow ultradarkbgcolor-transparent quote">
-    <span class="col offset-s2 s8 ultralightcolor">Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</span>
-    <span class="lightcolor col s12 author"> – Steve Jobs, June 12, 2005.</span>
+        <span class="col offset-m2 m8 s12 ultralightcolor">Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</span>
+        <span class="lightcolor col s12 author">– Steve Jobs, June 12, 2005.</span>
     </div>
 </div>
 <!-- jQuery (necessary for Materializes JavaScript plugins) -->

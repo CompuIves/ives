@@ -4,7 +4,7 @@ app.factory('ScrollService', function() {
         $('.scrollfade').each(function() {
             var top = $(this).offset().top;
 
-            if (top + $(this).outerHeight() * 0.5 < windowBottom) {
+            if (top + $(this).outerHeight() * 0.3 < windowBottom) {
                 if ($(this).css('opacity') == 0) {
                     $(this).animate({
                         opacity: 1,

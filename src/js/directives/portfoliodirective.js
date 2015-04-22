@@ -41,7 +41,7 @@ app.directive("ngPortfolio", function() {
                 }
 
                 if (item.front.title) {
-                    fronttitle = $("<span class='fronttitle'>" + item.front.title + "</span>");
+                    fronttitle = $("<div class='fronttitle'>" + item.front.title + "</div>");
                     container.append(fronttitle);
                 }
 

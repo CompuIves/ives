@@ -2,7 +2,6 @@
 @import 'responsive';
 @import 'hellocard';
 
-
 body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing:antialiased;
@@ -285,7 +284,12 @@ $header-height: 40rem;
             @include tablet {
                 width: 4rem;
                 font-size: 20px;
-                line-height: 20px + $margin * 4;;
+                line-height: 20px + $margin * 4;
+            }
+
+            @include phone {
+                font-size: 18px;
+                line-height: 18px + $margin  * 4;
             }
         }
         .text {
@@ -320,6 +324,9 @@ $header-height: 40rem;
         text-align: left;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-width: 80%;
+        @include phone {
+            text-align: center;
+        }
 
         .description {
             border: none;
@@ -331,7 +338,6 @@ $header-height: 40rem;
 
             @include phone {
                 text-align: center;
-
             }
         }
         
@@ -342,6 +348,12 @@ $header-height: 40rem;
             transition: background-color 0.3s ease;
             font-size: 26px;
             font-weight: 300;
+
+
+            @include phone {
+                padding-left: 0.75rem;
+                text-align: center;
+            }
                         /*
             cursor: pointer;
         
@@ -606,11 +618,10 @@ $header-height: 40rem;
 
     .fa {
         font-size: 50px;
-        margin-right: 0.5rem;
         &.fa-times-circle {
             position: absolute;
             transition: all 0.3s ease;
-            top: 60px;
+            top: 10px;
             font-size: 60px;
             line-height: 60px;
             padding: 5px;
@@ -623,10 +634,17 @@ $header-height: 40rem;
             @include phone {
                 font-size: 45px;
                 line-height: 45px;
-                top: 45px;
+                top: 5px;
                 left: 5px;;
             }
         }
+    }
+
+    .header-progress {
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 10px;
+        margin-top: -10px;
     }
     
 
@@ -789,8 +807,60 @@ $header-height: 40rem;
         left: 0;
         right: 0;
         top: 20px;
+        bottom: 0;
         position: absolute;
         pointer-events: none;
+        
+        .done {
+            transition: all 0.3s ease;
+            opacity: 0;
+
+            &.show {
+                opacity: 1;
+            }
+
+            .confirmed {
+                position: absolute; 
+                top: 0px;
+                left: 0;
+                right: 0;
+                color:rgb(46, 204, 113);
+                font-size: 45px;
+                font-weight: 400;
+            }
+            .text {
+                left: 0;
+                right: 0;
+                position: absolute;
+                font-size: 30px;
+                bottom: 10px;
+            }
+        }
+
+        .failed {
+            @extend .done;
+            .confirmed {
+                color:#c0392b;
+            }
+        }
+
+        
+        .loading {
+            transition: all 0.3s ease;
+            transition-delay: 0.2s;
+            color: #2c3e50;
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+
+            &.hide {
+                opacity: 0;
+            }
+        }
 
     }
 
@@ -804,18 +874,9 @@ $header-height: 40rem;
         }
         
         .confirmcontents {
-
-            .confirmed {
-                color:rgb(46, 204, 113) ;
-                font-size: 45px;
-                font-weight: 400;
-                margin-bottom: 50px;
-            }
-                transition: all 0.3s ease;
-                opacity: 1;
+            transition: all 0.3s ease;
+            opacity: 1;
         }
-
-
     }
 }
 
@@ -824,6 +885,10 @@ $header-height: 40rem;
         text-align: center;
         font-size: 20px;
         font-weight: 200;
+
+        @include phone {
+            font-size: 18px;
+        }
 
         &.author {
             font-weight: 400;

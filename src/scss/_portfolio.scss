@@ -43,6 +43,10 @@ ng-portfolio {
         text-align: center;
         line-height: 200px;
 
+        @include phone {
+            font-size: 40px;
+        }
+
         &.hover {
             transition: transform 0.3s ease;
             transform: scale(1.1, 1.1);
