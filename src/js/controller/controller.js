@@ -8,7 +8,7 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             this.ageseconds++
         ), 1000);
 
-        $scope.interval = 60;
+
         //When maps are loaded
         uiGmapGoogleMapApi.then(function(maps) {
             $scope.map = {
@@ -39,6 +39,26 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             }
         }, true);
 
+        this.ivesimages = [];
+        for (let i = 0; i < 3; i++) {
+            this.ivesimages.push("res/images/ives" + i + ".png");
+        };
+
+        this.changeIvesImage = () => {
+            if (!$scope.$$phase) {
+                $scope.$apply(() => this.currentIves = Math.floor(Math.random() * 3));
+            } else {
+                this.currentIves = Math.floor(Math.random() * 3);
+            }
+        }
+
+
+        if ($(window).outerHeight() < 600) {
+            ScrollService();
+        }
+
+
+        $scope.interval = 60;
         setTimeout(() => {
             $scope.$watch(function() {
                 return $scope.triangleconfig;
@@ -57,19 +77,6 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
                 });
 
         }, 0);
-
-        this.ivesimages = [];
-        for (let i = 0; i < 3; i++) {
-            this.ivesimages.push("res/images/ives" + i + ".png");
-        };
-
-        this.changeIvesImage = () => {
-            if (!$scope.$$phase) {
-                $scope.$apply(() => this.currentIves = Math.floor(Math.random() * 3));
-            } else {
-                this.currentIves = Math.floor(Math.random() * 3);
-            }
-        }
 
         $scope.resetBG = function() {
             $scope.triangleconfig = null;

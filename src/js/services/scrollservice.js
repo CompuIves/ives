@@ -1,20 +1,29 @@
 app.factory('ScrollService', function() {
-    function scroll() {
-        var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-        $('.scrollfade').each(function() {
-            var top = $(this).offset().top;
+    var disabled = false;
 
-            if (top + $(this).outerHeight() * 0.3 < windowBottom) {
-                if ($(this).css('opacity') == 0) {
-                    $(this).animate({
-                        opacity: 1,
-                        top: 0
-                    }, {
-                        duration: 300
-                    });
+    function disable() {
+        $('.scrollfade').css('opacity', 1);
+        disabled = true;
+    }
+
+    function scroll() {
+        if (!disabled) {
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+            $('.scrollfade').each(function() {
+                var top = $(this).offset().top;
+
+                if (top + $(this).outerHeight() * 0.3 < windowBottom) {
+                    if ($(this).css('opacity') == 0) {
+                        $(this).animate({
+                            opacity: 1,
+                            top: 0
+                        }, {
+                            duration: 300
+                        });
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 
     function reset() {
@@ -24,11 +33,13 @@ app.factory('ScrollService', function() {
     }
 
     setTimeout(() => {
-        reset();
-        scroll()
+        if (!disabled) {
+            reset();
+            scroll();
+        }
     }, 0);
 
     $(window).scroll(() => scroll());
 
-    return scroll;
+    return disable;
 });

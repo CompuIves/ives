@@ -139,7 +139,7 @@
         "image3": "res/images/counter/counter3.png",
         "image3desc": "Game screen"
     },
-    "description": "A mobile turn-based (Ruzzle-like) math game. This is the first game I made. Although it is not finished, it was almost finished. It has everything implemented except a statistic screen. A unique feature is the ability to challenge more than one players at once. This means you can play against a group of friends. <br> Like my other games this is also built on LibGDX and it uses AppEngine from Google for storing data.",
+    "description": "A mobile turn-based (Ruzzle-like) math game. This is the first game I made. Although it is not finished, it was almost finished. It has everything implemented except a statistic screen. A unique feature is the ability to challenge multiple players at once. This means you can play against a group of friends. <br> Like my other games this is also built on LibGDX and it uses AppEngine from Google for storing data.",
     "features": [
         "Turn based multiplayer",
         "Multiple player invite system",
