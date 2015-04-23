@@ -65,7 +65,7 @@
         </div>
 
         <div class="main">
-            <div class="row firstrow contentrow bgcolor-transparent">
+            <div id="information" analytics-on="scrollby" class="row firstrow contentrow bgcolor-transparent">
                 <div class="col s12 m5 l7">
                     <div class="title darkcolor">Who am I?</div>
                     <p class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.ageyears}} years, {{main.agemonths}} months and {{main.ageseconds}} seconds</strong> old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and its capabilities.</p>
@@ -100,7 +100,7 @@
             coords='{latitude: 53, longitude: 6.56}'>
         </ui-gmap-marker>
     </ui-gmap-google-map>
-    <div class="row contentrow centerrow ultradarkbgcolor-transparent">
+    <div id="skills" analytics-on="scrollby" class="row contentrow centerrow ultradarkbgcolor-transparent">
         <div class="header-title ultralightcolor scroll">Skills</div>
         <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
         These are the skills I'm familiar with. I'm trying to get better at each skill and learn new ones as fast as possible.
@@ -193,7 +193,7 @@
         </div>
     </div>
 
-    <div class="row contentrow bgcolor-transparent">
+    <div id="experience" analytics-on="scrollby" class="row contentrow bgcolor-transparent">
         <div class="header-title col s12 ultradarkcolor">Experience</div>
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
             My experience is mostly based on personal projects, holiday work and work for companies through school. I'm trying to gain as much experience as possible each year. 
@@ -253,7 +253,7 @@
         </div>
     </div>
 
-    <div class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
+    <div id="portfolio" analytics-on="scrollby" class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
         <div class="backportfolio">
             <div style="color: white;" class="backcontainer">
                 <div style="position: relative;" class="col s12">
@@ -323,7 +323,7 @@
         <ng-drop options="{{portfolio.drop}}"></ng-drop>
     </div>
 
-    <div class="row contentrow bgcolor-transparent" ng-controller="ContactController as contact">
+    <div id="contact" analytics-on="scrollby" class="row contentrow bgcolor-transparent" ng-controller="ContactController as contact">
         <div class="header-title ultradarkcolor">Contact</div>
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
             Thanks for visiting my website! <br> Do you have any questions, offers or do you just want to say hi? You can contact me by sending an email or filling out this form.   
@@ -425,6 +425,7 @@
 <!-- Analytics -->
 <script src="/lib/angulartics/dist/angulartics.min.js"></script>
 <script src="/lib/angulartics/dist/angulartics-ga.min.js"></script>
+<script src="/lib/angulartics/dist/angulartics-scroll.js"></script>
 <!-- Own scripts -->
 <script src="all.min.js"></script>
 </body>

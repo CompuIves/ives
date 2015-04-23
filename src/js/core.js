@@ -1,4 +1,4 @@
-var app = angular.module("ives", ['uiGmapgoogle-maps', 'ngSanitize', 'embedCodepen', 'angulartics', 'angulartics.google.analytics']);
+var app = angular.module("ives", ['uiGmapgoogle-maps', 'ngSanitize', 'embedCodepen', 'angulartics', 'angulartics.google.analytics', 'angulartics.scroll']);
 
 app.config(['uiGmapGoogleMapApiProvider',
     function(uiGmapGoogleMapApiProvider) {
