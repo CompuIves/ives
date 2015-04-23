@@ -20,3 +20,10 @@ app.config(['$sceDelegateProvider',
         ]);
     }
 ]);
+
+app.config(['$analyticsProvider',
+    function($analyticsProvider) {
+        $analyticsProvider.firstPageview(true); /* Records pages that don't use $state or $route */
+        $analyticsProvider.withAutoBase(true); /* Records full path */
+    }
+]);
