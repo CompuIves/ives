@@ -41,7 +41,7 @@
         "image3desc": "View for individual solar panels"
     },
     "shortdescription": "An app for showing and analyzing solar power winnings.",
-    "description": "Techniko is an installation company specialized in green power. They currently own more than 200 solar panels, but didn't have a way to see how much power they're generating. They wanted a simple way to see how much their solar panels were generating with the ability to compare the data.<br> I chose to make a website using the MEAN (MongoDB, Express, AngularJS, Node) stack. The website utilizes custom directives, filters and services. The backend has a RESTful API to communicate with the website. The data is gathered by kWh-meters and sent with an Arduino to a server which stores it in the database.",
+    "description": "Techniko is an installation company specialized in green power. They currently own more than 200 solar panels, but didn't have a way to see how much power they're generating. They wanted a simple way to see how much their solar panels were generating with the ability to compare the data.<br> I chose to make a website using the MEAN (MongoDB, Express, AngularJS, Node) stack. The website utilizes custom directives, filters and services. The backend has a RESTful API to communicate with the website. The data is gathered by kWh-meters and sent with an Arduino to a server which stores it in the database. <br> The demo above is based on generated data.",
     "features": [
         "Solar Yield Summary",
         "Datepicker for year, month and day summary",
