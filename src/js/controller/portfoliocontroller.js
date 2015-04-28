@@ -10,26 +10,21 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
         this.drop = undefined;
         this.transformfunction = function(item, pos) {
             setTimeout(function() {
-                $('.backportfolio').css('z-index', 5);
-                $('.frontportfolio').addClass('invisible');
+                var color = ColorService.stringToRGB(item.color);
                 $('.portfoliorow').stop().animate({
                     'height': $('.backcontainer').height() + 100
-                }, 300);
-                $(".backportfolio").addClass('visible');
-                $('.backportfolio').css('visibility', 'visible');
+                }, 500);
 
-
-                var color = ColorService.stringToRGB(item.color);
                 $(".portfoliolightcolor").css('color', ColorService.rgbToString(ColorService.lighten(color, 80)));
-
                 if ($(window).scrollTop() > $('.portfoliorow').offset().top) {
                     $("html, body").stop().animate({
                         scrollTop: $('.portfoliorow').offset().top
                     }, 200);
                 }
-            }, 250);
+            }, 300);
 
             $scope.$apply(() => {
+                vm.item = item;
                 vm.drop = {
                     color: item.bgcolor ? item.bgcolor : item.color,
                     pos: {
@@ -37,22 +32,29 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
                         y: pos.y
                     }
                 };
-                if (!vm.item || item.name !== vm.item.name)
-                    vm.item = item;
             });
-
         };
+
+        //For when images are loaded and height of portfoliorow has already changed to size 
+        // if image wasn't loaded.
+        $('.images img').load(function() {
+            $('.portfoliorow').stop().animate({
+                'height': $('.backcontainer').height() + 100
+            }, 500);
+        });
 
         this.reset = function() {
             vm.drop = undefined;
+            vm.item = undefined;
+
             $('.frontportfolio').removeClass('invisible');
-            $('.portfoliorow').stop().animate({
-                'height': $('.frontportfolio').height() + 100
-            }, 800);
+
             $(".backportfolio").removeClass('visible');
 
             setTimeout(() => {
-                $('.backportfolio').css('visibility', 'hidden');
+                $('.portfoliorow').stop().animate({
+                    'height': $('.frontportfolio').height() + 100
+                }, 800);
             }, 300);
         };
     }

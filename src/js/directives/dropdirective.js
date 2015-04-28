@@ -50,7 +50,8 @@ app.directive("ngDrop", function() {
                     '-moz-user-select': 'none',
                     '-ms-user-select': 'none',
                     opacity: 1,
-                    'pointer-events': 'none'
+                    'pointer-events': 'none',
+                    '-webkit-transform': 'translateZ(0)'
                 });
 
                 circle.stop().animate({

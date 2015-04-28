@@ -254,7 +254,7 @@
     </div>
 
     <div class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
-        <div class="backportfolio">
+        <div ng-show="portfolio.item" class="backportfolio">
             <div style="color: white;" class="backcontainer">
                 <div style="position: relative;" class="col s12">
                     <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>
@@ -267,15 +267,15 @@
 
                 <div ng-show="portfolio.item.banner.kind == 'images'" class="images col s12">
                     <div class="col s12 m4">
-                        <img class="col s12" ng-src="{{portfolio.item.banner.image1}}">
+                        <img ng-show="portfolio.item.banner.image1" class="col s12" ng-src="{{portfolio.item.banner.image1}}">
                         <div>{{portfolio.item.banner.image1desc}}</div>
                     </div>
                     <div class="col s12 m4">
-                        <img class="col s12" ng-src="{{portfolio.item.banner.image2}}">
+                        <img ng-show="portfolio.item.banner.image2" class="col s12" ng-src="{{portfolio.item.banner.image2}}">
                         <div>{{portfolio.item.banner.image2desc}}</div>
                     </div>
                     <div class="col s12 m4">
-                        <img class="col s12" ng-src="{{portfolio.item.banner.image3}}">
+                        <img ng-show="portfolio.item.banner.image3" class="col s12" ng-src="{{portfolio.item.banner.image3}}">
                         <div>{{portfolio.item.banner.image3desc}}</div>
                     </div>
                 </div>
@@ -308,7 +308,7 @@
                 </div>
             </div>
         </div>
-        <div class="frontportfolio">
+        <div ng-hide="portfolio.item" class="frontportfolio">
            <div class="header-title ultralightcolor">Projects</div>
            <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
                My most recent work is in development, I have done web development and game development (which I both love to do). My older work is in video editing, which I did a lot for Team6.
@@ -411,6 +411,8 @@
 <script src="lib/materialize/dist/js/materialize.min.js"></script>
 <!-- Angular for frontend modularity -->
 <script src="lib/angular/angular.min.js"></script>
+<!-- Angular animate for animations -->
+<script src="lib/angular-animate/angular-animate.min.js"></script>
 <!-- Trianglify for banner -->
 <script src="lib/trianglify/dist/trianglify.min.js"></script>
 <!-- Moment.JS -->

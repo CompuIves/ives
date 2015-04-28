@@ -33,11 +33,11 @@
     },
     "banner": {
         "kind": "images",
-        "image1": "res/images/solarboard/solarboard1.png",
+        "image1": "res/images/solarboard/solarboard1.jpg",
         "image1desc": "Dashboard itself",
-        "image2": "res/images/solarboard/solarboard2.png",
+        "image2": "res/images/solarboard/solarboard2.jpg",
         "image2desc": "View for days/months or years",
-        "image3": "res/images/solarboard/solarboard3.png",
+        "image3": "res/images/solarboard/solarboard3.jpg",
         "image3desc": "View for individual solar panels"
     },
     "shortdescription": "An app for showing and analyzing solar power winnings.",
@@ -72,11 +72,11 @@
     },
     "banner": {
         "kind": "images",
-        "image1": "res/images/relative/relative1.png",
+        "image1": "res/images/relative/relative1.jpg",
         "image1desc": "Concept art for base game.",
-        "image2": "res/images/relative/relative2.png",
+        "image2": "res/images/relative/relative2.jpg",
         "image2desc": "Distributed Authority System explained",
-        "image3": "res/images/relative/relative3.png",
+        "image3": "res/images/relative/relative3.jpg",
         "image3desc": "Rotating planet with player on it (debug view)"
     },
     "description": "Relative has been my most complicated and biggest project thus far. It is a 2d sidescrolling RPG game with as much as possible procedural generation and mod support. Multiplayer is implemented too with a special authority system designed by myself. Mod support works great together with multiplayer, since the server will send the mods it has installed to the client connecting. I really love doing procedural generation, the moment when you surprise yourself with generated content is incredible.",
@@ -132,11 +132,11 @@
     },
     "banner": {
         "kind": "images",
-        "image1": "res/images/counter/counter1.png",
+        "image1": "res/images/counter/counter1.jpg",
         "image1desc": "Main menu",
-        "image2": "res/images/counter/counter2.png",
+        "image2": "res/images/counter/counter2.jpg",
         "image2desc": "Invite screen",
-        "image3": "res/images/counter/counter3.png",
+        "image3": "res/images/counter/counter3.jpg",
         "image3desc": "Game screen"
     },
     "description": "A mobile turn-based (Ruzzle-like) math game. This is the first game I made. Although it is not finished, it was almost finished. It has everything implemented except a statistic screen. A unique feature is the ability to challenge multiple players at once. This means you can play against a group of friends. <br> Like my other games this is also built on LibGDX and it uses AppEngine from Google for storing data.",

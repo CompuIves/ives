@@ -6,7 +6,7 @@ app.directive("ngPortfolio", function() {
             transformfunction: "&"
         },
         link: function(scope, element, attr, ctrl) {
-            var container, image, cover, title, iconbox, icons, icontext, description, fronttitle;
+            var container, image, cover, title, description, fronttitle;
             scope.$watch('item', function(newValue) {
                 if (newValue) {
                     buildElement(JSON.parse(newValue));
@@ -72,11 +72,6 @@ app.directive("ngPortfolio", function() {
                     container.append(taskbox);
                     container.append(calendarbox);
                     container.append(progressbox);
-
-
-                    iconbox = $(element).find('.iconbox');
-                    icons = $(element).find('.icon');
-                    icontext = $(element).find('.text');
                 }
 
                 description = $("<p class='description " + (item.small ? "small" : "") + "'>" + item.shortdescription + "</p>");
@@ -87,10 +82,7 @@ app.directive("ngPortfolio", function() {
                     title.addClass('small');
                     description.addClass('small');
                 }
-                //Size div to absolute child + responsiveness
-                setTimeout(() => {
-                    element.css('height', 200);
-                }, 50);
+
 
                 setHoverActions();
                 setClickActions();
@@ -98,15 +90,15 @@ app.directive("ngPortfolio", function() {
 
             function setHoverActions() {
                 element.hover(function() {
-                    $(element).find('*').addClass('hover');
+                    container.children().addClass('hover');
                 }, function() {
-                    $(element).find('*').removeClass('hover');
+                    container.children().removeClass('hover');
                 });
             }
 
             function setClickActions() {
                 element.mousedown(function(event) {
-                    $(element).find('*').removeClass('hover');
+                    container.children().removeClass('hover');
                 });
                 element.click(function(e) {
                     if (!e.offsetX) {
