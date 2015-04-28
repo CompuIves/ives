@@ -109,9 +109,9 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             $(".bgcolor").css("background-color", ColorService.rgbToString(contentColor)).data("bgcolor", contentColor);
             $(".darkbgcolor").css("background-color", ColorService.rgbToString(ultimateRgb)).data("bgcolor", ultimateRgb);
             $(".ultradarkbgcolor").css("background-color", ColorService.rgbToString(secondColor)).data("bgcolor", secondColor);
-            $(".bgcolor-transparent").css("background-color", ColorService.rgbToString(contentColor, 0.8)).data("bgcolor", contentColor);
-            $(".darkbgcolor-transparent").css("background-color", ColorService.rgbToString(ultimateRgb, 0.8)).data("bgcolor", ultimateRgb);
-            $(".ultradarkbgcolor-transparent").css("background-color", ColorService.rgbToString(secondColor, 0.8)).data("bgcolor", secondColor);
+            $(".bgcolor-transparent").css("background-color", ColorService.rgbToString(contentColor, 0.75)).data("bgcolor", contentColor);
+            $(".darkbgcolor-transparent").css("background-color", ColorService.rgbToString(ultimateRgb, 0.7)).data("bgcolor", ultimateRgb);
+            $(".ultradarkbgcolor-transparent").css("background-color", ColorService.rgbToString(secondColor, 0.7)).data("bgcolor", secondColor);
             $(".ultradarkcolor").css("color", ColorService.rgbToString(secondColor)).data("color", secondColor);
             $(".darkcolor").css("color", ColorService.rgbToString(ultimateRgb)).data("color", ultimateRgb);
             $(".lightcolor").css("color", ColorService.rgbToString(thirdColor)).data("color", thirdColor);
