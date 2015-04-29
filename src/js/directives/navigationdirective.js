@@ -98,7 +98,6 @@ app.directive("ngNavigation", ['ColorService',
 
 
                 var setinActive = function(navitem) {
-                    console.log("TROLOLO");
                     navitem.css({
                         'background-color': "",
                     });
@@ -127,6 +126,12 @@ app.directive("ngNavigation", ['ColorService',
                 $(window).scroll(function() {
                     if (colorsloaded)
                         findActiveRecursive();
+                });
+
+                $(element).hover(function() {
+                    $(element).css('opacity', 1);
+                }, function() {
+                    $(element).css('opacity', '');
                 });
             }
         };

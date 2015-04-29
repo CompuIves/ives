@@ -1,6 +1,7 @@
 @import 'responsive';
 
 ng-navigation {
+	transition: all 0.3s ease;
 	$width: 75px;
 	z-index: 5;
 	position: fixed;
@@ -10,6 +11,24 @@ ng-navigation {
     width: $width;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.8);
+
+    @include phone {
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+    	width: 375px;
+    	opacity: 0.4;
+    }
+
+    @include tablet {
+    	top: 0;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+    	width: 375px;
+    	opacity: 0.4;
+    }
     
     li {
     	position: relative;
@@ -27,6 +46,16 @@ ng-navigation {
 		&.active {
 			cursor: default;
 			pointer-events: none;
+		}
+
+		@include phone {
+			display: inline-block;
+			border-bottom: none;
+		}
+
+		@include tablet {
+			display: inline-block;
+			border-bottom: none;
 		}
 
 		.fa {
@@ -50,7 +79,7 @@ ng-navigation {
 			color: white;
 
     		width: 150px;
-    		height: $height - 5px;
+    		height: $height - 1px;
     		border-radius: 3px;
 			
 			text-align: center;
@@ -61,7 +90,16 @@ ng-navigation {
     		background-color: rgba(240, 240, 240, 0.8);
     		opacity: 0;
     		pointer-events: none;
+			
+			@include phone {
+				top: 130px;
+				left: -$width / 2;
+			}
 
+			@include tablet {
+				top: 130px;
+				left: -$width / 2;
+			}
 
     		&.show {
     			transition: all 0.3s ease;
