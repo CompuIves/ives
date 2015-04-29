@@ -92,12 +92,12 @@ ng-navigation {
     		pointer-events: none;
 			
 			@include phone {
-				top: 130px;
+				top: 70px;
 				left: -$width / 2;
 			}
 
 			@include tablet {
-				top: 130px;
+				top: 70px;
 				left: -$width / 2;
 			}
 
