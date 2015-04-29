@@ -101,11 +101,14 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
                 b: Math.min(Math.floor(ultimateRgb.b + (200 * (1 - rb))), 255)
             };
 
-            for (var i = 0; i < 4; i++) {
-                $(".logocircle").css("background-color", ColorService.rgbToString(ultimateRgb));
-                $(".logo").css("color", ColorService.rgbToString(thirdColor));
-                $(".logo").css("background-color", ColorService.rgbToString(secondColor));
-            }
+            ColorService.colors.bgcolor = contentColor;
+            ColorService.colors.darkcolor = ultimateRgb;
+            ColorService.colors.ultradarkbgcolor = secondColor;
+            ColorService.colors.ultradarkcolor = secondColor;
+            ColorService.colors.darkcolor = ultimateRgb;
+            ColorService.colors.lightcolor = thirdColor;
+            ColorService.colors.ultralightcolor = contentColor;
+
             $(".bgcolor").css("background-color", ColorService.rgbToString(contentColor)).data("bgcolor", contentColor);
             $(".darkbgcolor").css("background-color", ColorService.rgbToString(ultimateRgb)).data("bgcolor", ultimateRgb);
             $(".ultradarkbgcolor").css("background-color", ColorService.rgbToString(secondColor)).data("bgcolor", secondColor);

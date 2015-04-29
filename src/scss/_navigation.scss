@@ -1,0 +1,74 @@
+@import 'responsive';
+
+ng-navigation {
+	$width: 75px;
+	z-index: 5;
+	position: fixed;
+	display: block;
+    left: 5px;
+    top: 200px;
+    width: $width;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    li {
+    	position: relative;
+    	transition: all 0.3s ease;
+    	$height: 65px;
+    	list-style-type: none;
+		height: $height;
+		border-bottom: 1px solid #ddd;
+		cursor: pointer;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&.active {
+			cursor: default;
+			pointer-events: none;
+		}
+
+		.fa {
+			transition: all 0.3s ease;
+			display: block;
+			font-size: 30px;
+			line-height: $height;
+			width: $width;
+			text-align: center;
+		}
+
+		.detail {
+			transition: all 0.3s ease;
+    		position: absolute;
+    		display: block;
+    		top: 0;
+    		bottom: 0;
+    		left: $width;
+			margin: auto;
+			
+			color: white;
+
+    		width: 150px;
+    		height: $height - 5px;
+    		border-radius: 3px;
+			
+			text-align: center;
+    		font-size: 20px;
+    		font-weight: 300;
+    		line-height: $height - 5px;
+
+    		background-color: rgba(240, 240, 240, 0.8);
+    		opacity: 0;
+    		pointer-events: none;
+
+
+    		&.show {
+    			transition: all 0.3s ease;
+    			opacity: 1;
+    		}
+    	}
+    }
+
+
+}

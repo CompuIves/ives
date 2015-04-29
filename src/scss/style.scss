@@ -1,6 +1,7 @@
 @import 'portfolio';
 @import 'responsive';
 @import 'hellocard';
+@import 'navigation';
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -785,6 +786,10 @@ $header-height: 40rem;
         border: none;
         border-radius: 2px;
         margin-bottom: 10px;
+
+        &.ng-pristine {
+            box-shadow: none;
+        }
 
         &:focus, &:valid {
             transition: all 0.3s ease;
