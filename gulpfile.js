@@ -69,7 +69,7 @@ gulp.task('javascript', function() {
         .pipe(concat('all.min.js'))
         .pipe(plumber())
         .pipe(babel())
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./app/'))
         .pipe(reload({
             stream: true
