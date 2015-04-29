@@ -17,7 +17,7 @@ ng-navigation {
     	left: 0;
     	right: 0;
     	margin: auto;
-    	width: 375px;
+    	width: 300px;
     	opacity: 0.4;
     }
 
@@ -51,6 +51,7 @@ ng-navigation {
 		@include phone {
 			display: inline-block;
 			border-bottom: none;
+			height: 60px;
 		}
 
 		@include tablet {
@@ -65,6 +66,11 @@ ng-navigation {
 			line-height: $height;
 			width: $width;
 			text-align: center;
+
+			@include phone { 
+				font-size: 20px;
+				width: 60px;
+			}
 		}
 
 		.detail {
@@ -92,12 +98,12 @@ ng-navigation {
     		pointer-events: none;
 			
 			@include phone {
-				top: 70px;
+				top: 145px;
 				left: -$width / 2;
 			}
 
 			@include tablet {
-				top: 70px;
+				top: 145px;
 				left: -$width / 2;
 			}
 

@@ -101,6 +101,7 @@ app.directive("ngPortfolio", function() {
                     container.children().removeClass('hover');
                 });
                 element.click(function(e) {
+                    ga('send', 'event', "PortfolioItem", 'click', scope.item.name);
                     if (!e.offsetX) {
                         e.offsetX = (e.pageX - $(e.target).offset().left);
                         e.offsetY = (e.pageY - $(e.target).offset().top);
