@@ -37,14 +37,13 @@ app.directive("ngNavigation", ['ColorService',
                     li.append(detailedInfo);
 
                     item.navitem = li;
-                    item.detail = detailedInfo;
 
                     $(li).hover(function() {
-                        setActive(li);
+                        setActive(item);
                         detailedInfo.addClass('show');
                     }, function() {
                         if (activeItem.navitem[0] != li[0]) {
-                            setinActive(li);
+                            setinActive(item);
                         }
                         detailedInfo.removeClass('show');
                     });
@@ -62,47 +61,48 @@ app.directive("ngNavigation", ['ColorService',
                         if (windowTop < items[i].element.offset().top) {
                             if (!activeItem || activeItem.navitem[0] != items[i - 1].navitem[0] || updateColor) {
                                 if (activeItem) {
-                                    setinActive(activeItem.navitem);
+                                    setinActive(activeItem);
                                     activeItem.navitem.removeClass('active');
                                 }
 
                                 activeItem = items[i - 1];
                                 items[i - 1].navitem.addClass('active');
-                                setActive(items[i - 1].navitem);
+                                setActive(items[i - 1]);
                             }
                             break;
                         }
 
                         if (i == items.length - 1) {
                             if (activeItem) {
-                                setinActive(activeItem.navitem);
+                                setinActive(activeItem);
                                 activeItem.navitem.removeClass('active');
                             }
 
                             activeItem = items[i];
                             items[i].navitem.addClass('active');
-                            setActive(items[i].navitem);
+                            setActive(items[i]);
                         }
                     }
                 }
 
-                var setActive = function(navitem) {
-                    navitem.css({
+                var setActive = function(item) {
+                    ga('send', 'event', item.name, 'scroll')
+                    item.navitem.css({
                         'background-color': ColorService.rgbToString(ColorService.colors.darkcolor),
                     });
 
-                    navitem.find('i').css({
+                    item.navitem.find('i').css({
                         'color': 'white'
                     });
                 };
 
 
-                var setinActive = function(navitem) {
-                    navitem.css({
+                var setinActive = function(item) {
+                    item.navitem.css({
                         'background-color': "",
                     });
 
-                    navitem.find('i').css({
+                    item.navitem.find('i').css({
                         'color': ColorService.rgbToString(ColorService.colors.ultradarkcolor)
                     });
                 }
