@@ -31,7 +31,7 @@ app.directive("ngNavigation", ['ColorService',
                     var li = $("<li></li>");
                     var icon = $("<i class='ultradarkcolor fa fa-" + item.icon + "'></i>");
                     $(element).append(li);
-                    var detailedInfo = $("<span class='detail darkbgcolor'>" + item.name + "</span>");
+                    var detailedInfo = $("<span class='detail ultradarkbgcolor'>" + item.name + "</span>");
                     $(element).append(detailedInfo);
                     li.append(icon);
                     li.append(detailedInfo);

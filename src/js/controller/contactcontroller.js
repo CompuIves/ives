@@ -1,3 +1,5 @@
+/* global status */
+/// <reference path="../../../typings/jquery/jquery.d.ts"/>
 app.controller("ContactController", ['$scope', '$http',
     function($scope, $http) {
         var vm = this;
@@ -31,6 +33,6 @@ app.controller("ContactController", ['$scope', '$http',
                 });
 
             }
-        }
+        };
     }
 ]);

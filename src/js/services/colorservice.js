@@ -27,6 +27,7 @@ app.factory('ColorService', function() {
         var newRgb = "rgb";
         if (rgb.a || a)
             newRgb += "a";
+            
 
         newRgb += "(" + rgb.r + "," + rgb.g + "," + rgb.b;
         if (rgb.a || a)
