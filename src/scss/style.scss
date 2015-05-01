@@ -24,7 +24,7 @@ body {
 
 $header-height: 40rem;
 
-.darkcolor, .lightcolor, .ultralightcolor, .ultradarkcolor {
+.darkcolor, .lightcolor, .ultralightcolor, .ultradarkcolor, .headercolor {
     transition: color 1s ease;
 }
 
@@ -60,7 +60,7 @@ $header-height: 40rem;
         height: $circlessize;
     }
     .logocircle {
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        transition: all 0.4s ease;
         $size-big: 100px;
         $size-small: 75px;
         border-radius: 50%;
@@ -71,7 +71,6 @@ $header-height: 40rem;
         width: $size-big;
         height: $size-big;
         top: $circlessize / 2 - $size-big / 2;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
         @for $i from 0 through 3 {
             &:nth-child(#{$i + 1}) {
                 right: -50% + 20% * $i + 40% * floor($i / 2);
@@ -111,7 +110,7 @@ $header-height: 40rem;
         .logo {
             $innersize-big: $size-big - 6px;
             $innersize-small: $size-small - 6px;
-            transition: 1s ease all;
+            transition: all 0.4s ease;
             color: black;
             display: block;
             font-size: 60px;
@@ -141,11 +140,6 @@ $header-height: 40rem;
                 font-size: 40px;
             }
         }
-        &:hover {
-            transition: 0.3s ease all;
-            transform: translateY(-3px);
-            box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.4);
-        }
     }
     .profileimg {
         transition: opacity 1s ease;
@@ -163,7 +157,6 @@ $header-height: 40rem;
         width: $circlessize;
         border: 7px solid white;
         border-radius: 50%;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 
         &.shown {
             transition: opacity 1s ease;
@@ -194,29 +187,36 @@ $header-height: 40rem;
     .title {
         font-size: 48px;
         font-weight: 300;
+        padding-bottom: 1.5rem;
 
         @include phone {
             font-size: 34px;
         }
     }
     .header-title {
+        color: white;
         text-align: center;
         font-size: 60px;
+        line-height: 46px;
+        padding-bottom: 1rem;
         @include phone {
             font-size: 36px;
+            line-height: 30px;
         }
     }
     .subheader-text {
         display: block;
         text-align: center;
         margin-bottom: 20px;
+        margin-top: 5px;
+        line-height: 2.5rem;
     }
     .contentrow {
         position: relative;
         padding-left: 15%;
         padding-right: 15%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         margin-bottom: 0px;
         overflow: hidden;
         &.firstrow {
@@ -748,6 +748,8 @@ $header-height: 40rem;
     padding-bottom: 2rem;
     &:last-child {
         border: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -766,6 +768,7 @@ $header-height: 40rem;
 
     .formcontents {
         padding: 3rem 1rem;
+        margin-bottom: 1rem;
         &.ng-invalid {
             .sendbutton {
                 background-color: grey !important;

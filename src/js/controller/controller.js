@@ -57,6 +57,18 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             ScrollService();
         }
 
+        $('.logocircle').hover(function() {
+            $(this).find('.logo').css({
+                'color': ColorService.rgbToString(ColorService.colors.ultradarkcolor),
+                'background-color': ColorService.rgbToString(ColorService.colors.darkcolor)
+            });
+        }, function() {
+            $(this).find('.logo').css({
+                'color': ColorService.rgbToString(ColorService.colors.lightcolor),
+                'background-color': ColorService.rgbToString(ColorService.colors.ultradarkcolor)
+            });
+        });
+
 
         $scope.interval = 60;
         setTimeout(() => {
@@ -108,6 +120,8 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             ColorService.colors.darkcolor = ultimateRgb;
             ColorService.colors.lightcolor = thirdColor;
             ColorService.colors.ultralightcolor = contentColor;
+            ColorService.colors.descriptioncolor = ColorService.lighten(thirdColor, 45);
+            ColorService.colors.headercolor = ColorService.darken(secondColor, 25);
 
             $(".bgcolor").css("background-color", ColorService.rgbToString(contentColor)).data("bgcolor", contentColor);
             $(".darkbgcolor").css("background-color", ColorService.rgbToString(ultimateRgb)).data("bgcolor", ultimateRgb);
@@ -119,6 +133,8 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             $(".darkcolor").css("color", ColorService.rgbToString(ultimateRgb)).data("color", ultimateRgb);
             $(".lightcolor").css("color", ColorService.rgbToString(thirdColor)).data("color", thirdColor);
             $(".ultralightcolor").css("color", ColorService.rgbToString(contentColor)).data("color", contentColor);
+            $(".headercolor").css("color", ColorService.rgbToString(ColorService.colors.headercolor)).data("color", ColorService.colors.headercolor);
+            $(".descriptioncolor").css("color", ColorService.rgbToString(ColorService.colors.descriptioncolor)).data("color", ColorService.colors.descriptioncolor);
         };
     }
 ]);

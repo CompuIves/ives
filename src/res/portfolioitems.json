@@ -66,7 +66,7 @@
     "bgcolor": "rgb(207, 103, 43)"
 }, {
     "name": "Relative",
-    "shortdescription": "A game utilizing procedural generation as main content.",
+    "shortdescription": "A game utilizing procedural generation.",
     "front": {
         "title": "Relative"
     },
@@ -199,12 +199,11 @@
         "title": "Youtube",
         "url": "https://www.youtube.com/watch?v=tKuOhWPoavI&list=PL14AB56050692684A"
     },
-    "color": "rgb(96, 0, 0)"
+    "color": "rgb(164, 27, 33)"
 }, {
     "name": "Bike Video",
     "front": {
-        "image": "res/images/technasium/cover.png",
-        "backgroundimage": true
+        "image": "res/images/technasium/cover.png"
     },
     "banner": {
         "kind": "youtube",
@@ -223,5 +222,5 @@
         "title": "Youtube",
         "url": "https://www.youtube.com/watch?v=rXoCOXrXYOo&list=PL14AB56050692684A"
     },
-    "color": "rgb(166, 118, 59)"
+    "color": "rgb(243, 156, 18)"
 }]

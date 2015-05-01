@@ -6,7 +6,7 @@ ng-portfolio {
     display: block;
     width: 100%;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
     height: 200px;
     -webkit-transform: translateZ(0);
 
@@ -122,7 +122,6 @@ ng-portfolio {
 
         &.hover {
         	transition: all 0.3s ease;
-        	//transition-delay: 0.15s;
         	opacity: 1;
         }
 
@@ -137,13 +136,13 @@ ng-portfolio {
         text-align: center;
         opacity: 0;
         pointer-events: none;
+        color: white;
 
         &.hover {
 			@extend .description.hover
         }
 
         .icon {
-        	color: white;
             margin-top: 0.5rem;
             font-size: 20px;
             pointer-events: none;
@@ -151,9 +150,9 @@ ng-portfolio {
 
         .text {
         	position: relative;
-            color: white;
             font-size: 15px;
             font-weight: 300;
+            color: white;
             z-index: 10;
             pointer-events: none;
         }

@@ -68,11 +68,10 @@
             <div class="row firstrow contentrow bgcolor-transparent">
                 <div class="col s12 m5 l7">
                     <div class="title darkcolor">Who am I?</div>
-                    <p class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.ageyears}} years, {{main.agemonths}} months and {{main.ageseconds}} seconds</strong> old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and its capabilities.</p>
+                    <span class="flow-text">I am <strong>Ives van Hoorne</strong>, I'm <strong>{{main.ageyears}} years, {{main.agemonths}} months and {{main.ageseconds}} seconds</strong> old and live in <strong>Assen, The Netherlands</strong>. I'm a young ambitious developer, passionate about new technology and its capabilities.</span>
                 </div>
                 <div class="col s12 m7 l5">
                     <div class="title darkcolor">Information</div>
-                    <p class="flow-text">
                         <div class="info">
                             <i class="fa fa-user icon darkcolor"></i>
                             <span class="text">Ives van Hoorne</span>
@@ -90,7 +89,6 @@
                             <span class="text">Assen, The Netherlands</span>
                             <i ng-click="main.showMaps()" class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
                         </div>
-                    </p>
                 </div>
             </div>
 
@@ -101,13 +99,13 @@
         </ui-gmap-marker>
     </ui-gmap-google-map>
     <div id="skillrow" class="row contentrow centerrow ultradarkbgcolor-transparent">
-        <div class="header-title ultralightcolor scroll">Skills</div>
-        <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+        <div class="header-title scroll">Skills</div>
+        <div class="subheader-text descriptioncolor flow-text col s12 m10 offset-m1 l6 offset-l3">
         These are the skills I'm comfortable with. I'm trying to get better at each skill and learn new ones as fast as possible.
         </div>
 
         <div class="col s12 skill scrollfade" ng-controller="SkillController as skill">
-            <span class="col s12 title">Coding Skills</span>
+            <span style="padding-bottom: 0;" class="col s12 title">Coding Skills</span>
             <div class="col s12 skills">
                 <span class="col s12 description">Programming Languages</span>
                 <div class="name col l6 m6 s12">Java</div>
@@ -133,7 +131,7 @@
         </div>
 
         <div class="col s12 skill scrollfade">
-            <span class="col s12 title">Tools</span>
+            <span style="padding-bottom: 0;" class="col s12 title">Tools</span>
             <div class="col s12 skills">
                 <span class="col s12 description">Graphic Tools</span>
                 <div class="name col m6 s12">Adobe Photoshop</div>
@@ -157,7 +155,7 @@
         </div>
 
         <div class="col s12 skill scrollfade">
-            <span class="col s12 title">Languages</span>
+            <span style="padding-bottom: 0;" class="col s12 title">Languages</span>
             <div class="col s12 skills">
                 <div class="language col s12">
                     <span class="col l2 m12 s12">Dutch</span>
@@ -192,12 +190,12 @@
     </div>
 
     <div id="experiencerow" class="row contentrow bgcolor-transparent">
-        <div class="header-title col s12 ultradarkcolor">Experience</div>
+        <div class="header-title col s12 headercolor">Experience</div>
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
             My experience is mostly based on personal projects, holiday work and work for professional companies through school. I'm trying to gain as much experience as possible each year. 
         </div>
         <div class="subrow row scrollfade">        
-            <div class="title darkcolor col s12">Education</div>
+            <div style="padding-bottom: 0;" class="title darkcolor col s12">Education</div>
             <div class="entry col s12">
                 <div class="entryinfo col m4 s12">
                     <a href="http://www.nassaucollege.nl/" target="_blank" class=" ultradarkcolor entryname">Dr. Nassau College Quintus </a>
@@ -217,7 +215,7 @@
         </div>
 
         <div class="subrow row scrollfade">
-            <div class="title darkcolor col s12">Work</div>
+            <div style="padding-bottom: 0;" class="title darkcolor col s12">Work</div>
             <div class="entry col s12">
                 <div class="entryinfo col m4 s12">
                     <a href="http://web.team6-games.com/" target="_blank" class="entryname ultradarkcolor">
@@ -307,8 +305,8 @@
             </div>
         </div>
         <div ng-hide="portfolio.item" class="frontportfolio">
-           <div class="header-title ultralightcolor">Projects</div>
-           <div class="subheader-text ultralightcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+           <div class="header-title">Projects</div>
+           <div class="subheader-text descriptioncolor flow-text col s12 m10 offset-m1 l6 offset-l3">
                My most recent work is in development, I have done web development and game development (which I both love to do). My older work is in video editing, which I did a lot for Team6.
            </div>
 
@@ -322,7 +320,7 @@
     </div>
 
     <div id="contactrow" class="row contentrow bgcolor-transparent" ng-controller="ContactController as contact">
-        <div class="header-title ultradarkcolor">Contact</div>
+        <div class="header-title headercolor">Contact</div>
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
             Thanks for visiting my website! <br> Do you have any questions, offers or do you just want to say hi? You can contact me by sending an email or filling out this form.   
         </div>
@@ -399,7 +397,7 @@
         </div>
     </div>
     <div id="quoterow" class="row contentrow ultradarkbgcolor-transparent quote">
-        <span class="col offset-m2 m8 s12 ultralightcolor">Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</span>
+        <span class="col offset-m2 m8 s12 ultralightcolor"><i>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</i></span>
         <span class="lightcolor col s12 author">– Steve Jobs, June 12, 2005.</span>
     </div>
 </div>
