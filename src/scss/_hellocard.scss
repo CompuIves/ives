@@ -29,7 +29,7 @@ ng-hello {
         @include phone {
             width: initial;
             max-width: $backwidth;
-            height: 325px;
+            height: 360px;
         }
     }
 
@@ -104,7 +104,7 @@ ng-hello {
             font-weight: 400;
             margin-top: 1rem;
             @include phone {
-                font-size: 30px;
+                margin-top: 1.5rem;
             }
         }
 
