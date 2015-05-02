@@ -26,7 +26,6 @@ app.directive("ngHello", ["ColorService",
                 });
 
                 function loadColors() {
-                    console.log($(element).find('.darkcolor'));
                     $(element).find('.darkcolor').css({
                         color: ColorService.colors.darkcolor
                     });
