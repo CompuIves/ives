@@ -12,7 +12,7 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
             setTimeout(function() {
                 var color = ColorService.stringToRGB(item.color);
                 $('.portfoliorow').stop().animate({
-                    'height': $('.backcontainer').height() + 100
+                    'height': $('.backcontainer').height() + 120
                 }, 500);
 
                 $(".portfoliolightcolor").css('color', ColorService.rgbToString(ColorService.lighten(color, 80)));
@@ -39,7 +39,7 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
         // if image wasn't loaded.
         $('.images img').load(function() {
             $('.portfoliorow').stop().animate({
-                'height': $('.backcontainer').height() + 100
+                'height': $('.backcontainer').height() + 120
             }, 500);
         });
 
@@ -53,7 +53,7 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
 
             setTimeout(() => {
                 $('.portfoliorow').stop().animate({
-                    'height': $('.frontportfolio').height() + 100
+                    'height': $('.frontportfolio').height() + 120 //+ 2*padding
                 }, 800);
             }, 300);
         };
