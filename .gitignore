@@ -2,3 +2,4 @@ bower_components/
 node_modules/
 app/
 mailsettings.json
+.idea/
