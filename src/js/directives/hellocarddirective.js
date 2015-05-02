@@ -10,22 +10,33 @@ app.directive("ngHello", ["ColorService",
                     $(element).toggleClass('backactive');
                 });
 
-                $(element).find('.title').css({
-                    color: ColorService.colors.darkcolor
-                });
 
                 var colorsloaded = false;
                 scope.$watch(function() {
                     return ColorService.colors;
                 }, function(newValue) {
                     if (newValue && !$.isEmptyObject(newValue) && !colorsloaded) {
-                        console.log("LEUK");
                         colorsloaded = true;
-                        $(element).find('.title').css({
-                            color: ColorService.colors.darkcolor
-                        });
+                        loadColors();
                     }
                 }, true);
+
+                $(element).load(function() {
+                    loadColors();
+                });
+
+                function loadColors() {
+                    console.log($(element).find('.darkcolor'));
+                    $(element).find('.darkcolor').css({
+                        color: ColorService.colors.darkcolor
+                    });
+                    $(element).find('.ultradarkcolor').css({
+                        color: ColorService.colors.darkcolor
+                    });
+                    $(element).find('.ultradarkbgcolor').css({
+                        'background-color': ColorService.colors.darkcolor
+                    });
+                }
             }
         };
     }
