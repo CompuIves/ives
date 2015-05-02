@@ -13,6 +13,19 @@ app.directive("ngHello", ["ColorService",
                 $(element).find('.title').css({
                     color: ColorService.colors.darkcolor
                 });
+
+                var colorsloaded = false;
+                scope.$watch(function() {
+                    return ColorService.colors;
+                }, function(newValue) {
+                    if (newValue && !$.isEmptyObject(newValue) && !colorsloaded) {
+                        console.log("LEUK");
+                        colorsloaded = true;
+                        $(element).find('.title').css({
+                            color: ColorService.colors.darkcolor
+                        });
+                    }
+                }, true);
             }
         };
     }
