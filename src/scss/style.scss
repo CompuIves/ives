@@ -690,7 +690,7 @@ $header-height: 40rem;
             @for $i from 1 through 3 {
                 &:nth-child(#{$i}) {
                 img {
-                        transition-delay: 0.1s * $i;
+                        transition-delay: 0.2s * $i;
                     }
                 }
             }
