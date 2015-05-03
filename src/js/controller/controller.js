@@ -141,17 +141,15 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
         $('.header').addClass('navigator');
 
         $(window).scroll(function() {
-            if ($('body').scrollTop() > 50) {
+            var windowTopHTML = $("html").scrollTop();
+            var windowTopBody = $("body").scrollTop();
+            var windowTop = Math.max(windowTopHTML, windowTopBody);
+            if (windowTop > 50) {
                 $('.header').removeClass('navigator');
                 $('ng-hello').addClass('navigator');
             } else {
                 $('.header').addClass('navigator');
                 $('ng-hello').removeClass('navigator');
-            }
-            if ($('body').scrollTop() > $(window).height() / 3) {
-
-            } else {
-
             }
         })
 
