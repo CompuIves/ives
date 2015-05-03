@@ -501,15 +501,32 @@ $header-height: 40rem;
     }
 
     .entrydescription {
+        .flow-text {
+            @include widescreen {
+                font-size: 23px;  
+                line-height: 2.5rem;
+            }
+            @include desktop {
+                font-size: 23px;  
+                line-height: 2.5rem;
+            }
+
+            @include tablet {
+                font-size: 20px;  
+                line-height: 2.2rem;
+            }
+        }
+
         @include phone {
             padding-top: 10px;
         }
     }
     
-        .recommendationtitle {
-            margin-top: 10px;
-            font-size: 18px;
-        }
+    .recommendationtitle {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
     .recommendation {
         position: relative;
         font-size: 20px;
@@ -668,11 +685,30 @@ $header-height: 40rem;
     }
 
     .images {
+        
+        .col {
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                img {
+                        transition-delay: 0.1s * $i;
+                    }
+                }
+            }
+        }
+
         img {
+            transition: all 0.3s ease;
             padding: 0;
             margin: 1rem;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             border-radius: 2px;
+            opacity: 1;
+            transform: none;
+
+            &.ng-hide {
+                opacity: 0;
+                transform: translateY(5px);
+            }
         }
 
         div {
@@ -738,10 +774,23 @@ $header-height: 40rem;
 
     .projectdescription {
         color: white;
+        &.flow-text {
+            @include widescreen {
+                font-size: 23px;  
+                line-height: 2.5rem;
+            }
+            @include desktop {
+                font-size: 23px;  
+                line-height: 2.5rem;
+            }
+
+            @include tablet {
+                font-size: 20px;  
+                line-height: 2.2rem;
+            }
+        }
     }
 }
-
-
 
 .subrow {
     border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -761,7 +810,6 @@ $header-height: 40rem;
     color: black;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     font-size: 32px;
     font-weight: 300;
     text-align: center;
