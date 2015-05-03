@@ -39,7 +39,7 @@ app.directive("ngNavigation", ['ColorService',
                     var li = $("<li></li>");
                     var icon = $("<i class='ultradarkcolor fa fa-" + item.icon + "'></i>");
                     $(element).append(li);
-                    var detailedInfo = $("<span class='detail ultralightcolor'>" + item.name + "</span>");
+                    var detailedInfo = $("<span class='detail'>" + item.name + "</span>");
                     $(li).append(detailedInfo);
                     li.append(icon);
                     li.append(detailedInfo);
@@ -116,7 +116,7 @@ app.directive("ngNavigation", ['ColorService',
 
                 var goItem = function(navitem) {
                     $("html, body").stop().animate({
-                        scrollTop: navitem.element.offset().top - 60
+                        scrollTop: navitem.element.offset().top - 59
                     }, 800);
                 }
 

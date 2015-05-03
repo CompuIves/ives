@@ -121,6 +121,9 @@
         border: 7px solid white;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.5);
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
 
         @include tablet {
             top: $circlessize / 2 - $picsize-medium * 0.5;
