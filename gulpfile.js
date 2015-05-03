@@ -46,7 +46,7 @@ gulp.task('sass', function() {
 
 gulp.task('fonts', function() {
     return gulp.src(["src/scss/**/*.ttf", 'src/scss/**/*.woff', 'src/scss/**/*.woff2'])
-        .pipe(gulp.dest("./app/css/"))
+        .pipe(gulp.dest("./app/"))
         .pipe(reload({
             stream: true
         }));
