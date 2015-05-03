@@ -25,6 +25,9 @@ app.directive("ngHello", ["ColorService",
                     loadColors();
                 });
 
+                //Just to be sure, pretty dumb...
+                setTimeout(loadColors, 2000);
+
                 function loadColors() {
                     $(element).find('.darkcolor').css({
                         color: ColorService.colors.darkcolor

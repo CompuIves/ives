@@ -29,7 +29,7 @@ gulp.task('build', ['sass', 'fonts', 'bower', 'html', 'javascript', 'resources']
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("src/scss/**/*.scss")
+    return gulp.src(["src/scss/style.scss", "src/scss/materialize/materialize.scss"])
         .pipe(plumber())
         .pipe(sass())
         .pipe(minifyCSS({
