@@ -136,8 +136,6 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             $(".descriptioncolor").css("color", ColorService.rgbToString(ColorService.colors.descriptioncolor)).data("color", ColorService.colors.descriptioncolor);
         };
 
-
-
         $('.header').addClass('navigator');
 
         $(window).scroll(function() {
@@ -154,8 +152,14 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
         })
 
         this.goDown = function() {
+            var top = 0;
+            if ($('#userinforow').offset().top - 120 + $('#userinforow')[0].offsetHeight - $(window).height() > $('#userinforow').offset().top) {
+                top = $('#userinforow').offset().top - 120;
+            } else {
+                top = $('#userinforow').offset().top + $('#userinforow')[0].offsetHeight - $(window).height();
+            }
             $("html, body").stop().animate({
-                scrollTop: $('#userinforow').offset().top + $('#userinforow')[0].offsetHeight - $(window).height()
+                scrollTop: top
             }, 800);
         }
     }

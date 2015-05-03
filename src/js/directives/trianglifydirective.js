@@ -50,6 +50,7 @@ app.directive("ngTrianglify", function() {
                 }
             });
 
+
             function resize() {
                 //Only generate when there is a bigger size, otherwise it is wasted memory
                 if (element[0].offsetWidth > width || element[0].offsetHeight > height) {
@@ -60,25 +61,38 @@ app.directive("ngTrianglify", function() {
             }
 
             var dobg1 = true;
+            var timerReset = true; //Prevents too many background changes (max 1 per sec)
+            var applyAfterTimeout = false; //Tells if the background reset should be applied after timer
 
             function setBackground() {
-                var pattern = Trianglify({
-                    width: width,
-                    height: height,
-                    cell_size: 150
-                });
+                if (timerReset) {
+                    var pattern = Trianglify({
+                        width: width,
+                        height: height,
+                        cell_size: 150
+                    });
 
 
-                scope.options = pattern.opts;
+                    scope.options = pattern.opts;
 
-                if (dobg1) {
-                    pattern.canvas(bg1[0]);
-                    bg2.fadeOut(1000);
-                    dobg1 = false;
+                    if (dobg1) {
+                        pattern.canvas(bg1[0]);
+                        bg2.fadeOut(1000);
+                        dobg1 = false;
+                    } else {
+                        pattern.canvas(bg2[0]);
+                        bg2.fadeIn(1000);
+                        dobg1 = true;
+                    }
+                    timerReset = false;
+                    applyAfterTimeout = false;
+                    setTimeout(function() {
+                        timerReset = true;
+                        if (applyAfterTimeout)
+                            setBackground();
+                    }, 1000);
                 } else {
-                    pattern.canvas(bg2[0]);
-                    bg2.fadeIn(1000);
-                    dobg1 = true;
+                    applyAfterTimeout = true;
                 }
             }
         }
