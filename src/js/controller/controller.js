@@ -8,7 +8,6 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             this.ageseconds++
         ), 1000);
 
-
         //When maps are loaded
         uiGmapGoogleMapApi.then(function(maps) {
             $scope.map = {
@@ -136,5 +135,30 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             $(".headercolor").css("color", ColorService.rgbToString(ColorService.colors.headercolor)).data("color", ColorService.colors.headercolor);
             $(".descriptioncolor").css("color", ColorService.rgbToString(ColorService.colors.descriptioncolor)).data("color", ColorService.colors.descriptioncolor);
         };
+
+
+
+        $('.header').addClass('navigator');
+
+        $(window).scroll(function() {
+            if ($('body').scrollTop() > 50) {
+                $('.header').removeClass('navigator');
+                $('ng-hello').addClass('navigator');
+            } else {
+                $('.header').addClass('navigator');
+                $('ng-hello').removeClass('navigator');
+            }
+            if ($('body').scrollTop() > $(window).height() / 3) {
+
+            } else {
+
+            }
+        })
+
+        this.goDown = function() {
+            $("html, body").stop().animate({
+                scrollTop: $('#userinforow').offset().top + $('#userinforow')[0].offsetHeight - $(window).height()
+            }, 800);
+        }
     }
 ]);

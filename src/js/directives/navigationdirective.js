@@ -26,13 +26,21 @@ app.directive("ngNavigation", ['ColorService',
                     icon: "envelope-o"
                 }];
 
+                $(element).append("<span class='ultradarkcolor name'>Ives van Hoorne</span>");
+                var bginfo = $("<div class='bginfo'></div>");
+                $(element).append(bginfo);
+                bginfo.append("<span class='darkbgcolor bgrect'>Change</span>");
+                bginfo.append("<span class='ultradarkbgcolor bgrect'>Colors</span>");
 
+                bginfo.click(function() {
+                    scope.resetBG();
+                });
                 items.forEach(function(item) {
                     var li = $("<li></li>");
                     var icon = $("<i class='ultradarkcolor fa fa-" + item.icon + "'></i>");
                     $(element).append(li);
-                    var detailedInfo = $("<span class='detail ultradarkbgcolor'>" + item.name + "</span>");
-                    $(element).append(detailedInfo);
+                    var detailedInfo = $("<span class='detail ultralightcolor'>" + item.name + "</span>");
+                    $(li).append(detailedInfo);
                     li.append(icon);
                     li.append(detailedInfo);
 
@@ -40,13 +48,11 @@ app.directive("ngNavigation", ['ColorService',
 
                     $(li).bind('mouseenter touchstart', function() {
                         setActive(item);
-                        detailedInfo.addClass('show');
                     });
                     $(li).bind('mouseleave touchend', function() {
                         if (activeItem.navitem[0] != li[0]) {
                             setinActive(item);
                         }
-                        detailedInfo.removeClass('show');
                     });
 
                     $(li).click(function() {
@@ -59,7 +65,7 @@ app.directive("ngNavigation", ['ColorService',
                     var windowTopBody = $("body").scrollTop();
                     var windowTop = Math.max(windowTopHTML, windowTopBody);
                     for (var i = 0; i < items.length; i++) {
-                        if (windowTop < items[i].element.offset().top) {
+                        if (windowTop < items[i].element.offset().top - $(window).height() / 4) {
                             if (!activeItem || activeItem.navitem[0] != items[i - 1].navitem[0] || updateColor) {
                                 if (activeItem) {
                                     setinActive(activeItem);
@@ -68,6 +74,7 @@ app.directive("ngNavigation", ['ColorService',
 
                                 activeItem = items[i - 1];
                                 items[i - 1].navitem.addClass('active');
+                                ga('send', 'event', items[i - 1].name, 'scroll')
                                 setActive(items[i - 1]);
                             }
                             break;
@@ -87,7 +94,6 @@ app.directive("ngNavigation", ['ColorService',
                 }
 
                 var setActive = function(item) {
-                    ga('send', 'event', item.name, 'scroll')
                     item.navitem.css({
                         'background-color': ColorService.rgbToString(ColorService.colors.darkcolor),
                     });
@@ -110,7 +116,7 @@ app.directive("ngNavigation", ['ColorService',
 
                 var goItem = function(navitem) {
                     $("html, body").stop().animate({
-                        scrollTop: navitem.element.offset().top + 1
+                        scrollTop: navitem.element.offset().top - 60
                     }, 800);
                 }
 
@@ -127,12 +133,6 @@ app.directive("ngNavigation", ['ColorService',
                 $(window).scroll(function() {
                     if (colorsloaded)
                         findActiveRecursive();
-                });
-
-                $(element).hover(function() {
-                    $(element).css('opacity', 1);
-                }, function() {
-                    $(element).css('opacity', '');
                 });
 
                 //Mobile topnav for scrolling

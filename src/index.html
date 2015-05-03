@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ives</title>
+    <title>Ives van Hoorne</title>
 
     <!-- Materialize -->
     <link href="css/materialize/materialize.css" rel="stylesheet">
@@ -31,11 +31,10 @@
     </script>
     </head>
     <body ng-controller="MainController as main">
-    <ng-navigation></ng-navigation>
-    <div ng-trianglify class="background" options="triangleconfig" interval="{{interval}}"></div>
+    <ng-hello interval="{{interval}}"></ng-hello>
 
-        <div class="header">
-        <ng-hello interval="{{interval}}"></ng-hello>
+    <div class="header">
+        <div ng-trianglify class="background" options="triangleconfig" interval="{{interval}}"></div>
             <div class="circles">
                 <div class="logocircle darkbgcolor">
                     <a href="https://nl.linkedin.com/in/ivesvh" target="_blank">
@@ -57,15 +56,16 @@
                         <i class="logo lightcolor ultradarkbgcolor fa fa-youtube-play"></i>
                     </a>
                 </div>
-                <div>
-                <img ng-repeat="i in main.ivesimages" class="profileimg" ng-src="{{i}}" ng-class="{'shown': main.currentIves === $index}"></img>
+                <div class="profileimg-container">
+                    <img ng-repeat="i in main.ivesimages" class="profileimg" ng-src="{{i}}" ng-class="{'shown': main.currentIves === $index}"></img>
+                    <i ng-click="main.goDown()" class="darkcolor fa fa-chevron-down"></i>
                 </div>
                 
             </div>
         </div>
 
         <div class="main">
-            <div class="row firstrow contentrow bgcolor-transparent">
+            <div id="userinforow" class="row firstrow contentrow bgcolor-transparent">
                 <div class="col s12 m5 l7">
                     <div class="title darkcolor">Who am I?</div>
                     <span class="flow-text">My name is <strong>Ives van Hoorne</strong>, I'm <strong>{{main.ageyears}} years, {{main.agemonths}} months and {{main.ageseconds}} seconds</strong> old and live in <strong>Assen, The Netherlands</strong>. I'm an ambitious developer, passionate about new technology and its capabilities. I am inspired by fast-growing companies and hope to become one in the future.</span>

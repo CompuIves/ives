@@ -2,6 +2,7 @@
 @import 'responsive';
 @import 'hellocard';
 @import 'navigation';
+@import 'header';
 
 body {
     -webkit-font-smoothing: antialiased;
@@ -22,8 +23,6 @@ body {
     }
  }
 
-$header-height: 40rem;
-
 .darkcolor, .lightcolor, .ultralightcolor, .ultradarkcolor, .headercolor {
     transition: color 1s ease;
 }
@@ -43,140 +42,6 @@ $header-height: 40rem;
     position: fixed;
     height: 100%;
     width: 100%;
-}
-
-.header {
-    position: relative;
-    width: 100%;
-    height: $header-height;
-
-    $circlessize: 275px;
-    .circles {
-        z-index: 2;
-        position: absolute;
-        bottom: -#{$circlessize / 2};
-        left: 0;
-        right: 0;
-        height: $circlessize;
-    }
-    .logocircle {
-        transition: all 0.4s ease;
-        $size-big: 100px;
-        $size-small: 75px;
-        border-radius: 50%;
-        display: block;
-        position: absolute;
-        left: 0;
-        margin: 0 auto;
-        width: $size-big;
-        height: $size-big;
-        top: $circlessize / 2 - $size-big / 2;
-        @for $i from 0 through 3 {
-            &:nth-child(#{$i + 1}) {
-                right: -50% + 20% * $i + 40% * floor($i / 2);
-            }
-        }
-        @include desktop {
-            @for $i from 0 through 3 {
-                &:nth-child(#{$i + 1}) {
-                    right: -75% + 30% * $i + 60% * floor($i / 2);
-                }
-            }
-        }
-
-        @include tablet {
-            width: $size-small;
-            height: $size-small;
-            top: $circlessize / 2 - $size-small / 2;
-            @for $i from 0 through 3 {
-                &:nth-child(#{$i + 1}) {
-                    right: -75% + 30% * $i + 60% * floor($i / 2);
-                }
-            }
-        }
-
-        @include phone {
-            width: $size-small;
-            height: $size-small;
-            bottom: 0;
-            margin-top: 80px;
-            @for $i from 0 through 3 {
-                &:nth-child(#{$i + 1}) {
-                    right: -70% + 47% * $i;
-                }
-            }
-        }
-
-        .logo {
-            $innersize-big: $size-big - 6px;
-            $innersize-small: $size-small - 6px;
-            transition: all 0.4s ease;
-            color: black;
-            display: block;
-            font-size: 60px;
-            width: $innersize-big;
-            height: $innersize-big;
-            margin-left: ($size-big - $innersize-big) / 2;
-            margin-top: ($size-big - $innersize-big) / 2;
-            border-radius: 50%;
-            align-content: center;
-            text-align: center;
-            line-height: $innersize-big;
-            @include tablet {
-                width: $innersize-small;
-                height: $innersize-small;
-                margin-left: ($size-small - $innersize-small) / 2;
-                margin-top: ($size-small - $innersize-small) / 2;
-                line-height: $innersize-small;
-                font-size: 40px;
-            }
-
-            @include phone {
-                width: $innersize-small;
-                height: $innersize-small;
-                margin-left: ($size-small - $innersize-small) / 2;
-                margin-top: ($size-small - $innersize-small) / 2;
-                line-height: $innersize-small;
-                font-size: 40px;
-            }
-        }
-    }
-    .profileimg {
-        transition: opacity 1s ease;
-        $picsize-large: $circlessize;
-        $picsize-medium: 200px;
-        $picsize-small: 130px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        bottom: 0;
-        opacity: 0;
-        top: $circlessize - $picsize-large;
-        height: $circlessize;
-        width: $circlessize;
-        border: 7px solid white;
-        border-radius: 50%;
-
-        &.shown {
-            transition: opacity 1s ease;
-            opacity: 1;
-        }
-
-        @include tablet {
-            top: $circlessize / 2 - $picsize-medium * 0.5;
-            height: $picsize-medium;
-            width: $picsize-medium;
-            border: 4px solid white;
-        }
-
-        @include phone {
-            top: $circlessize / 2 - $picsize-small * 0.75;
-            height: $picsize-small;
-            width: $picsize-small;
-            border: 4px solid white;
-        }
-    }
 }
 
 .main {
@@ -685,7 +550,6 @@ $header-height: 40rem;
     }
 
     .images {
-        
         .col {
             @for $i from 1 through 3 {
                 &:nth-child(#{$i}) {
@@ -820,6 +684,7 @@ $header-height: 40rem;
         &.ng-invalid {
             .sendbutton {
                 background-color: grey !important;
+                color: white !important;
                 cursor: default;
                 pointer-events: none;
             }

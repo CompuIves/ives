@@ -9,18 +9,21 @@ ng-hello {
     $backheight: 250px;
     $backwidth: 600px;
     transition: all $transition-time $transition;
+    z-index: 5;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     backface-visibility: hidden;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     bottom: 0;
     width: $frontwidth;
     height: $frontheight;
     transform-style: preserve-3d;
     transform-origin: 50% 50%;
+    overflow: hidden;
     
     &.backactive {
         width: $backwidth;
@@ -41,7 +44,7 @@ ng-hello {
     .fa {
         position: absolute;
         top: 5px;
-        right: 5px;
+        right: 10px;
         font-size: 30px;
         cursor: pointer;
     }
@@ -59,12 +62,10 @@ ng-hello {
         margin: auto;
         text-align: center;
         border-radius: 2px;
-        //box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 
         &.active {
             transition: all $transition-time $transition;
             transform: rotateX(180deg);
-            //line-height: $backheight;
         }
 
         .title {
@@ -143,6 +144,36 @@ ng-hello {
             left:0;
             right:0;
             color: grey;
+        }
+    }
+
+    &.navigator {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        transform: none;
+        background-color: rgba(255, 255, 255, 0.7);
+
+        @include phone {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .fronttextcard {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .backtextcard {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        ng-navigation {
+            transition-delay: 0.5s;
+            opacity: 0.9;
+            pointer-events: initial;
         }
     }
 }
