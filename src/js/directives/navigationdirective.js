@@ -135,45 +135,6 @@ app.directive("ngNavigation", ['ColorService',
                         findActiveRecursive();
                 });
 
-                //Mobile topnav for scrolling
-                if ($(window).width() < 600) {
-                    var iScrollPos = 0;
-                    var topNav = $(element);
-                    var lastScrolledUp = true;
-                    $(window).scroll(function() {
-                        var iCurScrollPos = $(this).scrollTop();
-                        var delta = (iCurScrollPos - iScrollPos);
-                        var oldTop = topNav.css('top').split('px')[0];
-                        if (iCurScrollPos > iScrollPos) {
-                            if (oldTop > -60) {
-                                if (oldTop - delta < -60)
-                                    topNav.css('top', '-60px');
-                                else
-                                    topNav.css('top', '-=' + delta + 'px');
-                            }
-                            lastScrolledUp = false;
-                        } else {
-                            if (oldTop < 0) {
-                                if (oldTop - delta > 0)
-                                    topNav.css('top', '0px');
-                                else
-                                    topNav.css('top', '-=' + delta + 'px');
-                            }
-                            lastScrolledUp = true;
-                        }
-                        iScrollPos = iCurScrollPos;
-
-                    });
-
-                    (document).addEventListener('touchend', function(e) {
-                        //Only if all fingers lifted the screen
-                        if (e.touches.length === 0) {
-                            topNav.animate({
-                                'top': (lastScrolledUp ? 0 : -60) + 'px'
-                            }, 400);
-                        }
-                    });
-                }
             }
         };
     }

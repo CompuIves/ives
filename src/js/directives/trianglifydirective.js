@@ -71,7 +71,6 @@ app.directive("ngTrianglify", function() {
 
                 scope.options = pattern.opts;
 
-                console.log(pattern);
                 if (dobg1) {
                     pattern.canvas(bg1[0]);
                     bg2.fadeOut(1000);
