@@ -254,9 +254,9 @@
             <div style="color: white;" class="backcontainer">
                 <div style="position: relative;" class="col s12">
                     <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>
-                    <div class="header-title portfolioitemtitle">
+                    <h1 class="portfolioitemtitle">
                         {{portfolio.item.name}}
-                    </div>
+                    </h1>
                     <div class="portfoliolightcolor header-progress">Status: {{portfolio.item.progress | lowercase}}</div>
                     <a ng-show="portfolio.item.link.title" class="portfoliosubtitle portfoliolightcolor" ng-href="{{portfolio.item.link.url}}" target="_blank">{{portfolio.item.link.title}}</a>
                 </div>

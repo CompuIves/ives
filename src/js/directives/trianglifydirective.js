@@ -52,10 +52,13 @@ app.directive("ngTrianglify", function() {
 
 
             function resize() {
+                $(element).parent().css('height', element[0].offsetHeight);
                 //Only generate when there is a bigger size, otherwise it is wasted memory
                 if (element[0].offsetWidth > width || element[0].offsetHeight > height) {
                     width = element[0].offsetWidth;
                     height = element[0].offsetHeight;
+                    bg1.css('height', height);
+                    bg2.css('height', height);
                     return true;
                 } else return false;
             }
