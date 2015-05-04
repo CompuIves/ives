@@ -13,14 +13,7 @@ app.factory('ScrollService', function() {
                 var top = $(this).offset().top;
 
                 if (top + $(this).outerHeight() * 0.3 < windowBottom) {
-                    if ($(this).css('opacity') == 0) {
-                        $(this).animate({
-                            opacity: 1,
-                            top: 0
-                        }, {
-                            duration: 300
-                        });
-                    }
+                    $(this).removeClass('hidden');
                 }
             });
         }
@@ -28,7 +21,7 @@ app.factory('ScrollService', function() {
 
     function reset() {
         $('.scrollfade').each(function() {
-            $(this).css('opacity', 0);
+            $(this).addClass('hidden');
         });
     }
 

@@ -36,6 +36,16 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.scrollfade {
+        transition: all 0.4s ease;
+&.hidden {
+
+    opacity: 0;
+    transform: translateY(15px) scale(0.9, 0.9);
+}
+}
+
+
 .background {
     transition: 1s ease all;
     z-index: 0;
@@ -368,6 +378,7 @@ body {
     }
 
     .entrydescription {
+        transition-delay: 0.1s;
         .flow-text {
             @include widescreen {
                 font-size: 23px;  
@@ -480,6 +491,15 @@ body {
     }
 }
 
+#projectrow {
+    &.visible {
+        .frontportfolio ng-portfolio {
+            opacity: 1;
+            transform: none;
+        }
+    }
+}
+
 .frontportfolio {
     display: inline-block;
     background-color: rgba(0,0,0,0);
@@ -493,6 +513,11 @@ body {
         opacity: 0;
         pointer-events: none;
         z-index: 0;
+    }
+
+    ng-portfolio {
+        opacity: 0;
+        transform: translateY(15px) scale(0.7, 0.7);
     }
 }
 
@@ -665,11 +690,6 @@ body {
         border: none;
         padding-bottom: 0;
         margin-bottom: 0;
-    }
-
-    .fa {
-        float: right;
-        display: inline-block;
     }
 }
 

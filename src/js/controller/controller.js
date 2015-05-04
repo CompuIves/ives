@@ -51,10 +51,10 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             }
         }
 
-
-        if ($(window).outerHeight() < 600) {
+        /*
+        if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
             ScrollService();
-        }
+        }*/
 
         $('.logocircle').hover(function() {
             $(this).find('.logo').css({
@@ -136,9 +136,11 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             $(".descriptioncolor").css("color", ColorService.rgbToString(ColorService.colors.descriptioncolor)).data("color", ColorService.colors.descriptioncolor);
         };
 
-        $('.header').addClass('navigator');
+        navigationScroll();
 
-        $(window).scroll(function() {
+        $(window).scroll(navigationScroll);
+
+        function navigationScroll() {
             var windowTopHTML = $("html").scrollTop();
             var windowTopBody = $("body").scrollTop();
             var windowTop = Math.max(windowTopHTML, windowTopBody);
@@ -149,7 +151,7 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
                 $('.header').addClass('navigator');
                 $('ng-hello').removeClass('navigator');
             }
-        })
+        }
 
         this.goDown = function() {
             var top = 0;

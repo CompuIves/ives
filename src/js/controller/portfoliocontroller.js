@@ -6,6 +6,10 @@ app.controller("PortfolioController", ['$scope', '$http', 'ColorService',
         $http.get('res/portfolioitems.json')
             .then((res) => {
                 this.items = res.data;
+
+                for (var i = 0; i < this.items.length; i++) {
+                    this.items[i].delay = 0.1 * i + 's';
+                }
             });
         this.drop = undefined;
         this.transformfunction = function(item, pos) {

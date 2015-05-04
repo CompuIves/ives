@@ -15,7 +15,7 @@ app.directive("ngHello", ["ColorService",
                 scope.$watch(function() {
                     return ColorService.colors;
                 }, function(newValue) {
-                    if (newValue && !$.isEmptyObject(newValue) && !colorsloaded) {
+                    if (newValue && !$.isEmptyObject(newValue)) {
                         colorsloaded = true;
                         loadColors();
                     }

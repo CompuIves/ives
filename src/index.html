@@ -194,10 +194,10 @@
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
             My experience is mostly based on personal projects, holiday work and work for professional companies through school. I'm trying to gain as much experience as possible each year. 
         </div>
-        <div class="subrow row scrollfade">        
-            <h2 style="margin-bottom: 0;" class="darkcolor col s12">Education</h2>
+        <div class="subrow row">        
+            <h2 style="margin-bottom: 0;" class="scrollfade darkcolor col s12">Education</h2>
             <div class="entry col s12">
-                <div class="entryinfo col m4 s12">
+                <div class="entryinfo col m4 s12 scrollfade">
                     <a href="http://www.nassaucollege.nl/" target="_blank" class=" ultradarkcolor entryname">Dr. Nassau College Quintus </a>
                     <div class="entryyears">
                         2009 - 2015
@@ -206,7 +206,7 @@
                         VWO - Nature & Technology + Biology
                     </div>
                 </div>
-                <div class="entrydescription col m8 s12">
+                <div class="entrydescription col m8 s12 scrollfade">
                     <span class="flow-text">
                         This is a high school for pre-university training in Assen, The Netherlands. I took technological and biological courses with a special subject called Research & Development that allowed me to do projects for commercial enterprises. Some projects listed here were also done in Research & Development. My next step is to go to university and study Biomedical Engineering.
                     </span>
@@ -214,10 +214,10 @@
             </div>
         </div>
 
-        <div class="subrow row scrollfade">
-            <h2 style="margin-bottom: 0;" class="darkcolor col s12">Work</h2>
+        <div class="subrow row">
+            <h2 style="margin-bottom: 0;" class="scrollfade darkcolor col s12">Work</h2>
             <div class="entry col s12">
-                <div class="entryinfo col m4 s12">
+                <div class="entryinfo col m4 s12 scrollfade">
                     <a href="http://web.team6-games.com/" target="_blank" class="entryname ultradarkcolor">
                         Team6 Game Studios
                     </a>
@@ -228,12 +228,12 @@
                         Graphic Artist
                     </div>
                 </div>
-                <div class="entrydescription col m8 s12">
+                <div class="entrydescription col m8 s12 scrollfade">
                     <span class="flow-text">
                         I first started working at Team6 in 2011 and after that I have worked there several times in the holidays. I started out as game-tester. After some time I became their Graphic Artist for video; I began making their trailers and commercials. Team6 has been a great learning experience for me, I have learned to work in a group cooperating with different people for an executive at a professional company.
                     </span>
                     <div class="recommendationtitle ultradarkcolor">Recommendation:</div>
-                    <div class="recommendation"><i class="darkcolor fa fa-quote-left"></i>
+                    <div class="recommendation scrollfade"><i class="darkcolor fa fa-quote-left"></i>
                         <span class="description">
                             <em>
                                 Ives is one of the few, unique individuals with a true entrepreneur spirit: He is not afraid of working real hard to realize his big dreams. From very early age Ives started building his career, and never stopped since then. Ives is known as someone who picks up things real quick, takes good initiative, isn't afraid to do what is necessary and from whom you'll know he will always deliver his best work.
@@ -311,8 +311,8 @@
            </div>
 
            <div class="portfolio col s12">
-               <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m6 s12': item.small, 'l4 m6 s12': !item.small, 'scrollfade': true}">
-                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}"></ng-portfolio>
+               <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m6 s12': item.small, 'l4 m6 s12': !item.small}">
+                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}" ng-style="{'transition-delay': item.delay}"></ng-portfolio>
                 </div>
             </div>
         </div>
@@ -322,10 +322,10 @@
     <div id="contactrow" class="row contentrow bgcolor-transparent" ng-controller="ContactController as contact">
         <h1 class="headercolor">Contact</h1>
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-            Thanks for visiting my website! <br> Do you have any questions, offers or do you just want to say hi? You can contact me by sending an email or filling out this form.   
+            <span style="font-weight: 400">Thanks for visiting my website!</span> <br> Do you have any questions, offers or do you just want to say hi? You can contact me by sending an email or filling out this form.   
         </div>
 
-        <div class="col s12 l8 offset-l2 form">
+        <div class="col s12 l8 offset-l2 form scrollfade ">
             <form name="contactForm" class="formcontents col s12 m10 offset-m1">
                 <div class="descriptionbox">Name:</div>
                 <input name='name' type="text" id="formname" ng-model="contact.data.name" class="bgcolor col s12" required></input>

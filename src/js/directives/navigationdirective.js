@@ -74,6 +74,7 @@ app.directive("ngNavigation", ['ColorService',
 
                                 activeItem = items[i - 1];
                                 items[i - 1].navitem.addClass('active');
+                                items[i - 1].element.addClass('visible');
                                 ga('send', 'event', items[i - 1].name, 'scroll')
                                 setActive(items[i - 1]);
                             }
