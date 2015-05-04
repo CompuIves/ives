@@ -49,23 +49,27 @@ body {
     z-index: 1;
     width: 100%;
     border-radius: 3px;
-    .title {
+    h2 {
         font-size: 48px;
         font-weight: 300;
-        padding-bottom: 1.5rem;
+        padding: 0;
+        margin: 1rem;
+        margin-left: 0;
+        margin-right: 0;
 
         @include phone {
             font-size: 34px;
         }
     }
-    .header-title {
+    h1 {
         color: white;
         text-align: center;
         font-size: 60px;
         line-height: 46px;
         padding-bottom: 1rem;
+        margin: 0;
         @include phone {
-            font-size: 36px;
+            font-size: 50px;
             line-height: 30px;
         }
     }
@@ -185,6 +189,10 @@ body {
     padding-bottom: 500px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     .skills {
         position: relative;
         text-align: left;
@@ -194,13 +202,16 @@ body {
             text-align: center;
         }
 
-        .description {
+        h3 {
             border: none;
             text-align: left;
             font-size: 25px;
             font-weight: 200;
             padding-top: 0.2rem;
             color: rgba(255, 255, 255, 0.8);
+            margin: 0;
+            padding: 0;
+
 
             @include phone {
                 text-align: center;
@@ -223,16 +234,7 @@ body {
             &.border {
                 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                 padding: 0;
-                margin-bottom: 0.5rem;
             }
-            /* For when this is selectable
-            cursor: pointer;
-        
-            &:hover {
-                transition: background-color 0.3s ease;
-                background-color: rgba(0, 0, 0, 0.1);
-            }
-            */
 
             &.selected {
                 background-color: rgba(0, 0, 0, 0.2);
@@ -663,6 +665,11 @@ body {
         border: none;
         padding-bottom: 0;
         margin-bottom: 0;
+    }
+
+    .fa {
+        float: right;
+        display: inline-block;
     }
 }
 
