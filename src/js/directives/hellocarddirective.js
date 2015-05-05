@@ -21,12 +21,12 @@ app.directive("ngHello", ["ColorService",
                     }
                 }, true);
 
-                $(element).load(function() {
+                $(window).load(function() {
                     loadColors();
-                });
-
-                //Just to be sure, pretty dumb...
-                setTimeout(loadColors, 2000);
+                    $(element).css({
+                        opacity: 1
+                    });
+                })
 
                 function loadColors() {
                     $(element).find('.darkcolor').css({

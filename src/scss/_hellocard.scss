@@ -24,7 +24,10 @@ ng-hello {
     transform-style: preserve-3d;
     transform-origin: 50% 50%;
     overflow: hidden;
-    
+        
+    //Animation
+    opacity: 0;
+
     &.backactive {
         width: $backwidth;
         height: $backheight;
