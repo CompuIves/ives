@@ -22,16 +22,14 @@ app.directive("ngHello", ["ColorService",
                 }, true);
 
                 $(window).load(function() {
-                    loadColors();
+
                     $(element).css({
                         opacity: 1
                     });
-
+                    loadColors();
                 })
 
                 function loadColors() {
-                    console.log(ColorService.colors.darkcolor);
-                    console.log($(element).find('.darkcolor'));
                     $(element).find('.darkcolor').css({
                         color: ColorService.rgbToString(ColorService.colors.darkcolor)
                     });
