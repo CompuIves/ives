@@ -26,17 +26,23 @@ app.directive("ngHello", ["ColorService",
                     $(element).css({
                         opacity: 1
                     });
+
                 })
 
                 function loadColors() {
+                    console.log(ColorService.colors.darkcolor);
+                    console.log($(element).find('.darkcolor'));
                     $(element).find('.darkcolor').css({
-                        color: ColorService.colors.darkcolor
+                        color: ColorService.rgbToString(ColorService.colors.darkcolor)
                     });
                     $(element).find('.ultradarkcolor').css({
-                        color: ColorService.colors.darkcolor
+                        color: ColorService.rgbToString(ColorService.colors.ultradarkcolor)
                     });
                     $(element).find('.ultradarkbgcolor').css({
-                        'background-color': ColorService.colors.darkcolor
+                        'background-color': ColorService.rgbToString(ColorService.colors.ultradarkcolor)
+                    })
+                    $(element).find('.darkbgcolor').css({
+                        'background-color': ColorService.rgbToString(ColorService.colors.darkcolor)
                     });
                 }
             }
