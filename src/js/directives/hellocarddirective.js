@@ -42,6 +42,8 @@ app.directive("ngHello", ["ColorService",
                     $(element).find('.darkbgcolor').css({
                         'background-color': ColorService.rgbToString(ColorService.colors.darkcolor)
                     });
+
+                    $(element).find('.active .fa').css('color', '#fff');
                 }
             }
         };
