@@ -43,7 +43,7 @@ app.directive("ngHello", ["ColorService",
                         'background-color': ColorService.rgbToString(ColorService.colors.darkcolor)
                     });
 
-                    $(element).find('.active .fa').css('color', '#fff');
+                    $(element).find('.active .fa').css('color', '#fff'); //Make active color white
                 }
             }
         };
