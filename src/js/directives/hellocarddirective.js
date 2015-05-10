@@ -5,8 +5,8 @@ app.directive("ngHello", ["ColorService",
             templateUrl: '/js/directives/hellocarddirective.html',
             link: function(scope, element, attr, ctrl) {
                 $(element).find('.fa').click(function() {
-                    $(element).find('.fronttextcard').toggleClass('active');
-                    $(element).find('.backtextcard').toggleClass('active');
+                    $(element).find('.fronttextcard').toggleClass('current');
+                    $(element).find('.backtextcard').toggleClass('current');
                     $(element).toggleClass('backactive');
                 });
 
@@ -43,7 +43,7 @@ app.directive("ngHello", ["ColorService",
                         'background-color': ColorService.rgbToString(ColorService.colors.darkcolor)
                     });
 
-                    $(element).find('.active').find('.fa').css('color', '#fff'); //Make active color white
+                    $(element).find('.active .fa').css('color', '#fff'); //Make active color white
                 }
             }
         };
