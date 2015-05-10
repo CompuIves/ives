@@ -35,29 +35,29 @@
 
     <div class="header">
         <div ng-trianglify class="background" options="triangleconfig" interval="{{interval}}"></div>
-            <div class="circles">
+            <div class="circles h-card">
                 <div class="logocircle darkbgcolor">
-                    <a href="https://nl.linkedin.com/in/ivesvh" target="_blank">
+                    <a href="https://nl.linkedin.com/in/ivesvh" rel="me" target="_blank">
                         <i class="logo lightcolor ultradarkbgcolor fa fa-linkedin"></i>
                     </a>
                 </div>
                 <div class="logocircle darkbgcolor">
-                    <a href="http://codepen.io/CompuIves/" target="_blank">
+                    <a href="http://codepen.io/CompuIves/" rel="me" target="_blank">
                         <i class="logo lightcolor ultradarkbgcolor fa fa-codepen"></i>
                     </a>
                 </div>
                 <div class="logocircle darkbgcolor">
-                    <a href="https://github.com/CompuIves" target="_blank">
+                    <a href="https://github.com/CompuIves" rel="me" target="_blank">
                         <i class="logo lightcolor ultradarkbgcolor fa fa-github-alt"></i>
                     </a>
                 </div>
                 <div class="logocircle darkbgcolor">
-                    <a href="https://www.youtube.com/playlist?list=PL14AB56050692684A" target="_blank">
+                    <a href="https://www.youtube.com/playlist?list=PL14AB56050692684A" rel="me" target="_blank">
                         <i class="logo lightcolor ultradarkbgcolor fa fa-youtube-play"></i>
                     </a>
                 </div>
                 <div class="profileimg-container">
-                    <img ng-repeat="i in main.ivesimages" class="profileimg" ng-src="{{i}}" ng-class="{'shown': main.currentIves === $index}"></img>
+                    <img ng-repeat="i in main.ivesimages" class="profileimg u-photo" ng-src="{{i}}" ng-class="{'shown': main.currentIves === $index}"></img>
                     <i ng-click="main.goDown()" class="darkcolor fa fa-chevron-down"></i>
                 </div>
                 
@@ -71,22 +71,22 @@
                     <span class="flow-text">My name is <strong>Ives van Hoorne</strong>, I'm <strong>{{main.ageyears}} years, {{main.agemonths}} months and {{main.ageseconds}} seconds</strong> old and live in <strong>Assen, The Netherlands</strong>. I'm an ambitious developer, passionate about new technology and its capabilities. I am inspired by fast-growing companies and hope to become the lead of one in the future.</span>
                 </div>
                 <div class="col s12 m7 l5">
-                    <h2 class="darkcolor">Information</h2>
+                    <h2 class="darkcolor h-card">Information</h2>
                         <div class="info">
                             <i class="fa fa-user icon darkcolor"></i>
-                            <span class="text">Ives van Hoorne</span>
+                            <span class="text p-name">Ives van Hoorne</span>
                             <i ng-click="main.changeIvesImage()" class="fa fa-picture-o action ultralightcolor darkbgcolor hoverdarker"></i>
                         </div>
 
                         <div class="info">
                             <i class="fa fa-envelope icon darkcolor"></i>
-                            <span class="text">me@ivesvh.com</span>
+                            <span class="text u-email">me@ivesvh.com</span>
                             <a href="mailto:me@ivesvh.com" class="fa fa-paper-plane action ultralightcolor darkbgcolor hoverdarker"></a>
                         </div>
 
                         <div class="info">
                             <i class="fa fa-map-marker icon darkcolor"></i>
-                            <span class="text">Assen, The Netherlands</span>
+                            <span class="text p-region">Assen, The Netherlands</span>
                             <i ng-click="main.showMaps()" class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
                         </div>
                 </div>
