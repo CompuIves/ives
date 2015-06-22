@@ -82,11 +82,11 @@ gulp.task('resources', function() {
         .pipe(reload({
             stream: true
         }));
-})
+});
 
 gulp.task('bower', function() {
     return bower('bower_components')
-        .pipe(gulp.dest('app/lib/'))
+        .pipe(gulp.dest('app/lib/'));
 });
 
 gulp.task('default', ['serve']);

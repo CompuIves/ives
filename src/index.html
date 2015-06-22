@@ -24,10 +24,10 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
+
       ga('create', 'UA-62222142-1', 'auto');
       ga('send', 'pageview');
-    
+
     </script>
     </head>
     <body ng-controller="MainController as main">
@@ -60,7 +60,7 @@
                     <img ng-repeat="i in main.ivesimages" class="profileimg u-photo" ng-src="{{i}}" ng-class="{'shown': main.currentIves === $index}"></img>
                     <i ng-click="main.goDown()" class="darkcolor fa fa-chevron-down"></i>
                 </div>
-                
+
             </div>
         </div>
 
@@ -101,8 +101,26 @@
     <div id="skillrow" class="row contentrow centerrow ultradarkbgcolor-transparent">
         <h1>Skills</h1>
         <div class="subheader-text descriptioncolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-        These are the skills I'm comfortable with. I'm trying to get better at each skill and learn new ones as fast as possible.
+          These are the skills I'm comfortable with. I both love development and design and like learning new things about them.
         </div>
+<!--
+        <div class="skills">
+            <div class="col s6">
+                <h2 class="categorytitle">Development</h2>
+                <div class="entrydescription categorydescription"><div class="flow-text">
+                  Developing is my favorite thing to do.
+                  I am most comfortable with Java, although I have created web apps with HTML, CSS and Javascript.
+                </div></div>
+            </div>
+            <div class="col s6">
+                <h2 class="categorytitle">Design</h2>
+                <div class="entrydescription categorydescription"><div class="flow-text">
+                  Great design should makes an application both easy and enjoyable to use.
+                  Designing is really important and with this in mind I try to design everything to make it both beautiful and easy to use.
+                </div></div>
+            </div>
+        </div>
+      -->
 
         <div class="col s12 skill scrollfade">
             <h2 style="padding-bottom: 0;" class="col s12">Coding Skills</h2>
@@ -154,6 +172,7 @@
             </div>
         </div>
 
+
         <div class="col s12 skill scrollfade">
             <h2 style="padding-bottom: 0;" class="col s12">Languages</h2>
             <div class="col s12 skills">
@@ -187,14 +206,15 @@
                 </div>
             </div>
         </div>
+        
     </div>
 
     <div id="experiencerow" class="row contentrow bgcolor-transparent">
         <h1 class="headercolor">Experience</h1>
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-            My experience is mostly based on personal projects, holiday work and work for professional companies through school. I'm trying to gain as much experience as possible each year. 
+            My experience is mostly based on personal projects, holiday work and work for professional companies through school. I'm trying to gain as much experience as possible each year.
         </div>
-        <div class="subrow row">        
+        <div class="subrow row">
             <h2 style="margin-bottom: 0;" class="scrollfade darkcolor col s12">Education</h2>
             <div class="entry col s12">
                 <div class="entryinfo col m4 s12 scrollfade">
@@ -216,6 +236,26 @@
 
         <div class="subrow row">
             <h2 style="margin-bottom: 0;" class="scrollfade darkcolor col s12">Work</h2>
+            <div class="entry col s12" style="padding-bottom: 2rem;">
+                <div class="entryinfo col m4 s12 scrollfade">
+                    <a href="http://catawiki.com/" target="_blank" class="entryname ultradarkcolor">
+                        Catawiki
+                    </a>
+                    <div class="entryyears">
+                        June 2015 - Now
+                    </div>
+                    <div class="entrysub">
+                        Junior Developer
+                    </div>
+                </div>
+                <div class="entrydescription col m8 s12 scrollfade">
+                    <span class="flow-text">
+                        Catawiki is a fast-growing auction company originally based in Assen.
+                        It is currently the biggest auction website of Europe and is still growing rapidly.
+                        My function at Catawiki involves maintaining and adding new features to their front- and backend.
+                    </span>
+                </div>
+            </div>
             <div class="entry col s12">
                 <div class="entryinfo col m4 s12 scrollfade">
                     <a href="http://web.team6-games.com/" target="_blank" class="entryname ultradarkcolor">
@@ -322,7 +362,7 @@
     <div id="contactrow" class="row contentrow bgcolor-transparent" ng-controller="ContactController as contact">
         <h1 class="headercolor">Contact</h1>
         <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-            <span style="font-weight: 400">Thanks for visiting my website!</span> <br> I'm currently looking for work. If you have an offer or just want to say hi, you can contact me by sending an email or filling out this form.   
+            <span style="font-weight: 400">Thanks for visiting my website!</span> <br> If you have an offer or just want to say hi, you can contact me by sending an email or filling out this form.
         </div>
 
         <div class="col s12 l8 offset-l2 form scrollfade ">
@@ -352,7 +392,7 @@
                             <div class="circle"></div>
                           </div>
                         </div>
-                
+
                         <div class="spinner-layer spinner-red">
                           <div class="circle-clipper left">
                             <div class="circle"></div>
@@ -362,7 +402,7 @@
                             <div class="circle"></div>
                           </div>
                         </div>
-                
+
                         <div class="spinner-layer spinner-yellow">
                           <div class="circle-clipper left">
                             <div class="circle"></div>
@@ -372,7 +412,7 @@
                             <div class="circle"></div>
                           </div>
                         </div>
-                
+
                         <div class="spinner-layer spinner-green">
                           <div class="circle-clipper left">
                             <div class="circle"></div>
@@ -389,7 +429,7 @@
                     <div class="confirmed">Your message has been sent</div>
                     <div class="text">Thanks for contacting me!</div>
                 </div>
-                <div class="failed">                    
+                <div class="failed">
                     <div class="confirmed">Your message has not been sent</div>
                     <div class="text">Please try again later or try sending a mail directly (me@ivesvh.com)</div>
                 </div>

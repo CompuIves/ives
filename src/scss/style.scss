@@ -12,7 +12,7 @@ body {
     font-smooth:always;
 }
 
-.angular-google-map-container { 
+.angular-google-map-container {
     transition: all 0.3s ease;
     display: block;
     height: 0px;
@@ -60,7 +60,7 @@ body {
     width: 100%;
     border-radius: 3px;
     h2 {
-        font-size: 48px;
+        font-size: 45px;
         font-weight: 300;
         padding: 0;
         margin: 1rem;
@@ -108,7 +108,7 @@ body {
                 padding-top: 120px;
             }
         }
-        
+
         &.centerrow {
             @include phone {
                 padding-left: 0%;
@@ -188,6 +188,23 @@ body {
     }
 }
 
+.skills {
+    text-align: center;
+    .fa {
+        font-size: 25px;
+    }
+
+    .categorytitle {
+        color: white;
+        font-weight: 200;
+    }
+
+    .categorydescription {
+        color: white;
+        font-weight: 200;
+    }
+}
+
 .skill {
     position: relative;
     display: block;
@@ -227,7 +244,7 @@ body {
                 text-align: center;
             }
         }
-        
+
         .name {
             text-align: left;
             padding: 0.75rem;
@@ -240,7 +257,7 @@ body {
                 padding-left: 0.75rem;
                 text-align: center;
             }
-            
+
             &.border {
                 border-bottom: 1px solid rgba(255, 255, 255, 0.2);
                 padding: 0;
@@ -292,7 +309,7 @@ body {
                 font-size: 20px;
                 border: 1px solid rgba(255, 255, 255, 0.1);
                 transform: translateY(50%);
-                
+
                 @include tablet {
                     position: relative;
                 }
@@ -359,6 +376,28 @@ body {
     }
 }
 
+.entrydescription {
+    transition-delay: 0.1s;
+    .flow-text {
+        @include widescreen {
+            font-size: 23px;
+            line-height: 2.5rem;
+        }
+        @include desktop {
+            font-size: 23px;
+            line-height: 2.5rem;
+        }
+
+        @include tablet {
+            font-size: 20px;
+            line-height: 2.2rem;
+        }
+    }
+
+    @include phone {
+        padding-top: 10px;
+    }
+}
 .entry {
     margin-top: 1rem;
     padding: 1rem;
@@ -377,29 +416,6 @@ body {
         font-weight: 300;
     }
 
-    .entrydescription {
-        transition-delay: 0.1s;
-        .flow-text {
-            @include widescreen {
-                font-size: 23px;  
-                line-height: 2.5rem;
-            }
-            @include desktop {
-                font-size: 23px;  
-                line-height: 2.5rem;
-            }
-
-            @include tablet {
-                font-size: 20px;  
-                line-height: 2.2rem;
-            }
-        }
-
-        @include phone {
-            padding-top: 10px;
-        }
-    }
-    
     .recommendationtitle {
         margin-top: 10px;
         font-size: 18px;
@@ -414,12 +430,10 @@ body {
         background-color: rgba(255, 255, 255, 0.4);
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 
-        
+
         .description {
             padding-left: 40px;
             padding-right: 40px;
-
-
         }
         .author {
             font-weight: 400;
@@ -427,10 +441,10 @@ body {
             text-align: right;
             margin-right: 50px;
         }
-        
+
         .fa {
             font-size: 30px;
-            
+
             &.fa-quote-right {
                 position: absolute;
                 right: 10px;
@@ -656,7 +670,7 @@ body {
             color: rgb(60, 60, 60) !important;
         }
     }
-    
+
     .categoryinfo {
         font-size: 18px;
         border-radius: 2px;
@@ -667,16 +681,16 @@ body {
         color: white;
         &.flow-text {
             @include widescreen {
-                font-size: 23px;  
+                font-size: 23px;
                 line-height: 2.5rem;
             }
             @include desktop {
-                font-size: 23px;  
+                font-size: 23px;
                 line-height: 2.5rem;
             }
 
             @include tablet {
-                font-size: 20px;  
+                font-size: 20px;
                 line-height: 2.2rem;
             }
         }
@@ -767,7 +781,7 @@ body {
         bottom: 0;
         position: absolute;
         pointer-events: none;
-        
+
         .done {
             transition: all 0.3s ease;
             opacity: 0;
@@ -777,7 +791,7 @@ body {
             }
 
             .confirmed {
-                position: absolute; 
+                position: absolute;
                 top: 0px;
                 left: 0;
                 right: 0;
@@ -801,7 +815,7 @@ body {
             }
         }
 
-        
+
         .loading {
             transition: all 0.3s ease;
             transition-delay: 0.2s;
@@ -829,7 +843,7 @@ body {
             opacity: 0;
             pointer-events: none;
         }
-        
+
         .confirmcontents {
             transition: all 0.3s ease;
             opacity: 1;
