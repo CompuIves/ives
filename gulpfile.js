@@ -9,7 +9,11 @@ var minifyHTML = require('gulp-minify-html');
 var uglify = require('gulp-uglify');
 var babel = require("gulp-babel");
 var bower = require('gulp-bower');
+var purify = require('gulp-purifycss');
 var reload = browserSync.reload;
+
+var JAVASCRIPT_SOURCES = ["src/js/core.js", "src/js/services/*.js", "src/js/**/*.js"]
+var HTML_SOURCES = ['src/**/*.html']
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass', 'fonts', 'bower', 'html', 'javascript', 'resources'], function() {
@@ -32,6 +36,7 @@ gulp.task('sass', function() {
     return gulp.src(["src/scss/style.scss", "src/scss/materialize/materialize.scss"])
         .pipe(plumber())
         .pipe(sass())
+        .pipe(purify(JAVASCRIPT_SOURCES.concat(HTML_SOURCES)))
         .pipe(minifyCSS({
             keepBreaks: true
         }))
@@ -53,7 +58,7 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('html', function() {
-    return gulp.src("src/**/*.html")
+    return gulp.src(HTML_SOURCES)
         .pipe(plumber())
         .pipe(minifyHTML({
             conditionals: true
@@ -65,7 +70,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('javascript', function() {
-    return gulp.src(["src/js/core.js", "src/js/services/*.js", "src/js/**/*.js"])
+    return gulp.src(JAVASCRIPT_SOURCES)
         .pipe(concat('all.min.js'))
         .pipe(plumber())
         .pipe(babel())
