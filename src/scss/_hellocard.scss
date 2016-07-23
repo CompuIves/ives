@@ -24,7 +24,7 @@ ng-hello {
     transform-style: preserve-3d;
     transform-origin: 50% 50%;
     overflow: hidden;
-        
+
     //Animation
     opacity: 0;
 
@@ -75,6 +75,7 @@ ng-hello {
             line-height: $frontheight;
             font-size: 64px;
             font-weight: 500;
+            margin: 0;
             @include phone {
                 font-size: 50px;
             }

@@ -2,445 +2,428 @@
 <html lang="en" ng-app="ives">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ives van Hoorne</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ives van Hoorne</title>
 
-    <!-- Materialize -->
-    <link href="css/materialize.css" rel="stylesheet">
-    <link href="lib/fontawesome/css/font-awesome.min.css" rel="stylesheet"></link>
-    <link href='css/style.css' rel="stylesheet"></link>
+  <!-- Materialize -->
+  <link href="css/materialize.css" rel="stylesheet">
+  <link href="lib/fontawesome/css/font-awesome.min.css" rel="stylesheet"></link>
+  <link href='css/style.css' rel="stylesheet"></link>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-62222142-1', 'auto');
-      ga('send', 'pageview');
+  ga('create', 'UA-62222142-1', 'auto');
+  ga('send', 'pageview');
 
-    </script>
-    </head>
-    <body ng-controller="MainController as main">
-    <ng-hello interval="{{interval}}"></ng-hello>
+  </script>
+</head>
+<body ng-controller="MainController as main">
+  <ng-hello interval="{{interval}}"></ng-hello>
 
-    <div class="header">
-        <div ng-trianglify class="background" options="triangleconfig" interval="{{interval}}"></div>
-            <div class="circles h-card">
-                <div class="logocircle darkbgcolor">
-                    <a href="https://nl.linkedin.com/in/ivesvh" rel="me" target="_blank">
-                        <i class="logo lightcolor ultradarkbgcolor fa fa-linkedin"></i>
-                    </a>
-                </div>
-                <div class="logocircle darkbgcolor">
-                    <a href="http://codepen.io/CompuIves/" rel="me" target="_blank">
-                        <i class="logo lightcolor ultradarkbgcolor fa fa-codepen"></i>
-                    </a>
-                </div>
-                <div class="logocircle darkbgcolor">
-                    <a href="https://www.youtube.com/playlist?list=PL14AB56050692684A" rel="me" target="_blank">
-                        <i class="logo lightcolor ultradarkbgcolor fa fa-youtube-play"></i>
-                    </a>
-                </div>
-                <div class="logocircle darkbgcolor">
-                    <a href="https://github.com/CompuIves" rel="me" target="_blank">
-                        <i class="logo lightcolor ultradarkbgcolor fa fa-github-alt"></i>
-                    </a>
-                </div>
-                <div class="profileimg-container">
-                    <img ng-repeat="i in main.ivesimages" class="profileimg u-photo" ng-src="{{i}}" ng-class="{'shown': main.currentIves === $index}"></img>
-                    <i ng-click="main.goDown()" class="darkcolor fa fa-chevron-down"></i>
-                </div>
+  <header class="header">
+    <div ng-trianglify class="background" options="triangleconfig" interval="{{interval}}"></div>
+    <div class="circles h-card">
+      <div class="logocircle darkbgcolor">
+        <a href="https://nl.linkedin.com/in/ivesvh" rel="me" target="_blank">
+          <i class="logo lightcolor ultradarkbgcolor fa fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="logocircle darkbgcolor">
+        <a href="http://codepen.io/CompuIves/" rel="me" target="_blank">
+          <i class="logo lightcolor ultradarkbgcolor fa fa-codepen"></i>
+        </a>
+      </div>
+      <div class="logocircle darkbgcolor">
+        <a href="https://www.youtube.com/playlist?list=PL14AB56050692684A" rel="me" target="_blank">
+          <i class="logo lightcolor ultradarkbgcolor fa fa-youtube-play"></i>
+        </a>
+      </div>
+      <div class="logocircle darkbgcolor">
+        <a href="https://github.com/CompuIves" rel="me" target="_blank">
+          <i class="logo lightcolor ultradarkbgcolor fa fa-github-alt"></i>
+        </a>
+      </div>
+      <div class="profileimg-container">
+        <img ng-repeat="i in main.ivesimages" class="profileimg u-photo" ng-src="{{i}}" ng-class="{'shown': main.currentIves === $index}"></img>
+        <i ng-click="main.goDown()" class="darkcolor fa fa-chevron-down"></i>
+      </div>
 
-            </div>
+    </div>
+  </header>
+
+  <div class="main">
+    <section id="userinforow" class="row firstrow contentrow bgcolor-transparent">
+      <div class="col s12 m5 l7">
+        <h2 class="darkcolor">Who am I?</h2>
+        <p class="flow-text">My name is <strong>Ives van Hoorne</strong>. I'm <strong>{{main.ageyears}} years, {{main.agemonths}} months and {{main.ageseconds}} seconds</strong> old and live in <strong>Assen, The Netherlands</strong>. I'm an <strong>ambitious developer</strong>, passionate about new technology and its capabilities. I am inspired by fast-growing companies and hope to become the lead of one in the future.</p>
+      </div>
+      <div class="col s12 m7 l5">
+        <h2 class="darkcolor h-card">Information</h2>
+        <div class="info">
+          <i class="fa fa-user icon darkcolor"></i>
+          <span class="text p-name">Ives van Hoorne</span>
+          <i ng-click="main.changeIvesImage()" class="fa fa-picture-o action ultralightcolor darkbgcolor hoverdarker"></i>
         </div>
 
-        <div class="main">
-            <div id="userinforow" class="row firstrow contentrow bgcolor-transparent">
-                <div class="col s12 m5 l7">
-                    <h2 class="darkcolor">Who am I?</h2>
-                    <span class="flow-text">My name is <strong>Ives van Hoorne</strong>. I'm <strong>{{main.ageyears}} years, {{main.agemonths}} months and {{main.ageseconds}} seconds</strong> old and live in <strong>Assen, The Netherlands</strong>. I'm an <strong>ambitious developer</strong>, passionate about new technology and its capabilities. I am inspired by fast-growing companies and hope to become the lead of one in the future.</span>
-                </div>
-                <div class="col s12 m7 l5">
-                    <h2 class="darkcolor h-card">Information</h2>
-                        <div class="info">
-                            <i class="fa fa-user icon darkcolor"></i>
-                            <span class="text p-name">Ives van Hoorne</span>
-                            <i ng-click="main.changeIvesImage()" class="fa fa-picture-o action ultralightcolor darkbgcolor hoverdarker"></i>
-                        </div>
+        <div class="info">
+          <i class="fa fa-envelope icon darkcolor"></i>
+          <span class="text u-email">me@ivesvh.com</span>
+          <a href="mailto:me@ivesvh.com" class="fa fa-paper-plane action ultralightcolor darkbgcolor hoverdarker"></a>
+        </div>
 
-                        <div class="info">
-                            <i class="fa fa-envelope icon darkcolor"></i>
-                            <span class="text u-email">me@ivesvh.com</span>
-                            <a href="mailto:me@ivesvh.com" class="fa fa-paper-plane action ultralightcolor darkbgcolor hoverdarker"></a>
-                        </div>
-
-                        <div class="info">
-                            <i class="fa fa-map-marker icon darkcolor"></i>
-                            <span class="text p-region">Assen, The Netherlands</span>
-                            <i ng-click="main.showMaps()" class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
-                        </div>
-                </div>
-            </div>
+        <div class="info">
+          <i class="fa fa-map-marker icon darkcolor"></i>
+          <span class="text p-region">Assen, The Netherlands</span>
+          <i ng-click="main.showMaps()" class="fa fa-globe action ultralightcolor darkbgcolor hoverdarker"></i>
+        </div>
+      </div>
+    </section>
 
     <ui-gmap-google-map center='map.center' zoom='map.zoom' control="map.control">
-        <ui-gmap-marker
-        idKey="'Ives'"
-        coords='{latitude: 53, longitude: 6.56}'>
-        </ui-gmap-marker>
-    </ui-gmap-google-map>
-    <div id="skillrow" class="row contentrow centerrow ultradarkbgcolor-transparent">
-        <h1>Skills</h1>
-        <div class="subheader-text descriptioncolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-          I love development and design. I'm most
-          comfortable with front-end technologies like React and Redux, but I have also done a lot
-          of work in back-end technologies like Rails.
-        </div>
-<!--
-        <div class="skills">
-            <div class="col s6">
-                <h2 class="categorytitle">Development</h2>
-                <div class="entrydescription categorydescription"><div class="flow-text">
-                  Developing is my favorite thing to do.
-                  I am most comfortable with Java, although I have created web apps with HTML, CSS and Javascript.
-                </div></div>
-            </div>
-            <div class="col s6">
-                <h2 class="categorytitle">Design</h2>
-                <div class="entrydescription categorydescription"><div class="flow-text">
-                  Great design should makes an application both easy and enjoyable to use.
-                  Designing is really important and with this in mind I try to design everything to make it both beautiful and easy to use.
-                </div></div>
-            </div>
-        </div>
-      -->
-
-        <div class="col s12 skill scrollfade">
-            <h2 style="padding-bottom: 0;" class="col s12">Coding Skills</h2>
-            <div class="col s12 skills">
-                <h3 class="col s12">Programming Languages</h3>
-                <div class="name col l4 m4 s12">Javascript (ES6)</div>
-                <div class="name col l4 m4 s12">Java</div>
-                <div class="name col l4 m4 s12">Ruby</div>
-                <div class="name col s12 border"></div>
-                <h3 class="col s12">Backend</h3>
-                <div class="name col l4 m4 s12">Node.js</div>
-                <div class="name col l4 m4 s12">(No)SQL</div>
-                <div class="name col l4 m4 s12">Ruby on Rails</div>
-                <div class="name col s12 border"></div>
-                <h3 class="col s12">Frontend</h3>
-                <div class="name col l4 m4 s12">React</div>
-                <div class="name col l4 m4 s12">React Native</div>
-                <div class="name col l4 m4 s12">HTML5</div>
-                <div class="name col l4 m4 s12">CSS3</div>
-                <div class="name col l4 m4 s12">Sass</div>
-                <div class="name col l4 m4 s12">AngularJS 1</div>
-                <div class="name col l4 m4 s12">JQuery</div>
-            </div>
-        </div>
-
-        <div class="col s12 skill scrollfade">
-            <h2 style="padding-bottom: 0;" class="col s12">Tools</h2>
-            <div class="col s12 skills">
-                <h3 class="col s12">Graphic Tools</h3>
-                <div class="name col m6 s12">Adobe Photoshop</div>
-                <div class="name col m6 s12">Adobe Illustrator</div>
-                <div class="name col m6 s12">Adobe After Effects</div>
-                <div class="name col m6 s12">Adobe Premiere Pro</div>
-                <div class="name col s12 border"></div>
-                <h3 class="col s12">Version Control Systems</h3>
-                <div class="name col s6">Git</div>
-                <div class="name col s6">SVN</div>
-                <div class="name col s12 border"></div>
-                <h3 class="col s12">Build Automatization</h3>
-                <div class="name col s6">Webpack</div>
-                <div class="name col s6">Gulp</div>
-            </div>
-        </div>
-
-
-        <div class="col s12 skill scrollfade">
-            <h2 style="padding-bottom: 0;" class="col s12">Languages</h2>
-            <div class="col s12 skills">
-                <div class="language col s12">
-                    <span class="col l2 m12 s12">Dutch</span>
-                    <span class="col l4 m6 s12 langdesc">Nederlands is mijn moedertaal.</span>
-                    <div class="col l6 m6 s12" style="position: relative;">
-                        <ng-progress progress="1" ></ng-progress>
-                    </div>
-                </div>
-                <div class="language col s12">
-                    <span class="col l2 s12">English</span>
-                    <span class="col l4 m6 s12 langdesc">I am highly proficient in English.</span>
-                    <div class="col l6 m6 s12" style="position: relative;">
-                        <ng-progress progress="0.95" ></ng-progress>
-                    </div>
-                </div>
-                <div class="language col s12">
-                    <span class="col l2 s12">German</span>
-                    <span class="col l4 m6 s12 langdesc">Ich spreche Deutsch in der Schule.</span>
-                    <div class="col l6 m6 s12" style="position: relative;">
-                        <ng-progress progress="0.5" ></ng-progress>
-                    </div>
-                </div>
-                <div class="language col s12">
-                    <span class="col l2 s12">French</span>
-                    <span class="col l4 m6 s12 langdesc">Je parle un petit peu de Français.</span>
-                    <div class="col l6 m6 s12" style="position: relative;">
-                        <ng-progress progress="0.2" ></ng-progress>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      <ui-gmap-marker
+      idKey="'Ives'"
+      coords='{latitude: 53, longitude: 6.56}'>
+    </ui-gmap-marker>
+  </ui-gmap-google-map>
+  <section id="skillrow" class="row contentrow centerrow ultradarkbgcolor-transparent">
+    <h1>Skills</h1>
+    <div class="subheader-text descriptioncolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+      I love development and design. I'm most
+      comfortable with front-end technologies like React and Redux, but I have also done a lot
+      of work in back-end technologies like Rails.
     </div>
 
-    <div id="experiencerow" class="row contentrow bgcolor-transparent">
-        <h1 class="headercolor">Experience</h1>
-        <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-          I'm trying to learn and gain as much experience as possible each year.
-        </div>
-
-        <div class="subrow row">
-            <h2 style="margin-bottom: 0;" class="scrollfade darkcolor col s12">Work</h2>
-            <div class="entry col s12" style="padding-bottom: 2rem;">
-                <div class="entryinfo col m4 s12 scrollfade">
-                    <a href="http://catawiki.com/" target="_blank" class="entryname ultradarkcolor">
-                        Catawiki
-                    </a>
-                    <div class="entryyears">
-                        June 2015 - Now
-                    </div>
-                    <div class="entrysub">
-                        Developer
-                    </div>
-                </div>
-                <div class="entrydescription col m8 s12 scrollfade">
-                    <span class="flow-text">
-                        Catawiki is an auction website focused on selling only exceptional items.
-                        We are the fastest growing tech company of the world with a 45.080% growth over the past four years, our
-                        site is visited by more than 12 million users each month.
-                        I'm responsible for the implementation of a technology called React for different parts
-                        of the website, including the auction and lot pages.
-                    </span>
-                </div>
-            </div>
-            <div class="entry col s12">
-                <div class="entryinfo col m4 s12 scrollfade">
-                    <a href="http://web.team6-games.com/" target="_blank" class="entryname ultradarkcolor">
-                        Team6 Game Studios
-                    </a>
-                    <div class="entryyears">
-                        2011 - 2015
-                    </div>
-                    <div class="entrysub">
-                        Graphic Artist
-                    </div>
-                </div>
-                <div class="entrydescription col m8 s12 scrollfade">
-                    <span class="flow-text">
-                        I first started working at Team6 in 2011 and after that I have worked there several times in the holidays. I started out as game-tester. After some time I became their Graphic Artist for video; I began making their trailers and commercials. Team6 has been a great learning experience for me, I have learned to work in a group cooperating with different people for an executive at a professional company.
-                    </span>
-                    <div class="recommendationtitle ultradarkcolor">Recommendation:</div>
-                    <div class="recommendation scrollfade"><i class="darkcolor fa fa-quote-left"></i>
-                        <span class="description">
-                            <em>
-                                Ives is one of the few, unique individuals with a true entrepreneur spirit: He is not afraid of working real hard to realize his big dreams. From very early age Ives started building his career, and never stopped since then. Ives is known as someone who picks up things real quick, takes good initiative, isn't afraid to do what is necessary and from whom you'll know he will always deliver his best work.
-                            </em>
-                        </span>
-                        <div class="author">
-                            Ronnie Nelis - CEO Team6
-                        </div>
-                        <i class="darkcolor fa fa-quote-right"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="subrow row">
-            <h2 style="margin-bottom: 0;" class="scrollfade darkcolor col s12">Education</h2>
-            <div class="entry col s12">
-                <div class="entryinfo col m4 s12 scrollfade">
-                    <a href="http://www.nassaucollege.nl/" target="_blank" class=" ultradarkcolor entryname">Dr. Nassau College Quintus </a>
-                    <div class="entryyears">
-                        2009 - 2015
-                    </div>
-                    <div class="entrysub">
-                        VWO - Nature & Technology + Biology
-                    </div>
-                </div>
-                <div class="entrydescription col m8 s12 scrollfade">
-                    <span class="flow-text">
-                        This is a high school for pre-university training in Assen, The Netherlands. I took technological and biological courses with a
-                        special subject called Research & Development that allowed me to do projects for commercial enterprises.
-                        Some projects listed here were also done in Research & Development. In September I will go to University of Twente to study
-                        Computer Science.
-                    </span>
-                </div>
-            </div>
-        </div>
+    <div class="col s12 skill scrollfade">
+      <h2 style="padding-bottom: 0;" class="col s12">Coding Skills</h2>
+      <div class="col s12 skills">
+        <h3 class="col s12">Programming Languages</h3>
+        <div class="name col l4 m4 s12">Javascript (ES6)</div>
+        <div class="name col l4 m4 s12">Java</div>
+        <div class="name col l4 m4 s12">Ruby</div>
+        <div class="name col s12 border"></div>
+        <h3 class="col s12">Backend</h3>
+        <div class="name col l4 m4 s12">Node.js</div>
+        <div class="name col l4 m4 s12">(No)SQL</div>
+        <div class="name col l4 m4 s12">Ruby on Rails</div>
+        <div class="name col s12 border"></div>
+        <h3 class="col s12">Frontend</h3>
+        <div class="name col l4 m4 s12">React</div>
+        <div class="name col l4 m4 s12">React Native</div>
+        <div class="name col l4 m4 s12">HTML5</div>
+        <div class="name col l4 m4 s12">CSS3</div>
+        <div class="name col l4 m4 s12">Sass</div>
+        <div class="name col l4 m4 s12">AngularJS 1</div>
+        <div class="name col l4 m4 s12">JQuery</div>
+      </div>
     </div>
 
-    <div id="projectrow" class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
-        <div ng-show="portfolio.item" class="backportfolio">
-            <div style="color: white;" class="backcontainer">
-                <div style="position: relative;" class="col s12">
-                    <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>
-                    <h1 class="portfolioitemtitle">
-                        {{portfolio.item.name}}
-                    </h1>
-                    <div class="portfoliolightcolor header-progress">Status: {{portfolio.item.progress | lowercase}}</div>
-                    <a ng-show="portfolio.item.link.title" class="portfoliosubtitle portfoliolightcolor" ng-href="{{portfolio.item.link.url}}" target="_blank">{{portfolio.item.link.title}}</a>
-                </div>
-
-                <div ng-show="portfolio.item.banner.kind == 'images'" class="images col s12">
-                    <div class="col s12 m4">
-                        <img ng-show="portfolio.item.banner.image1" class="col s12" ng-src="{{portfolio.item.banner.image1}}">
-                        <div>{{portfolio.item.banner.image1desc}}</div>
-                    </div>
-                    <div class="col s12 m4">
-                        <img ng-show="portfolio.item.banner.image2" class="col s12" ng-src="{{portfolio.item.banner.image2}}">
-                        <div>{{portfolio.item.banner.image2desc}}</div>
-                    </div>
-                    <div class="col s12 m4">
-                        <img ng-show="portfolio.item.banner.image3" class="col s12" ng-src="{{portfolio.item.banner.image3}}">
-                        <div>{{portfolio.item.banner.image3desc}}</div>
-                    </div>
-                </div>
-
-                <iframe class="col s12 website" ng-show="portfolio.item.banner.kind == 'iframe'" ng-src="{{portfolio.item.banner.url}}"></iframe>
-
-                <p ng-if="portfolio.item.banner.kind == 'codepen'" data-height="300" data-theme-id="0" data-slug-hash="{{portfolio.item.banner.codepen_id}}" data-default-tab="result" class='col s12 codepen' data-user="CompuIves">
-                </p>
-
-                <iframe ng-if="portfolio.item.banner.kind == 'youtube'" style="max-width: 550px; display: block; margin: 0 auto; padding-top: 15px;" width="100%" height="360" ng-src="{{'https://www.youtube.com/embed/' + portfolio.item.banner.youtube_id}}" frameborder="0" allowfullscreen></iframe>
-
-                <div class="col s12 m7">
-                    <div class="categoryinfo portfoliolightcolor">Description:</div>
-                    <div ng-bind-html="portfolio.item.description" class="flow-text projectdescription"></div>
-                </div>
-                <div class="col s12 m5">
-                    <div ng-show="portfolio.item.features" class="categoryinfo portfoliolightcolor">Features:</div>
-                    <ul style="margin: 0">
-                        <li class="flow-text projectdescription" ng-repeat="feature in portfolio.item.features">
-                            {{feature}}
-                        </li>
-                    </ul>
-
-                    <div ng-show="portfolio.item.tools" class="categoryinfo portfoliolightcolor">Built with:</div>
-                    <ul style="margin: 0;">
-                        <li class="flow-text projectdescription" ng-repeat="tool in portfolio.item.tools">
-                            {{tool}}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div ng-hide="portfolio.item" class="frontportfolio">
-           <h1>Projects</h1>
-           <div class="subheader-text descriptioncolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-               My most recent work is in development, I have done web development and game development (which I both love to do). My older work is in video editing, which I did a lot for Team6.
-           </div>
-
-           <div class="portfolio col s12">
-               <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m6 s12': item.small, 'l4 m6 s12': !item.small}">
-                   <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}" ng-style="{'transition-delay': item.delay}"></ng-portfolio>
-                </div>
-            </div>
-        </div>
-        <ng-drop options="{{portfolio.drop}}"></ng-drop>
+    <div class="col s12 skill scrollfade">
+      <h2 style="padding-bottom: 0;" class="col s12">Tools</h2>
+      <div class="col s12 skills">
+        <h3 class="col s12">Graphic Tools</h3>
+        <div class="name col m6 s12">Adobe Photoshop</div>
+        <div class="name col m6 s12">Adobe Illustrator</div>
+        <div class="name col m6 s12">Adobe After Effects</div>
+        <div class="name col m6 s12">Adobe Premiere Pro</div>
+        <div class="name col s12 border"></div>
+        <h3 class="col s12">Version Control Systems</h3>
+        <div class="name col s6">Git</div>
+        <div class="name col s6">SVN</div>
+        <div class="name col s12 border"></div>
+        <h3 class="col s12">Build Automatization</h3>
+        <div class="name col s6">Webpack</div>
+        <div class="name col s6">Gulp</div>
+      </div>
     </div>
 
-    <div id="contactrow" class="row contentrow bgcolor-transparent" ng-controller="ContactController as contact">
-        <h1 class="headercolor">Contact</h1>
-        <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
-            <span style="font-weight: 400">Thanks for visiting my website!</span> <br> If you have an offer or just want to say hi, you can contact me by sending an email or filling out this form.
+
+    <div class="col s12 skill scrollfade">
+      <h2 style="padding-bottom: 0;" class="col s12">Languages</h2>
+      <div class="col s12 skills">
+        <div class="language col s12">
+          <span class="col l2 m12 s12">Dutch</span>
+          <span class="col l4 m6 s12 langdesc">Nederlands is mijn moedertaal.</span>
+          <div class="col l6 m6 s12" style="position: relative;">
+            <ng-progress progress="1" ></ng-progress>
+          </div>
         </div>
+        <div class="language col s12">
+          <span class="col l2 s12">English</span>
+          <span class="col l4 m6 s12 langdesc">I am highly proficient in English.</span>
+          <div class="col l6 m6 s12" style="position: relative;">
+            <ng-progress progress="0.95" ></ng-progress>
+          </div>
+        </div>
+        <div class="language col s12">
+          <span class="col l2 s12">German</span>
+          <span class="col l4 m6 s12 langdesc">Ich spreche Deutsch in der Schule.</span>
+          <div class="col l6 m6 s12" style="position: relative;">
+            <ng-progress progress="0.5" ></ng-progress>
+          </div>
+        </div>
+        <div class="language col s12">
+          <span class="col l2 s12">French</span>
+          <span class="col l4 m6 s12 langdesc">Je parle un petit peu de Français.</span>
+          <div class="col l6 m6 s12" style="position: relative;">
+            <ng-progress progress="0.2" ></ng-progress>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div class="col s12 l8 offset-l2 form scrollfade ">
-            <form name="contactForm" class="formcontents col s12 m10 offset-m1">
-                <div class="descriptionbox">Name:</div>
-                <input name='name' type="text" id="formname" ng-model="contact.data.name" class="bgcolor col s12" required></input>
-                <div class="descriptionbox">E-mail:</div>
-                <input name='email' id="formemail" ng-model="contact.data.email" style="margin-bottom: 50px" type="email" class="bgcolor col s12" required></input>
-                <div class="descriptionbox">Subject:</div>
-                <input name='subject' type="text" id="formsubject" ng-model="contact.data.subject" class="bgcolor col s12" required></input>
-                <div class="descriptionbox">Message:</div>
-                <textarea name='message' type="text" id="formmessage" ng-model="contact.data.message" style="height: 300px;" class="bgcolor col s12" required></textarea>
+  </section>
 
-                <a class="sendbutton ultradarkbgcolor ultralightcolor hoverdarker" ng-click="contact.sendForm()">Send</a>
-            </form>
+  <section id="experiencerow" class="row contentrow bgcolor-transparent">
+    <h1 class="headercolor">Experience</h1>
+    <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+      I'm trying to learn and gain as much experience as possible each year.
+    </div>
 
-            <div class="confirmcontents">
-                <div class="loading">
-                <div class="loadinganim">
-                    <div class="preloader-wrapper big active">
-                        <div class="spinner-layer spinner-blue">
-                          <div class="circle-clipper left">
-                            <div class="circle"></div>
-                          </div><div class="gap-patch">
-                            <div class="circle"></div>
-                          </div><div class="circle-clipper right">
-                            <div class="circle"></div>
-                          </div>
-                        </div>
-
-                        <div class="spinner-layer spinner-red">
-                          <div class="circle-clipper left">
-                            <div class="circle"></div>
-                          </div><div class="gap-patch">
-                            <div class="circle"></div>
-                          </div><div class="circle-clipper right">
-                            <div class="circle"></div>
-                          </div>
-                        </div>
-
-                        <div class="spinner-layer spinner-yellow">
-                          <div class="circle-clipper left">
-                            <div class="circle"></div>
-                          </div><div class="gap-patch">
-                            <div class="circle"></div>
-                          </div><div class="circle-clipper right">
-                            <div class="circle"></div>
-                          </div>
-                        </div>
-
-                        <div class="spinner-layer spinner-green">
-                          <div class="circle-clipper left">
-                            <div class="circle"></div>
-                          </div><div class="gap-patch">
-                            <div class="circle"></div>
-                          </div><div class="circle-clipper right">
-                            <div class="circle"></div>
-                          </div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                <div class="done">
-                    <div class="confirmed">Your message has been sent</div>
-                    <div class="text">Thanks for contacting me!</div>
-                </div>
-                <div class="failed">
-                    <div class="confirmed">Your message has not been sent</div>
-                    <div class="text">Please try again later or try sending a mail directly (me@ivesvh.com)</div>
-                </div>
+    <div class="subrow row">
+      <h2 style="margin-bottom: 0;" class="scrollfade darkcolor col s12">Work</h2>
+      <div class="entry col s12" style="padding-bottom: 2rem;">
+        <div class="entryinfo col m4 s12 scrollfade">
+          <a href="http://catawiki.com/" target="_blank" class="entryname ultradarkcolor">
+            Catawiki
+          </a>
+          <div class="entryyears">
+            June 2015 - Now
+          </div>
+          <div class="entrysub">
+            Developer
+          </div>
+        </div>
+        <div class="entrydescription col m8 s12 scrollfade">
+          <span class="flow-text">
+            Catawiki is an auction website focused on selling only exceptional items.
+            We are the fastest growing tech company of the world with a 45.080% growth over the past four years, our
+            site is visited by more than 12 million users each month.
+            I'm responsible for the implementation of a technology called React for different parts
+            of the website, including the auction and lot pages.
+          </span>
+        </div>
+      </div>
+      <div class="entry col s12">
+        <div class="entryinfo col m4 s12 scrollfade">
+          <a href="http://web.team6-games.com/" target="_blank" class="entryname ultradarkcolor">
+            Team6 Game Studios
+          </a>
+          <div class="entryyears">
+            2011 - 2015
+          </div>
+          <div class="entrysub">
+            Graphic Artist
+          </div>
+        </div>
+        <div class="entrydescription col m8 s12 scrollfade">
+          <span class="flow-text">
+            I first started working at Team6 in 2011 and after that I have worked there several times in the holidays. I started out as game-tester. After some time I became their Graphic Artist for video; I began making their trailers and commercials. Team6 has been a great learning experience for me, I have learned to work in a group cooperating with different people for an executive at a professional company.
+          </span>
+          <div class="recommendationtitle ultradarkcolor">Recommendation:</div>
+          <div class="recommendation scrollfade"><i class="darkcolor fa fa-quote-left"></i>
+            <span class="description">
+              <em>
+                Ives is one of the few, unique individuals with a true entrepreneur spirit: He is not afraid of working real hard to realize his big dreams. From very early age Ives started building his career, and never stopped since then. Ives is known as someone who picks up things real quick, takes good initiative, isn't afraid to do what is necessary and from whom you'll know he will always deliver his best work.
+              </em>
+            </span>
+            <div class="author">
+              Ronnie Nelis - CEO Team6
             </div>
+            <i class="darkcolor fa fa-quote-right"></i>
+          </div>
         </div>
+      </div>
     </div>
-    <div id="quoterow" class="row contentrow ultradarkbgcolor-transparent quote">
-        <span class="col offset-m2 m8 s12 ultralightcolor"><i>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</i></span>
-        <span class="lightcolor col s12 author">– Steve Jobs, June 12, 2005.</span>
+
+    <div class="subrow row">
+      <h2 style="margin-bottom: 0;" class="scrollfade darkcolor col s12">Education</h2>
+      <div class="entry col s12">
+        <div class="entryinfo col m4 s12 scrollfade">
+          <a href="http://www.nassaucollege.nl/" target="_blank" class=" ultradarkcolor entryname">Dr. Nassau College Quintus </a>
+          <div class="entryyears">
+            2009 - 2015
+          </div>
+          <div class="entrysub">
+            VWO - Nature & Technology + Biology
+          </div>
+        </div>
+        <div class="entrydescription col m8 s12 scrollfade">
+          <span class="flow-text">
+            This is a high school for pre-university training in Assen, The Netherlands. I took technological and biological courses with a
+            special subject called Research & Development that allowed me to do projects for commercial enterprises.
+            Some projects listed here were also done in Research & Development. In September I will go to University of Twente to study
+            Computer Science.
+          </span>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section id="projectrow" class="row contentrow portfoliorow ultradarkbgcolor-transparent" ng-controller="PortfolioController as portfolio">
+    <div ng-show="portfolio.item" class="backportfolio">
+      <div style="color: white;" class="backcontainer">
+        <div style="position: relative;" class="col s12">
+          <i ng-click="portfolio.reset()" class="fa fa-times-circle"></i>
+          <h1 class="portfolioitemtitle">
+            {{portfolio.item.name}}
+          </h1>
+          <div class="portfoliolightcolor header-progress">Status: {{portfolio.item.progress | lowercase}}</div>
+          <a ng-show="portfolio.item.link.title" class="portfoliosubtitle portfoliolightcolor" ng-href="{{portfolio.item.link.url}}" target="_blank">{{portfolio.item.link.title}}</a>
+        </div>
+
+        <div ng-show="portfolio.item.banner.kind == 'images'" class="images col s12">
+          <div class="col s12 m4">
+            <img ng-show="portfolio.item.banner.image1" class="col s12" ng-src="{{portfolio.item.banner.image1}}">
+            <div>{{portfolio.item.banner.image1desc}}</div>
+          </div>
+          <div class="col s12 m4">
+            <img ng-show="portfolio.item.banner.image2" class="col s12" ng-src="{{portfolio.item.banner.image2}}">
+            <div>{{portfolio.item.banner.image2desc}}</div>
+          </div>
+          <div class="col s12 m4">
+            <img ng-show="portfolio.item.banner.image3" class="col s12" ng-src="{{portfolio.item.banner.image3}}">
+            <div>{{portfolio.item.banner.image3desc}}</div>
+          </div>
+        </div>
+
+        <iframe class="col s12 website" ng-show="portfolio.item.banner.kind == 'iframe'" ng-src="{{portfolio.item.banner.url}}"></iframe>
+
+        <p ng-if="portfolio.item.banner.kind == 'codepen'" data-height="300" data-theme-id="0" data-slug-hash="{{portfolio.item.banner.codepen_id}}" data-default-tab="result" class='col s12 codepen' data-user="CompuIves">
+        </p>
+
+        <iframe ng-if="portfolio.item.banner.kind == 'youtube'" style="max-width: 550px; display: block; margin: 0 auto; padding-top: 15px;" width="100%" height="360" ng-src="{{'https://www.youtube.com/embed/' + portfolio.item.banner.youtube_id}}" frameborder="0" allowfullscreen></iframe>
+
+        <div class="col s12 m7">
+          <div class="categoryinfo portfoliolightcolor">Description:</div>
+          <div ng-bind-html="portfolio.item.description" class="flow-text projectdescription"></div>
+        </div>
+        <div class="col s12 m5">
+          <div ng-show="portfolio.item.features" class="categoryinfo portfoliolightcolor">Features:</div>
+          <ul style="margin: 0">
+            <li class="flow-text projectdescription" ng-repeat="feature in portfolio.item.features">
+              {{feature}}
+            </li>
+          </ul>
+
+          <div ng-show="portfolio.item.tools" class="categoryinfo portfoliolightcolor">Built with:</div>
+          <ul style="margin: 0;">
+            <li class="flow-text projectdescription" ng-repeat="tool in portfolio.item.tools">
+              {{tool}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div ng-hide="portfolio.item" class="frontportfolio">
+      <h1>Projects</h1>
+      <div class="subheader-text descriptioncolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+        My most recent work is in development, I have done web development and game development (which I both love to do). My older work is in video editing, which I did a lot for Team6.
+      </div>
+
+      <div class="portfolio col s12">
+        <div ng-repeat="item in portfolio.items" ng-class="{'col': true, 'l2 m6 s12': item.small, 'l4 m6 s12': !item.small}">
+          <ng-portfolio transformfunction="portfolio.transformfunction(item, pos)" item="{{item}}" ng-style="{'transition-delay': item.delay}"></ng-portfolio>
+        </div>
+      </div>
+    </div>
+    <ng-drop options="{{portfolio.drop}}"></ng-drop>
+  </section>
+
+  <section id="contactrow" class="row contentrow bgcolor-transparent" ng-controller="ContactController as contact">
+    <h1 class="headercolor">Contact</h1>
+    <div class="subheader-text ultradarkcolor flow-text col s12 m10 offset-m1 l6 offset-l3">
+      <span style="font-weight: 400">Thanks for visiting my website!</span> <br> If you have an offer or just want to say hi, you can contact me by sending an email or filling out this form.
+    </div>
+
+    <div class="col s12 l8 offset-l2 form scrollfade ">
+      <form name="contactForm" class="formcontents col s12 m10 offset-m1">
+        <div class="descriptionbox">Name:</div>
+        <input name='name' type="text" id="formname" ng-model="contact.data.name" class="bgcolor col s12" required></input>
+        <div class="descriptionbox">E-mail:</div>
+        <input name='email' id="formemail" ng-model="contact.data.email" style="margin-bottom: 50px" type="email" class="bgcolor col s12" required></input>
+        <div class="descriptionbox">Subject:</div>
+        <input name='subject' type="text" id="formsubject" ng-model="contact.data.subject" class="bgcolor col s12" required></input>
+        <div class="descriptionbox">Message:</div>
+        <textarea name='message' type="text" id="formmessage" ng-model="contact.data.message" style="height: 300px;" class="bgcolor col s12" required></textarea>
+
+        <a class="sendbutton ultradarkbgcolor ultralightcolor hoverdarker" ng-click="contact.sendForm()">Send</a>
+      </form>
+
+      <div class="confirmcontents">
+        <div class="loading">
+          <div class="loadinganim">
+            <div class="preloader-wrapper big active">
+              <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+
+              <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+
+              <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+
+              <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="done">
+          <div class="confirmed">Your message has been sent</div>
+          <div class="text">Thanks for contacting me!</div>
+        </div>
+        <div class="failed">
+          <div class="confirmed">Your message has not been sent</div>
+          <div class="text">Please try again later or try sending a mail directly (me@ivesvh.com)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quoterow" class="row contentrow ultradarkbgcolor-transparent quote">
+    <span class="col offset-m2 m8 s12 ultralightcolor"><i>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma — which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</i></span>
+    <span class="lightcolor col s12 author">– Steve Jobs, June 12, 2005.</span>
+  </section>
 </div>
 <!-- jQuery (necessary for Materializes JavaScript plugins) -->
 <script src="lib/jquery/dist/jquery.min.js"></script>

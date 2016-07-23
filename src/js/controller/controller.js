@@ -51,10 +51,6 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             }
         }
 
-        this.difference(date1, date2) = () => (
-          moment(date1).diff(date2, 'years');
-        );
-
         /*
         if (navigator.userAgent.match(/(iPad|iPhone|iPod)/g)) {
             ScrollService();
