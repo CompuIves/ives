@@ -77,8 +77,8 @@ gulp.task('javascript', function() {
 });
 
 gulp.task('resources', function() {
-    return gulp.src("src/res/**/*.*")
-        .pipe(gulp.dest('./app/res'))
+    return gulp.src(["src/**/*.*", "!src/js/**/*.*", "!src/scss/**/*.*", "src/index.html"])
+        .pipe(gulp.dest('./app'))
         .pipe(reload({
             stream: true
         }));
