@@ -68,7 +68,9 @@ gulp.task('javascript', function() {
     return gulp.src(["src/js/core.js", "src/js/services/*.js", "src/js/**/*.js"])
         .pipe(concat('all.min.js'))
         .pipe(plumber())
-        .pipe(babel())
+        .pipe(babel({
+          presets: ['es2015']
+        }))
         .pipe(uglify())
         .pipe(gulp.dest('./app/'))
         .pipe(reload({
