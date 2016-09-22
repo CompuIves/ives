@@ -46,7 +46,7 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
         this.currentIves = Math.floor(Math.random() * 3)
         this.changeIvesImage = () => {
             if (!$scope.$$phase) {
-                $scope.$apply(() => (this.currentIves + 1) % 3;
+                $scope.$apply(() => (this.currentIves + 1) % 3);
             } else {
                 this.currentIves = (this.currentIves + 1) % 3;
             }
