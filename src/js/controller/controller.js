@@ -12,8 +12,8 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
         uiGmapGoogleMapApi.then(function(maps) {
             $scope.map = {
                 center: {
-                    latitude: 53,
-                    longitude: 6.56
+                    latitude: 52.2233632,
+                    longitude: 6.798508
                 },
                 zoom: 12,
                 control: {}
@@ -31,8 +31,8 @@ app.controller("MainController", ["$scope", "uiGmapGoogleMapApi", "ColorService"
             if (newValue == 400 && !mapsResized) {
                 google.maps.event.trigger($scope.map.control.getGMap(), 'resize');
                 $scope.map.center = {
-                    latitude: 53,
-                    longitude: 6.56
+                    latitude: 52.2233632,
+                    longitude: 6.798508
                 };
                 mapsResized = true;
             }
