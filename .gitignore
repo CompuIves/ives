@@ -3,3 +3,4 @@ node_modules/
 app/
 mailsettings.json
 .idea/
+.DS_Store

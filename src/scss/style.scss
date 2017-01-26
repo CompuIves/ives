@@ -378,6 +378,11 @@ body {
 
 .entrydescription {
     transition-delay: 0.1s;
+
+    p {
+        margin: 0;
+    }
+
     .flow-text {
         @include widescreen {
             font-size: 23px;
@@ -401,6 +406,10 @@ body {
 .entry {
     margin-top: 1rem;
     padding: 1rem;
+
+    &.col {
+        padding-left: 0;
+    }
 
     .entryname {
         font-size: 26px;
