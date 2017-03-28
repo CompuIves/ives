@@ -110,6 +110,32 @@
         "bgcolor": "rgb(207, 103, 43)"
     },
     {
+        "name": "Drop effect",
+        "shortdescription": "A Codepen showing the drop effect of Material Design.",
+        "description": "This effect is also used for this portfolio. When a button is pressed a circle will expand from the pointer, when the screen or parent is filled the background will be set to given color.",
+        "front": {
+            "image": "res/images/codepen/cover.png"
+        },
+        "banner": {
+            "kind": "codepen",
+            "codepen_id": "RNmwKV"
+        },
+        "tools": [
+            "HTML5",
+            "Sass",
+            "JQuery"
+        ],
+        "progress": "Finished!",
+        "calendar": "April 2015",
+        "tasks": "Frontend",
+        "link": {
+            "title": "Codepen",
+            "url": "http://codepen.io/CompuIves/pen/RNmwKV"
+        },
+        "color": "rgb(44, 62, 80)",
+        "small": true
+    },
+    {
         "name": "Relative",
         "shortdescription": "A game utilizing procedural generation.",
         "front": {
@@ -144,32 +170,6 @@
             "url": "https://github.com/CompuIves/relative"
         },
         "color": "rgb(52, 152, 219)"
-    },
-    {
-        "name": "Drop effect",
-        "shortdescription": "A Codepen showing the drop effect of Material Design.",
-        "description": "This effect is also used for this portfolio. When a button is pressed a circle will expand from the pointer, when the screen or parent is filled the background will be set to given color.",
-        "front": {
-            "image": "res/images/codepen/cover.png"
-        },
-        "banner": {
-            "kind": "codepen",
-            "codepen_id": "RNmwKV"
-        },
-        "tools": [
-            "HTML5",
-            "Sass",
-            "JQuery"
-        ],
-        "progress": "Finished!",
-        "calendar": "April 2015",
-        "tasks": "Frontend",
-        "link": {
-            "title": "Codepen",
-            "url": "http://codepen.io/CompuIves/pen/RNmwKV"
-        },
-        "color": "rgb(44, 62, 80)",
-        "small": true
     },
     {
         "name": "Counter",
