@@ -17,7 +17,7 @@
         "banner": {
             "kind": "images",
             "image1": "res/images/codesandbox/codesandbox1.jpg",
-            "image1desc": "The editor",
+            "image1desc": "Editor",
             "image2": "res/images/codesandbox/codesandbox2.png",
             "image2desc": "Logo",
             "image3": "res/images/codesandbox/codesandbox3.jpg",
@@ -37,7 +37,7 @@
         "tasks": "Full Stack",
         "link": {
             "title": "Site",
-            "url": "https://codesandbox.io"
+            "url": "https://codesandbox.io?utm_source=ivesvh"
         },
         "color": "rgb(108,174,221)"
     },
