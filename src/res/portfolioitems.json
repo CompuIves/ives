@@ -6,13 +6,13 @@
             "backgroundimage": true
         },
         "shortdescription": "An online live React editor",
-        "description": "CodeSandbox is a project that manifested while I was working at Catawiki. I am responsible for React and I noticed that there is no way to share React ideas and projects seamlessly between me and other developers or designers. CodeSandbox aims to solve this by making it possible to create React projects online with the ability to share them with others.<br>I started this as a pet project when I started studying, but eventually decided to turn this into a startup with my friend Bas Buursma.",
+        "description": "CodeSandbox is a project that manifested while I was working at Catawiki. I am responsible for rewriting pages to React and I noticed that my coworkers couldn't easily grasp what I was working on. Furthermore it was very hard to share my work with them without asking to install dependencies. CodeSandbox aims to solve this by making it possible to create React projects online in your browser. You can share your work by just sharing the URL, and it's very easy for others to play with.",
         "features": [
             "Live preview of React",
             "Online module system",
             "NPM Support",
             "Download project",
-            "Import eachothers projects"
+            "Import from GitHub"
         ],
         "banner": {
             "kind": "images",
