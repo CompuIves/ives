@@ -20,8 +20,8 @@
 }
 
 .section {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   &.no-pad {
     padding: 0;
@@ -33,7 +33,6 @@
     padding-top: 0;
   }
 }
-
 
 .row {
   margin-left: auto;
@@ -71,7 +70,6 @@
     }
 
     @media #{$medium-and-up} {
-
       $i: 1;
       @while $i <= $num-cols {
         $perc: unquote((100 / ($num-cols / $i)) + "%");
@@ -89,11 +87,9 @@
         }
         $i: $i + 1;
       }
-
     }
 
     @media #{$large-and-up} {
-
       $i: 1;
       @while $i <= $num-cols {
         $perc: unquote((100 / ($num-cols / $i)) + "%");
@@ -111,8 +107,6 @@
         }
         $i: $i + 1;
       }
-
     }
-
   }
 }

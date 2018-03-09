@@ -18,11 +18,11 @@
   margin-bottom: -1px;
   position: relative;
   background: #ffffff;
-  padding: .75em 1.25em;
+  padding: 0.75em 1.25em;
 }
 @media (min-height: 46.75em) {
   .picker__list-item {
-    padding: .5em 1em;
+    padding: 0.5em 1em;
   }
 }
 /* Hovered time */
@@ -74,7 +74,7 @@
   background: none;
   border: 0;
   font-weight: 500;
-  font-size: .67em;
+  font-size: 0.67em;
   text-align: center;
   text-transform: uppercase;
   color: #666;

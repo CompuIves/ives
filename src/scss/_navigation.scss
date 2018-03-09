@@ -1,139 +1,138 @@
-@import 'responsive';
+@import "responsive";
 
 ng-navigation {
-	transition: all 0.3s ease;
-	$width: 75px;
-	$height: 60px;
-	opacity: 0;
-	pointer-events: none;
-	z-index: 6;
-	position: absolute;
-	display: block;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-    border-radius: 3px;
-    
-    li {
-    	position: relative;
-    	transition: all 0.3s ease;
-    	display: inline-block;
+  transition: all 0.3s ease;
+  $width: 75px;
+  $height: 60px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 6;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  border-radius: 3px;
 
-    	width: $width;
-    	height: $height;
-    	list-style-type: none;
-		cursor: pointer;
-		overflow: hidden;
+  li {
+    position: relative;
+    transition: all 0.3s ease;
+    display: inline-block;
 
-		&.active {
-			cursor: default;
-			pointer-events: none;
-			width: 180px;
-			@include phone {
-				width: 60px;
-			}
-		}
+    width: $width;
+    height: $height;
+    list-style-type: none;
+    cursor: pointer;
+    overflow: hidden;
 
-		.fa {
-			transition: all 0.3s ease;
-			display: block;
-			font-size: 30px;
-			line-height: $height;
-			width: $width;
-			text-align: center;
-			top: 0;
-			left: 0;
-			
-			@include widescreen {
-				&.fa-home {
-					top: 0;
-					font-size: 32px;
-				}
-	
-				&.fa-envelope-o {
-					top: -2px;
-					font-size: 32px;
-				}
-	
-				&.fa-lightbulb-o {
-					top: -1px;
-				}
-			}
-
-			@include phone { 
-				font-size: 25px;
-				width: 60px;
-			}
-
-			@include tablet {
-				font-size: 25px;
-				width: 60px;
-			}
-		}
-
-		@include tablet {
-			width: 60px;
-		}
-
-		@include phone {
-			width: 60px;
-		}
-
-		.detail {
-			position: absolute;
-			color: white;
-			font-size: 20px;
-			font-weight: 300;
-			line-height: $height;
-			left: $width;
-    	}
+    &.active {
+      cursor: default;
+      pointer-events: none;
+      width: 180px;
+      @include phone {
+        width: 60px;
+      }
     }
-	
-	.name {
-		position: absolute;
-		left: 20px;
-		line-height: $height;
-		font-size: 20px;
 
-		@include phone {
-			visibility: hidden;
-		}
-	}
+    .fa {
+      transition: all 0.3s ease;
+      display: block;
+      font-size: 30px;
+      line-height: $height;
+      width: $width;
+      text-align: center;
+      top: 0;
+      left: 0;
 
-	.bginfo {
-		position: absolute;
-		right: 20px;
-		line-height: $height;
-		cursor: pointer;
+      @include widescreen {
+        &.fa-home {
+          top: 0;
+          font-size: 32px;
+        }
 
-		@include phone {
-			visibility: hidden;
-		}
+        &.fa-envelope-o {
+          top: -2px;
+          font-size: 32px;
+        }
 
-		.bgrect {
-			display: inline-block;
-			width: 80px;
-			height: 45px;
-			margin: 8px;
-			border: 1px solid white;
+        &.fa-lightbulb-o {
+          top: -1px;
+        }
+      }
 
-			color: white;
-			line-height: 45px;
-			text-align: center;
-			font-size: 20px;
-			font-weight: 300;
-			
-			&:nth-child(1) {
-				border-right: 0;
-				margin-right: 0;
-			}
+      @include phone {
+        font-size: 25px;
+        width: 60px;
+      }
 
-			&:nth-child(2) {
-				border-left: 0;
-				margin-left: 0;
-			}
+      @include tablet {
+        font-size: 25px;
+        width: 60px;
+      }
+    }
 
-		}
-	}
+    @include tablet {
+      width: 60px;
+    }
+
+    @include phone {
+      width: 60px;
+    }
+
+    .detail {
+      position: absolute;
+      color: white;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: $height;
+      left: $width;
+    }
+  }
+
+  .name {
+    position: absolute;
+    left: 20px;
+    line-height: $height;
+    font-size: 20px;
+
+    @include phone {
+      visibility: hidden;
+    }
+  }
+
+  .bginfo {
+    position: absolute;
+    right: 20px;
+    line-height: $height;
+    cursor: pointer;
+
+    @include phone {
+      visibility: hidden;
+    }
+
+    .bgrect {
+      display: inline-block;
+      width: 80px;
+      height: 45px;
+      margin: 8px;
+      border: 1px solid white;
+
+      color: white;
+      line-height: 45px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 300;
+
+      &:nth-child(1) {
+        border-right: 0;
+        margin-right: 0;
+      }
+
+      &:nth-child(2) {
+        border-left: 0;
+        margin-left: 0;
+      }
+    }
+  }
 }

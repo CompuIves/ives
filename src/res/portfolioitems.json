@@ -1,277 +1,255 @@
 [
-    {
-        "name": "CodeSandbox",
-        "front": {
-            "image": "res/images/codesandbox/cover.png",
-            "backgroundimage": true
-        },
-        "shortdescription": "An online live React editor",
-        "description": "CodeSandbox is a project that manifested while I was working at Catawiki. I am responsible for rewriting pages to React and I noticed that my coworkers couldn't easily grasp what I was working on. Furthermore it was very hard to share my work with them without asking to install dependencies. CodeSandbox aims to solve this by making it possible to create React projects online in your browser. You can share your work by just sharing the URL, and it's very easy for others to play with.",
-        "features": [
-            "Live preview of React",
-            "Online module system",
-            "NPM Support",
-            "Download project",
-            "Import from GitHub"
-        ],
-        "banner": {
-            "kind": "images",
-            "image1": "res/images/codesandbox/codesandbox1.jpg",
-            "image1desc": "Editor",
-            "image2": "res/images/codesandbox/codesandbox2.png",
-            "image2desc": "Logo",
-            "image3": "res/images/codesandbox/codesandbox3.jpg",
-            "image3desc": "Homepage"
-        },
-        "tools": [
-            "Phoenix/Elixir",
-            "React",
-            "Node",
-            "Postgres",
-            "Nginx",
-            "Redis",
-            "Docker"
-        ],
-        "progress": "Released, continued development",
-        "calendar": "March 2017",
-        "tasks": "Full Stack",
-        "link": {
-            "title": "Site",
-            "url": "https://codesandbox.io?utm_source=ivesvh"
-        },
-        "color": "rgb(108,174,221)"
+  {
+    "name": "CodeSandbox",
+    "front": {
+      "image": "res/images/codesandbox/cover.png",
+      "backgroundimage": true
     },
-    {
-        "name": "ivesvh.com",
-        "front": {
-            "image": "res/images/ives.io/cover.png",
-            "backgroundimage": true,
-            "title": "This"
-        },
-        "shortdescription": "My portfolio website, you're browsing it now!",
-        "description": "My portfolio website is designed to highlight important information so potential employers can have a quick glance before reading further. It features a dynamic color palette and some small features like this portfolio.",
-        "features": [
-            "Dynamic Color Palette",
-            "Small design features"
-        ],
-        "tools": [
-            "HTML5",
-            "Sass",
-            "Javascript",
-            "AngularJS",
-            "Gulp"
-        ],
-        "progress": "Finished!",
-        "calendar": "April 2015",
-        "tasks": "Frontend",
-        "link": {
-            "title": "Source",
-            "url": "https://github.com/CompuIves/ives"
-        },
-        "color": "rgb(65, 170, 92)"
+    "shortdescription": "An online live React editor",
+    "description":
+      "CodeSandbox is a project that manifested while I was working at Catawiki. I am responsible for rewriting pages to React and I noticed that my coworkers couldn't easily grasp what I was working on. Furthermore it was very hard to share my work with them without asking to install dependencies. CodeSandbox aims to solve this by making it possible to create React projects online in your browser. You can share your work by just sharing the URL, and it's very easy for others to play with.",
+    "features": [
+      "Live preview of React",
+      "Online module system",
+      "NPM Support",
+      "Download project",
+      "Import from GitHub"
+    ],
+    "banner": {
+      "kind": "images",
+      "image1": "res/images/codesandbox/codesandbox1.jpg",
+      "image1desc": "Editor",
+      "image2": "res/images/codesandbox/codesandbox2.png",
+      "image2desc": "Logo",
+      "image3": "res/images/codesandbox/codesandbox3.jpg",
+      "image3desc": "Homepage"
     },
-    {
-        "name": "SolarBoard",
-        "front": {
-            "image": "res/images/solarboard/solarboardlogo.png"
-        },
-        "banner": {
-            "kind": "images",
-            "image1": "res/images/solarboard/solarboard1.jpg",
-            "image1desc": "Dashboard itself",
-            "image2": "res/images/solarboard/solarboard2.jpg",
-            "image2desc": "View for days/months or years",
-            "image3": "res/images/solarboard/solarboard3.jpg",
-            "image3desc": "View for individual solar panels"
-        },
-        "shortdescription": "An app for showing and analyzing solar power winnings.",
-        "description": "Techniko is an installation company specialized in green power. They currently own more than 200 solar panels, but didn't have a way to see how much power they're generating. They wanted a simple way to see how much their solar panels were generating with the ability to compare the data.<br> I chose to make a website using the MEAN (MongoDB, Express, AngularJS, Node) stack. The website utilizes custom directives, filters and services. The backend has a RESTful API to communicate with the website. The data is gathered by kWh-meters and sent with an Arduino to a server which stores it in the database. <br> The demo above is based on generated data.",
-        "features": [
-            "Solar Yield Summary",
-            "Datepicker for year, month and day summary",
-            "Individual Solar Page",
-            "Alert system"
-        ],
-        "tools": [
-            "HTML5",
-            "CSS3",
-            "Javascript",
-            "Java",
-            "MEAN stack"
-        ],
-        "progress": "Working on it...",
-        "calendar": "Dec 2014 - Now",
-        "tasks": "Full stack",
-        "link": {
-            "title": "Demo",
-            "url": "http://techniko.ivesvh.com"
-        },
-        "color": "rgb(244, 121, 51)",
-        "bgcolor": "rgb(207, 103, 43)"
+    "tools": [
+      "Phoenix/Elixir",
+      "React",
+      "Node",
+      "Postgres",
+      "Nginx",
+      "Redis",
+      "Docker"
+    ],
+    "progress": "Released, continued development",
+    "calendar": "March 2017",
+    "tasks": "Full Stack",
+    "link": {
+      "title": "Site",
+      "url": "https://codesandbox.io?utm_source=ivesvh"
     },
-    {
-        "name": "Drop effect",
-        "shortdescription": "A Codepen showing the drop effect of Material Design.",
-        "description": "This effect is also used for this portfolio. When a button is pressed a circle will expand from the pointer, when the screen or parent is filled the background will be set to given color.",
-        "front": {
-            "image": "res/images/codepen/cover.png"
-        },
-        "banner": {
-            "kind": "codepen",
-            "codepen_id": "RNmwKV"
-        },
-        "tools": [
-            "HTML5",
-            "Sass",
-            "JQuery"
-        ],
-        "progress": "Finished!",
-        "calendar": "April 2015",
-        "tasks": "Frontend",
-        "link": {
-            "title": "Codepen",
-            "url": "http://codepen.io/CompuIves/pen/RNmwKV"
-        },
-        "color": "rgb(44, 62, 80)",
-        "small": true
+    "color": "rgb(108,174,221)"
+  },
+  {
+    "name": "ivesvh.com",
+    "front": {
+      "image": "res/images/ives.io/cover.png",
+      "backgroundimage": true,
+      "title": "This"
     },
-    {
-        "name": "Relative",
-        "shortdescription": "A game utilizing procedural generation.",
-        "front": {
-            "title": "Relative"
-        },
-        "banner": {
-            "kind": "images",
-            "image1": "res/images/relative/relative1.jpg",
-            "image1desc": "Concept art for base game.",
-            "image2": "res/images/relative/relative2.jpg",
-            "image2desc": "Distributed Authority System explained",
-            "image3": "res/images/relative/relative3.jpg",
-            "image3desc": "Rotating planet with player on it (debug view)"
-        },
-        "description": "Relative has been my most complicated and biggest project thus far. It is a 2d sidescrolling RPG game with as much as possible procedural generation and mod support. Multiplayer is implemented too with a special authority system designed by myself. Mod support works great together with multiplayer, since the server will send the mods it has installed to the client connecting. I really love doing procedural generation, the moment when you surprise yourself with generated content is incredible.",
-        "features": [
-            "Entity Component System (ECS)",
-            "Procedurally generated universe",
-            "Unique Distributed Authority System for multiplayer",
-            "Mod Support both on server and client"
-        ],
-        "tools": [
-            "Java",
-            "LibGDX",
-            "Kryonet"
-        ],
-        "progress": "Playing with it...",
-        "calendar": "Oct 2014 - Now",
-        "tasks": "Java",
-        "link": {
-            "title": "Source",
-            "url": "https://github.com/CompuIves/relative"
-        },
-        "color": "rgb(52, 152, 219)"
+    "shortdescription": "My portfolio website, you're browsing it now!",
+    "description":
+      "My portfolio website is designed to highlight important information so potential employers can have a quick glance before reading further. It features a dynamic color palette and some small features like this portfolio.",
+    "features": ["Dynamic Color Palette", "Small design features"],
+    "tools": ["HTML5", "Sass", "Javascript", "AngularJS", "Gulp"],
+    "progress": "Finished!",
+    "calendar": "April 2015",
+    "tasks": "Frontend",
+    "link": {
+      "title": "Source",
+      "url": "https://github.com/CompuIves/ives"
     },
-    {
-        "name": "Counter",
-        "shortdescription": "A turn based math game for Android.",
-        "front": {
-            "image": "res/images/counter/cover.png"
-        },
-        "banner": {
-            "kind": "images",
-            "image1": "res/images/counter/counter1.jpg",
-            "image1desc": "Main menu",
-            "image2": "res/images/counter/counter2.jpg",
-            "image2desc": "Invite screen",
-            "image3": "res/images/counter/counter3.jpg",
-            "image3desc": "Game screen"
-        },
-        "description": "A mobile turn-based (Ruzzle-like) math game. This is the first game I made. Although it is not finished, it was almost finished. It has everything implemented except a statistic screen. A unique feature is the ability to challenge multiple players at once. This means you can play against a group of friends. <br> Like my other games this is also built on LibGDX and it uses AppEngine from Google for storing data.",
-        "features": [
-            "Turn based multiplayer",
-            "Multiple player invite system",
-            "Push notifications"
-        ],
-        "tools": [
-            "Java",
-            "LibGDX",
-            "AppEngine"
-        ],
-        "progress": "Not finished",
-        "calendar": "2013",
-        "tasks": "Java",
-        "color": "rgb(106, 147, 175)"
+    "color": "rgb(65, 170, 92)"
+  },
+  {
+    "name": "SolarBoard",
+    "front": {
+      "image": "res/images/solarboard/solarboardlogo.png"
     },
-    {
-        "name": "MJ Commercial",
-        "front": {
-            "title": "Monster Jam"
-        },
-        "banner": {
-            "kind": "youtube",
-            "youtube_id": "Q4TY92_MK3E"
-        },
-        "shortdescription": "A commercial video for a Monster Jam game by Team6.",
-        "description": "A commercial for one of the latest games of Team6 in collaboration with Monster Jam. The final video has been broadcasted in the USA as a commercial on TV.",
-        "tools": [
-            "Adobe After Effects",
-            "Adobe Premiere Pro"
-        ],
-        "progress": "Finished!",
-        "calendar": "Dec 2013",
-        "tasks": "Video",
-        "link": {
-            "title": "Youtube",
-            "url": "https://www.youtube.com/watch?v=Q4TY92_MK3E&index=10&list=PL14AB56050692684A"
-        },
-        "color": "rgb(211, 84, 0)"
+    "banner": {
+      "kind": "images",
+      "image1": "res/images/solarboard/solarboard1.jpg",
+      "image1desc": "Dashboard itself",
+      "image2": "res/images/solarboard/solarboard2.jpg",
+      "image2desc": "View for days/months or years",
+      "image3": "res/images/solarboard/solarboard3.jpg",
+      "image3desc": "View for individual solar panels"
     },
-    {
-        "name": "Team6 Logo Intro",
-        "front": {
-            "image": "res/images/T6/cover.png"
-        },
-        "banner": {
-            "kind": "youtube",
-            "youtube_id": "tKuOhWPoavI"
-        },
-        "shortdescription": "My first video work for Team6. A video intro for their games.",
-        "description": "This was my last assignment when working for the first time at Team6. Normally I did game testing, but this time I got the opportunity to make a potential video for Team6: a logo intro for their upcoming games.<br>The video was appreciated and I received more video assignments after this one.",
-        "tools": [
-            "Adobe After Effects",
-            "Adobe Premiere Pro"
-        ],
-        "progress": "Finished!",
-        "calendar": "Aug 2011",
-        "tasks": "Video",
-        "link": {
-            "title": "Youtube",
-            "url": "https://www.youtube.com/watch?v=tKuOhWPoavI&list=PL14AB56050692684A"
-        },
-        "color": "rgb(164, 27, 33)"
+    "shortdescription":
+      "An app for showing and analyzing solar power winnings.",
+    "description":
+      "Techniko is an installation company specialized in green power. They currently own more than 200 solar panels, but didn't have a way to see how much power they're generating. They wanted a simple way to see how much their solar panels were generating with the ability to compare the data.<br> I chose to make a website using the MEAN (MongoDB, Express, AngularJS, Node) stack. The website utilizes custom directives, filters and services. The backend has a RESTful API to communicate with the website. The data is gathered by kWh-meters and sent with an Arduino to a server which stores it in the database. <br> The demo above is based on generated data.",
+    "features": [
+      "Solar Yield Summary",
+      "Datepicker for year, month and day summary",
+      "Individual Solar Page",
+      "Alert system"
+    ],
+    "tools": ["HTML5", "CSS3", "Javascript", "Java", "MEAN stack"],
+    "progress": "Working on it...",
+    "calendar": "Dec 2014 - Now",
+    "tasks": "Full stack",
+    "link": {
+      "title": "Demo",
+      "url": "http://techniko.ivesvh.com"
     },
-    {
-        "name": "Bike Video",
-        "front": {
-            "image": "res/images/technasium/cover.png"
-        },
-        "banner": {
-            "kind": "youtube",
-            "youtube_id": "rXoCOXrXYOo"
-        },
-        "shortdescription": "My first project ever, a video for a school project.",
-        "description": "This is more or less a fun portfolio item, it is my first video ever made. It was used for a school project, we even reached the finals of The Netherlands with this project!",
-        "tools": [
-            "Adobe After Effects",
-            "Adobe Premiere Pro"
-        ],
-        "progress": "Finished!",
-        "calendar": "2011",
-        "tasks": "Video",
-        "link": {
-            "title": "Youtube",
-            "url": "https://www.youtube.com/watch?v=rXoCOXrXYOo&list=PL14AB56050692684A"
-        },
-        "color": "rgb(243, 156, 18)"
-    }
+    "color": "rgb(244, 121, 51)",
+    "bgcolor": "rgb(207, 103, 43)"
+  },
+  {
+    "name": "Drop effect",
+    "shortdescription": "A Codepen showing the drop effect of Material Design.",
+    "description":
+      "This effect is also used for this portfolio. When a button is pressed a circle will expand from the pointer, when the screen or parent is filled the background will be set to given color.",
+    "front": {
+      "image": "res/images/codepen/cover.png"
+    },
+    "banner": {
+      "kind": "codepen",
+      "codepen_id": "RNmwKV"
+    },
+    "tools": ["HTML5", "Sass", "JQuery"],
+    "progress": "Finished!",
+    "calendar": "April 2015",
+    "tasks": "Frontend",
+    "link": {
+      "title": "Codepen",
+      "url": "http://codepen.io/CompuIves/pen/RNmwKV"
+    },
+    "color": "rgb(44, 62, 80)",
+    "small": true
+  },
+  {
+    "name": "Relative",
+    "shortdescription": "A game utilizing procedural generation.",
+    "front": {
+      "title": "Relative"
+    },
+    "banner": {
+      "kind": "images",
+      "image1": "res/images/relative/relative1.jpg",
+      "image1desc": "Concept art for base game.",
+      "image2": "res/images/relative/relative2.jpg",
+      "image2desc": "Distributed Authority System explained",
+      "image3": "res/images/relative/relative3.jpg",
+      "image3desc": "Rotating planet with player on it (debug view)"
+    },
+    "description":
+      "Relative has been my most complicated and biggest project thus far. It is a 2d sidescrolling RPG game with as much as possible procedural generation and mod support. Multiplayer is implemented too with a special authority system designed by myself. Mod support works great together with multiplayer, since the server will send the mods it has installed to the client connecting. I really love doing procedural generation, the moment when you surprise yourself with generated content is incredible.",
+    "features": [
+      "Entity Component System (ECS)",
+      "Procedurally generated universe",
+      "Unique Distributed Authority System for multiplayer",
+      "Mod Support both on server and client"
+    ],
+    "tools": ["Java", "LibGDX", "Kryonet"],
+    "progress": "Playing with it...",
+    "calendar": "Oct 2014 - Now",
+    "tasks": "Java",
+    "link": {
+      "title": "Source",
+      "url": "https://github.com/CompuIves/relative"
+    },
+    "color": "rgb(52, 152, 219)"
+  },
+  {
+    "name": "Counter",
+    "shortdescription": "A turn based math game for Android.",
+    "front": {
+      "image": "res/images/counter/cover.png"
+    },
+    "banner": {
+      "kind": "images",
+      "image1": "res/images/counter/counter1.jpg",
+      "image1desc": "Main menu",
+      "image2": "res/images/counter/counter2.jpg",
+      "image2desc": "Invite screen",
+      "image3": "res/images/counter/counter3.jpg",
+      "image3desc": "Game screen"
+    },
+    "description":
+      "A mobile turn-based (Ruzzle-like) math game. This is the first game I made. Although it is not finished, it was almost finished. It has everything implemented except a statistic screen. A unique feature is the ability to challenge multiple players at once. This means you can play against a group of friends. <br> Like my other games this is also built on LibGDX and it uses AppEngine from Google for storing data.",
+    "features": [
+      "Turn based multiplayer",
+      "Multiple player invite system",
+      "Push notifications"
+    ],
+    "tools": ["Java", "LibGDX", "AppEngine"],
+    "progress": "Not finished",
+    "calendar": "2013",
+    "tasks": "Java",
+    "color": "rgb(106, 147, 175)"
+  },
+  {
+    "name": "MJ Commercial",
+    "front": {
+      "title": "Monster Jam"
+    },
+    "banner": {
+      "kind": "youtube",
+      "youtube_id": "Q4TY92_MK3E"
+    },
+    "shortdescription": "A commercial video for a Monster Jam game by Team6.",
+    "description":
+      "A commercial for one of the latest games of Team6 in collaboration with Monster Jam. The final video has been broadcasted in the USA as a commercial on TV.",
+    "tools": ["Adobe After Effects", "Adobe Premiere Pro"],
+    "progress": "Finished!",
+    "calendar": "Dec 2013",
+    "tasks": "Video",
+    "link": {
+      "title": "Youtube",
+      "url":
+        "https://www.youtube.com/watch?v=Q4TY92_MK3E&index=10&list=PL14AB56050692684A"
+    },
+    "color": "rgb(211, 84, 0)"
+  },
+  {
+    "name": "Team6 Logo Intro",
+    "front": {
+      "image": "res/images/T6/cover.png"
+    },
+    "banner": {
+      "kind": "youtube",
+      "youtube_id": "tKuOhWPoavI"
+    },
+    "shortdescription":
+      "My first video work for Team6. A video intro for their games.",
+    "description":
+      "This was my last assignment when working for the first time at Team6. Normally I did game testing, but this time I got the opportunity to make a potential video for Team6: a logo intro for their upcoming games.<br>The video was appreciated and I received more video assignments after this one.",
+    "tools": ["Adobe After Effects", "Adobe Premiere Pro"],
+    "progress": "Finished!",
+    "calendar": "Aug 2011",
+    "tasks": "Video",
+    "link": {
+      "title": "Youtube",
+      "url":
+        "https://www.youtube.com/watch?v=tKuOhWPoavI&list=PL14AB56050692684A"
+    },
+    "color": "rgb(164, 27, 33)"
+  },
+  {
+    "name": "Bike Video",
+    "front": {
+      "image": "res/images/technasium/cover.png"
+    },
+    "banner": {
+      "kind": "youtube",
+      "youtube_id": "rXoCOXrXYOo"
+    },
+    "shortdescription": "My first project ever, a video for a school project.",
+    "description":
+      "This is more or less a fun portfolio item, it is my first video ever made. It was used for a school project, we even reached the finals of The Netherlands with this project!",
+    "tools": ["Adobe After Effects", "Adobe Premiere Pro"],
+    "progress": "Finished!",
+    "calendar": "2011",
+    "tasks": "Video",
+    "link": {
+      "title": "Youtube",
+      "url":
+        "https://www.youtube.com/watch?v=rXoCOXrXYOo&list=PL14AB56050692684A"
+    },
+    "color": "rgb(243, 156, 18)"
+  }
 ]

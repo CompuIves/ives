@@ -13,39 +13,38 @@
 .picker__header {
   text-align: center;
   position: relative;
-  margin-top: .75em;
+  margin-top: 0.75em;
 }
 /**
  * The month and year labels.
  */
 .picker__month,
 .picker__year {
-//  font-weight: 500;
+  //  font-weight: 500;
   display: inline-block;
-  margin-left: .25em;
-  margin-right: .25em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
 }
 /**
  * The month and year selectors.
  */
 .picker__select--month,
 .picker__select--year {
-
   height: 2em;
   padding: 0;
-  margin-left: .25em;
-  margin-right: .25em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
 }
 
 // Modified
 .picker__select--month.browser-default {
   display: inline;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 40%;
 }
 .picker__select--year.browser-default {
   display: inline;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 25%;
 }
 .picker__select--month:focus,
@@ -58,7 +57,7 @@
 .picker__nav--prev,
 .picker__nav--next {
   position: absolute;
-  padding: .5em 1.25em;
+  padding: 0.5em 1.25em;
   width: 1em;
   height: 1em;
   box-sizing: content-box;
@@ -108,20 +107,14 @@
   table-layout: fixed;
   font-size: 1rem;
   width: 100%;
-  margin-top: .75em;
-  margin-bottom: .5em;
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
 }
 
-
-
-.picker__table th, .picker__table td {
+.picker__table th,
+.picker__table td {
   text-align: center;
 }
-
-
-
-
-
 
 .picker__table td {
   margin: 0;
@@ -132,15 +125,15 @@
  */
 .picker__weekday {
   width: 14.285714286%;
-  font-size: .75em;
-  padding-bottom: .25em;
+  font-size: 0.75em;
+  padding-bottom: 0.25em;
   color: #999999;
   font-weight: 500;
   /* Increase the spacing a tad */
 }
 @media (min-height: 33.875em) {
   .picker__weekday {
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
   }
 }
 /**
@@ -150,11 +143,10 @@
 .picker__day--today {
   position: relative;
   color: #595959;
-  letter-spacing: -.3;
-  padding: .75rem 0;
+  letter-spacing: -0.3;
+  padding: 0.75rem 0;
   font-weight: 400;
   border: 1px solid transparent;
-
 }
 
 //.picker__day--today:before {
@@ -171,8 +163,7 @@
   border-top-color: #aaaaaa;
 }
 
-
-.picker__day--infocus:hover{
+.picker__day--infocus:hover {
   cursor: pointer;
   color: #000;
   font-weight: 500;
@@ -180,36 +171,32 @@
 
 .picker__day--outfocus {
   display: none;
-  padding: .75rem 0;
+  padding: 0.75rem 0;
   color: #fff;
-
 }
 .picker__day--outfocus:hover {
   cursor: pointer;
   color: #dddddd;
-//  background: #b1dcfb;
+  //  background: #b1dcfb;
   font-weight: 500;
 }
 
-
 .picker__day--highlighted {
-//  border-color: #0089ec;
+  //  border-color: #0089ec;
 }
 .picker__day--highlighted:hover,
 .picker--focused .picker__day--highlighted {
   cursor: pointer;
-//  color: #000000;
-//  background: #b1dcfb;
-//  font-weight: 500;
+  //  color: #000000;
+  //  background: #b1dcfb;
+  //  font-weight: 500;
 }
 .picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
-
-
-//  Circle background
-   border-radius: 50%;
-  @include transform(scale(.75));
+  //  Circle background
+  border-radius: 50%;
+  @include transform(scale(0.75));
   background: #0089ec;
   color: #ffffff;
 }
@@ -239,8 +226,8 @@
 .picker__button--close {
   border: 1px solid #ffffff;
   background: #ffffff;
-  font-size: .8em;
-  padding: .66em 0;
+  font-size: 0.8em;
+  padding: 0.66em 0;
   font-weight: bold;
   width: 33%;
   display: inline-block;
@@ -271,17 +258,17 @@
 .picker__button--today:before,
 .picker__button--clear:before {
   content: " ";
-  margin-right: .45em;
+  margin-right: 0.45em;
 }
 .picker__button--today:before {
   top: -0.05em;
   width: 0;
   border-top: 0.66em solid #0059bc;
-  border-left: .66em solid transparent;
+  border-left: 0.66em solid transparent;
 }
 .picker__button--clear:before {
   top: -0.25em;
-  width: .66em;
+  width: 0.66em;
   border-top: 3px solid #ee2200;
 }
 .picker__button--close:before {
@@ -289,7 +276,7 @@
   top: -0.1em;
   vertical-align: top;
   font-size: 1.1em;
-  margin-right: .35em;
+  margin-right: 0.35em;
   color: #777777;
 }
 .picker__button--today[disabled],
@@ -330,7 +317,7 @@
   background-color: $datepicker-weekday-bg;
   padding: 10px;
   font-weight: 200;
-  letter-spacing: .5;
+  letter-spacing: 0.5;
   font-size: 1rem;
   margin-bottom: 15px;
 }
@@ -340,7 +327,6 @@
   font-size: 2rem;
 }
 .picker__day-display {
-
   font-size: 4.5rem;
   font-weight: 400;
 }
@@ -363,13 +349,13 @@
 // Calendar
 .picker__table {
   margin-top: 0;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .picker__day--infocus {
   color: #595959;
-  letter-spacing: -.3;
-  padding: .75rem 0;
+  letter-spacing: -0.3;
+  padding: 0.75rem 0;
   font-weight: 400;
   border: 1px solid transparent;
 }
@@ -385,16 +371,15 @@
 
 // Table Header
 .picker__weekday {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-
 
 .picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
   // Circle background
   border-radius: 50%;
-  @include transform(scale(.9));
+  @include transform(scale(0.9));
   background-color: $datepicker-selected;
   &.picker__day--outfocus {
     background-color: $datepicker-selected-outfocus;
@@ -408,7 +393,8 @@
 }
 
 // Materialize modified
-.picker__close, .picker__today {
+.picker__close,
+.picker__today {
   font-size: 1.1rem;
   padding: 0 1rem;
   color: $datepicker-selected;
@@ -418,8 +404,8 @@
 .picker__nav--prev:before,
 .picker__nav--next:before {
   content: " ";
-  border-top: .5em solid transparent;
-  border-bottom: .5em solid transparent;
+  border-top: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
   border-right: 0.75em solid #676767;
   width: 0;
   height: 0;
@@ -430,6 +416,8 @@
   border-right: 0;
   border-left: 0.75em solid #676767;
 }
-button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
+button.picker__today:focus,
+button.picker__clear:focus,
+button.picker__close:focus {
   background-color: $datepicker-selected-outfocus;
 }

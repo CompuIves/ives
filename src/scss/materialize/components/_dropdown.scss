@@ -1,6 +1,6 @@
 .dropdown-content {
   @extend .z-depth-1;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 0;
   display: none;
   min-width: 100px;
@@ -21,11 +21,13 @@
     text-align: left;
     text-transform: none;
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
       background-color: #eee;
     }
 
-    & > a, & > span {
+    & > a,
+    & > span {
       font-size: 1.2rem;
       color: $dropdown-color;
       display: block;

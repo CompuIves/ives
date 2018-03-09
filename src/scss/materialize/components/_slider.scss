@@ -24,7 +24,7 @@
   }
 
   .slides {
-    background-color: color('grey', 'base');
+    background-color: color("grey", "base");
     margin: 0;
     height: 400px;
 
@@ -53,7 +53,9 @@
         width: 70%;
         opacity: 0;
 
-        p { color: color('grey', 'lighten-2'); }
+        p {
+          color: color("grey", "lighten-2");
+        }
       }
 
       &.active {
@@ -61,7 +63,6 @@
       }
     }
   }
-
 
   .indicators {
     position: absolute;
@@ -78,15 +79,14 @@
       height: 16px;
       width: 16px;
       margin: 0 12px;
-      background-color: color('grey', 'lighten-2');
+      background-color: color("grey", "lighten-2");
 
-      @include transition(background-color .3s);
+      @include transition(background-color 0.3s);
       border-radius: 50%;
 
       &.active {
-        background-color: color('green', 'base');
+        background-color: color("green", "base");
       }
     }
   }
-
 }
