@@ -1,160 +1,162 @@
-@import 'responsive';
+@import "responsive";
 
 ng-portfolio {
-	transition: all 0.3s ease;
-    position: relative;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  height: 200px;
+  -webkit-transform: translateZ(0);
+
+  img {
+    transition: transform 0.3s ease;
+    position: absolute;
     display: block;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 1.5rem;
-    height: 200px;
-    -webkit-transform: translateZ(0);
+    transition: all 0.3s ease;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    pointer-events: none;
 
-    img {
-        transition: transform 0.3s ease;
-		position: absolute;
-		display: block;
-		transition: all 0.3s ease;
-		margin: auto;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 0;
-        pointer-events: none;
+    &.hover {
+      transition: transform 0.3s ease;
+      transform: scale(1.1, 1.1);
+    }
+  }
 
-        &.hover {
-            transition: transform 0.3s ease;
-            transform: scale(1.1, 1.1);
-        }
+  .fronttitle {
+    transition: transform 0.3s ease;
+    display: block;
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    font-weight: 500;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    line-height: 200px;
+
+    @include phone {
+      font-size: 40px;
     }
 
-    .fronttitle {
-        transition: transform 0.3s ease;
-        display: block;
-        color: white;
-        position: absolute;
-        font-size: 50px;
-        font-weight: 500;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-        line-height: 200px;
+    &.hover {
+      transition: transform 0.3s ease;
+      transform: scale(1.1, 1.1);
+    }
+  }
 
-        @include phone {
-            font-size: 40px;
-        }
+  .portfoliocontainer {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+  }
 
-        &.hover {
-            transition: transform 0.3s ease;
-            transform: scale(1.1, 1.1);
-        }
+  .cover {
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+
+    &.hover {
+      transition: all 0.3s ease;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .itemtitle {
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 32px;
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    font-weight: 300;
+    opacity: 0;
+    transform: translateY(-50px);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+
+    &.hover {
+      transition: all 0.3s ease;
+      transform: none;
+      opacity: 1;
     }
 
-    .portfoliocontainer {
-    	transition: all 0.3s ease;
-    	position: absolute;
-    	top: 0; bottom: 0; left: 0; right: 0;
-    	overflow: hidden;
+    &.small {
+      font-size: 28px;
+    }
+  }
+
+  .description {
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    color: white;
+    font-weight: 300;
+    opacity: 0;
+    font-size: 20px;
+    text-align: center;
+    pointer-events: none;
+
+    @include phone {
+      font-size: 15px;
     }
 
-    .cover {
-		transition: all 0.3s ease;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: rgba(0,0,0,0);
-        pointer-events: none;
-
-		&.hover {
-			transition: all 0.3s ease;
-			background-color: rgba(0,0,0,0.5);
-		}
-
+    &.hover {
+      transition: all 0.3s ease;
+      opacity: 1;
     }
 
-    .itemtitle {
-		transition: all 0.3s ease;
-		position: relative;
-		font-size: 32px;
-		text-align: center;
-		margin: auto;
-		width: 95%;
-		font-weight: 300;
-		opacity: 0;
-		transform: translateY(-50px);
-		color: white;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        pointer-events: none;
+    &.small {
+      top: 50px;
+      font-size: 17px;
+    }
+  }
 
-		&.hover {
-			transition: all 0.3s ease;
-			transform: none;
-			opacity: 1;
-		}
+  .iconbox {
+    transition: all 0.3s ease;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    color: white;
 
-        &.small {
-            font-size: 28px;
-        }
+    &.hover {
+      @extend .description.hover;
     }
 
-    .description {
-    	transition: all 0.3s ease;
-        position: absolute;
-        bottom: 0;
-        left: 15px;
-        right: 15px;
-        color: white;
-        font-weight: 300;
-        opacity: 0;
-        font-size: 20px;
-        text-align: center;
-        pointer-events: none;
-
-        @include phone {
-        	font-size: 15px;
-        }
-
-        &.hover {
-        	transition: all 0.3s ease;
-        	opacity: 1;
-        }
-
-        &.small {
-            top: 50px;
-            font-size: 17px;
-        }
+    .icon {
+      margin-top: 0.5rem;
+      font-size: 20px;
+      pointer-events: none;
     }
 
-    .iconbox {
-    	transition: all 0.3s ease;
-        text-align: center;
-        opacity: 0;
-        pointer-events: none;
-        color: white;
-
-        &.hover {
-			@extend .description.hover
-        }
-
-        .icon {
-            margin-top: 0.5rem;
-            font-size: 20px;
-            pointer-events: none;
-        }
-
-        .text {
-        	position: relative;
-            font-size: 15px;
-            font-weight: 300;
-            color: white;
-            z-index: 10;
-            pointer-events: none;
-        }
+    .text {
+      position: relative;
+      font-size: 15px;
+      font-weight: 300;
+      color: white;
+      z-index: 10;
+      pointer-events: none;
     }
+  }
 }

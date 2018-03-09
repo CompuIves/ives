@@ -1,5 +1,6 @@
 // shared styles
-.btn, .btn-flat {
+.btn,
+.btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -14,7 +15,12 @@
   -webkit-tap-highlight-color: transparent;
 }
 // Disabled shared style
-.btn.disabled, .btn-floating.disabled, .btn-large.disabled, .btn:disabled, .btn-large:disabled, .btn-floating:disabled {
+.btn.disabled,
+.btn-floating.disabled,
+.btn-large.disabled,
+.btn:disabled,
+.btn-large:disabled,
+.btn-floating:disabled {
   background-color: $button-bg-color-disabled;
   box-shadow: none;
   color: $button-color-disabled;
@@ -29,7 +35,10 @@
   }
 }
 // Shared icon styles
-.btn, .btn-floating, .btn-large, .btn-flat {
+.btn,
+.btn-floating,
+.btn-large,
+.btn-flat {
   i {
     font-size: $button-font-size-shared;
     line-height: inherit;
@@ -38,13 +47,13 @@
 
 // Raised Button
 .btn {
-  text-decoration:none;
+  text-decoration: none;
   color: $button-color-raised;
   background-color: $button-color;
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   @extend .z-depth-1;
-  @include transition(.2s ease-out);
+  @include transition(0.2s ease-out);
   cursor: pointer;
 
   &:hover {
@@ -67,7 +76,7 @@
   background-color: $button-color;
   border-radius: 50%;
   @extend .z-depth-1;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
   vertical-align: middle;
 
@@ -89,11 +98,10 @@
   &.btn-large {
     width: $button-floating-size * 1.5;
     height: $button-floating-size * 1.5;
-    i{
+    i {
       line-height: $button-floating-size * 1.5;
     }
   }
-
 }
 // button fix
 button.btn-floating {

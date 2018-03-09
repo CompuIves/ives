@@ -8,7 +8,7 @@
   height: calc(100% + 60px);
   height: -moz-calc(100%); //Temporary Firefox Fix
   padding-bottom: 60px;
-  background-color: #FFF;
+  background-color: #fff;
   z-index: 999;
   overflow-y: auto;
 
@@ -22,15 +22,17 @@
     left: auto;
   }
 
-  .collapsible{
+  .collapsible {
     margin: 0;
   }
-
 
   li {
     float: none;
     padding: 0 15px;
-    &:hover, &.active { background-color: #ddd; }
+    &:hover,
+    &.active {
+      background-color: #ddd;
+    }
   }
   a {
     color: #444;
@@ -42,7 +44,6 @@
   }
 }
 
-
 // Touch interaction
 .drag-target {
   height: 100%;
@@ -52,7 +53,6 @@
   z-index: 998;
 }
 
-
 // Hidden side-nav for all sizes
 .side-nav.fixed {
   a {
@@ -61,7 +61,6 @@
     color: #444;
   }
 }
-
 
 // Fixed side-nav shown
 .side-nav.fixed {
@@ -87,7 +86,6 @@
   }
 }
 
-
 .side-nav .collapsible-body li.active,
 .side-nav.fixed .collapsible-body li.active {
   background-color: $primary-color;
@@ -96,7 +94,6 @@
   }
 }
 
-
 #sidenav-overlay {
   position: fixed;
   top: 0;
@@ -104,7 +101,7 @@
   right: 0;
 
   height: 120vh;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 997;
 
   will-change: opacity;

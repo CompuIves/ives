@@ -18,10 +18,13 @@
   will-change: top, opacity;
 
   @media #{$medium-and-down} {
-   width: 80%;
+    width: 80%;
   }
 
-  h1,h2,h3,h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     margin-top: 0;
   }
 
@@ -36,25 +39,26 @@
     height: 56px;
     width: 100%;
 
-    .btn, .btn-flat {
+    .btn,
+    .btn-flat {
       float: right;
       margin: 6px 0;
     }
   }
 }
 #lean-overlay {
-    position: fixed;
-    z-index:999;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 115%;
-    width: 100%;
-    background: #000;
-    display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 115%;
+  width: 100%;
+  background: #000;
+  display: none;
 
-    will-change: opacity;
+  will-change: opacity;
 }
 
 // Modal with fixed action footer
@@ -71,7 +75,7 @@
   }
 
   .modal-footer {
-    border-top: 1px solid rgba(0,0,0,.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     position: fixed;
     bottom: 0;
   }

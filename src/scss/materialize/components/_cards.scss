@@ -1,5 +1,3 @@
-
-
 .card-panel {
   padding: $card-padding;
   margin: $element-top-margin 0 $element-bottom-margin 0;
@@ -16,7 +14,6 @@
   border-radius: 2px;
   @extend .z-depth-1;
 
-
   .card-title {
     color: #fff;
     font-size: 24px;
@@ -27,7 +24,9 @@
   }
 
   // Card Sizes
-  &.small, &.medium, &.large {
+  &.small,
+  &.medium,
+  &.large {
     position: relative;
 
     .card-image {
@@ -53,7 +52,6 @@
     .card-content {
       height: 150px;
     }
-
   }
 
   &.medium {
@@ -78,7 +76,6 @@
     }
   }
 
-
   .card-image {
     position: relative;
 
@@ -99,13 +96,11 @@
       left: 0;
       padding: $card-padding;
     }
-
   }
 
   .card-content {
     padding: $card-padding;
     border-radius: 0 0 2px 2px;
-
 
     p {
       margin: 0;
@@ -117,23 +112,25 @@
   }
 
   .card-action {
-    border-top: 1px solid rgba(160,160,160,.2);
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: $card-padding;
 
     a {
       color: color("orange", "accent-2");
       margin-right: $card-padding;
-      @include transition(color .3s ease);
+      @include transition(color 0.3s ease);
       text-transform: uppercase;
 
-      &:hover { color: lighten(color("orange", "accent-2"), 20%); }
+      &:hover {
+        color: lighten(color("orange", "accent-2"), 20%);
+      }
     }
   }
 
   .card-reveal {
     padding: $card-padding;
     position: absolute;
-    background-color: #FFF;
+    background-color: #fff;
     width: 100%;
     overflow-y: auto;
     top: 100%;
@@ -145,6 +142,5 @@
       cursor: pointer;
       display: block;
     }
-
   }
 }

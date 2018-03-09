@@ -287,7 +287,8 @@ select {
  *    `input` and others.
  */
 
-/* 1 */ html input[type="button"],
+/* 1 */
+html input[type="button"],
 button,
 input[type="reset"],
 input[type="submit"] {

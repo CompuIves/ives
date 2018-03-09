@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
-
 //Default styles
 
 html {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
- box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -21,17 +22,16 @@ main {
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-	color: $link-color;
-	text-decoration: none;
+  color: $link-color;
+  text-decoration: none;
 
   // Gets rid of tap active state
   -webkit-tap-highlight-color: transparent;
 }
-
 
 // Positioning
 .valign-wrapper {
@@ -42,7 +42,6 @@ a {
     display: block;
   }
 }
-
 
 ul {
   padding: 0;
@@ -56,26 +55,25 @@ ul {
   clear: both;
 }
 
-
 // Z-levels
 
-.z-depth-1{
-    @include box-shadow-2(0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12));
+.z-depth-1 {
+  @include box-shadow-2(0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12));
 }
-.z-depth-1-half{
-    @include box-shadow-2(0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15));
+.z-depth-1-half {
+  @include box-shadow-2(0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15));
 }
-.z-depth-2{
-    @include box-shadow-2(0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
+.z-depth-2 {
+  @include box-shadow-2(0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19));
 }
-.z-depth-3{
-    @include box-shadow-2(0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19));
+.z-depth-3 {
+  @include box-shadow-2(0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19));
 }
-.z-depth-4{
-    @include box-shadow-2(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21));
+.z-depth-4 {
+  @include box-shadow-2(0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21));
 }
-.z-depth-5{
-    @include box-shadow-2(0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
+.z-depth-5 {
+  @include box-shadow-2(0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22));
 }
 
 // Dividers
@@ -85,7 +83,6 @@ ul {
   overflow: hidden;
   background-color: color("grey", "lighten-2");
 }
-
 
 //  Blockquote
 
@@ -129,11 +126,9 @@ video.responsive-video {
   height: auto;
 }
 
-
 // Pagination
 
 .pagination {
-
   li {
     font-size: 1.2rem;
     float: left;
@@ -143,13 +138,21 @@ video.responsive-video {
     border-radius: 2px;
     text-align: center;
 
-    a { color: #444; }
+    a {
+      color: #444;
+    }
 
-    &.active a { color: #fff; }
+    &.active a {
+      color: #fff;
+    }
 
-    &.active { background-color: $primary-color; }
+    &.active {
+      background-color: $primary-color;
+    }
 
-    &.disabled a { color: #999; }
+    &.disabled a {
+      color: #999;
+    }
 
     i {
       font-size: 2rem;
@@ -157,7 +160,6 @@ video.responsive-video {
     }
   }
 }
-
 
 // Parallax
 .parallax-container {
@@ -181,14 +183,15 @@ video.responsive-video {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    -webkit-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     transform: translateX(-50%);
   }
 }
 
 // Pushpin
-.pin-top, .pin-bottom {
+.pin-top,
+.pin-bottom {
   position: relative;
 }
 .pinned {
@@ -208,11 +211,11 @@ ul.staggered-list li {
   transform-origin: 0 50%;
 }
 
-
 /*********************
   Media Query Classes
 **********************/
-.hide-on-small-only, .hide-on-small-and-down {
+.hide-on-small-only,
+.hide-on-small-and-down {
   @media #{$small-and-down} {
     display: none !important;
   }
@@ -263,7 +266,6 @@ ul.staggered-list li {
   }
 }
 
-
 // Center text on mobile
 .center-on-small-only {
   @media #{$small-and-down} {
@@ -281,19 +283,21 @@ footer.page-footer {
     overflow: hidden;
     height: 50px;
     line-height: 50px;
-    color: rgba(255,255,255,.8);
-    background-color: rgba(51,51,51,.08);;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.08);
     @extend .light;
   }
 }
 
 // Tables
-table, th, td {
-   border: none;
+table,
+th,
+td {
+  border: none;
 }
 
 table {
-  width:100%;
+  width: 100%;
   display: table;
 
   &.bordered tr {
@@ -307,9 +311,8 @@ table {
   }
 
   &.hoverable {
-
     tbody tr {
-      @include transition(background-color .25s ease);
+      @include transition(background-color 0.25s ease);
       &:hover {
         background-color: $table-striped-color;
       }
@@ -317,19 +320,19 @@ table {
   }
 
   &.centered {
-    thead tr th, tbody tr td {
+    thead tr th,
+    tbody tr td {
       text-align: center;
-
     }
   }
-
 }
 
 thead {
   border-bottom: 1px solid $table-border-color;
 }
 
-td, th{
+td,
+th {
   padding: 15px 5px;
   display: table-cell;
   text-align: left;
@@ -339,7 +342,6 @@ td, th{
 
 // Responsive Table
 @media #{$medium-and-down} {
-
   table.responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -353,7 +355,9 @@ td, th{
       vertical-align: top;
     }
 
-    th { text-align: left; }
+    th {
+      text-align: left;
+    }
     thead {
       display: block;
       float: left;
@@ -388,7 +392,9 @@ td, th{
       min-height: 1.25em;
       text-align: left;
     }
-    tr { padding: 0 10px; }
+    tr {
+      padding: 0 10px;
+    }
 
     /* sort out borders */
     thead {
@@ -397,16 +403,24 @@ td, th{
     }
 
     &.bordered {
-      th { border-bottom: 0; border-left: 0; }
-      td { border-left: 0; border-right: 0; border-bottom: 0; }
-      tr { border: 0; }
-      tbody tr { border-right: 1px solid $table-border-color; }
+      th {
+        border-bottom: 0;
+        border-left: 0;
+      }
+      td {
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+      }
+      tr {
+        border: 0;
+      }
+      tbody tr {
+        border-right: 1px solid $table-border-color;
+      }
     }
-
   }
-
 }
-
 
 // Collections
 .collection {
@@ -446,7 +460,6 @@ td, th{
         text-align: center;
       }
 
-
       .title {
         font-size: 16px;
       }
@@ -460,9 +473,7 @@ td, th{
         top: 16px;
         right: 16px;
       }
-
     }
-
 
     &:last-child {
       border-bottom: none;
@@ -473,9 +484,9 @@ td, th{
       color: $collection-active-color;
     }
   }
-  a.collection-item{
+  a.collection-item {
     display: block;
-    @include transition(.25s);
+    @include transition(0.25s);
     color: $secondary-color;
     &:not(.active) {
       &:hover {
@@ -491,17 +502,15 @@ td, th{
       padding: 10px 20px;
     }
     .collection-item {
-     padding-left: 30px;
+      padding-left: 30px;
     }
   }
-
 }
 // Made less specific to allow easier overriding
 .secondary-content {
   float: right;
   color: $secondary-color;
 }
-
 
 // Badges
 span.badge {
@@ -510,7 +519,7 @@ span.badge {
   text-align: center;
   font-size: 1rem;
   line-height: inherit;
-  color: color('grey', 'darken-1');
+  color: color("grey", "darken-1");
   position: absolute;
   right: 15px;
   @include box-sizing(border-box);
@@ -529,100 +538,100 @@ span.badge {
 
 // Responsive Videos
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    &.no-controls {
-      padding-top: 0;
-    }
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  &.no-controls {
+    padding-top: 0;
+  }
 
-    iframe, object, embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // Progress Bar
 .progress {
-    position: relative;
-    height: 4px;
-    display: block;
-    width: 100%;
-    background-color: lighten($progress-bar-color, 40%);
-    border-radius: 2px;
-    margin: $element-top-margin 0 $element-bottom-margin 0;
-    overflow: hidden;
+  position: relative;
+  height: 4px;
+  display: block;
+  width: 100%;
+  background-color: lighten($progress-bar-color, 40%);
+  border-radius: 2px;
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  overflow: hidden;
   .determinate {
     position: absolute;
     background-color: inherit;
     top: 0;
     bottom: 0;
     background-color: $progress-bar-color;
-    @include transition(width .3s linear);
+    @include transition(width 0.3s linear);
   }
   .indeterminate {
     background-color: $progress-bar-color;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: inherit;
       top: 0;
-      left:0;
+      left: 0;
       bottom: 0;
       will-change: left, right;
       // Custom bezier
-      @include animation(indeterminate 2.1s cubic-bezier(0.650, 0.815, 0.735, 0.395) infinite);
-
+      @include animation(indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite);
     }
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       background-color: inherit;
       top: 0;
-      left:0;
+      left: 0;
       bottom: 0;
       will-change: left, right;
       // Custom bezier
-      @include animation(indeterminate-short 2.1s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite);
+      @include animation(indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite);
       @include animation-delay(1.15s);
     }
   }
 }
 @include keyframes(indeterminate) {
-    0% {
-            left: -35%;
-            right:100%;
-        }
-    60% {
-        left: 100%;
-        right: -90%;
-    }
-    100% {
-        left: 100%;
-        right: -90%;
-    }
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
 }
 
 @include keyframes(indeterminate-short) {
-    0% {
-        left: -200%;
-        right: 100%;
-    }
-    60% {
-        left: 107%;
-        right: -8%;
-    }
-    100% {
-      left: 107%;
-      right: -8%;
-    }
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
 }
-
 
 /*******************
   Utility Classes
@@ -637,9 +646,10 @@ span.badge {
   text-align: left;
 }
 .right-align {
-  text-align: right
+  text-align: right;
 }
-.center, .center-align {
+.center,
+.center-align {
   text-align: center;
 }
 

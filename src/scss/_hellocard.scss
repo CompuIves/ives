@@ -1,182 +1,180 @@
-@import 'responsive';
+@import "responsive";
 
-$transition: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$transition: cubic-bezier(0.23, 1, 0.32, 1);
 $transition-time: 0.8s;
 
 ng-hello {
-    $frontheight: 125px;
-    $frontwidth: 500px;
-    $backheight: 250px;
-    $backwidth: 600px;
-    transition: all $transition-time $transition;
-    z-index: 5;
-    display: block;
-    margin: 0 auto;
-    backface-visibility: hidden;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    bottom: 0;
-    width: $frontwidth;
-    height: $frontheight;
-    transform-style: preserve-3d;
-    transform-origin: 50% 50%;
-    overflow: hidden;
+  $frontheight: 125px;
+  $frontwidth: 500px;
+  $backheight: 250px;
+  $backwidth: 600px;
+  transition: all $transition-time $transition;
+  z-index: 5;
+  display: block;
+  margin: 0 auto;
+  backface-visibility: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: 0;
+  width: $frontwidth;
+  height: $frontheight;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  overflow: hidden;
 
-    //Animation
-    opacity: 0;
+  //Animation
+  opacity: 0;
 
-    &.backactive {
-        width: $backwidth;
-        height: $backheight;
-
-        @include phone {
-            width: initial;
-            max-width: $backwidth;
-            height: 360px;
-        }
-    }
+  &.backactive {
+    width: $backwidth;
+    height: $backheight;
 
     @include phone {
-        width: initial;
-        max-width: $frontwidth;
+      width: initial;
+      max-width: $backwidth;
+      height: 360px;
+    }
+  }
+
+  @include phone {
+    width: initial;
+    max-width: $frontwidth;
+  }
+
+  .fa {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .fronttextcard {
+    backface-visibility: hidden;
+    transition: all $transition-time $transition;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    text-align: center;
+    border-radius: 2px;
+
+    &.current {
+      transition: all $transition-time $transition;
+      transform: rotateX(180deg);
     }
 
-    .fa {
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        font-size: 30px;
-        cursor: pointer;
+    .title {
+      line-height: $frontheight;
+      font-size: 64px;
+      font-weight: 500;
+      margin: 0;
+      @include phone {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .backtextcard {
+    display: block;
+    transition: all $transition-time $transition;
+    backface-visibility: hidden;
+    position: absolute;
+    transform: translateZ(-1px) rotateX(180deg);
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    border-radius: 2px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    &.current {
+      transition: all $transition-time $transition;
+      transform: rotateX(0);
+    }
+
+    .toptext {
+      font-size: 30px;
+      font-weight: 400;
+      margin-top: 1rem;
+      @include phone {
+        margin-top: 1.5rem;
+      }
+    }
+
+    .inputcontainer {
+      font-size: 20px;
+      width: 80%;
+      margin: 20px auto;
+
+      input {
+        border: none;
+        width: 40px;
+        text-align: center;
+      }
+    }
+
+    .button {
+      margin: 15px auto;
+      background-color: grey;
+
+      display: block;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+
+      color: white;
+      font-size: 17px;
+      font-weight: 300;
+
+      cursor: pointer;
+    }
+
+    .trianglify {
+      position: absolute;
+      font-size: 15px;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      color: grey;
+    }
+  }
+
+  &.navigator {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    @include phone {
+      width: 100%;
+      max-width: 100%;
     }
 
     .fronttextcard {
-        backface-visibility: hidden;
-        transition: all $transition-time $transition;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        z-index: 1;
-        background-color: rgba(255, 255, 255, 0.8);
-        margin: auto;
-        text-align: center;
-        border-radius: 2px;
-
-        &.current {
-            transition: all $transition-time $transition;
-            transform: rotateX(180deg);
-        }
-
-        .title {
-            line-height: $frontheight;
-            font-size: 64px;
-            font-weight: 500;
-            margin: 0;
-            @include phone {
-                font-size: 50px;
-            }
-        }
+      opacity: 0;
+      pointer-events: none;
     }
 
     .backtextcard {
-        display: block;
-        transition: all $transition-time $transition;
-        backface-visibility: hidden;
-        position: absolute;
-        transform: translateZ(-1px) rotateX(180deg);
-        background-color: rgba(255,255,255,0.7);
-        text-align: center;
-        border-radius: 2px;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-
-
-        &.current {
-            transition: all $transition-time $transition;
-            transform: rotateX(0);
-        }
-
-
-        .toptext {
-            font-size: 30px;
-            font-weight: 400;
-            margin-top: 1rem;
-            @include phone {
-                margin-top: 1.5rem;
-            }
-        }
-
-        .inputcontainer {
-            font-size: 20px;
-            width: 80%;
-            margin: 20px auto;
-
-            input {
-                border: none;
-                width: 40px;
-                text-align: center;
-            }
-        }
-
-        .button {
-            margin: 15px auto;
-            background-color: grey;
-
-            display: block;
-            width: 200px;
-            height: 50px;
-            line-height: 50px;
-
-            color: white;
-            font-size: 17px;
-            font-weight: 300;
-
-            cursor: pointer;
-        }
-
-        .trianglify {
-            position: absolute;
-            font-size: 15px;
-            bottom: 5px;
-            left:0;
-            right:0;
-            color: grey;
-        }
+      opacity: 0;
+      pointer-events: none;
     }
 
-    &.navigator {
-        position: fixed;
-        width: 100%;
-        height: 60px;
-        top: 0;
-        transform: none;
-        background-color: rgba(255, 255, 255, 0.7);
-
-        @include phone {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .fronttextcard {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .backtextcard {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        ng-navigation {
-            transition-delay: 0.5s;
-            opacity: 0.9;
-            pointer-events: initial;
-        }
+    ng-navigation {
+      transition-delay: 0.5s;
+      opacity: 0.9;
+      pointer-events: initial;
     }
+  }
 }

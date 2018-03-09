@@ -1,877 +1,879 @@
-@import 'portfolio';
-@import 'responsive';
-@import 'hellocard';
-@import 'navigation';
-@import 'header';
+@import "portfolio";
+@import "responsive";
+@import "hellocard";
+@import "navigation";
+@import "header";
 
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-    font-smooth:always;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
 }
 
 .angular-google-map-container {
+  transition: all 0.3s ease;
+  display: block;
+  height: 0px;
+
+  &.activated {
     transition: all 0.3s ease;
-    display: block;
-    height: 0px;
-
-    &.activated {
-        transition: all 0.3s ease;
-        height: 400px;
-    }
- }
-
-.darkcolor, .lightcolor, .ultralightcolor, .ultradarkcolor, .headercolor {
-    transition: color 1s ease;
+    height: 400px;
+  }
 }
 
-.bgcolor, .darkbgcolor, .ultradarkbgcolor,
-.bgcolor-transparent, .darkbgcolor-transparent, .ultradarkbgcolor-transparent {
-    transition: background-color 1s ease;
+.darkcolor,
+.lightcolor,
+.ultralightcolor,
+.ultradarkcolor,
+.headercolor {
+  transition: color 1s ease;
+}
+
+.bgcolor,
+.darkbgcolor,
+.ultradarkbgcolor,
+.bgcolor-transparent,
+.darkbgcolor-transparent,
+.ultradarkbgcolor-transparent {
+  transition: background-color 1s ease;
 }
 
 .hoverdarker {
-    transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .scrollfade {
-        transition: all 0.4s ease;
-&.hidden {
-
+  transition: all 0.4s ease;
+  &.hidden {
     opacity: 0;
     transform: translateY(15px) scale(0.9, 0.9);
+  }
 }
-}
-
 
 .background {
-    transition: 1s ease all;
-    z-index: 0;
-    position: fixed;
-    height: 100%;
-    width: 100%;
+  transition: 1s ease all;
+  z-index: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
 
 .main {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    border-radius: 3px;
-    h2 {
-        font-size: 45px;
-        font-weight: 300;
-        padding: 0;
-        margin: 1rem;
-        margin-left: 0;
-        margin-right: 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  border-radius: 3px;
+  h2 {
+    font-size: 45px;
+    font-weight: 300;
+    padding: 0;
+    margin: 1rem;
+    margin-left: 0;
+    margin-right: 0;
 
-        @include phone {
-            font-size: 34px;
-        }
+    @include phone {
+      font-size: 34px;
     }
-    h1 {
-        color: white;
-        text-align: center;
-        font-size: 60px;
-        line-height: 46px;
-        padding-bottom: 1rem;
-        margin: 0;
-        @include phone {
-            font-size: 50px;
-            line-height: 30px;
-        }
-    }
-    .subheader-text {
-        display: block;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: 5px;
-        line-height: 2.5rem;
-    }
-    .contentrow {
-        position: relative;
-        padding-left: 15%;
-        padding-right: 15%;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        margin-bottom: 0px;
-        overflow: hidden;
-        &.firstrow {
-            padding-top: 150px;
-            @include tablet {
-                padding-top: 100px;
-            }
-
-            @include phone {
-                padding-top: 120px;
-            }
-        }
-
-        &.centerrow {
-            @include phone {
-                padding-left: 0%;
-                padding-right: 0%;
-            }
-        }
-
-        @include desktop {
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-
-        @include tablet {
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-
-        @include phone {
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-    }
-    .info {
-        $margin: 5px;
-        $font-size: 26px;
-        position: relative;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color: rgba(255,255,255,0.7);
-        border-radius: 2px;
-        margin-bottom: $margin;
-        .icon {
-            width: 3.5rem;
-            text-align: center;
-            font-size: $font-size - 3px;
-        }
-        .action {
-            border-radius: 2px;
-            position: absolute;
-            display: block;
-            text-align: center;
-            vertical-align: middle;
-            margin: auto;
-            width: 4.5rem;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            padding: $margin;
-            font-size: $font-size;
-            line-height: $font-size + $margin * 4;
-            margin: auto;
-            cursor: pointer;
-            @include tablet {
-                width: 4rem;
-                font-size: 20px;
-                line-height: 20px + $margin * 4;
-            }
-
-            @include phone {
-                font-size: 18px;
-                line-height: 18px + $margin  * 4;
-            }
-        }
-        .text {
-            border-left: 1px solid #ddd;
-            padding-left: 15px;
-            font-size: $font-size;
-            font-weight: 300;
-            @include tablet {
-                font-size: 20px;
-            }
-
-            @include phone {
-                font-size: 16px;
-            }
-        }
-    }
-}
-
-.skills {
-    text-align: center;
-    .fa {
-        font-size: 25px;
-    }
-
-    .categorytitle {
-        color: white;
-        font-weight: 200;
-    }
-
-    .categorydescription {
-        color: white;
-        font-weight: 200;
-    }
-}
-
-.skill {
-    position: relative;
-    display: block;
+  }
+  h1 {
     color: white;
-    background-color: rgba(0, 0, 0, 0.15);
-    margin-bottom: 10px;
     text-align: center;
-    padding: 0 0.75rem;
-    padding-bottom: 500px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 60px;
+    line-height: 46px;
+    padding-bottom: 1rem;
+    margin: 0;
+    @include phone {
+      font-size: 50px;
+      line-height: 30px;
+    }
+  }
+  .subheader-text {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    line-height: 2.5rem;
+  }
+  .contentrow {
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    &.firstrow {
+      padding-top: 150px;
+      @include tablet {
+        padding-top: 100px;
+      }
 
-    &:last-child {
-        margin-bottom: 0;
+      @include phone {
+        padding-top: 120px;
+      }
     }
 
-    .skills {
-        position: relative;
-        text-align: left;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        border-width: 80%;
-        @include phone {
-            text-align: center;
-        }
-
-        h3 {
-            border: none;
-            text-align: left;
-            font-size: 25px;
-            font-weight: 200;
-            padding-top: 0.2rem;
-            color: rgba(255, 255, 255, 0.8);
-            margin: 0;
-            padding: 0;
-
-
-            @include phone {
-                text-align: center;
-            }
-        }
-
-        .name {
-            text-align: left;
-            padding: 0.75rem;
-            padding-left: 2.5rem;
-            transition: background-color 0.3s ease;
-            font-size: 26px;
-            font-weight: 300;
-
-            @include phone {
-                padding-left: 0.75rem;
-                text-align: center;
-            }
-
-            &.border {
-                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-                padding: 0;
-            }
-
-            &.selected {
-                background-color: rgba(0, 0, 0, 0.2);
-                font-weight: 400;
-            }
-        }
-
-        .language {
-            position: relative;
-            padding: 0.75rem;
-            font-weight: 300;
-            font-size: 36px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-            @include phone {
-                text-align: center;
-            }
-
-            &:last-child {
-                border: none;
-            }
-
-            .langdesc {
-                display: block;
-                font-size: 20px;
-                font-weight: 200;
-                line-height: 56px;
-
-                @include phone {
-                    text-align: center;
-                    line-height: 2.5rem;
-                }
-            }
-
-
-            ng-progress {
-                position: absolute;
-                display: inline-block;
-                border-radius: 1px;
-                background-color: rgba(0, 0, 0, 0.2);
-                height: 30px;
-                top: 50%;
-                bottom: 0;
-                width: 100%;
-                font-size: 20px;
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                transform: translateY(50%);
-
-                @include tablet {
-                    position: relative;
-                }
-
-                @include phone {
-                    position: relative;
-                }
-            }
-        }
+    &.centerrow {
+      @include phone {
+        padding-left: 0%;
+        padding-right: 0%;
+      }
     }
 
-    .description {
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        position: relative;
-
-        .skillprogress {
-            position: absolute;
-            top:0;
-            left: 0;
-            display: block;
-            width: 100%;
-            height: 40px;
-            border-top: rgba(255, 255, 255, 0.1);
-            background-color: rgba(255, 255, 255, 0.15);
-            font-size: 26px;
-            font-weight: 200;
-        }
+    @include desktop {
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
-    .codingskill {
-        position: relative;
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        text-align: center;
-        margin: 10px;
-        padding: 0;
-        vertical-align: center;
-
-
-        .skilltitle {
-            font-size: 36px;
-            font-weight: 200;
-            line-height: 100px;
-        }
-    }
-
-    .leftlanguages {
-        border-right: 1px solid rgba(255,255,255,0.1);
-        .codingskill {
-            text-align: right;
-            .skillprogress {
-               float: left;
-            }
-        }
-    }
-
-    .subtitle {
-        font-size: 36px;
-        font-weight: 300;
-    }
-
-    .framework-logo {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-.entrydescription {
-    transition-delay: 0.1s;
-
-    p {
-        margin: 0;
-    }
-
-    .flow-text {
-        @include widescreen {
-            font-size: 23px;
-            line-height: 2.5rem;
-        }
-        @include desktop {
-            font-size: 23px;
-            line-height: 2.5rem;
-        }
-
-        @include tablet {
-            font-size: 20px;
-            line-height: 2.2rem;
-        }
+    @include tablet {
+      padding-left: 5%;
+      padding-right: 5%;
     }
 
     @include phone {
-        padding-top: 10px;
+      padding-left: 5%;
+      padding-right: 5%;
     }
+  }
+  .info {
+    $margin: 5px;
+    $font-size: 26px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+    margin-bottom: $margin;
+    .icon {
+      width: 3.5rem;
+      text-align: center;
+      font-size: $font-size - 3px;
+    }
+    .action {
+      border-radius: 2px;
+      position: absolute;
+      display: block;
+      text-align: center;
+      vertical-align: middle;
+      margin: auto;
+      width: 4.5rem;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: $margin;
+      font-size: $font-size;
+      line-height: $font-size + $margin * 4;
+      margin: auto;
+      cursor: pointer;
+      @include tablet {
+        width: 4rem;
+        font-size: 20px;
+        line-height: 20px + $margin * 4;
+      }
+
+      @include phone {
+        font-size: 18px;
+        line-height: 18px + $margin * 4;
+      }
+    }
+    .text {
+      border-left: 1px solid #ddd;
+      padding-left: 15px;
+      font-size: $font-size;
+      font-weight: 300;
+      @include tablet {
+        font-size: 20px;
+      }
+
+      @include phone {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.skills {
+  text-align: center;
+  .fa {
+    font-size: 25px;
+  }
+
+  .categorytitle {
+    color: white;
+    font-weight: 200;
+  }
+
+  .categorydescription {
+    color: white;
+    font-weight: 200;
+  }
+}
+
+.skill {
+  position: relative;
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 0 0.75rem;
+  padding-bottom: 500px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .skills {
+    position: relative;
+    text-align: left;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-width: 80%;
+    @include phone {
+      text-align: center;
+    }
+
+    h3 {
+      border: none;
+      text-align: left;
+      font-size: 25px;
+      font-weight: 200;
+      padding-top: 0.2rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0;
+      padding: 0;
+
+      @include phone {
+        text-align: center;
+      }
+    }
+
+    .name {
+      text-align: left;
+      padding: 0.75rem;
+      padding-left: 2.5rem;
+      transition: background-color 0.3s ease;
+      font-size: 26px;
+      font-weight: 300;
+
+      @include phone {
+        padding-left: 0.75rem;
+        text-align: center;
+      }
+
+      &.border {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 0;
+      }
+
+      &.selected {
+        background-color: rgba(0, 0, 0, 0.2);
+        font-weight: 400;
+      }
+    }
+
+    .language {
+      position: relative;
+      padding: 0.75rem;
+      font-weight: 300;
+      font-size: 36px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      @include phone {
+        text-align: center;
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      .langdesc {
+        display: block;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 56px;
+
+        @include phone {
+          text-align: center;
+          line-height: 2.5rem;
+        }
+      }
+
+      ng-progress {
+        position: absolute;
+        display: inline-block;
+        border-radius: 1px;
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 30px;
+        top: 50%;
+        bottom: 0;
+        width: 100%;
+        font-size: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transform: translateY(50%);
+
+        @include tablet {
+          position: relative;
+        }
+
+        @include phone {
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .description {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+
+    .skillprogress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 40px;
+      border-top: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.15);
+      font-size: 26px;
+      font-weight: 200;
+    }
+  }
+
+  .codingskill {
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+    vertical-align: center;
+
+    .skilltitle {
+      font-size: 36px;
+      font-weight: 200;
+      line-height: 100px;
+    }
+  }
+
+  .leftlanguages {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    .codingskill {
+      text-align: right;
+      .skillprogress {
+        float: left;
+      }
+    }
+  }
+
+  .subtitle {
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  .framework-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.entrydescription {
+  transition-delay: 0.1s;
+
+  p {
+    margin: 0;
+  }
+
+  .flow-text {
+    @include widescreen {
+      font-size: 23px;
+      line-height: 2.5rem;
+    }
+    @include desktop {
+      font-size: 23px;
+      line-height: 2.5rem;
+    }
+
+    @include tablet {
+      font-size: 20px;
+      line-height: 2.2rem;
+    }
+  }
+
+  @include phone {
+    padding-top: 10px;
+  }
 }
 .entry {
-    margin-top: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  &.col {
+    padding-left: 0;
+  }
+
+  .entryname {
+    font-size: 26px;
+  }
+
+  .entryyears {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .entrysub {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .recommendationtitle {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .recommendation {
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
     padding: 1rem;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    //box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 
-    &.col {
-        padding-left: 0;
+    .description {
+      padding-left: 40px;
+      padding-right: 40px;
     }
-
-    .entryname {
-        font-size: 26px;
-    }
-
-    .entryyears {
-        font-size: 20px;
-        font-weight: 300;
-    }
-
-    .entrysub {
-        font-size: 20px;
-        font-weight: 300;
-    }
-
-    .recommendationtitle {
-        margin-top: 10px;
-        font-size: 18px;
-    }
-
-    .recommendation {
-        position: relative;
-        font-size: 20px;
-        font-weight: 300;
-        padding: 1rem;
-        border-radius: 3px;
-        background-color: rgba(255, 255, 255, 0.5);
-        //box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-
-
-        .description {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-        .author {
-            font-weight: 400;
-            font-size: 18px;
-            text-align: right;
-            margin-right: 50px;
-        }
-
-        .fa {
-            font-size: 30px;
-
-            &.fa-quote-right {
-                position: absolute;
-                right: 10px;
-                bottom: 10px;
-            }
-
-            &.fa-quote-left {
-                position: absolute;
-                left: 10px;
-                top: 10px;
-            }
-        }
-    }
-}
-
-.portfolio {
-    .item {
-        position: relative;
-        transition: all 0.3s ease;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.3);
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        overflow: hidden;
-
-        .title {
-            position: absolute;
-            text-align: center;
-            font-size: 32px;
-            font-weight: 200;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            top: -59px;
-            left: 0;
-            right: 0;
-
-            &.hovered {
-                transition: all 0.3s ease;
-                top: 0;
-            }
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .description {
-            font-size: 20px;
-            font-weight: 200;
-            margin: 0.5rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        &:hover {
-            transition: all 0.3s ease;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-    }
-}
-
-#projectrow {
-    &.visible {
-        .frontportfolio ng-portfolio {
-            opacity: 1;
-            transform: none;
-        }
-    }
-}
-
-.frontportfolio {
-    display: inline-block;
-    background-color: rgba(0,0,0,0);
-    transition: opacity 0.3s ease;
-    opacity: 1;
-    z-index: 2;
-
-    &.ng-hide {
-        transition: opacity 0.3s ease;
-        transition-delay: 0.3s;
-        opacity: 0;
-        pointer-events: none;
-        z-index: 0;
-    }
-
-    ng-portfolio {
-        opacity: 0;
-        transform: translateY(15px) scale(0.7, 0.7);
-    }
-}
-
-.backportfolio {
-    transition: opacity 0.3s ease;
-    transition-delay: 0.3s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0;
-    padding: inherit;
-    margin: inherit;
-    opacity: 1;
-    z-index: 5;
-
-    &.ng-hide {
-        transition: opacity 0.3s ease;
-        opacity: 0;
-        z-index: 0;
+    .author {
+      font-weight: 400;
+      font-size: 18px;
+      text-align: right;
+      margin-right: 50px;
     }
 
     .fa {
-        font-size: 50px;
-        &.fa-times-circle {
-            position: absolute;
-            transition: all 0.3s ease;
-            top: 10px;
-            font-size: 60px;
-            line-height: 60px;
-            padding: 5px;
-            cursor: pointer;
-            &:hover {
-               transition: all 0.3s ease;
-               transform: rotateZ(180deg);
-            }
+      font-size: 30px;
 
-            @include phone {
-                font-size: 45px;
-                line-height: 45px;
-                top: 5px;
-                left: 5px;;
-            }
-        }
+      &.fa-quote-right {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+
+      &.fa-quote-left {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+      }
     }
+  }
+}
 
-    .header-progress {
-        text-align: center;
-        font-size: 25px;
-        padding-bottom: 10px;
-        margin-top: -10px;
-    }
+.portfolio {
+  .item {
+    position: relative;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
 
-    .backcontainer {
-        display: inline-block;
-    }
+    .title {
+      position: absolute;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 200;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      top: -59px;
+      left: 0;
+      right: 0;
 
-    .images {
-        .col {
-            @for $i from 1 through 3 {
-                &:nth-child(#{$i}) {
-                img {
-                        transition-delay: 0.15s * $i;
-                    }
-                }
-            }
-        }
-
-        img {
-            transition: all 0.3s ease;
-            padding: 0;
-            margin: 1rem;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            border-radius: 2px;
-            opacity: 1;
-            transform: none;
-
-            &.ng-hide {
-                opacity: 0;
-                transform: translateY(5px);
-            }
-        }
-
-        div {
-            text-align: center;
-        }
-    }
-
-    .website {
-        height: 300px;
-        width: 100%;
-        margin-top: 1rem;
-        border: none;
-    }
-
-    .smalldescription {
-        font-size: 15px;
-        font-weight: 300;
-        padding-top: 0;
-    }
-
-    .subinfo {
-        font-size: 32px;
-        border-radius: 5px;
-        padding-left: 90px;
-
-        .fa {
-            padding: 0.75rem;
-        }
-    }
-
-    .portfolioitemtitle {
-        display: block;
-        transition: opacity 0.3s ease;
-        position: relative;
-        opacity: 1;
-        text-align: center;
-        pointer-events: none;
-    }
-
-    .portfoliosubtitle {
+      &.hovered {
         transition: all 0.3s ease;
-        display: block;
-        text-align: center;
-        font-size: 25px;
-        font-weight: 300;
-        line-height: 40px;
-        border: 2px solid rgba(255, 255, 255, 1);
-        max-width: 200px;
-        margin: auto;
-        border-radius: 3px;
-        &:hover {
-            transition: all 0.3s ease;
-            background-color: rgba(255, 255, 255, 1);
-            color: rgb(60, 60, 60) !important;
+        top: 0;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .description {
+      font-size: 20px;
+      font-weight: 200;
+      margin: 0.5rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    &:hover {
+      transition: all 0.3s ease;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+#projectrow {
+  &.visible {
+    .frontportfolio ng-portfolio {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+.frontportfolio {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  z-index: 2;
+
+  &.ng-hide {
+    transition: opacity 0.3s ease;
+    transition-delay: 0.3s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  ng-portfolio {
+    opacity: 0;
+    transform: translateY(15px) scale(0.7, 0.7);
+  }
+}
+
+.backportfolio {
+  transition: opacity 0.3s ease;
+  transition-delay: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  padding: inherit;
+  margin: inherit;
+  opacity: 1;
+  z-index: 5;
+
+  &.ng-hide {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 0;
+  }
+
+  .fa {
+    font-size: 50px;
+    &.fa-times-circle {
+      position: absolute;
+      transition: all 0.3s ease;
+      top: 10px;
+      font-size: 60px;
+      line-height: 60px;
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+        transition: all 0.3s ease;
+        transform: rotateZ(180deg);
+      }
+
+      @include phone {
+        font-size: 45px;
+        line-height: 45px;
+        top: 5px;
+        left: 5px;
+      }
+    }
+  }
+
+  .header-progress {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+  }
+
+  .backcontainer {
+    display: inline-block;
+  }
+
+  .images {
+    .col {
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          img {
+            transition-delay: 0.15s * $i;
+          }
         }
+      }
     }
 
-    .categoryinfo {
-        font-size: 18px;
-        border-radius: 2px;
-        padding-top: 0.75rem;
+    img {
+      transition: all 0.3s ease;
+      padding: 0;
+      margin: 1rem;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+      opacity: 1;
+      transform: none;
+
+      &.ng-hide {
+        opacity: 0;
+        transform: translateY(5px);
+      }
     }
 
-    .projectdescription {
-        color: white;
-        &.flow-text {
-            @include widescreen {
-                font-size: 23px;
-                line-height: 2.5rem;
-            }
-            @include desktop {
-                font-size: 23px;
-                line-height: 2.5rem;
-            }
-
-            @include tablet {
-                font-size: 20px;
-                line-height: 2.2rem;
-            }
-        }
+    div {
+      text-align: center;
     }
+  }
+
+  .website {
+    height: 300px;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+  }
+
+  .smalldescription {
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 0;
+  }
+
+  .subinfo {
+    font-size: 32px;
+    border-radius: 5px;
+    padding-left: 90px;
+
+    .fa {
+      padding: 0.75rem;
+    }
+  }
+
+  .portfolioitemtitle {
+    display: block;
+    transition: opacity 0.3s ease;
+    position: relative;
+    opacity: 1;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .portfoliosubtitle {
+    transition: all 0.3s ease;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 40px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    max-width: 200px;
+    margin: auto;
+    border-radius: 3px;
+    &:hover {
+      transition: all 0.3s ease;
+      background-color: rgba(255, 255, 255, 1);
+      color: rgb(60, 60, 60) !important;
+    }
+  }
+
+  .categoryinfo {
+    font-size: 18px;
+    border-radius: 2px;
+    padding-top: 0.75rem;
+  }
+
+  .projectdescription {
+    color: white;
+    &.flow-text {
+      @include widescreen {
+        font-size: 23px;
+        line-height: 2.5rem;
+      }
+      @include desktop {
+        font-size: 23px;
+        line-height: 2.5rem;
+      }
+
+      @include tablet {
+        font-size: 20px;
+        line-height: 2.2rem;
+      }
+    }
+  }
 }
 
 .subrow {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding-bottom: 2rem;
-    &:last-child {
-        border: none;
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 2rem;
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
 }
 
 .form {
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    border-radius: 3px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  color: black;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+
+  .formcontents {
+    padding: 3rem 1rem;
+    margin-bottom: 1rem;
+    &.ng-invalid {
+      .sendbutton {
+        background-color: grey !important;
+        color: white !important;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .descriptionbox {
     color: black;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    font-size: 32px;
-    font-weight: 300;
-    text-align: center;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  input,
+  textarea {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 10px;
+
+    &.ng-pristine {
+      box-shadow: none;
+    }
+
+    &:focus,
+    &:valid {
+      transition: all 0.3s ease;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 200;
+      color: white;
+    }
+  }
+
+  textarea {
+    font-size: 20px;
+  }
+
+  .sendbutton {
+    float: right;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+  }
+
+  .confirmcontents {
+    transition: all 0.3s ease;
+    color: black;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+
+    .done {
+      transition: all 0.3s ease;
+      opacity: 0;
+
+      &.show {
+        opacity: 1;
+      }
+
+      .confirmed {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        color: rgb(46, 204, 113);
+        font-size: 45px;
+        font-weight: 400;
+      }
+      .text {
+        left: 0;
+        right: 0;
+        position: absolute;
+        font-size: 30px;
+        bottom: 10px;
+      }
+    }
+
+    .failed {
+      @extend .done;
+      .confirmed {
+        color: #c0392b;
+      }
+    }
+
+    .loading {
+      transition: all 0.3s ease;
+      transition-delay: 0.2s;
+      color: #2c3e50;
+      position: absolute;
+      top: 50px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+
+      &.hide {
+        opacity: 0;
+      }
+    }
+  }
+
+  &.confirm {
+    transition: all 0.3s ease;
 
     .formcontents {
-        padding: 3rem 1rem;
-        margin-bottom: 1rem;
-        &.ng-invalid {
-            .sendbutton {
-                background-color: grey !important;
-                color: white !important;
-                cursor: default;
-                pointer-events: none;
-            }
-        }
-    }
-
-    .descriptionbox {
-        color: black;
-        text-align: left;
-        font-size: 20px;
-    }
-
-    input, textarea {
-        transition: all 0.3s ease;
-        border: none;
-        border-radius: 2px;
-        margin-bottom: 10px;
-
-        &.ng-pristine {
-            box-shadow: none;
-        }
-
-        &:focus, &:valid {
-            transition: all 0.3s ease;
-        }
-
-        &::-webkit-input-placeholder {
-            font-weight: 200;
-            color: white;
-        }
-    }
-
-    textarea {
-        font-size: 20px;
-    }
-
-    .sendbutton {
-        float: right;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        cursor: pointer;
+      transition: all 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
     }
 
     .confirmcontents {
-        transition: all 0.3s ease;
-        color: black;
-        opacity: 0;
-        left: 0;
-        right: 0;
-        top: 20px;
-        bottom: 0;
-        position: absolute;
-        pointer-events: none;
-
-        .done {
-            transition: all 0.3s ease;
-            opacity: 0;
-
-            &.show {
-                opacity: 1;
-            }
-
-            .confirmed {
-                position: absolute;
-                top: 0px;
-                left: 0;
-                right: 0;
-                color:rgb(46, 204, 113);
-                font-size: 45px;
-                font-weight: 400;
-            }
-            .text {
-                left: 0;
-                right: 0;
-                position: absolute;
-                font-size: 30px;
-                bottom: 10px;
-            }
-        }
-
-        .failed {
-            @extend .done;
-            .confirmed {
-                color:#c0392b;
-            }
-        }
-
-
-        .loading {
-            transition: all 0.3s ease;
-            transition-delay: 0.2s;
-            color: #2c3e50;
-            position: absolute;
-            top: 50px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            text-align: center;
-
-            &.hide {
-                opacity: 0;
-            }
-        }
-
+      transition: all 0.3s ease;
+      opacity: 1;
     }
-
-    &.confirm {
-        transition: all 0.3s ease;
-
-        .formcontents {
-            transition: all 0.3s ease;
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .confirmcontents {
-            transition: all 0.3s ease;
-            opacity: 1;
-        }
-    }
+  }
 }
 
 .quote {
-    span {
-        text-align: center;
-        font-size: 20px;
-        font-weight: 200;
+  span {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
 
-        @include phone {
-            font-size: 18px;
-        }
-
-        &.author {
-            font-weight: 400;
-        }
+    @include phone {
+      font-size: 18px;
     }
+
+    &.author {
+      font-weight: 400;
+    }
+  }
 }
